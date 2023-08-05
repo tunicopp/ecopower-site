@@ -8,12 +8,27 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "card-bg": "url('/public/assets/images/img-card.png')",
       },
       colors: {
         "font-black": "#262833",
+      },
+
+      keyframes: {
+        fly: {
+          "0%": { transform: "translate(0%)" },
+          "50%": { transform: "translate(250%)" },
+          "100%": { transform: "translate(0%)" },
+        },
+        fly2: {
+          "0%": { transform: "translate(0%)" },
+          "50%": { transform: "translate(-180%)" },
+          "100%": { transform: "translate(0%)" },
+        },
+      },
+      animation: {
+        fly: "fly 50s linear infinite",
+        fly2: "fly2 40s linear infinite",
       },
     },
   },

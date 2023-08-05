@@ -4,15 +4,15 @@ import cardImage from "./../../../public/assets/images/img-card.png";
 
 const CardSlider: React.FC = () => {
   return (
-    <div className="relative flex w-[400px] h-[300px] rounded-2xl">
+    <div className="relative flex h-[280px] rounded-2xl scale-up-slider overflow-hidden">
       <Image
         src={cardImage}
-        layout="fill"
+        layout="cover"
         alt="card image"
         quality={100}
-        className="rounded-2xl absolute top-0 left-0"
+        className="rounded-2xl absolute top-0 left-0 w-full h-[300px]  "
       />
-      <div className="flex absolute top-[18%] left-10 w-[120px]">
+      <div className="flex absolute top-[18%] left-10 w-[120px] ">
         <p className=" text-[30px] font-bold">Lorem ipsum dolor sit amet</p>
       </div>
     </div>

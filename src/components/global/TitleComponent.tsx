@@ -10,7 +10,7 @@ const TitleComponent: React.FC<TitleComponent> = ({ children, className }) => {
   return (
     <h1
       className={twMerge(
-        "align-middle text-[48px] font-semibold leading-[56px]",
+        "align-middle text-[48px] font-semibold leading-[56px] z-10",
         className
       )}
     >

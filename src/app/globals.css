@@ -7,8 +7,29 @@
   padding: 0;
   box-sizing: border-box;
   color: #262833;
+  scroll-behavior: smooth;
+}
+
+.scale-up-slider {
+  transition: transform 0.3s ease;
+}
+
+.scale-up-slider:hover {
+  transform: scale(0.9);
+}
+
+.scale-down-slider {
+  transition: transform 0.3s ease;
+}
+
+.scale-down-slider:hover {
+  transform: scale(1.1);
 }
 
 .flex-center {
   @apply flex items-center justify-center;
+}
+
+.style-navigation {
+  @apply text-3xl cursor-pointer  w-10 h-10  absolute top-[50%] right-[5%] z-10 opacity-0 group-hover:opacity-60 transition-opacity duration-500 ease-in-out;
 }
