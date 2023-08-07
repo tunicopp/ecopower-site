@@ -24,11 +24,14 @@ module.exports = {
         700: "#3E455B",
         600: "#4A536D",
         300: "#8790AB",
+        400: "#6F717B",
         200: "#B3BACE",
         100: "#E5E8F0",
         50: "#F6F7FC",
-        white: "#FFFFFF",
       },
+      white: "#FFFFFF",
+      "font-black": "#262833",
+      "beige-300": "#F8F6F1",
       secondary: {
         1: "#43088F",
         2: "#7120D9",
@@ -36,26 +39,22 @@ module.exports = {
         4: "#F1E5FF",
         "card-bg": "url('/public/assets/images/img-card.png')",
       },
-      colors: {
-        "font-black": "#262833",
+    },
+    keyframes: {
+      fly: {
+        "0%": { transform: "translate(0%)" },
+        "50%": { transform: "translate(250%)" },
+        "100%": { transform: "translate(0%)" },
       },
-
-      keyframes: {
-        fly: {
-          "0%": { transform: "translate(0%)" },
-          "50%": { transform: "translate(250%)" },
-          "100%": { transform: "translate(0%)" },
-        },
-        fly2: {
-          "0%": { transform: "translate(0%)" },
-          "50%": { transform: "translate(-180%)" },
-          "100%": { transform: "translate(0%)" },
-        },
+      fly2: {
+        "0%": { transform: "translate(0%)" },
+        "50%": { transform: "translate(-180%)" },
+        "100%": { transform: "translate(0%)" },
       },
-      animation: {
-        fly: "fly 50s linear infinite",
-        fly2: "fly2 40s linear infinite",
-      },
+    },
+    animation: {
+      fly: "fly 50s linear infinite",
+      fly2: "fly2 40s linear infinite",
     },
   },
   plugins: [],
