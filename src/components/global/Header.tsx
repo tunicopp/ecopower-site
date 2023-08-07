@@ -39,7 +39,7 @@ const Header: React.FC = () => {
       <Link href="/" className="text-sm leading-4 font-medium text-white">
         Unidades
       </Link>
-      <button className="text-white ml-[70px] text-lg">
+      <button className="text-white ml-[70px] text-xl">
         <MdOutlineMenu />
       </button>
     </GridContainer>

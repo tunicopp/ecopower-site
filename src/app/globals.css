@@ -26,12 +26,8 @@ a {
 }
 
 .hero-slider-wrapper {
-  min-height: calc(100vh - 40px);
+  min-height: 582px;
   width: 100%;
-}
-
-.hero-slider {
-  height: calc(100vh - 40px);
 }
 
 .active-bullet {
