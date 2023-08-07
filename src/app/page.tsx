@@ -3,7 +3,7 @@ import Hero from "../components/Hero/Hero";
 import SectionSlide from "@/components/SectionSlide/SectionSlide";
 import BlogSection from "@/components/blog-section/BlogSection";
 
-export default function Home() {
+export default async function Home() {
     return (
         <main className="">
             <Hero/>

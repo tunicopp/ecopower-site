@@ -3,9 +3,36 @@ import GridContainer from "@/components/global/GridContainer";
 import TitleComponent from "@/components/global/TitleComponent";
 import MainBlogItem from "@/components/blog-section/MainBlogItem";
 import SideBlogItem from "@/components/blog-section/SideBlogItem";
+import api from "@/services/api";
+import ApiBlogPost from "@/@types/api/blog-post.api.interface";
+import BlogPost from "@/@types/app/blog-post.app.interface";
 
+async function getData(): Promise<BlogPost[]> {
+    const response = await api.get<ApiBlogPost[]>("/wp-json/wp/v2/posts", {params: {per_page: 4, "_embed": ''}});
+    const data = response.data
 
-const BlogSection: React.FC = () => {
+    const posts: BlogPost[] = []
+    for (const d of data) {
+        const post: BlogPost = {
+            title: d.title.rendered,
+            date: d.date,
+            link: d.link,
+            photo: d._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url,
+            author: {
+                name: d._embedded.author[0].name,
+                photo: d._embedded.author[0].avatar_urls['48']
+            }
+        }
+
+        posts.push(post)
+    }
+
+    return posts
+}
+
+const BlogSection: React.FC = async () => {
+    const data = await getData()
+
     return (
         <section className="min-h-screen w-full bg-beige-300 py-28">
             <GridContainer className="flex flex-col h-full">
@@ -40,3 +67,4 @@ const BlogSection: React.FC = () => {
 };
 
 export default BlogSection;
+
