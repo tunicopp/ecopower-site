@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-br" className="">
+    <html lang="pt-br">
       <body className={golos_text.className}>{children}</body>
     </html>
   );
