@@ -1,17 +1,21 @@
 import ComponentWithChildren from "@/@types/ComponentWithChildren";
+import { twMerge } from "tailwind-merge";
 import React from "react";
 
 interface GridContainerProps extends ComponentWithChildren {
-  extraClasses?: string;
+  className?: string;
 }
 
 const GridContainer: React.FC<GridContainerProps> = ({
-  extraClasses,
+  className,
   children,
 }) => {
   return (
     <div
-      className={`flex w-full mx-auto max-w-[1156px] px-[36px] ${extraClasses}`}
+      className={twMerge(
+        "flex w-full mx-auto max-w-[1156px] px-[36px]",
+        className
+      )}
     >
       {children}
     </div>

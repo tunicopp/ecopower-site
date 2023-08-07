@@ -12,6 +12,9 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: {
+        calculator: "0px 32px 32px 0px rgba(55, 47, 25, 0.05);",
+      },
     },
     colors: {
       "primary-green": "#01B040",
@@ -46,10 +49,21 @@ module.exports = {
         "50%": { transform: "translate(250%)" },
         "100%": { transform: "translate(0%)" },
       },
-      fly2: {
-        "0%": { transform: "translate(0%)" },
-        "50%": { transform: "translate(-180%)" },
-        "100%": { transform: "translate(0%)" },
+      keyframes: {
+        fly: {
+          "0%": { transform: "translate(0%)" },
+          "50%": { transform: "translate(250%)" },
+          "100%": { transform: "translate(0%)" },
+        },
+        fly2: {
+          "0%": { transform: "translate(0%)" },
+          "50%": { transform: "translate(-180%)" },
+          "100%": { transform: "translate(0%)" },
+        },
+      },
+      animation: {
+        fly: "fly 50s linear infinite",
+        fly2: "fly2 40s linear infinite",
       },
     },
     animation: {

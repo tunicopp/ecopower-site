@@ -7,8 +7,8 @@ import GridContainer from "../global/GridContainer";
 
 const ContactsBar: React.FC = () => {
   return (
-    <div className="bg-white h-[40px] py-2.5">
-      <GridContainer extraClasses="items-center justify-end">
+    <div className="bg-white h-[40px] py-2.5 relative">
+      <GridContainer className="items-center justify-end">
         <Link href="/" className="flex items-center text-xl text-grayscale-800">
           <MdCardTravel />
           <span className="text-sm ml-2">Seja um Franqueado</span>

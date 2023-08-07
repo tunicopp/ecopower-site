@@ -10,6 +10,19 @@
   scroll-behavior: smooth;
 }
 
+.hero-slider-wrapper {
+  min-height: calc(100vh - 40px);
+  width: 100%;
+}
+
+.hero-slider {
+  height: calc(100vh - 40px);
+}
+
+.active-bullet {
+  background: #12131a !important;
+}
+
 .scale-up-slider {
   transition: transform 0.3s ease;
 }
@@ -32,4 +45,8 @@
 
 .style-navigation {
   @apply text-3xl cursor-pointer  w-10 h-10  absolute top-[50%] right-[5%] z-10 opacity-0 group-hover:opacity-60 transition-opacity duration-500 ease-in-out;
+}
+
+.style-navigation-hero {
+  @apply w-10 h-10 bg-white rounded-full absolute z-20 top-[50%] flex-center cursor-pointer text-xl;
 }
