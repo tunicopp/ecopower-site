@@ -12,6 +12,9 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: {
+        calculator: "0px 32px 32px 0px rgba(55, 47, 25, 0.05);",
+      },
     },
     colors: {
       "primary-green": "#01B040",
@@ -27,8 +30,8 @@ module.exports = {
         200: "#B3BACE",
         100: "#E5E8F0",
         50: "#F6F7FC",
-        white: "#FFFFFF",
       },
+      white: "#FFFFFF",
       secondary: {
         1: "#43088F",
         2: "#7120D9",
@@ -39,7 +42,6 @@ module.exports = {
       colors: {
         "font-black": "#262833",
       },
-
       keyframes: {
         fly: {
           "0%": { transform: "translate(0%)" },
