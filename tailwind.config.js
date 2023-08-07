@@ -12,6 +12,9 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: {
+        calculator: "0px 32px 32px 0px rgba(55, 47, 25, 0.05);",
+      },
     },
     colors: {
       "primary-green": "#01B040",
@@ -32,6 +35,7 @@ module.exports = {
       white: "#FFFFFF",
       "font-black": "#262833",
       "beige-300": "#F8F6F1",
+      bege: "#F8F6F1",
       secondary: {
         1: "#43088F",
         2: "#7120D9",

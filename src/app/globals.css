@@ -10,6 +10,19 @@
   scroll-behavior: smooth;
 }
 
+.hero-slider-wrapper {
+  min-height: calc(100vh - 40px);
+  width: 100%;
+}
+
+.hero-slider {
+  height: calc(100vh - 40px);
+}
+
+.active-bullet {
+  background: #12131a !important;
+}
+
 .scale-up-slider {
   transition: transform 0.3s ease;
 }
@@ -50,4 +63,20 @@
 
 .slide-arrow {
   @apply group-hover/arrow:translate-x-8 transition-all duration-500 ease-in-out;
+}
+.style-navigation-hero {
+  @apply w-10 h-10 bg-white rounded-full absolute z-20 top-[50%] flex-center cursor-pointer text-xl;
+}
+
+.select {
+  @apply rounded-full h-12 px-5 py-[6px] pr-12 text-sm font-medium bg-white border border-grayscale-200 max-w-[200px] outline-none appearance-none;
+  background: url(../../public/assets/icons/expand_more.png);
+  background-size: 20px;
+  background-position: center right 14px;
+  background-repeat: no-repeat;
+  text-overflow: ellipsis;
+}
+
+.simulate-button {
+  @apply px-5 py-[6px] h-12 bg-grayscale-900 rounded-full text-white text-sm font-semibold transition-colors hover:bg-primary-green;
 }
