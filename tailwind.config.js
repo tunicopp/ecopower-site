@@ -32,6 +32,7 @@ module.exports = {
         50: "#F6F7FC",
       },
       white: "#FFFFFF",
+      bege: "#F8F6F1",
       secondary: {
         1: "#43088F",
         2: "#7120D9",
