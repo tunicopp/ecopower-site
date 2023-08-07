@@ -23,7 +23,7 @@ const Header: React.FC = () => {
         className="text-sm leading-4 font-medium text-white flex items-center"
       >
         Produtos
-        <div className="fill-white text-base ml-1 rotate-90">
+        <div className="text-base ml-1 rotate-90">
           <MdChevronRight />
         </div>
       </Link>
@@ -32,14 +32,14 @@ const Header: React.FC = () => {
         className="text-sm leading-4 font-medium text-white mx-6 flex items-center"
       >
         Sobre Nós
-        <div className="fill-white text-base ml-1 rotate-90">
+        <div className="text-base ml-1 rotate-90">
           <MdChevronRight />
         </div>
       </Link>
       <Link href="/" className="text-sm leading-4 font-medium text-white">
         Unidades
       </Link>
-      <button className="fill-white ml-[70px] text-lg">
+      <button className="text-white ml-[70px] text-lg">
         <MdOutlineMenu />
       </button>
     </GridContainer>
