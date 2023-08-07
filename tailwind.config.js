@@ -34,6 +34,27 @@ module.exports = {
         2: "#7120D9",
         3: "#9B53F9",
         4: "#F1E5FF",
+        "card-bg": "url('/public/assets/images/img-card.png')",
+      },
+      colors: {
+        "font-black": "#262833",
+      },
+
+      keyframes: {
+        fly: {
+          "0%": { transform: "translate(0%)" },
+          "50%": { transform: "translate(250%)" },
+          "100%": { transform: "translate(0%)" },
+        },
+        fly2: {
+          "0%": { transform: "translate(0%)" },
+          "50%": { transform: "translate(-180%)" },
+          "100%": { transform: "translate(0%)" },
+        },
+      },
+      animation: {
+        fly: "fly 50s linear infinite",
+        fly2: "fly2 40s linear infinite",
       },
     },
   },
