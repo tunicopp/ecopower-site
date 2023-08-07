@@ -6,8 +6,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #262833;
   scroll-behavior: smooth;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+select,
+span,
+label,
+a {
+  color: #262833;
 }
 
 .hero-slider-wrapper {
