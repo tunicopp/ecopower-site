@@ -9,7 +9,7 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 const Hero: React.FC = () => {
   return (
-    <div className="min-h-screen w-full bg-primary-green">
+    <div className="min-h-[624px] w-full bg-primary-green relative">
       <HeroSlider />
       <div className="z-10 relative">
         <ContactsBar />

@@ -13,7 +13,6 @@ const HeroSlider: React.FC = () => {
         slidesPerView={1}
         direction="horizontal"
         modules={[Navigation, Pagination]}
-        className="hero-slider"
         draggable
         pagination={{
           clickable: true,
@@ -29,7 +28,7 @@ const HeroSlider: React.FC = () => {
           <Image
             src={banner}
             alt="Hero Banner"
-            className="h-full w-full object-cover"
+            className="w-full h-[582px] object-cover"
             quality={100}
           />
         </SwiperSlide>
@@ -37,7 +36,7 @@ const HeroSlider: React.FC = () => {
           <Image
             src={banner}
             alt="Hero Banner"
-            className="h-full w-full object-cover"
+            className="w-full h-[582px] object-cover"
             quality={100}
           />
         </SwiperSlide>
