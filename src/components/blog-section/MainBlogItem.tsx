@@ -1,28 +1,27 @@
 import React from "react";
+import BlogPost from "@/@types/app/blog-post.app.interface";
+import moment from "moment";
 
-
-const MainBlogItem: React.FC = () => {
+const MainBlogItem: React.FC<{ blog: BlogPost }> = ({blog: {title, photo, author, category, date, link}}) => {
     return (
         <div className="bg-white p-6 flex flex-col w-full h-full gap-4">
             <img
-                className="max-h-[433px] max-w-[650px] object-cover rounded-2xl"
-                src="https://www.ecopower.com.br/wp-content/uploads/2023/05/transicao-de-carreira-para-franquia-1015x698.jpg"
+                src={photo}
+                className="max-h-[500px] object-cover rounded-2xl"
                 alt="blog main post photo"/>
-            <span className="text-primary-green text-sm">Energia Solar</span>
-            <h3 className="text-2xl font-bold">Energia Solar: a sua indústria referência em economia e
-                sustentabilidade</h3>
+            <span className="text-primary-green text-sm">{category}</span>
+            <a href={link} className="text-2xl font-bold">{title}</a>
             <div className="flex text-sm">
                 <div className="flex flex-1 items-center gap-2">
                     <img
                         className="w-8 h-8 object-cover rounded-full"
-                        src="https://www.ecopower.com.br/wp-content/uploads/2023/05/transicao-de-carreira-para-franquia-1015x698.jpg"
+                        src={author.photo}
                         alt="post author photo"/>
-                    <span>Por Murilo Mazer</span>
+                    <span>{author.name}</span>
                 </div>
 
                 <div className="flex">
-                    <time>09 de Janeiro de 2023 ·</time>
-                    <time> 10min</time>
+                    <time>{moment(date).format('LL')}</time>
                 </div>
             </div>
         </div>

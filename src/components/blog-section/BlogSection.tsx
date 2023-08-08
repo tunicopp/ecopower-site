@@ -7,28 +7,30 @@ import ApiBlogPost from "@/@types/api/blog-post.api.interface";
 import BlogPost from "@/@types/app/blog-post.app.interface";
 
 async function getData(): Promise<BlogPost[]> {
-//    const response = await api.get<ApiBlogPost[]>("/wp-json/wp/v2/posts", {params: {per_page: 4, "_embed": ''}});
-//    const data = response.data
-//
-//    const posts: BlogPost[] = []
-//    for (const d of data) {
-//        const post: BlogPost = {
-//            title: d.title.rendered,
-//            date: d.date,
-//            link: d.link,
-//            photo: d._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url,
-//            author: {
-//                name: d._embedded.author[0].name,
-//                photo: d._embedded.author[0].avatar_urls['48']
-//            }
-//        }
-//
-//        posts.push(post)
-//    }
-//
-//    return posts
+    const response = await fetch('https://www.ecopower.com.br/wp-json/wp/v2/posts?per_page=4&_embed', {
+        next: {revalidate: 14400}, // 4h
+        method: "GET"
+    })
+    const data = await response.json()
 
-    return []
+    const posts: BlogPost[] = []
+    for (const d of data as ApiBlogPost[]) {
+        const post: BlogPost = {
+            title: d.title.rendered,
+            date: d.date,
+            link: d.link,
+            photo: d._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url,
+            category: d._embedded['wp:term'][0][0].name,
+            author: {
+                name: d._embedded.author[0].name,
+                photo: d._embedded.author[0].avatar_urls['48']
+            }
+        }
+
+        posts.push(post)
+    }
+
+    return posts
 }
 
 const BlogSection: React.FC = async () => {
@@ -48,18 +50,21 @@ const BlogSection: React.FC = async () => {
                 </header>
                 <div className="w-full h-full pt-20">
                     <div className="blog-items-grid w-full h-full">
-                        <div className="blog-item-main" style={{gridArea: "main", background: "red"}}>
-                            <MainBlogItem/>
-                        </div>
-                        <div className="blog-item-side-1" style={{gridArea: 1}}>
-                            <SideBlogItem/>
-                        </div>
-                        <div className="blog-item-side-2" style={{gridArea: 2}}>
-                            <SideBlogItem/>
-                        </div>
-                        <div className="blog-item-side-3" style={{gridArea: 3}}>
-                            <SideBlogItem/>
-                        </div>
+                        {data.map((d, i) => {
+                            if (i === 0) {
+                                return (
+                                    <div key={i} className="blog-item-main" style={{gridArea: "main"}}>
+                                        <MainBlogItem blog={d}/>
+                                    </div>
+                                )
+                            } else {
+                                return (
+                                    <div key={i} className={`blog-item-side-${i}`} style={{gridArea: i}}>
+                                        <SideBlogItem blog={d}/>
+                                    </div>
+                                )
+                            }
+                        })}
                     </div>
                 </div>
             </GridContainer>
