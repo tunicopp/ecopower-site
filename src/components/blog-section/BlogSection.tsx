@@ -1,0 +1,70 @@
+import React from "react";
+import GridContainer from "@/components/global/GridContainer";
+import TitleComponent from "@/components/global/TitleComponent";
+import MainBlogItem from "@/components/blog-section/MainBlogItem";
+import SideBlogItem from "@/components/blog-section/SideBlogItem";
+import api from "@/services/api";
+import ApiBlogPost from "@/@types/api/blog-post.api.interface";
+import BlogPost from "@/@types/app/blog-post.app.interface";
+
+async function getData(): Promise<BlogPost[]> {
+    const response = await api.get<ApiBlogPost[]>("/wp-json/wp/v2/posts", {params: {per_page: 4, "_embed": ''}});
+    const data = response.data
+
+    const posts: BlogPost[] = []
+    for (const d of data) {
+        const post: BlogPost = {
+            title: d.title.rendered,
+            date: d.date,
+            link: d.link,
+            photo: d._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url,
+            author: {
+                name: d._embedded.author[0].name,
+                photo: d._embedded.author[0].avatar_urls['48']
+            }
+        }
+
+        posts.push(post)
+    }
+
+    return posts
+}
+
+const BlogSection: React.FC = async () => {
+    const data = await getData()
+
+    return (
+        <section className="min-h-screen w-full bg-beige-300 py-28">
+            <GridContainer className="flex flex-col h-full">
+                <header className="flex w-full justify-between items-center">
+                    <div className="flex-col w-full">
+                        <TitleComponent>Últimos posts do blog</TitleComponent>
+                        <p className="pt-6">Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <a href="https://www.ecopower.com.br/blog/" className="text-base font-semibold whitespace-nowrap">Ver
+                        todos os posts
+                    </a>
+                </header>
+                <div className="w-full h-full pt-20">
+                    <div className="blog-items-grid w-full h-full">
+                        <div className="blog-item-main" style={{gridArea: "main", background: "red"}}>
+                            <MainBlogItem/>
+                        </div>
+                        <div className="blog-item-side-1" style={{gridArea: 1}}>
+                            <SideBlogItem/>
+                        </div>
+                        <div className="blog-item-side-2" style={{gridArea: 2}}>
+                            <SideBlogItem/>
+                        </div>
+                        <div className="blog-item-side-3" style={{gridArea: 3}}>
+                            <SideBlogItem/>
+                        </div>
+                    </div>
+                </div>
+            </GridContainer>
+        </section>
+    );
+};
+
+export default BlogSection;
+

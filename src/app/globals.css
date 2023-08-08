@@ -74,3 +74,21 @@ a {
 .simulate-button {
   @apply px-5 py-[6px] h-12 bg-grayscale-900 rounded-full text-white text-sm font-semibold transition-colors hover:bg-primary-green;
 }
+.blog-items-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr minmax(496px, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "main 1"
+    "main 2"
+    "main 3";
+}
+
+.text-limit {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
