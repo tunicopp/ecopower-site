@@ -13,7 +13,6 @@ const HeroSlider: React.FC = () => {
         slidesPerView={1}
         direction="horizontal"
         modules={[Navigation, Pagination]}
-        draggable
         pagination={{
           clickable: true,
           renderBullet(_, className) {
