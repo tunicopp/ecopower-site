@@ -34,11 +34,11 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
             animate="visible"
             exit="hidden"
             variants={modalVariants2}
-            className="bg-white relative p-6 rounded-lg shadow-lg w-[900px] aspect-video"
+            className="bg-white relative p-8 rounded-3xl shadow-lg w-[980px] aspect-video"
           >
             {children}
             <button
-              className="mt-4 px-4 py-2 bg-blue-500 text-[40px]  rounded-md absolute -top-6 -right-4 z-50 opacity-90"
+              className="mt-4 px-4 py-2 bg-blue-500 text-[40px]  rounded-md absolute -top-5 -right-3 z-50 opacity-90"
               onClick={onClose}
             >
               <AiFillCloseCircle />

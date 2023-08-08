@@ -8,6 +8,7 @@ import {
   motion,
   useInView,
   useAnimation,
+  MotionValue,
 } from "framer-motion";
 import RigthArrow from "../../../public/assets/icons/RigthArrow";
 import RigthArrowWhite from "../../../public/assets/icons/RigthArrowWhite";
@@ -19,6 +20,13 @@ import Modal from "../global/Modal";
 
 const SectionVideo: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: [0.5, "end start"],
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   useEffect(() => {
     if (modalOpen) {
@@ -29,15 +37,21 @@ const SectionVideo: React.FC = () => {
   }, [modalOpen]);
   return (
     <>
-      <div className="flex items-center justify-between relative w-full h-[690px] bg-grayscale-600 group">
-        <Image
-          src={thumb1}
-          layout="cover"
-          alt="threeMd"
-          quality={100}
-          className="absolute w-full"
-          objectPosition="center"
-        />
+      <div className="flex items-center justify-between relative w-full h-[690px] bg-grayscale-600 group overflow-hidden">
+        <motion.div
+          ref={ref}
+          style={{ y }}
+          className="absolute -top-[15%] w-[130%] h-[800px] "
+        >
+          <Image
+            src={thumb1}
+            layout="fill"
+            alt="thumbnail"
+            quality={100}
+            className="w-full "
+            objectPosition="center"
+          />
+        </motion.div>
         <div className="flex relative flex-col ml-[64px] w-[615px] p-[45px] bg-primary-green z-10 rounded-3xl ">
           <h2 className="text-white text-[44px] font-semibold leading-[52px]">
             Renovável, limpa e infinita. Entenda como a energia solar funciona.
@@ -71,7 +85,7 @@ const SectionVideo: React.FC = () => {
       </div>
       <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
         <iframe
-          className="w-full h-full"
+          className="w-full h-full rounded-3xl"
           src="https://www.youtube.com/embed/TpQmlARdLa0"
           title="YouTube video player"
           allowFullScreen
