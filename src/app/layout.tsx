@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Golos_Text } from "next/font/google";
+import { GlobalContextProvider } from "./context/store";
 
 const golos_text = Golos_Text({
   subsets: ["latin"],
@@ -21,7 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={golos_text.className}>{children}</body>
+      <body className={golos_text.className}>
+        <GlobalContextProvider>{children}</GlobalContextProvider>
+      </body>
     </html>
   );
 }

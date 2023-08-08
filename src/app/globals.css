@@ -91,3 +91,38 @@ a {
 .simulate-button {
   @apply px-5 py-[6px] h-12 bg-grayscale-900 rounded-full text-white text-sm font-semibold transition-colors hover:bg-primary-green;
 }
+
+.bg-solutions {
+  background: url(../../public/assets/images/section-solutions/bg-solutions.png);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.bg-house {
+  background: url(../../public/assets/images/section-solutions/projeto-residencial-botucatu-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100%;
+}
+.bg-farm {
+  background: url(../../public/assets/images/section-solutions/projeto-rural-campo-grande-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100%;
+}
+.bg-store {
+  background: url(../../public/assets/images/section-solutions/projeto-empresarial-monte-alto-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100%;
+}
+.bg-factory {
+  background: url(../../public/assets/images/section-solutions/projeto-industrial-andradas-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100%;
+}

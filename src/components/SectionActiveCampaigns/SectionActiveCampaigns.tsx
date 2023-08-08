@@ -4,7 +4,7 @@ import TitleComponent from "../global/TitleComponent";
 
 const SectionActiveCampaigns: React.FC = () => {
   return (
-    <div className="flex min-h-[830px] w-full relative flex-col items-center mt-[110px]">
+    <section className="flex min-h-[830px] w-full relative flex-col items-center mt-[110px]">
       <Reveal>
         <TitleComponent>Campanhas ativas</TitleComponent>
       </Reveal>
@@ -13,7 +13,7 @@ const SectionActiveCampaigns: React.FC = () => {
           A luz que não apenas ilumina, mas também protege o nosso planeta
         </p>
       </Reveal>
-    </div>
+    </section>
   );
 };
 

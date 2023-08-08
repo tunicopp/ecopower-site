@@ -3,7 +3,6 @@ import BgMap from "./BgMap";
 import { companyIinfoGroup1, companyIinfoGroup2 } from "@/utils/companyInfo";
 import CompanyInfo from "./CompanyInfo";
 import RigthArrow from "../../../public/assets/icons/RigthArrow";
-import { useInView, motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import car from "../../../public/assets/images/section-map/car.png";
 import threeLg from "../../../public/assets/images/section-map/three-lg.png";
@@ -12,7 +11,7 @@ import sun from "../../../public/assets/images/section-map/sun.png";
 
 const SectionMap: React.FC = () => {
   return (
-    <div className="relative flex w-full h-screen min-h-[1040px] bg-beige-300 overflow-hidden items-end">
+    <section className="relative flex w-full h-screen min-h-[1040px] bg-beige-300 overflow-hidden items-end">
       <BgMap />
       <div className="relative flex w-[912px] p-10 group bg-white z-10 rounded-3xl mb-[110px] ml-[110px] ">
         <div className="flex w-[60%] flex-col">
@@ -86,7 +85,7 @@ const SectionMap: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

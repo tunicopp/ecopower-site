@@ -41,7 +41,7 @@ const SectionVideo: React.FC = () => {
         <motion.div
           ref={ref}
           style={{ y }}
-          className="absolute -top-[15%] w-[130%] h-[800px] "
+          className="absolute -top-[15%] w-[100%] h-[800px] "
         >
           <Image
             src={thumb1}
