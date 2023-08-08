@@ -1,4 +1,5 @@
 import ApiAuthor from "@/@types/api/author.api.interface";
+import BlogCategory from "@/@types/api/category.api.interface.ts";
 
 export default interface ApiBlogPost {
     id: number,
@@ -50,5 +51,6 @@ export default interface ApiBlogPost {
     _embedded: {
         author: ApiAuthor[]
         "wp:featuredmedia": IFeaturedMedia[]
+        "wp:term": BlogCategory[][]
     }
 }

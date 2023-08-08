@@ -1,21 +1,19 @@
 import React from "react";
+import BlogPost from "@/@types/app/blog-post.app.interface";
+import moment from "moment";
 
-
-const SideBlogItem: React.FC = () => {
+const SideBlogItem: React.FC<{ blog: BlogPost }> = ({blog: {title, photo, category, date, link}}) => {
     return (
         <div className="bg-white flex w-full h-full rounded-2xl">
             <img
+                src={photo}
                 className="flex-1 h-full max-w-[200px] object-cover rounded-2xl"
-                src="https://www.ecopower.com.br/wp-content/uploads/2023/05/transicao-de-carreira-para-franquia-1015x698.jpg"
                 alt="blog main post photo"/>
             <div className="flex flex-col p-3 gap-4">
-                <span className="text-primary-green text-sm">Energia Solar</span>
-                <h3 className="text-xl font-bold text-limit">Energia Solar: a sua indústria
-                    referência em economia e
-                    sustentabilidade</h3>
+                <span className="text-primary-green text-sm">{category}</span>
+                <a href={link} className="text-xl font-bold text-limit">{title}</a>
                 <div className="flex text-xs">
-                    <time>09 de Janeiro de 2023 ·</time>
-                    <time> 10min</time>
+                    <time>{moment(date).format('LL')}</time>
                 </div>
             </div>
         </div>
