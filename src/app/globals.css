@@ -96,6 +96,7 @@ a {
   background: url(../../public/assets/images/section-solutions/bg-solutions.png);
   background-position: top;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bg-house {
@@ -125,4 +126,12 @@ a {
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: 100%;
+}
+
+.gradient-black {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(229, 230, 231, 0) 100%
+  );
 }

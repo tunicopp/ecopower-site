@@ -48,7 +48,7 @@ const SectionSolutions: React.FC = () => {
   // }, [isInView]);
 
   return (
-    <section className="flex  w-full relative flex-col items-center p-[108px] bg-solutions">
+    <section className="flex  w-full min-h-[1000px] relative flex-col items-center p-[108px] bg-solutions">
       <Reveal className="max-w-[690px] text-center">
         <TitleComponent>
           Soluções feitas sob medida para o seu segmento
