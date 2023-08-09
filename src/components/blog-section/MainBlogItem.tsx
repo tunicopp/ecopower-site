@@ -11,7 +11,7 @@ const MainBlogItem: React.FC<{ blog: BlogPost }> = ({
       <div className="overflow-hidden  rounded-2xl">
         <img
           src={photo}
-          className="max-h-[500px] object-cover rounded-2xl hover:scale-125 transition-transform "
+          className="max-h-[500px] object-cover rounded-2xl hover:scale-125 transition-transform duration-500"
           alt="blog main post photo"
         />
       </div>

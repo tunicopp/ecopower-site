@@ -19,11 +19,9 @@ const BgMap: React.FC = ({}) => {
     >
       <Image
         src={map}
-        layout="cover"
         alt="card map"
         quality={100}
-        className="absolute w-[50%] mx-auto "
-        objectPosition="center"
+        className="absolute w-[50%] mx-auto object-cover"
       />
     </motion.div>
   );

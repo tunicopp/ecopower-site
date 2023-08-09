@@ -13,72 +13,58 @@ const TopFooter: React.FC = () => {
       <div className="absolute -bottom-[55%] -right-[9%] flex w-[200px]  items-end  group-hover:-translate-x-10  transition-all duration-1000 ease-in-out; ">
         <Image
           src={three}
-          layout="cover"
           alt="threeMd"
           quality={100}
-          className="absolute w-full "
-          objectPosition="center"
+          className="absolute w-full object-cover"
         />
       </div>
 
       <div className="absolute -bottom-[30%] -left-[11%] flex w-[220px]  items-end  group-hover:translate-x-10  transition-all duration-1000 ease-in-out; ">
         <Image
           src={three}
-          layout="cover"
           alt="threeMd"
           quality={100}
-          className="absolute w-full "
-          objectPosition="center"
+          className="absolute w-full object-cover"
         />
       </div>
       <div className="absolute -bottom-[80%] left-[8%] flex w-[170px]  items-end  group-hover:-translate-y-20 transition-all duration-1000 ease-in-out; ">
         <Image
           src={three}
-          layout="cover"
           alt="threeMd"
           quality={100}
-          className="absolute w-full "
-          objectPosition="center"
+          className="absolute w-full object-cover"
         />
       </div>
       <div className="absolute -bottom-[74%] left-[30%] flex w-[170px]  items-end  group-hover:-translate-y-20 transition-all duration-1000 ease-in-out; ">
         <Image
           src={three}
-          layout="cover"
           alt="threeMd"
           quality={100}
-          className="absolute w-full "
-          objectPosition="center"
+          className="absolute w-full object-cover"
         />
       </div>
       <div className="absolute -bottom-[65%] left-[50%] flex w-[480px]  items-end  group-hover:-translate-y-20 transition-all duration-1000 ease-in-out; ">
         <Image
           src={house}
-          layout="cover"
           alt="house"
           quality={100}
-          className="absolute w-full "
-          objectPosition="center"
+          className="absolute w-full object-cover"
         />
       </div>
       <div className="absolute top-[20%] left-[5%] flex w-[127px]  items-end  group-hover:translate-x-20 transition-all duration-1000 ease-in-out; ">
         <Image
           src={cloud}
-          layout="cover"
           alt="cloud"
           quality={100}
-          className="absolute w-full "
-          objectPosition="center"
+          className="absolute w-full object-cover"
         />
       </div>
       <div className="absolute top-[30%] right-[5%] flex w-[98px]  items-end  group-hover:scale-150 transition-all duration-1000 ease-in-out; ">
         <Image
           src={sun}
-          layout="cover"
           alt="sun"
           quality={100}
-          className="absolute w-full "
-          objectPosition="center"
+          className="absolute w-full object-cover"
         />
       </div>
       <div className="flex flex-col  items-center w-fit mt-[80px]">
