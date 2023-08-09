@@ -22,11 +22,10 @@ const Carroussel: React.FC<RevealProps> = ({
     >
       <Swiper
         direction={"horizontal"}
-        slidesPerView={3.5}
+        slidesPerView={3.2}
         spaceBetween={20}
         grabCursor={true}
-        className="mySwiper"
-        style={{ paddingLeft: "110px" }}
+        className="mySwiper !px-[110px]"
         modules={[Navigation]}
         navigation={{
           nextEl: "#next",

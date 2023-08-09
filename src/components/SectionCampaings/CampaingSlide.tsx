@@ -26,12 +26,14 @@ const CampaingSlide: React.FC<CampaingSlideProps> = ({
           className="object-cover rounded-t-3xl"
         />
       </div>
-      <div className="bg-campaing p-6 flex flex-col rounded-b-3xl">
+      <div className="bg-campaing p-6 flex flex-col rounded-b-3xl flex-1">
         <b className="font-semibold text-grayscale-900 text-2xl whitespace-nowrap text-ellipsis overflow-hidden">
           {title}
         </b>
         <span className="text-slide-description my-6">{description}</span>
-        <span className="font-semibold text-slide-description">{price}</span>
+        <span className="font-semibold text-slide-description mt-auto">
+          {price}
+        </span>
       </div>
     </div>
   );
