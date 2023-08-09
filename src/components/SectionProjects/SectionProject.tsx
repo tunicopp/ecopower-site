@@ -44,17 +44,6 @@ const cards = [
 ];
 
 const SectionProject: React.FC = () => {
-  const calculateColSpan = (index: number) => {
-    if (index === 0) {
-      return "col-span-3";
-    } else if (index === 1) {
-      return "col-span-2";
-    } else if (index === 2) {
-      return "col-span-2";
-    } else {
-      return "col-span-3";
-    }
-  };
   return (
     <section className="relative w-full pb-14 pt-[66px] flex flex-col items-center overflow-x-hidden mt-[64px]">
       <div className="absolute top-[30px] left-[0%] animate-fly">

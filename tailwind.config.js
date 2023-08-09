@@ -52,21 +52,10 @@ module.exports = {
         "50%": { transform: "translate(250%)" },
         "100%": { transform: "translate(0%)" },
       },
-      keyframes: {
-        fly: {
-          "0%": { transform: "translate(0%)" },
-          "50%": { transform: "translate(250%)" },
-          "100%": { transform: "translate(0%)" },
-        },
-        fly2: {
-          "0%": { transform: "translate(0%)" },
-          "50%": { transform: "translate(-180%)" },
-          "100%": { transform: "translate(0%)" },
-        },
-      },
-      animation: {
-        fly: "fly 50s linear infinite",
-        fly2: "fly2 40s linear infinite",
+      fly2: {
+        "0%": { transform: "translate(0%)" },
+        "50%": { transform: "translate(-180%)" },
+        "100%": { transform: "translate(0%)" },
       },
     },
     animation: {

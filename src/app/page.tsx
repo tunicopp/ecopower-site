@@ -7,6 +7,7 @@ import SectionVideo from "@/components/SectionVideo/SectionVideo";
 import SectionActiveCampaigns from "@/components/SectionActiveCampaigns/SectionActiveCampaigns";
 import SectionSolutions from "@/components/SectionSolutions/SectionSolutions";
 import SectionProject from "@/components/SectionProjects/SectionProject";
+import Footer from "@/components/Footer/Footer";
 
 export default async function Home() {
   return (
@@ -14,12 +15,12 @@ export default async function Home() {
       <Hero />
       <SectionSlide />
       <SectionMap />
-      <BlogSection />
       <SectionVideo />
       <SectionCampaings />
-      <SectionActiveCampaigns />
       <SectionSolutions />
       <SectionProject />
+      <BlogSection />
+      <Footer />
     </main>
   );
 }

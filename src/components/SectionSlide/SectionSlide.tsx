@@ -26,18 +26,14 @@ const SectionSlide: React.FC = () => {
       <div className="absolute top-[5%] right-[0%] animate-fly2">
         <Cloud2 />
       </div>
-      <Reveal>
-        <TitleComponent>Conheça nossos produtos</TitleComponent>
-      </Reveal>
-      <Reveal delay={0.4}>
-        <Link href="/" className="hover:underline">
-          <p className="font-medium mt-4">Ver todos os produtos</p>
-        </Link>
-      </Reveal>
+      <TitleComponent>Conheça nossos produtos</TitleComponent>
+      <Link href="/" className="hover:underline">
+        <p className="font-medium mt-4">Ver todos os produtos</p>
+      </Link>
       <motion.div
         className="w-full"
         initial={{ x: 100 }}
-        whileInView={{ x: 0 }}
+        animate={{ x: 0 }}
         transition={{
           duration: 1,
           x: {

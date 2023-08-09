@@ -17,6 +17,7 @@ import SolarPateSmall from "../../../public/assets/icons/SolarPateSmall";
 import SolarPateLarge from "../../../public/assets/icons/SolarPateLarge";
 import PlayCircle from "../../../public/assets/icons/PlayCircle";
 import Modal from "../global/Modal";
+import LinkArrow from "../global/LinkArrow";
 
 const SectionVideo: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -60,15 +61,13 @@ const SectionVideo: React.FC = () => {
             Lorem ipsum dolor sit amet consectetur. Feugiat mi habitasse
             pellentesque eget ipsum.
           </p>
-          <p
+
+          <LinkArrow
+            className="text-white"
+            text="Assistir Video"
             onClick={() => setModalOpen(true)}
-            className="text-white font-semibold mt-10 flex gap-2 group/arrow cursor-pointer"
-          >
-            Assistir Video
-            <div className="slide-arrow">
-              <RigthArrowWhite />
-            </div>
-          </p>
+          />
+
           <div className="absolute bottom-0 -right-3">
             <SolarPateLarge />
           </div>

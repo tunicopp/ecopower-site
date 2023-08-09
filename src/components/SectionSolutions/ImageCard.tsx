@@ -16,7 +16,7 @@ const ImageCard: React.FC<Props> = ({ children, id, bg }) => {
   return (
     <div
       className={twMerge(
-        "absolute w-full h-full inset-0 rounded-3xl transition-opacity",
+        "absolute  h-full inset-0 rounded-3xl transition-opacity",
         bg,
         cardId === id ? "opacity-100" : "opacity-0"
       )}
