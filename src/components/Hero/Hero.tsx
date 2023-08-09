@@ -1,7 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import ContactsBar from "./ContactsBar";
-import Header from "../global/Header";
 import "swiper/css";
 import GridContainer from "../global/GridContainer";
 import Calculator from "./Calculator";
@@ -13,15 +11,13 @@ const Hero: React.FC = () => {
 
   return (
     <div
-      className="min-h-[624px] w-full bg-primary-green relative"
+      className="min-h-[624px] pt-32 bg-hero-green w-full"
       onMouseEnter={() => setTimeline("to")}
       onMouseLeave={() => setTimeline("from")}
     >
       <HeroSlider timeline={timeline} />
       <div className="z-10 relative">
-        <ContactsBar />
-        <Header />
-        <GridContainer className="mt-[103px] flex-col">
+        <GridContainer className="pt-[103px] flex-col">
           <h1 className="text-base text-white font-bold">EcoPower te faz</h1>
           <h2 className="text-[3.5rem] leading-[4rem] text-white font-semibold">
             Reduzir sua conta de luz

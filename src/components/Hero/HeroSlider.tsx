@@ -30,7 +30,7 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ timeline }) => {
         <SwiperSlide>
           <LottieAnimation
             animation={mainLottie}
-            style={{ height: "582px", width: "100%" }}
+            style={{ height: "584px", width: "100%" }}
             rendererSettings={{ preserveAspectRatio: "xMinYMax slice" }}
             currentTimeline={timeline}
             frames={[0, 76]}

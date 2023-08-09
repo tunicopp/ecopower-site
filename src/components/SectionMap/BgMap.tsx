@@ -11,7 +11,7 @@ interface BgMapProps {
 const BgMap: React.FC = ({}) => {
   return (
     <motion.div
-      className="absolute top-0 left-0 h-full flex w-full items-center justify-center overflow-hidden"
+      className="absolute top-0 left-0 h-full flex w-full items-center justify-center overflow-hidden select-none"
       initial={{ scale: 0.9 }}
       whileInView={{ scale: 2.3 }}
       transition={{ duration: 7 }}

@@ -32,9 +32,10 @@ const Calculator: React.FC = () => {
         </span>
         <Range
           onChange={(v) => setValue(v)}
-          renderThumb={({ props }) => (
+          renderThumb={({ props, index }) => (
             <div
               {...props}
+              key={index}
               className="h-6 w-6 bg-grayscale-900 rounded-full border-2 border-white outline-none thumb"
             />
           )}
