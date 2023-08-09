@@ -1,22 +1,25 @@
 "use client";
 import React from "react";
+import GridContainer from "../global/GridContainer";
 import TitleComponent from "../global/TitleComponent";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import CampaingSlide from "./CampaingSlide";
+import TestimonialSlide from "./TestimonialSlide";
+import campaing1 from "../../../public/assets/images/section-campaing/campaing-1.png";
+import campaing2 from "../../../public/assets/images/section-campaing/campaing-2.png";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import Reveal from "../global/Reveal";
-import { campaingData } from "@/utils/campaingData";
+import { testimonialData } from "@/utils/testimonialData";
 
-const SectionCampaings: React.FC = () => {
+const SectionTestimonial: React.FC = () => {
   return (
     <section className="relative py-[110px] flex flex-col items-center">
       <Reveal>
-        <TitleComponent>Campanhas Ativas</TitleComponent>
+        <TitleComponent>O que dizem nossos clientes</TitleComponent>
       </Reveal>
-      <Reveal className="mb-[112px]" delay={0.4}>
+      <Reveal className="mb-[112px] mt-6" delay={0.4}>
         <span className="font-medium text-grayscale-400">
-          A luz que não apenas ilumina, mas também protege o nosso planeta
+          Lorem ipsum dolor sit amet consectetur.
         </span>
       </Reveal>
       <Swiper
@@ -27,9 +30,9 @@ const SectionCampaings: React.FC = () => {
         modules={[Navigation]}
         navigation={{ nextEl: "#next-campaing", prevEl: "#prev-campaing" }}
       >
-        {campaingData.map((c, i) => (
+        {testimonialData.map((t, i) => (
           <SwiperSlide key={i}>
-            <CampaingSlide {...c} />
+            <TestimonialSlide {...t} />
           </SwiperSlide>
         ))}
         <button
@@ -49,4 +52,4 @@ const SectionCampaings: React.FC = () => {
   );
 };
 
-export default SectionCampaings;
+export default SectionTestimonial;

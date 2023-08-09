@@ -153,3 +153,11 @@ a {
     rgba(229, 230, 231, 0) 100%
   );
 }
+
+.h-stack-18 > * {
+  margin-bottom: 18px;
+}
+
+.h-stack-18 > *:last-child {
+  margin-bottom: 0px;
+}

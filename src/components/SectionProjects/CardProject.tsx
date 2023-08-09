@@ -52,12 +52,12 @@ const CardProject: React.FC<CardProjectProps> = ({
       </div>
       <h4 className="text-white text-[32px] font-bold z-10">{title}</h4>
       <p className="text-white  z-10">{subTitle}</p>
-      <p className="text-white font-semibold mt-4 flex gap-2 group/arrow cursor-pointer z-10">
-        Ver projeto
+      <div className="flex items-center mt-4 gap-2 group/arrow cursor-pointer z-10">
+        <p className="text-white font-semibold">Ver projeto</p>
         <div className="slide-arrow">
           <RigthArrowWhite />
         </div>
-      </p>
+      </div>
     </div>
   );
 };

@@ -34,9 +34,12 @@ module.exports = {
       },
       white: "#FFFFFF",
       "font-black": "#262833",
+      black: "#2F3133",
+      "full-black": "#000000",
       "beige-300": "#F8F6F1",
       "beige-200": "#EBE7DF",
       "slide-description": "#5A5C6B",
+      "testimonial-location": "#797A80",
       campaing: "#FAF9F8",
       secondary: {
         1: "#43088F",

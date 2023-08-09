@@ -34,12 +34,14 @@ const SectionMap: React.FC = () => {
               ))}
             </div>
           </div>
-          <p className="text-primary-green font-semibold mt-10 flex gap-2 group/arrow cursor-pointer">
-            Conheça nossa história
+          <div className="flex items-center mt-10 gap-2 group/arrow cursor-pointer">
+            <p className="text-primary-green font-semibold">
+              Conheça nossa história
+            </p>
             <div className="slide-arrow">
               <RigthArrow />
             </div>
-          </p>
+          </div>
         </div>
 
         <div className="flex w-[40%] ">

@@ -56,15 +56,14 @@ export const CardScrollContent = {
             <CheckIcon />
             <p className="text-lg leading-6 ">Garantia Nacional</p>
           </div>
-          <p
-            onClick={() => {}}
-            className="text-primary-green font-semibold mt-10 flex gap-2 group/arrow cursor-pointer"
-          >
-            Ver Projetos Residenciais
+          <div className="mt-10 flex items-center gap-2 group/arrow cursor-pointer">
+            <p onClick={() => {}} className="text-primary-green font-semibold">
+              Ver Projetos Residenciais
+            </p>
             <div className="slide-arrow">
               <RigthArrow />
             </div>
-          </p>
+          </div>
         </div>
       </>
     );
@@ -91,15 +90,14 @@ export const CardScrollContent = {
             <CheckIcon />
             <p className="text-lg leading-6 ">Investimento</p>
           </div>
-          <p
-            onClick={() => {}}
-            className="text-primary-green font-semibold mt-10 flex gap-2 group/arrow cursor-pointer"
-          >
-            Ver Projetos Empresariais
+          <div className="mt-10 flex items-center gap-2 group/arrow cursor-pointer">
+            <p onClick={() => {}} className="text-primary-green font-semibold">
+              Ver Projetos Residenciais
+            </p>
             <div className="slide-arrow">
               <RigthArrow />
             </div>
-          </p>
+          </div>
         </div>
       </>
     );
@@ -126,15 +124,14 @@ export const CardScrollContent = {
             <CheckIcon />
             <p className="text-lg leading-6 ">Ecológico</p>
           </div>
-          <p
-            onClick={() => {}}
-            className="text-primary-green font-semibold mt-10 flex gap-2 group/arrow cursor-pointer"
-          >
-            Ver Projetos Indutriais
+          <div className="mt-10 flex items-center gap-2 group/arrow cursor-pointer">
+            <p onClick={() => {}} className="text-primary-green font-semibold">
+              Ver Projetos Residenciais
+            </p>
             <div className="slide-arrow">
               <RigthArrow />
             </div>
-          </p>
+          </div>
         </div>
       </>
     );
@@ -161,15 +158,14 @@ export const CardScrollContent = {
             <CheckIcon />
             <p className="text-lg leading-6 ">Autossuficiente</p>
           </div>
-          <p
-            onClick={() => {}}
-            className="text-primary-green font-semibold mt-10 flex gap-2 group/arrow cursor-pointer"
-          >
-            Ver Projetos Rurais
+          <div className="mt-10 flex items-center gap-2 group/arrow cursor-pointer">
+            <p onClick={() => {}} className="text-primary-green font-semibold">
+              Ver Projetos Residenciais
+            </p>
             <div className="slide-arrow">
               <RigthArrow />
             </div>
-          </p>
+          </div>
         </div>
       </>
     );

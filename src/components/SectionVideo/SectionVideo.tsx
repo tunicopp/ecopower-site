@@ -60,15 +60,17 @@ const SectionVideo: React.FC = () => {
             Lorem ipsum dolor sit amet consectetur. Feugiat mi habitasse
             pellentesque eget ipsum.
           </p>
-          <p
-            onClick={() => setModalOpen(true)}
-            className="text-white font-semibold mt-10 flex gap-2 group/arrow cursor-pointer"
-          >
-            Assistir Video
-            <div className="slide-arrow">
-              <RigthArrowWhite />
-            </div>
-          </p>
+          <div className="mt-10 flex items-center gap-2 group/arrow cursor-pointer">
+            <p
+              onClick={() => setModalOpen(true)}
+              className="text-white font-semibold"
+            >
+              Assistir Video
+              <div className="slide-arrow">
+                <RigthArrowWhite />
+              </div>
+            </p>
+          </div>
           <div className="absolute bottom-0 -right-3">
             <SolarPateLarge />
           </div>

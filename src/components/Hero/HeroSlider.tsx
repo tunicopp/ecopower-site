@@ -1,12 +1,16 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import Image from "next/image";
-import banner from "../../../public/assets/images/hero-slider.png";
+import { LottieAnimation } from "react-lottie-tools";
+import mainLottie from "../../../public/assets/lottie/main-lottie.json";
 import "swiper/css/pagination";
 
-const HeroSlider: React.FC = () => {
+interface HeroSliderProps {
+  timeline: "to" | "from";
+}
+
+const HeroSlider: React.FC<HeroSliderProps> = ({ timeline }) => {
   return (
     <div className="absolute hero-slider-wrapper top-[40px] left-0 z-0">
       <Swiper
@@ -24,29 +28,28 @@ const HeroSlider: React.FC = () => {
         navigation={{ nextEl: "#next-hero", prevEl: "#prev-hero" }}
       >
         <SwiperSlide>
-          <Image
-            src={banner}
-            alt="Hero Banner"
-            className="w-full h-[582px] object-cover"
-            quality={100}
+          <LottieAnimation
+            animation={mainLottie}
+            style={{ height: "582px", width: "100%" }}
+            rendererSettings={{ preserveAspectRatio: "xMinYMax slice" }}
+            currentTimeline={timeline}
+            frames={[0, 76]}
+          />
+        </SwiperSlide>
+        {/* <SwiperSlide>
+          <LottieAnimation
+            animation={mainLottie}
+            style={{ height: "582px", width: "100%" }}
+            rendererSettings={{ preserveAspectRatio: "xMinYMax slice" }}
           />
         </SwiperSlide>
         <SwiperSlide>
-          <Image
-            src={banner}
-            alt="Hero Banner"
-            className="w-full h-[582px] object-cover"
-            quality={100}
+          <LottieAnimation
+            animation={mainLottie}
+            style={{ height: "582px", width: "100%" }}
+            rendererSettings={{ preserveAspectRatio: "xMinYMax slice" }}
           />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={banner}
-            alt="Hero Banner"
-            className="h-full w-full object-cover"
-            quality={100}
-          />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </div>
   );

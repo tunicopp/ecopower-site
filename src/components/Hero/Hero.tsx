@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import ContactsBar from "./ContactsBar";
 import Header from "../global/Header";
 import "swiper/css";
@@ -8,9 +9,15 @@ import HeroSlider from "./HeroSlider";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 const Hero: React.FC = () => {
+  const [timeline, setTimeline] = useState<"to" | "from">("to");
+
   return (
-    <div className="min-h-[624px] w-full bg-primary-green relative">
-      <HeroSlider />
+    <div
+      className="min-h-[624px] w-full bg-primary-green relative"
+      onMouseEnter={() => setTimeline("to")}
+      onMouseLeave={() => setTimeline("from")}
+    >
+      <HeroSlider timeline={timeline} />
       <div className="z-10 relative">
         <ContactsBar />
         <Header />
