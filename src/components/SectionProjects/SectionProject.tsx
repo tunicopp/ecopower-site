@@ -6,9 +6,42 @@ import TitleComponent from "../global/TitleComponent";
 import { twMerge } from "tailwind-merge";
 import Image from "next/image";
 import house from "../../../public/assets/images/sectionProjects/img-card-house.png";
+import factory from "../../../public/assets/images/sectionProjects/img-card-factory.png";
+import store from "../../../public/assets/images/sectionProjects/img-card-store.png";
+import farm from "../../../public/assets/images/sectionProjects/img-card-farm.png";
 import RigthArrowWhite from "../../../public/assets/icons/RigthArrowWhite";
+import CardProject, { CardProjectProps } from "./CardProject";
 
-const cards = [1, 2, 3, 4];
+const cards = [
+  {
+    id: 1,
+    image: factory,
+    textTag: "Industrial",
+    title: "Fabrica de Rações",
+    subTitle: "1 Inversor WEG 60, 167 módulos 410 Wp, 68.33 kWp",
+  },
+  {
+    id: 2,
+    image: house,
+    textTag: "Residencial",
+    title: "Casa Geraldo",
+    subTitle: "1 Inversor WEG 60, 167 módulos 410 Wp, 68.33 kWp",
+  },
+  {
+    id: 3,
+    image: store,
+    textTag: "Empresarial",
+    title: "Sperta Honda",
+    subTitle: "1 Inversor WEG 60, 167 módulos 410 Wp, 68.33 kWp",
+  },
+  {
+    id: 4,
+    image: farm,
+    textTag: "rural",
+    title: "Dois Lagos",
+    subTitle: "1 Inversor WEG 60, 167 módulos 410 Wp, 68.33 kWp",
+  },
+];
 
 const SectionProject: React.FC = () => {
   const calculateColSpan = (index: number) => {
@@ -23,7 +56,7 @@ const SectionProject: React.FC = () => {
     }
   };
   return (
-    <section className="relative w-full pb-20 pt-[66px] flex flex-col items-center overflow-x-hidden mt-[64px]">
+    <section className="relative w-full pb-14 pt-[66px] flex flex-col items-center overflow-x-hidden mt-[64px]">
       <div className="absolute top-[30px] left-[0%] animate-fly">
         <Cloud1 />
       </div>
@@ -36,41 +69,20 @@ const SectionProject: React.FC = () => {
       <div className="flex flex-col w-full p-[108px]">
         <div className="grid grid-cols-5 gap-6">
           {cards.map((card, index) => (
-            <div
-              className={twMerge(
-                "relative flex flex-col  h-[480px] rounded-3xl p-[32px]",
-                calculateColSpan(index)
-              )}
-            >
-              <Image
-                src={house}
-                layout="fill"
-                alt="card image"
-                quality={100}
-                className="rounded-3xl absolute inset-0 "
-              />
-              <div className="absolute inset-0 gradient-black rounded-3xl" />
-              <div className="flex flex-1">
-                <div className="items-center flex text-white z-10 px-4 py-2 bg-primary-green rounded-3xl h-[32px] w-fit ">
-                  Industrial
-                </div>
-              </div>
-              <h4 className="text-white text-[32px] font-bold z-10">
-                Fabrica de Rações
-              </h4>
-              <p className="text-white  z-10">
-                1 Inversor WEG 60, 167 módulos 410 Wp, 68.33 kWp
-              </p>
-              <p className="text-white font-semibold mt-4 flex gap-2 group/arrow cursor-pointer z-10">
-                Ver projeto
-                <div className="slide-arrow">
-                  <RigthArrowWhite />
-                </div>
-              </p>
-            </div>
+            <CardProject
+              key={card.id}
+              index={index}
+              image={card.image}
+              title={card.title}
+              subTitle={card.subTitle}
+              textTag={card.textTag}
+            />
           ))}
         </div>
       </div>
+      <button className="h-12 rounded-3xl border-2 px-5 hover:bg-grayscale-100 transition-all">
+        Ver todos os projetos
+      </button>
     </section>
   );
 };
