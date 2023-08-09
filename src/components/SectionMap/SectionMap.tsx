@@ -46,41 +46,33 @@ const SectionMap: React.FC = () => {
           <div className="absolute bottom-0 right-[4%] flex w-[130px] h-[112px] items-end translate-three-md ">
             <Image
               src={threeMd}
-              layout="cover"
               alt="threeMd"
               quality={100}
-              className="absolute w-full "
-              objectPosition="center"
+              className="absolute w-full object-cover"
             />
           </div>
           <div className="absolute bottom-0 right-[14%] flex w-[240px] h-[112px] items-end translate-three-lg">
             <Image
               src={threeLg}
-              layout="cover"
               alt="threeLg"
               quality={100}
-              className="absolute w-full "
-              objectPosition="center"
+              className="absolute w-full object-cover"
             />
           </div>
           <div className="absolute top-[8%] right-[37%] flex w-[57px] h-[57px] items-end translate-three-sun">
             <Image
               src={sun}
-              layout="cover"
               alt="sun"
               quality={100}
-              className="absolute w-full "
-              objectPosition="center"
+              className="absolute w-full object-cover"
             />
           </div>
           <div className="absolute bottom-0 right-[22%] flex w-[250px] h-[112px] items-end translate-three-car">
             <Image
               src={car}
-              layout="cover"
               alt="car"
               quality={100}
-              className="absolute w-full "
-              objectPosition="center"
+              className="absolute w-full object-cover"
             />
           </div>
         </div>

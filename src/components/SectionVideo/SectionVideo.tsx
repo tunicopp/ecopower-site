@@ -46,11 +46,9 @@ const SectionVideo: React.FC = () => {
         >
           <Image
             src={thumb1}
-            layout="fill"
             alt="thumbnail"
             quality={100}
-            className="w-full "
-            objectPosition="center"
+            className="w-full object-fill"
           />
         </motion.div>
         <div className="flex relative flex-col ml-[64px] w-[615px] p-[45px] bg-primary-green z-10 rounded-3xl ">

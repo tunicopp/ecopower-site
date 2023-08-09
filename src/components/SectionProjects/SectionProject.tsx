@@ -69,7 +69,7 @@ const SectionProject: React.FC = () => {
           ))}
         </div>
       </div>
-      <button className="h-12 rounded-3xl border-2 px-5 hover:bg-grayscale-100 transition-all">
+      <button className="h-12 rounded-3xl border-2 px-5 hover:bg-grayscale-100 transition-all font-semibold">
         Ver todos os projetos
       </button>
     </section>

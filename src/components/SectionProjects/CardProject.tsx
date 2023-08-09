@@ -35,11 +35,11 @@ const CardProject: React.FC<CardProjectProps> = ({
   const fadeAnimations = {
     initial: {
       opacity: 0,
-      scale: 0,
+      y: 100,
     },
     animate: (index: number) => ({
       opacity: 1,
-      scale: 1,
+      y: 0,
       transition: {
         delay: 0.05 * index,
         type: "spring",
@@ -61,10 +61,9 @@ const CardProject: React.FC<CardProjectProps> = ({
     >
       <Image
         src={image}
-        layout="fill"
         alt="card image"
         quality={100}
-        className="rounded-3xl absolute inset-0 "
+        className="rounded-3xl absolute inset-0 object-fill"
       />
       <div className="absolute inset-0 gradient-black rounded-3xl" />
       <div className="flex flex-1">

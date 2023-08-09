@@ -11,7 +11,7 @@ const SideBlogItem: React.FC<{ blog: BlogPost }> = ({
       <div className="overflow-hidden min-w-[200px] max-w-[200px] rounded-2xl">
         <img
           src={photo}
-          className="h-full w-full object-cover rounded-2xl hover:scale-125 transition-transform"
+          className="h-full w-full object-cover rounded-2xl hover:scale-125 transition-transform duration-500"
           alt="blog main post photo"
         />
       </div>
