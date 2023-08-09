@@ -1,5 +1,5 @@
 import ApiAuthor from "@/@types/api/author.api.interface";
-import BlogCategory from "@/@types/api/category.api.interface.ts";
+import BlogCategory from "@/@types/api/category.api.interface";
 
 export default interface ApiBlogPost {
     id: number,
