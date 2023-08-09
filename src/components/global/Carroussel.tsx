@@ -4,6 +4,7 @@ import { Navigation } from "swiper/modules";
 import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
 import { productsCardsGroup } from "@/utils/carrousselData";
 import { twMerge } from "tailwind-merge";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 interface RevealProps extends HTMLProps<HTMLDivElement> {
   children: ReactNode;
@@ -37,12 +38,18 @@ const Carroussel: React.FC<RevealProps> = ({
       >
         {children}
 
-        <div id="next" className="style-navigation right-[5%] ">
-          <FaChevronCircleRight />
-        </div>
-        <div id="prev" className="style-navigation left-[5%] ">
-          <FaChevronCircleLeft />
-        </div>
+        <button
+          id="prev"
+          className="style-navigation-hero left-6 !bg-beige-200"
+        >
+          <MdChevronLeft />
+        </button>
+        <button
+          id="next"
+          className="style-navigation-hero right-6 !bg-beige-200"
+        >
+          <MdChevronRight />
+        </button>
       </Swiper>
     </div>
   );

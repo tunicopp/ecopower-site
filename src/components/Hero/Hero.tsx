@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
 
   return (
     <div
-      className="min-h-[624px] pt-32 bg-hero-green w-full"
+      className="min-h-[624px] pt-32 bg-hero-green w-full relative"
       onMouseEnter={() => setTimeline("to")}
       onMouseLeave={() => setTimeline("from")}
     >
