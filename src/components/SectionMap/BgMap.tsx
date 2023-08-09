@@ -12,9 +12,10 @@ const BgMap: React.FC = ({}) => {
   return (
     <motion.div
       className="absolute top-0 left-0 h-full flex w-full items-center justify-center overflow-hidden"
-      initial={{ scale: 0.7 }}
-      whileInView={{ scale: 2.5 }}
-      transition={{ duration: 5 }}
+      initial={{ scale: 0.9 }}
+      whileInView={{ scale: 2.3 }}
+      transition={{ duration: 7 }}
+      viewport={{ once: true }}
     >
       <Image
         src={map}

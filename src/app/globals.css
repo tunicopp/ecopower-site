@@ -58,6 +58,23 @@ a {
   @apply text-3xl cursor-pointer  w-10 h-10  absolute top-[50%] right-[5%] z-10 opacity-0 group-hover:opacity-60 transition-opacity duration-500 ease-in-out;
 }
 
+.translate-three-md {
+  @apply group-hover:-translate-y-4 group-hover:translate-x-10 group-hover:scale-125 transition-all duration-1000 ease-in-out;
+}
+
+.translate-three-lg {
+  @apply group-hover:translate-x-6 transition-all duration-1000 ease-in-out;
+}
+.translate-three-car {
+  @apply group-hover:translate-x-10 transition-all duration-1000 ease-in-out;
+}
+.translate-three-sun {
+  @apply group-hover:scale-150 group-hover:rotate-90 transition-all duration-1000 ease-in-out;
+}
+
+.slide-arrow {
+  @apply group-hover/arrow:translate-x-8 transition-all duration-500 ease-in-out;
+}
 .style-navigation-hero {
   @apply w-10 h-10 bg-white rounded-full absolute z-20 top-[50%] flex-center cursor-pointer text-xl;
 }
@@ -91,4 +108,48 @@ a {
   -webkit-line-clamp: 4;
   line-clamp: 4;
   -webkit-box-orient: vertical;
+}
+
+.bg-solutions {
+  background: url(../../public/assets/images/section-solutions/bg-solutions.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-house {
+  background: url(../../public/assets/images/section-solutions/projeto-residencial-botucatu-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100%;
+}
+.bg-farm {
+  background: url(../../public/assets/images/section-solutions/projeto-rural-campo-grande-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100%;
+}
+.bg-store {
+  background: url(../../public/assets/images/section-solutions/projeto-empresarial-monte-alto-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100%;
+}
+.bg-factory {
+  background: url(../../public/assets/images/section-solutions/projeto-industrial-andradas-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100%;
+}
+
+.gradient-black {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(229, 230, 231, 0) 100%
+  );
 }

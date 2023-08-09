@@ -21,6 +21,9 @@ const Carroussel: React.FC<RevealProps> = ({
       {...rest}
     >
       <Swiper
+        onInit={(swiper) => {
+          swiper.animating = false;
+        }}
         direction={"horizontal"}
         slidesPerView={3.2}
         spaceBetween={20}
