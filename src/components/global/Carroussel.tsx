@@ -40,13 +40,13 @@ const Carroussel: React.FC<RevealProps> = ({
 
         <button
           id="prev"
-          className="style-navigation-hero left-6 !bg-beige-200"
+          className="style-navigation-hero left-6 !bg-beige-200 opacity-0 group-hover:opacity-100 transition-opacity"
         >
           <MdChevronLeft />
         </button>
         <button
           id="next"
-          className="style-navigation-hero right-6 !bg-beige-200"
+          className="style-navigation-hero right-6 !bg-beige-200 opacity-0 group-hover:opacity-100 transition-opacity"
         >
           <MdChevronRight />
         </button>

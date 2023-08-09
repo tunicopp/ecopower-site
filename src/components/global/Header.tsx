@@ -25,7 +25,7 @@ const Header: React.FC = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 z-[999] w-full ${
+      className={`fixed top-0 left-0 z-[800] w-full ${
         isAtTop ? "" : "header-blur"
       }`}
     >

@@ -22,7 +22,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 flex items-center justify-center z-50 bg-grayscale-900 bg-opacity-50"
+          className="fixed inset-0 flex items-center justify-center  bg-grayscale-900 bg-opacity-50 z-[999]"
           initial="hidden"
           animate="visible"
           exit="hidden"

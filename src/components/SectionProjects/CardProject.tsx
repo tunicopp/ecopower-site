@@ -62,6 +62,7 @@ const CardProject: React.FC<CardProjectProps> = ({
       <Image
         src={image}
         alt="card image"
+        layout="fill"
         quality={100}
         className="rounded-3xl absolute inset-0 object-fill"
       />
