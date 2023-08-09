@@ -10,6 +10,7 @@ const CardSlider: React.FC = () => {
         layout="cover"
         alt="card image"
         quality={100}
+        priority
         className="rounded-2xl absolute top-0 left-0 w-full h-[300px]  "
       />
       <div className="flex absolute top-[18%] left-10 w-[120px] ">

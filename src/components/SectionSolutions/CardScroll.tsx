@@ -7,6 +7,7 @@ import StoreIcon from "../../../public/assets/icons/StoreIcon";
 import HouseIcon from "../../../public/assets/icons/HouseIcon";
 import { useInView } from "framer-motion";
 import { useGlobalContext } from "@/app/context/store";
+import LinkArrow from "../global/LinkArrow";
 
 type Props = {
   children: React.ReactNode;
@@ -56,14 +57,10 @@ export const CardScrollContent = {
             <CheckIcon />
             <p className="text-lg leading-6 ">Garantia Nacional</p>
           </div>
-          <div className="mt-10 flex items-center gap-2 group/arrow cursor-pointer">
-            <p onClick={() => {}} className="text-primary-green font-semibold">
-              Ver Projetos Residenciais
-            </p>
-            <div className="slide-arrow">
-              <RigthArrow />
-            </div>
-          </div>
+          <LinkArrow
+            className="text-primary-green"
+            text=" Ver Projetos Residenciais"
+          />
         </div>
       </>
     );
@@ -90,14 +87,10 @@ export const CardScrollContent = {
             <CheckIcon />
             <p className="text-lg leading-6 ">Investimento</p>
           </div>
-          <div className="mt-10 flex items-center gap-2 group/arrow cursor-pointer">
-            <p onClick={() => {}} className="text-primary-green font-semibold">
-              Ver Projetos Residenciais
-            </p>
-            <div className="slide-arrow">
-              <RigthArrow />
-            </div>
-          </div>
+          <LinkArrow
+            className="text-primary-green"
+            text=" Ver Projetos Empresariais"
+          />
         </div>
       </>
     );
@@ -124,14 +117,10 @@ export const CardScrollContent = {
             <CheckIcon />
             <p className="text-lg leading-6 ">Ecológico</p>
           </div>
-          <div className="mt-10 flex items-center gap-2 group/arrow cursor-pointer">
-            <p onClick={() => {}} className="text-primary-green font-semibold">
-              Ver Projetos Residenciais
-            </p>
-            <div className="slide-arrow">
-              <RigthArrow />
-            </div>
-          </div>
+          <LinkArrow
+            className="text-primary-green"
+            text=" Ver Projetos Indutriais"
+          />
         </div>
       </>
     );
@@ -158,14 +147,10 @@ export const CardScrollContent = {
             <CheckIcon />
             <p className="text-lg leading-6 ">Autossuficiente</p>
           </div>
-          <div className="mt-10 flex items-center gap-2 group/arrow cursor-pointer">
-            <p onClick={() => {}} className="text-primary-green font-semibold">
-              Ver Projetos Residenciais
-            </p>
-            <div className="slide-arrow">
-              <RigthArrow />
-            </div>
-          </div>
+          <LinkArrow
+            className="text-primary-green"
+            text="  Ver Projetos Rurais"
+          />
         </div>
       </>
     );

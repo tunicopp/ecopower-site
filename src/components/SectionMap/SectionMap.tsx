@@ -8,6 +8,7 @@ import car from "../../../public/assets/images/section-map/car.png";
 import threeLg from "../../../public/assets/images/section-map/three-lg.png";
 import threeMd from "../../../public/assets/images/section-map/three-md.png";
 import sun from "../../../public/assets/images/section-map/sun.png";
+import LinkArrow from "../global/LinkArrow";
 
 const SectionMap: React.FC = () => {
   return (
@@ -34,14 +35,11 @@ const SectionMap: React.FC = () => {
               ))}
             </div>
           </div>
-          <div className="flex items-center mt-10 gap-2 group/arrow cursor-pointer">
-            <p className="text-primary-green font-semibold">
-              Conheça nossa história
-            </p>
-            <div className="slide-arrow">
-              <RigthArrow />
-            </div>
-          </div>
+
+          <LinkArrow
+            className="text-primary-green"
+            text="Conheça nossa historia"
+          />
         </div>
 
         <div className="flex w-[40%] ">

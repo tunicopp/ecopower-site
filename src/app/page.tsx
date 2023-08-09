@@ -8,6 +8,7 @@ import SectionSolutions from "@/components/SectionSolutions/SectionSolutions";
 import SectionProject from "@/components/SectionProjects/SectionProject";
 import SectionTestimonial from "@/components/SectionTestimonial/SectionTestimonial";
 import SectionFAQ from "@/components/SectionFAQ/SectionFAQ";
+import Footer from "@/components/Footer/Footer";
 
 export default async function Home() {
   return (
@@ -22,6 +23,7 @@ export default async function Home() {
       <SectionTestimonial />
       <BlogSection />
       <SectionFAQ />
+      <Footer />
     </main>
   );
 }

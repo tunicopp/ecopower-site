@@ -1,8 +1,9 @@
+"use client";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { twMerge } from "tailwind-merge";
-import RigthArrowWhite from "../../../public/assets/icons/RigthArrowWhite";
-import { title } from "process";
+import LinkArrow from "../global/LinkArrow";
+import { motion } from "framer-motion";
 
 export interface CardProjectProps {
   index: number;
@@ -30,8 +31,29 @@ const CardProject: React.FC<CardProjectProps> = ({
       return "col-span-3";
     }
   };
+
+  const fadeAnimations = {
+    initial: {
+      opacity: 0,
+      scale: 0,
+    },
+    animate: (index: number) => ({
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delay: 0.05 * index,
+        type: "spring",
+      },
+    }),
+  };
+
   return (
-    <div
+    <motion.div
+      variants={fadeAnimations}
+      initial="initial"
+      whileInView="animate"
+      custom={index}
+      viewport={{ once: true }}
       className={twMerge(
         "relative flex flex-col  h-[480px] rounded-3xl p-[32px]",
         calculateColSpan(index)
@@ -52,13 +74,8 @@ const CardProject: React.FC<CardProjectProps> = ({
       </div>
       <h4 className="text-white text-[32px] font-bold z-10">{title}</h4>
       <p className="text-white  z-10">{subTitle}</p>
-      <div className="flex items-center mt-4 gap-2 group/arrow cursor-pointer z-10">
-        <p className="text-white font-semibold">Ver projeto</p>
-        <div className="slide-arrow">
-          <RigthArrowWhite />
-        </div>
-      </div>
-    </div>
+      <LinkArrow className="text-white z-10" text="Ver Projeto" />
+    </motion.div>
   );
 };
 
