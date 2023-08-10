@@ -14,8 +14,8 @@ import Header from "@/components/global/Header";
 export default async function Home() {
   return (
     <main className="relative">
-      <Header />
-      <Hero />
+      {/* <Header /> */}
+      {/* <Hero /> */}
       <SectionSlide />
       <SectionMap />
       <SectionVideo />
@@ -23,9 +23,8 @@ export default async function Home() {
       <SectionSolutions />
       <SectionProject />
       <SectionTestimonial />
-      <BlogSection />
+      {/* <BlogSection /> */}
       <SectionFAQ />
-      <Footer />
     </main>
   );
 }
