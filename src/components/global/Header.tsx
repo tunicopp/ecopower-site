@@ -21,7 +21,7 @@ const Header: React.FC = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [window.scrollY]);
+  }, []);
 
   return (
     <div
