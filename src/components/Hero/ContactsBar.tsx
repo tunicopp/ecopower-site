@@ -7,7 +7,7 @@ import GridContainer from "../global/GridContainer";
 
 const ContactsBar: React.FC = () => {
   return (
-    <div className="bg-white h-[40px] py-2.5 relative">
+    <div className="bg-white h-[40px] py-2.5 relative hidden md:block">
       <GridContainer className="items-center justify-end">
         <Link href="/" className="flex items-center text-xl text-grayscale-800">
           <MdCardTravel />

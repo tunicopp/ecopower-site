@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={golos_text.className}>
         <GlobalContextProvider>{children}</GlobalContextProvider>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

@@ -18,7 +18,7 @@ import Image from "next/image";
 
 const SectionSlide: React.FC = () => {
   return (
-    <section className="relative w-full pb-20 pt-[66px] flex flex-col items-center">
+    <section className="relative w-full pb-20 px-6 sm:px-0 pt-[66px] flex flex-col sm:items-center">
       <div className="absolute -top-[30px] z-50">
         <Image src={cloud} alt="Cloud Arrow" width={104} height={56} />
       </div>
@@ -29,7 +29,7 @@ const SectionSlide: React.FC = () => {
         <Cloud2 />
       </div>
       <TitleComponent>Conheça nossos produtos</TitleComponent>
-      <Link href="/" className="hover:underline">
+      <Link href="/" className="z-10 hover:underline">
         <p className="font-medium mt-4">Ver todos os produtos</p>
       </Link>
       {/* <motion.div

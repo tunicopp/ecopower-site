@@ -25,9 +25,9 @@ const Calculator: React.FC = () => {
       : "Mais de R$800";
 
   return (
-    <div className="mt-14 p-6 pl-10 flex items-center rounded-full bg-white shadow-calculator max-w-[1016px]">
-      <div className="flex flex-col mr-8">
-        <span className="text-grayscale-800 font-medium leading-5 mb-[10px]">
+    <div className="mt-14 px-3 py-8 sm:p-6 sm:pl-10 flex flex-col sm:flex-row items-center rounded-[20px] sm:rounded-full bg-white shadow-calculator max-w-[952px]">
+      <div className="flex flex-1 flex-col mr-8">
+        <span className="text-grayscale-800 font-medium leading-5 mb-[14px] sm:mb-[10px]">
           Média mensal de gasto com energia:
         </span>
         <Range
@@ -42,7 +42,7 @@ const Calculator: React.FC = () => {
           renderTrack={({ props, children }) => (
             <div
               {...props}
-              className="h-3 rounded-full w-[532px]"
+              className="h-3 rounded-full w-full"
               style={{ background: bg }}
             >
               {children}
@@ -62,7 +62,7 @@ const Calculator: React.FC = () => {
         </Tooltip>
       </div>
       <select
-        className="select"
+        className="select mt-6 mb-3 sm:my-0"
         placeholder="Arraste ou selecione"
         value={value[0]}
         onChange={(v) => setValue([parseInt(v.target.value)])}
@@ -73,7 +73,9 @@ const Calculator: React.FC = () => {
         <option value={600}>De R$400 a R$800</option>
         <option value={800}>Mais de R$800</option>
       </select>
-      <button className="simulate-button ml-4">Simular Economia</button>
+      <button className="simulate-button w-full sm:w-auto sm:ml-4">
+        Simular Economia
+      </button>
     </div>
   );
 };

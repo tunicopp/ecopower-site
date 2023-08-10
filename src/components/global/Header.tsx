@@ -24,7 +24,7 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <div
+    <header
       className={`fixed top-0 left-0 z-[800] w-full ${
         isAtTop ? "" : "header-blur"
       }`}
@@ -41,32 +41,34 @@ const Header: React.FC = () => {
             priority
           />
         </div>
-        <Link
-          href="/"
-          className="text-sm leading-4 font-medium text-white flex items-center"
-        >
-          Produtos
-          <div className="text-base ml-1 rotate-90">
-            <MdChevronRight />
-          </div>
-        </Link>
-        <Link
-          href="/"
-          className="text-sm leading-4 font-medium text-white mx-6 flex items-center"
-        >
-          Sobre Nós
-          <div className="text-base ml-1 rotate-90">
-            <MdChevronRight />
-          </div>
-        </Link>
-        <Link href="/" className="text-sm leading-4 font-medium text-white">
-          Unidades
-        </Link>
-        <button className="text-white ml-[70px] text-xl">
+        <div className="hidden sm:flex sm:items-center">
+          <Link
+            href="/"
+            className="text-sm leading-4 font-medium text-white flex items-center"
+          >
+            Produtos
+            <div className="text-base ml-1 rotate-90">
+              <MdChevronRight />
+            </div>
+          </Link>
+          <Link
+            href="/"
+            className="text-sm leading-4 font-medium text-white mx-6 flex items-center"
+          >
+            Sobre Nós
+            <div className="text-base ml-1 rotate-90">
+              <MdChevronRight />
+            </div>
+          </Link>
+          <Link href="/" className="text-sm leading-4 font-medium text-white">
+            Unidades
+          </Link>
+        </div>
+        <button className="text-white sm:ml-[70px] text-xl">
           <MdOutlineMenu />
         </button>
       </GridContainer>
-    </div>
+    </header>
   );
 };
 

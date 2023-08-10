@@ -20,12 +20,18 @@ const SectionCampaings: React.FC = () => {
         </span>
       </Reveal>
       <Swiper
-        slidesPerView={3.2}
+        slidesPerView={1}
         spaceBetween={24}
-        className="w-full !px-[110px] !transform-none"
+        className="w-full !px-[110px]"
+        direction="horizontal"
         draggable
         modules={[Navigation]}
         navigation={{ nextEl: "#next-campaing", prevEl: "#prev-campaing" }}
+        breakpoints={{
+          768: {
+            slidesPerView: 3.2,
+          },
+        }}
       >
         {campaingData.map((c, i) => (
           <SwiperSlide key={i}>

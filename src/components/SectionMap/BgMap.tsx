@@ -14,14 +14,14 @@ const BgMap: React.FC = ({}) => {
       className="absolute top-0 left-0 h-full flex w-full items-center justify-center overflow-hidden select-none"
       initial={{ scale: 0.9 }}
       whileInView={{ scale: 2.3 }}
-      transition={{ duration: 7 }}
+      transition={{ duration: 3 }}
       viewport={{ once: true }}
     >
       <Image
         src={map}
         alt="card map"
         quality={100}
-        className="absolute w-[50%] mx-auto object-cover"
+        className="absolute w-[50%] top-[50%] left-[50%] mx-auto object-cover"
       />
     </motion.div>
   );

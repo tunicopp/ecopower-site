@@ -16,15 +16,15 @@ export default async function Home() {
     <main className="relative">
       {/* <Header /> */}
       {/* <Hero /> */}
-      <SectionSlide />
-      <SectionMap />
-      <SectionVideo />
+      {/* <SectionSlide /> */}
+      {/* <SectionMap /> */}
+      {/* <SectionVideo /> */}
       <SectionCampaings />
-      <SectionSolutions />
-      <SectionProject />
-      <SectionTestimonial />
+      {/* <SectionSolutions /> */}
+      {/* <SectionProject /> */}
+      {/* <SectionTestimonial /> */}
       {/* <BlogSection /> */}
-      <SectionFAQ />
+      {/* <SectionFAQ /> */}
     </main>
   );
 }

@@ -9,13 +9,15 @@ import threeLg from "../../../public/assets/images/section-map/three-lg.png";
 import threeMd from "../../../public/assets/images/section-map/three-md.png";
 import sun from "../../../public/assets/images/section-map/sun.png";
 import LinkArrow from "../global/LinkArrow";
+import mobileThree from "../../../public/assets/images/section-map/mobile-three.png";
 
 const SectionMap: React.FC = () => {
   return (
-    <section className="relative flex w-full h-screen min-h-[1040px] bg-beige-300 overflow-hidden items-end">
+    <section className="relative flex w-full h-screen min-h-[1460px] sm:min-h-[1040px] bg-beige-300 overflow-hidden items-end">
       <BgMap />
-      <div className="relative flex w-[912px] p-10 group bg-white z-10 rounded-3xl mb-[110px] ml-[110px] ">
-        <div className="flex w-[60%] flex-col">
+
+      <div className="relative flex mt-[180px] sm:mt-0 flex-col sm:flex-row max-w-[912px] p-6 sm:p-10 group bg-white z-10 rounded-3xl sm:mb-[110px]">
+        <div className="flex sm:w-[60%] flex-col">
           <h2 className="text-[44px] font-semibold leading-[52px]">
             Somos a energia que move o futuro. Somos Eco. Somos Power.
           </h2>
@@ -23,7 +25,7 @@ const SectionMap: React.FC = () => {
             Presente em todo o país, a EcoPower é a empresa de energia solar que
             mais cresce no Brasil.
           </p>
-          <div className="grid grid-cols-2  w-[480px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2  w-[480px]">
             <div className="w-full">
               {companyIinfoGroup1.map((i) => (
                 <CompanyInfo number={i.number} text={i.text} key={i.id} />
@@ -42,7 +44,7 @@ const SectionMap: React.FC = () => {
           />
         </div>
 
-        <div className="flex w-[40%] ">
+        <div className="w-[40%] hidden sm:flex">
           <div className="absolute bottom-0 right-[4%] flex w-[130px] h-[112px] items-end translate-three-md ">
             <Image
               src={threeMd}
@@ -75,6 +77,16 @@ const SectionMap: React.FC = () => {
               className="absolute w-full object-cover"
             />
           </div>
+        </div>
+
+        <div className="flex justify-center sm:hidden mt-12">
+          <Image
+            src={mobileThree}
+            alt="Mobile Ecopower"
+            quality={100}
+            width={191}
+            height={375}
+          />
         </div>
       </div>
     </section>
