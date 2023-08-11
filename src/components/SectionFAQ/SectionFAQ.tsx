@@ -3,13 +3,16 @@ import GridContainer from "../global/GridContainer";
 import Reveal from "../global/Reveal";
 import TitleComponent from "../global/TitleComponent";
 import Accordion from "../Accordion/Accordion";
+import { faqData } from "@/utils/faqData";
 
 const SectionFAQ: React.FC = () => {
   return (
     <section>
       <GridContainer className="flex-col py-[110px]">
         <Reveal>
-          <TitleComponent>Dúvidas frequentes</TitleComponent>
+          <TitleComponent className="leading-none">
+            Dúvidas frequentes
+          </TitleComponent>
         </Reveal>
         <Reveal className="mt-[10px] mb-[42px]" delay={0.4}>
           <span className="text-lg text-grayscale-800">
@@ -17,46 +20,11 @@ const SectionFAQ: React.FC = () => {
           </span>
         </Reveal>
         <div className="h-stack-18">
-          <Accordion title="Quanto custa?">
-            Lorem ipsum dolor sit amet consectetur. Massa lobortis orci leo
-            lectus pellentesque enim pharetra sit phasellus. Tristique nulla
-            faucibus enim velit aliquam dolor. Aliquet dui id elit praesent
-            pellentesque tellus tellus at pellentesque. At sem pellentesque
-            adipiscing tortor enim ultricies nullam bibendum in. Sagittis ac
-            pellentesque sed dignissim dictum et eu faucibus ut.
-          </Accordion>
-          <Accordion title="Quanto custa?">
-            Lorem ipsum dolor sit amet consectetur. Massa lobortis orci leo
-            lectus pellentesque enim pharetra sit phasellus. Tristique nulla
-            faucibus enim velit aliquam dolor. Aliquet dui id elit praesent
-            pellentesque tellus tellus at pellentesque. At sem pellentesque
-            adipiscing tortor enim ultricies nullam bibendum in. Sagittis ac
-            pellentesque sed dignissim dictum et eu faucibus ut.
-          </Accordion>
-          <Accordion title="Quanto custa?">
-            Lorem ipsum dolor sit amet consectetur. Massa lobortis orci leo
-            lectus pellentesque enim pharetra sit phasellus. Tristique nulla
-            faucibus enim velit aliquam dolor. Aliquet dui id elit praesent
-            pellentesque tellus tellus at pellentesque. At sem pellentesque
-            adipiscing tortor enim ultricies nullam bibendum in. Sagittis ac
-            pellentesque sed dignissim dictum et eu faucibus ut.
-          </Accordion>
-          <Accordion title="Quanto custa?">
-            Lorem ipsum dolor sit amet consectetur. Massa lobortis orci leo
-            lectus pellentesque enim pharetra sit phasellus. Tristique nulla
-            faucibus enim velit aliquam dolor. Aliquet dui id elit praesent
-            pellentesque tellus tellus at pellentesque. At sem pellentesque
-            adipiscing tortor enim ultricies nullam bibendum in. Sagittis ac
-            pellentesque sed dignissim dictum et eu faucibus ut.
-          </Accordion>
-          <Accordion title="Quanto custa?">
-            Lorem ipsum dolor sit amet consectetur. Massa lobortis orci leo
-            lectus pellentesque enim pharetra sit phasellus. Tristique nulla
-            faucibus enim velit aliquam dolor. Aliquet dui id elit praesent
-            pellentesque tellus tellus at pellentesque. At sem pellentesque
-            adipiscing tortor enim ultricies nullam bibendum in. Sagittis ac
-            pellentesque sed dignissim dictum et eu faucibus ut.
-          </Accordion>
+          {faqData.map((faq, i) => (
+            <Accordion key={i} isH3={i % 2 === 0} title={faq.title}>
+              {faq.description}
+            </Accordion>
+          ))}
         </div>
       </GridContainer>
     </section>

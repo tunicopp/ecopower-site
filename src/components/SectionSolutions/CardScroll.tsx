@@ -27,7 +27,7 @@ const CardScroll: React.FC<Props> = ({ children, id }) => {
   return (
     <div
       ref={ref}
-      className="flex flex-col bg-white p-10 max-w-[515px] h-fit rounded-3xl z-10"
+      className="flex flex-col bg-white p-10 md:max-w-[515px] h-fit rounded-3xl z-10"
     >
       {children}
     </div>

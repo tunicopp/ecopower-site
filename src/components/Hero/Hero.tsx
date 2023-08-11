@@ -10,19 +10,19 @@ const Hero: React.FC = () => {
   const [timeline, setTimeline] = useState<"to" | "from">("to");
 
   return (
-    <div
-      className="min-h-[624px] pt-32 bg-hero-green w-full relative"
+    <section
+      className="min-h-[1101px] flex flex-col-reverse md:block md:min-h-[664px] pt-20 md:pt-32 bg-hero-green w-full relative"
       onMouseEnter={() => setTimeline("to")}
       onMouseLeave={() => setTimeline("from")}
     >
       <HeroSlider timeline={timeline} />
       <div className="z-10 relative">
-        <GridContainer className="pt-[103px] flex-col">
+        <GridContainer className="pt-8 md:pt-[103px] flex-col">
           <h1 className="text-base text-white font-bold">EcoPower te faz</h1>
-          <h2 className="text-[3.5rem] leading-[4rem] text-white font-semibold">
+          <h2 className="text-4xl leading-none md:text-[3.5rem] md:leading-[4rem] text-white font-semibold my-2 md:my-0">
             Reduzir sua conta de luz
           </h2>
-          <p className="text-white text-base mt-6">
+          <p className="text-white text-base md:mt-6">
             Use a nossa calculadora de economia e receba um orçamento da unidade
             mais próxima:
           </p>
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
       <button id="next-hero" className="style-navigation-hero right-3">
         <MdChevronRight />
       </button>
-    </div>
+    </section>
   );
 };
 

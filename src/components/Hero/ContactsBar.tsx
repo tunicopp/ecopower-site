@@ -7,7 +7,7 @@ import GridContainer from "../global/GridContainer";
 
 const ContactsBar: React.FC = () => {
   return (
-    <div className="bg-white h-[40px] py-2.5 relative">
+    <div className="bg-white h-[40px] py-2.5 relative hidden md:block">
       <GridContainer className="items-center justify-end">
         <Link href="/" className="flex items-center text-xl text-grayscale-800">
           <MdCardTravel />
@@ -15,7 +15,7 @@ const ContactsBar: React.FC = () => {
         </Link>
         <Link
           href="/"
-          className="flex items-center text-xl mx-[41px] text-grayscale-800"
+          className="flex items-center text-xl mx-6 lg:mx-[41px] text-grayscale-800"
         >
           <MdHelp />
           <span className="text-sm ml-2">Dúvidas Frequentes</span>

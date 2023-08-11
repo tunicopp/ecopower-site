@@ -18,7 +18,7 @@ module.exports = {
     },
     colors: {
       "primary-green": "#01B040",
-      "hero-green": "#01B040",
+      "hero-green": "#01AC3F",
       "blue-dark": "#050245",
       "blue-soft-dark": "#240697",
       "blue-light": "#2E90EB",
@@ -33,6 +33,7 @@ module.exports = {
         100: "#E5E8F0",
         50: "#F6F7FC",
       },
+      transparent: "transparent",
       white: "#FFFFFF",
       "font-black": "#262833",
       black: "#2F3133",

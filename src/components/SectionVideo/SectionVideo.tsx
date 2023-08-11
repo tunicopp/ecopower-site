@@ -38,11 +38,11 @@ const SectionVideo: React.FC = () => {
   }, [modalOpen]);
   return (
     <>
-      <div className="flex items-center justify-between relative w-full h-[690px] bg-grayscale-600 group overflow-hidden">
+      <div className="flex flex-col md:flex-row items-center justify-between p-6 relative w-full h-full md:h-[690px] md:bg-grayscale-600 group overflow-hidden">
         <motion.div
           ref={ref}
           style={{ y }}
-          className="absolute -top-[15%] w-[100%] h-[800px] "
+          className="absolute -top-[15%] w-[100%] h-[800px] hidden md:block"
         >
           <Image
             src={thumb1}
@@ -52,7 +52,7 @@ const SectionVideo: React.FC = () => {
             className="w-full object-fill "
           />
         </motion.div>
-        <div className="flex relative flex-col ml-[64px] w-[615px] p-[45px] bg-primary-green z-10 rounded-3xl ">
+        <div className="flex relative flex-col md:ml-[64px] md:w-[615px] p-6 pb-[150px] md:p-[45px] bg-primary-green z-10 rounded-3xl ">
           <h2 className="text-white text-[44px] font-semibold leading-[52px]">
             Renovável, limpa e infinita. Entenda como a energia solar funciona.
           </h2>
@@ -74,9 +74,26 @@ const SectionVideo: React.FC = () => {
             <SolarPateSmall />
           </div>
         </div>
+
+        <div className="relative mt-6 w-full md:hidden">
+          <Image
+            src={thumb1}
+            alt="thumbnail"
+            height={200}
+            quality={100}
+            className="w-full object-fill rounded-3xl"
+          />
+          <button
+            onClick={() => setModalOpen(true)}
+            className="flex absolute left-0 top-0 inset-0 items-center justify-center group-hover:scale-125 transition-all duration-500 ease-in-out cursor-pointer"
+          >
+            <PlayCircle />
+          </button>
+        </div>
+
         <button
           onClick={() => setModalOpen(true)}
-          className="flex z-10 m-auto group-hover:scale-125 transition-all duration-500 ease-in-out cursor-pointer"
+          className="z-10 m-auto hidden md:flex group-hover:scale-125 transition-all duration-500 ease-in-out cursor-pointer"
         >
           <PlayCircle />
         </button>

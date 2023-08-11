@@ -26,27 +26,32 @@ const Carroussel: React.FC<RevealProps> = ({
           swiper.animating = false;
         }}
         direction={"horizontal"}
-        slidesPerView={3.2}
+        slidesPerView={1}
         spaceBetween={20}
         grabCursor={true}
-        className="mySwiper !px-[110px]"
+        className="mySwiper w-full md:w-auto px-6 md:!px-[110px]"
         modules={[Navigation]}
         navigation={{
           nextEl: "#next",
           prevEl: "#prev",
+        }}
+        breakpoints={{
+          768: {
+            slidesPerView: 3.2,
+          },
         }}
       >
         {children}
 
         <button
           id="prev"
-          className="style-navigation-hero left-6 !bg-beige-200 opacity-0 group-hover:opacity-100 transition-opacity"
+          className="style-navigation-hero !hidden md:!flex left-6 !bg-beige-200 md:opacity-0 group-hover:opacity-100 transition-opacity"
         >
           <MdChevronLeft />
         </button>
         <button
           id="next"
-          className="style-navigation-hero right-6 !bg-beige-200 opacity-0 group-hover:opacity-100 transition-opacity"
+          className="style-navigation-hero !hidden md:!flex right-6 !bg-beige-200 md:opacity-0 group-hover:opacity-100 transition-opacity"
         >
           <MdChevronRight />
         </button>

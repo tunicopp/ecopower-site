@@ -48,20 +48,20 @@ const SectionSolutions: React.FC = () => {
   // }, [isInView]);
 
   return (
-    <section className="flex  w-full  min-h-[1000px] relative flex-col items-center p-[108px] bg-solutions">
-      <Reveal className="max-w-[690px] text-center">
+    <section className="flex pt-[110px] md:pt-0 w-full  md:min-h-[1000px] relative flex-col md:items-center md:p-[108px] bg-solutions">
+      <Reveal className="max-w-[690px] md:text-center px-6">
         <TitleComponent>
           Soluções feitas sob medida para o seu segmento
         </TitleComponent>
       </Reveal>
-      <Reveal delay={0.4}>
-        <p className="font-medium mt-4">
+      <Reveal delay={0.4} className="px-6">
+        <p className="font-medium mt-4 text-lg">
           Lorem ipsum dolor sit amet consectetur.
         </p>
       </Reveal>
 
       <div
-        className=" flex max-w-full  items-center justify-center mt-[100px] "
+        className=" flex max-w-full flex-col md:flex-row items-center justify-center mt-[100px] bg-white md:bg-transparent"
         ref={centerRef}
         id="scrollDiv"
       >
@@ -75,7 +75,7 @@ const SectionSolutions: React.FC = () => {
             sensitivity: 2,
           }}
           modules={[Mousewheel, Navigation]}
-          className="mySwiper max-w-[515px] "
+          className="mySwiper w-full md:max-w-[515px]"
         >
           {cards.map((i) => (
             <SwiperSlide
@@ -88,7 +88,7 @@ const SectionSolutions: React.FC = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className=" relative w-[880px] h-[524px]  flex items-center -ml-[8%] rounded-3xl ">
+        <div className=" relative w-full mb-[110px] md:mb-0 h-[208px] md:w-[880px] md:h-[524px] md:bg-transparent flex items-center md:-ml-[8%] px-6 md:px-0 rounded-3xl ">
           {cards.map((card) => (
             <card.cardImg key={card.id} id={card.id}></card.cardImg>
           ))}

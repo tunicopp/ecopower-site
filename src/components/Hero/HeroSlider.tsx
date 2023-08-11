@@ -4,6 +4,7 @@ import { SwiperSlide, Swiper } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { LottieAnimation } from "react-lottie-tools";
 import mainLottie from "../../../public/assets/lottie/main-lottie.json";
+import mainLottieMobile from "../../../public/assets/lottie/main-lottie-mobile.json";
 import "swiper/css/pagination";
 
 interface HeroSliderProps {
@@ -12,7 +13,7 @@ interface HeroSliderProps {
 
 const HeroSlider: React.FC<HeroSliderProps> = ({ timeline }) => {
   return (
-    <div className="absolute hero-slider-wrapper top-[40px] left-0 z-0">
+    <div className="md:absolute hero-slider-wrapper mt-10 top-[40px] left-0 z-0">
       <Swiper
         slidesPerView={1}
         direction="horizontal"
@@ -28,28 +29,24 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ timeline }) => {
         navigation={{ nextEl: "#next-hero", prevEl: "#prev-hero" }}
       >
         <SwiperSlide>
-          <LottieAnimation
-            animation={mainLottie}
-            style={{ height: "584px", width: "100%" }}
-            rendererSettings={{ preserveAspectRatio: "xMinYMax slice" }}
-            currentTimeline={timeline}
-            frames={[0, 76]}
-          />
+          <div className="hidden md:block">
+            <LottieAnimation
+              animation={mainLottie}
+              style={{ height: "584px", width: "100%" }}
+              rendererSettings={{ preserveAspectRatio: "xMinYMax slice" }}
+              currentTimeline={timeline}
+              frames={[0, 76]}
+            />
+          </div>
+          <div className="md:hidden">
+            <LottieAnimation
+              animation={mainLottieMobile}
+              style={{ height: "584px", width: "100%" }}
+              rendererSettings={{ preserveAspectRatio: "xMinYMax slice" }}
+              justPlayInView
+            />
+          </div>
         </SwiperSlide>
-        {/* <SwiperSlide>
-          <LottieAnimation
-            animation={mainLottie}
-            style={{ height: "582px", width: "100%" }}
-            rendererSettings={{ preserveAspectRatio: "xMinYMax slice" }}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <LottieAnimation
-            animation={mainLottie}
-            style={{ height: "582px", width: "100%" }}
-            rendererSettings={{ preserveAspectRatio: "xMinYMax slice" }}
-          />
-        </SwiperSlide> */}
       </Swiper>
     </div>
   );

@@ -25,7 +25,6 @@ export default async function Home() {
       <SectionTestimonial />
       <BlogSection />
       <SectionFAQ />
-      <Footer />
     </main>
   );
 }

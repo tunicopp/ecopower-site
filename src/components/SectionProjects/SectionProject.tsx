@@ -45,7 +45,7 @@ const cards = [
 
 const SectionProject: React.FC = () => {
   return (
-    <section className="relative w-full pb-14 pt-[66px] flex flex-col items-center overflow-x-hidden mt-[64px]">
+    <section className="relative w-full px-6 md:px-0 pb-14 pt-[66px] flex flex-col items-center overflow-x-hidden md:mt-[64px]">
       <div className="absolute top-[30px] left-[0%] animate-fly">
         <Cloud1 />
       </div>
@@ -53,10 +53,12 @@ const SectionProject: React.FC = () => {
         <Cloud2 />
       </div>
       <Reveal className="max-w-[690px] text-center">
-        <TitleComponent>Confira os projetos mais recentes</TitleComponent>
+        <TitleComponent className="leading-none">
+          Confira os projetos mais recentes
+        </TitleComponent>
       </Reveal>
-      <div className="flex flex-col w-full p-[108px]">
-        <div className="grid grid-cols-5 gap-6">
+      <div className="flex flex-col w-full mt-6 md:mt-0 md:p-[108px]">
+        <div className="grid md:grid-cols-5 gap-6">
           {cards.map((card, index) => (
             <CardProject
               key={card.id}
@@ -69,7 +71,7 @@ const SectionProject: React.FC = () => {
           ))}
         </div>
       </div>
-      <button className="h-12 rounded-3xl border-2 px-5 hover:bg-grayscale-100 transition-all font-semibold">
+      <button className="h-12 w-full mt-6 md:mt-0 md:w-auto rounded-3xl border-2 px-5 hover:bg-grayscale-100 transition-all font-semibold">
         Ver todos os projetos
       </button>
     </section>

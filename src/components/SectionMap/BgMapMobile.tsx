@@ -4,27 +4,23 @@ import React from "react";
 import map from "../../../public/assets/images/unit-map.png";
 import { motion } from "framer-motion";
 
-interface BgMapProps {
-  children: React.ReactNode;
-}
-
-const BgMap: React.FC = ({}) => {
+const BgMapMobile: React.FC = ({}) => {
   return (
     <motion.div
-      className="absolute top-0 left-0 h-full hidden md:flex w-full items-center justify-center overflow-hidden select-none"
+      className="absolute top-0 left-0 h-full flex md:hidden w-full items-center justify-center overflow-hidden select-none"
       initial={{ scale: 0.9 }}
       whileInView={{ scale: 2.3 }}
-      transition={{ duration: 7 }}
+      transition={{ duration: 3 }}
       viewport={{ once: true }}
     >
       <Image
         src={map}
         alt="card map"
         quality={100}
-        className="absolute w-[50%] mx-auto object-cover"
+        className="absolute w-[738px] top-[25%] left-0 mx-auto object-cover"
       />
     </motion.div>
   );
 };
 
-export default BgMap;
+export default BgMapMobile;
