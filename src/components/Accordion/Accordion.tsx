@@ -5,9 +5,10 @@ import { BsPlus } from "react-icons/bs";
 
 interface AccordionProps extends ComponentWithChildren {
   title: string;
+  isH3: boolean;
 }
 
-const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
+const Accordion: React.FC<AccordionProps> = ({ title, isH3, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -16,7 +17,11 @@ const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
         onClick={() => setIsOpen((old) => !old)}
         className="px-8 w-full py-[18px] flex items-center justify-between"
       >
-        <h2 className="text-lg text-black leading-6">{title}</h2>
+        {isH3 ? (
+          <h3 className="text-lg text-black leading-6">{title}</h3>
+        ) : (
+          <h2 className="text-lg text-black leading-6">{title}</h2>
+        )}
         <div className="text-full-black text-2xl">
           <BsPlus />
         </div>

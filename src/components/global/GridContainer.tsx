@@ -13,7 +13,7 @@ const GridContainer: React.FC<GridContainerProps> = ({
   return (
     <div
       className={twMerge(
-        "flex w-full mx-auto max-w-[1224px] px-6 sm:px-[36px]",
+        "flex w-full mx-auto max-w-[1224px] px-6 md:px-[36px]",
         className
       )}
     >

@@ -22,13 +22,13 @@ const CardProject: React.FC<CardProjectProps> = ({
 }) => {
   const calculateColSpan = (index: number) => {
     if (index === 0) {
-      return "col-span-3";
+      return "md:col-span-3";
     } else if (index === 1) {
-      return "col-span-2";
+      return "md:col-span-2";
     } else if (index === 2) {
-      return "col-span-2";
+      return "md:col-span-2";
     } else {
-      return "col-span-3";
+      return "md:col-span-3";
     }
   };
 
@@ -72,7 +72,7 @@ const CardProject: React.FC<CardProjectProps> = ({
           {textTag}
         </div>
       </div>
-      <h4 className="text-white text-[32px] font-bold z-10">{title}</h4>
+      <h3 className="text-white text-[32px] font-bold z-10">{title}</h3>
       <p className="text-white  z-10">{subTitle}</p>
       <LinkArrow className="text-white z-10" text="Ver Projeto" />
     </motion.div>

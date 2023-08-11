@@ -10,19 +10,33 @@ import { campaingData } from "@/utils/campaingData";
 
 const SectionCampaings: React.FC = () => {
   return (
-    <section className="relative py-[110px] flex flex-col items-center">
-      <Reveal>
+    <section className="relative py-[110px] flex flex-col md:items-center">
+      <Reveal className="px-6">
         <TitleComponent>Campanhas Ativas</TitleComponent>
       </Reveal>
-      <Reveal className="mb-[112px]" delay={0.4}>
+      <Reveal className="md:mb-[112px] px-6 text-center" delay={0.4}>
         <span className="font-medium text-grayscale-400">
           A luz que não apenas ilumina, mas também protege o nosso planeta
         </span>
       </Reveal>
+      <div className="flex w-full md:hidden my-6 px-6 items-center justify-between">
+        <button
+          id="prev-campaing"
+          className="style-navigation-campaing !bg-beige-200"
+        >
+          <MdChevronLeft />
+        </button>
+        <button
+          id="next-campaing"
+          className="style-navigation-campaing !bg-beige-200"
+        >
+          <MdChevronRight />
+        </button>
+      </div>
       <Swiper
         slidesPerView={1}
         spaceBetween={24}
-        className="w-full !px-[110px]"
+        className="w-full !px-6 md:!px-[110px]"
         direction="horizontal"
         draggable
         modules={[Navigation]}
@@ -40,13 +54,13 @@ const SectionCampaings: React.FC = () => {
         ))}
         <button
           id="prev-campaing"
-          className="style-navigation-hero left-6 !bg-beige-200"
+          className="style-navigation-hero !hidden md:!flex left-6 !bg-beige-200"
         >
           <MdChevronLeft />
         </button>
         <button
           id="next-campaing"
-          className="style-navigation-hero right-6 !bg-beige-200"
+          className="style-navigation-hero !hidden md:!flex right-6 !bg-beige-200"
         >
           <MdChevronRight />
         </button>

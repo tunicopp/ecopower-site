@@ -14,21 +14,45 @@ import { testimonialData } from "@/utils/testimonialData";
 const SectionTestimonial: React.FC = () => {
   return (
     <section className="relative py-[110px] flex flex-col items-center">
-      <Reveal>
-        <TitleComponent>O que dizem nossos clientes</TitleComponent>
+      <Reveal className="px-6">
+        <TitleComponent className="leading-none">
+          O que dizem nossos clientes
+        </TitleComponent>
       </Reveal>
-      <Reveal className="mb-[112px] mt-6" delay={0.4}>
+      <Reveal className="px-6 mb-10 mb:mb-[112px] mt-6" delay={0.4}>
         <span className="font-medium text-grayscale-400">
           Lorem ipsum dolor sit amet consectetur.
         </span>
       </Reveal>
+      <div className="flex w-full md:hidden mb-6 px-6 items-center justify-between">
+        <button
+          id="next-testimonial"
+          className="style-navigation-campaing !bg-beige-200"
+        >
+          <MdChevronLeft />
+        </button>
+        <button
+          id="next-testimonial"
+          className="style-navigation-campaing !bg-beige-200"
+        >
+          <MdChevronRight />
+        </button>
+      </div>
       <Swiper
-        slidesPerView={3.2}
+        slidesPerView={1}
         spaceBetween={24}
-        className="w-full !px-[110px] !transform-none"
+        className="w-full !px-6 md:!px-[110px] !transform-none"
         draggable
         modules={[Navigation]}
-        navigation={{ nextEl: "#next-campaing", prevEl: "#prev-campaing" }}
+        navigation={{
+          nextEl: "#next-testimonial",
+          prevEl: "#next-testimonial",
+        }}
+        breakpoints={{
+          768: {
+            slidesPerView: 3.2,
+          },
+        }}
       >
         {testimonialData.map((t, i) => (
           <SwiperSlide key={i}>
@@ -36,14 +60,14 @@ const SectionTestimonial: React.FC = () => {
           </SwiperSlide>
         ))}
         <button
-          id="prev-campaing"
-          className="style-navigation-hero left-6 !bg-beige-200"
+          id="next-testimonial"
+          className="style-navigation-hero !hidden md:!flex left-6 !bg-beige-200"
         >
           <MdChevronLeft />
         </button>
         <button
-          id="next-campaing"
-          className="style-navigation-hero right-6 !bg-beige-200"
+          id="next-testimonial"
+          className="style-navigation-hero !hidden md:!flex right-6 !bg-beige-200"
         >
           <MdChevronRight />
         </button>

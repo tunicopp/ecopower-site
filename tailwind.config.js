@@ -33,6 +33,7 @@ module.exports = {
         100: "#E5E8F0",
         50: "#F6F7FC",
       },
+      transparent: "transparent",
       white: "#FFFFFF",
       "font-black": "#262833",
       black: "#2F3133",

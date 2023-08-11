@@ -41,7 +41,7 @@ const Header: React.FC = () => {
             priority
           />
         </div>
-        <div className="hidden sm:flex sm:items-center">
+        <div className="hidden md:flex md:items-center">
           <Link
             href="/"
             className="text-sm leading-4 font-medium text-white flex items-center"
@@ -64,7 +64,7 @@ const Header: React.FC = () => {
             Unidades
           </Link>
         </div>
-        <button className="text-white sm:ml-[70px] text-xl">
+        <button className="text-white md:ml-[70px] text-xl">
           <MdOutlineMenu />
         </button>
       </GridContainer>

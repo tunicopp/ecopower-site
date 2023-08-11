@@ -14,17 +14,17 @@ import Header from "@/components/global/Header";
 export default async function Home() {
   return (
     <main className="relative">
-      {/* <Header /> */}
-      {/* <Hero /> */}
-      {/* <SectionSlide /> */}
-      {/* <SectionMap /> */}
-      {/* <SectionVideo /> */}
+      <Header />
+      <Hero />
+      <SectionSlide />
+      <SectionMap />
+      <SectionVideo />
       <SectionCampaings />
-      {/* <SectionSolutions /> */}
-      {/* <SectionProject /> */}
-      {/* <SectionTestimonial /> */}
-      {/* <BlogSection /> */}
-      {/* <SectionFAQ /> */}
+      <SectionSolutions />
+      <SectionProject />
+      <SectionTestimonial />
+      <BlogSection />
+      <SectionFAQ />
     </main>
   );
 }

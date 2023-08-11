@@ -13,7 +13,7 @@ const CardSlider: React.FC = () => {
         className="rounded-2xl absolute top-0 left-0 w-full h-[300px]  object-cover"
       />
       <div className="flex absolute top-[18%] left-10 w-[120px] ">
-        <p className=" text-[30px] font-bold">Lorem ipsum dolor sit amet</p>
+        <h3 className="text-[30px] font-bold">Lorem ipsum dolor sit amet</h3>
       </div>
     </div>
   );

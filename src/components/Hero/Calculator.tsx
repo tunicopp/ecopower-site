@@ -25,11 +25,11 @@ const Calculator: React.FC = () => {
       : "Mais de R$800";
 
   return (
-    <div className="mt-14 px-3 py-8 sm:p-6 sm:pl-10 flex flex-col sm:flex-row items-center rounded-[20px] sm:rounded-full bg-white shadow-calculator max-w-[952px]">
-      <div className="flex flex-1 flex-col mr-8">
-        <span className="text-grayscale-800 font-medium leading-5 mb-[14px] sm:mb-[10px]">
+    <div className="mt-14 px-3 py-8 md:p-6 md:pl-10 flex flex-col md:flex-row items-center rounded-[20px] md:rounded-full bg-white shadow-calculator max-w-[952px]">
+      <div className="flex flex-1 flex-col md:mr-8">
+        <h3 className="text-grayscale-800 font-medium leading-5 mb-[14px] md:mb-[10px]">
           Média mensal de gasto com energia:
-        </span>
+        </h3>
         <Range
           onChange={(v) => setValue(v)}
           renderThumb={({ props, index }) => (
@@ -62,7 +62,7 @@ const Calculator: React.FC = () => {
         </Tooltip>
       </div>
       <select
-        className="select mt-6 mb-3 sm:my-0"
+        className="select mt-6 mb-3 md:my-0"
         placeholder="Arraste ou selecione"
         value={value[0]}
         onChange={(v) => setValue([parseInt(v.target.value)])}
@@ -73,7 +73,7 @@ const Calculator: React.FC = () => {
         <option value={600}>De R$400 a R$800</option>
         <option value={800}>Mais de R$800</option>
       </select>
-      <button className="simulate-button w-full sm:w-auto sm:ml-4">
+      <button className="simulate-button w-full md:w-auto md:ml-4">
         Simular Economia
       </button>
     </div>

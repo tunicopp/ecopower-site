@@ -7,7 +7,10 @@ const MainBlogItem: React.FC<{ blog: BlogPost }> = ({
   blog: { title, photo, author, category, date, link },
 }) => {
   return (
-    <div className="bg-white rounded-2xl flex flex-col w-full h-full gap-4">
+    <a
+      href={link}
+      className="bg-white rounded-2xl flex flex-col w-full h-full gap-4"
+    >
       <div className="overflow-hidden  rounded-2xl">
         <img
           src={photo}
@@ -17,9 +20,7 @@ const MainBlogItem: React.FC<{ blog: BlogPost }> = ({
       </div>
       <div className=" flex flex-col w-full p-6 gap-4">
         <span className="text-primary-green text-sm">{category}</span>
-        <a href={link} className="text-2xl font-bold">
-          {title}
-        </a>
+        <h3 className="text-2xl font-bold">{title}</h3>
         <div className="flex text-sm">
           <div className="flex flex-1 items-center gap-2">
             <img
@@ -35,7 +36,7 @@ const MainBlogItem: React.FC<{ blog: BlogPost }> = ({
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 

@@ -15,7 +15,7 @@ const ContactsBar: React.FC = () => {
         </Link>
         <Link
           href="/"
-          className="flex items-center text-xl mx-[41px] text-grayscale-800"
+          className="flex items-center text-xl mx-6 lg:mx-[41px] text-grayscale-800"
         >
           <MdHelp />
           <span className="text-sm ml-2">Dúvidas Frequentes</span>
