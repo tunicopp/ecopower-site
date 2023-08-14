@@ -1,5 +1,4 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import "swiper/css";
 import GridContainer from "../global/GridContainer";
 import Calculator from "./Calculator";
@@ -7,15 +6,9 @@ import HeroSlider from "./HeroSlider";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 const Hero: React.FC = () => {
-  const [timeline, setTimeline] = useState<"to" | "from">("to");
-
   return (
-    <section
-      className="min-h-[1101px] flex flex-col-reverse lg:block lg:min-h-[664px] pt-20 lg:pt-32 bg-hero-green w-full relative"
-      onMouseEnter={() => setTimeline("to")}
-      onMouseLeave={() => setTimeline("from")}
-    >
-      <HeroSlider timeline={timeline} />
+    <section className="min-h-[1101px] flex flex-col-reverse lg:block lg:min-h-[582px] pt-10 lg:pt-32 bg-hero-green w-full relative group">
+      <HeroSlider />
       <div className="z-10 relative">
         <GridContainer className="pt-8 lg:pt-[103px] flex-col">
           <h1 className="text-base text-white font-bold">EcoPower te faz</h1>
