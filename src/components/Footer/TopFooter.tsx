@@ -10,7 +10,7 @@ import sun from "../../../public/assets/images/section-map/sun2.png";
 const TopFooter: React.FC = () => {
   return (
     <div className="relative flex justify-center  w-full bg-beige-300 h-[544px] overflow-hidden group">
-      <div className="absolute -bottom-[55%] -right-[9%] flex w-[100px] md:w-[200px]  items-end  group-hover:-translate-x-10  transition-all duration-1000 ease-in-out; ">
+      <div className="absolute -bottom-[55%] -right-[9%] flex w-[100px] lg:w-[200px]  items-end  group-hover:-translate-x-10  transition-all duration-1000 ease-in-out; ">
         <Image
           src={three}
           alt="threeMd"
@@ -19,7 +19,7 @@ const TopFooter: React.FC = () => {
         />
       </div>
 
-      <div className="absolute -bottom-[30%] -left-[20%] md:-left-[11%] flex w-[110px] md:w-[220px] items-end  group-hover:translate-x-10  transition-all duration-1000 ease-in-out; ">
+      <div className="absolute -bottom-[30%] -left-[20%] lg:-left-[11%] flex w-[110px] lg:w-[220px] items-end  group-hover:translate-x-10  transition-all duration-1000 ease-in-out; ">
         <Image
           src={three}
           alt="threeMd"
@@ -27,7 +27,7 @@ const TopFooter: React.FC = () => {
           className="absolute w-full object-cover"
         />
       </div>
-      <div className="absolute -bottom-[40%] md:-bottom-[80%] left-[8%] flex w-[85px] md:w-[170px]  items-end  group-hover:-translate-y-20 transition-all duration-1000 ease-in-out; ">
+      <div className="absolute -bottom-[40%] lg:-bottom-[80%] left-[8%] flex w-[85px] lg:w-[170px]  items-end  group-hover:-translate-y-20 transition-all duration-1000 ease-in-out; ">
         <Image
           src={three}
           alt="threeMd"
@@ -35,7 +35,7 @@ const TopFooter: React.FC = () => {
           className="absolute w-full object-cover"
         />
       </div>
-      <div className="absolute -bottom-[35%] md:-bottom-[74%] left-[30%] flex w-[85px] md:w-[170px]  items-end  group-hover:-translate-y-20 transition-all duration-1000 ease-in-out; ">
+      <div className="absolute -bottom-[35%] lg:-bottom-[74%] left-[30%] flex w-[85px] lg:w-[170px]  items-end  group-hover:-translate-y-20 transition-all duration-1000 ease-in-out; ">
         <Image
           src={three}
           alt="threeMd"
@@ -43,7 +43,7 @@ const TopFooter: React.FC = () => {
           className="absolute w-full object-cover"
         />
       </div>
-      <div className="absolute -bottom-[30%] md:-bottom-[65%] left-[50%] flex w-[240px] md:w-[480px] items-end  group-hover:-translate-y-20 transition-all duration-1000 ease-in-out; ">
+      <div className="absolute -bottom-[30%] lg:-bottom-[65%] left-[50%] flex w-[240px] lg:w-[480px] items-end  group-hover:-translate-y-20 transition-all duration-1000 ease-in-out; ">
         <Image
           src={house}
           alt="house"
@@ -51,7 +51,7 @@ const TopFooter: React.FC = () => {
           className="absolute w-full object-cover"
         />
       </div>
-      <div className="absolute top-[20%] left-[5%] flex w-[80px] md:w-[127]  items-end  group-hover:translate-x-20 transition-all duration-1000 ease-in-out; ">
+      <div className="absolute top-[20%] left-[5%] flex w-[80px] lg:w-[127]  items-end  group-hover:translate-x-20 transition-all duration-1000 ease-in-out; ">
         <Image
           src={cloud}
           alt="cloud"
@@ -59,7 +59,7 @@ const TopFooter: React.FC = () => {
           className="absolute w-full object-cover"
         />
       </div>
-      <div className="absolute top-[25%] md:top-[30%] right-[5%] flex w-[49px] md:w-[98px] items-end  group-hover:scale-150 transition-all duration-1000 ease-in-out; ">
+      <div className="absolute top-[25%] lg:top-[30%] right-[5%] flex w-[49px] lg:w-[98px] items-end  group-hover:scale-150 transition-all duration-1000 ease-in-out; ">
         <Image
           src={sun}
           alt="sun"
@@ -67,7 +67,7 @@ const TopFooter: React.FC = () => {
           className="absolute w-full object-cover"
         />
       </div>
-      <div className="flex flex-col justify-center md:justify-start items-center p-6 md:p-0 w-fit md:mt-[80px]">
+      <div className="flex flex-col justify-center lg:justify-start items-center p-6 lg:p-0 w-fit lg:mt-[80px]">
         <Reveal className="max-w-[758px]">
           <TitleComponent className=" text-center">
             Reduza sua conta de luz com energia solar

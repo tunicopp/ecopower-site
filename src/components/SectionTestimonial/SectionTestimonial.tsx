@@ -24,54 +24,45 @@ const SectionTestimonial: React.FC = () => {
           Lorem ipsum dolor sit amet consectetur.
         </span>
       </Reveal>
-      <div className="flex w-full md:hidden mb-6 px-6 items-center justify-between">
+      <div className="relative flex w-full mt-[88px]">
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={24}
+          className="w-full !px-6 lg:!px-[110px] !transform-none"
+          draggable
+          modules={[Navigation]}
+          navigation={{
+            nextEl: "#next-testimonial",
+            prevEl: "#next-testimonial",
+          }}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3.2,
+            },
+          }}
+        >
+          {testimonialData.map((t, i) => (
+            <SwiperSlide key={i}>
+              <TestimonialSlide {...t} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
         <button
           id="next-testimonial"
-          className="style-navigation-campaing !bg-beige-200"
+          className="style-navigation-products !hidden lg:!flex left-6 !bg-beige-200"
         >
           <MdChevronLeft />
         </button>
         <button
           id="next-testimonial"
-          className="style-navigation-campaing !bg-beige-200"
+          className="style-navigation-products !hidden lg:!flex right-6 !bg-beige-200"
         >
           <MdChevronRight />
         </button>
       </div>
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={24}
-        className="w-full !px-6 md:!px-[110px] !transform-none"
-        draggable
-        modules={[Navigation]}
-        navigation={{
-          nextEl: "#next-testimonial",
-          prevEl: "#next-testimonial",
-        }}
-        breakpoints={{
-          768: {
-            slidesPerView: 3.2,
-          },
-        }}
-      >
-        {testimonialData.map((t, i) => (
-          <SwiperSlide key={i}>
-            <TestimonialSlide {...t} />
-          </SwiperSlide>
-        ))}
-        <button
-          id="next-testimonial"
-          className="style-navigation-hero !hidden md:!flex left-6 !bg-beige-200"
-        >
-          <MdChevronLeft />
-        </button>
-        <button
-          id="next-testimonial"
-          className="style-navigation-hero !hidden md:!flex right-6 !bg-beige-200"
-        >
-          <MdChevronRight />
-        </button>
-      </Swiper>
     </section>
   );
 };

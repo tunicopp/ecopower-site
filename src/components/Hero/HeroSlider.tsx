@@ -13,7 +13,7 @@ interface HeroSliderProps {
 
 const HeroSlider: React.FC<HeroSliderProps> = ({ timeline }) => {
   return (
-    <div className="md:absolute hero-slider-wrapper mt-10 top-[40px] left-0 z-0">
+    <div className="lg:absolute hero-slider-wrapper mt-16 lg:mt-10 top-[40px] left-0 z-0">
       <Swiper
         slidesPerView={1}
         direction="horizontal"
@@ -21,24 +21,44 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ timeline }) => {
         pagination={{
           clickable: true,
           renderBullet(_, className) {
-            return `<span class="!bg-white !opacity-100 ${className}"></span>`;
+            return `<span class="!bg-white mx-[6px] !opacity-100 ${className}"></span>`;
           },
           bulletActiveClass: "active-bullet",
-          horizontalClass: "!bottom-[48px]",
+          horizontalClass: "bullets",
+          el: "#bullets",
         }}
         navigation={{ nextEl: "#next-hero", prevEl: "#prev-hero" }}
       >
         <SwiperSlide>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <LottieAnimation
               animation={mainLottie}
               style={{ height: "584px", width: "100%" }}
               rendererSettings={{ preserveAspectRatio: "xMinYMax slice" }}
               currentTimeline={timeline}
-              frames={[0, 76]}
+              frames={[0, 61]}
             />
           </div>
-          <div className="md:hidden">
+          <div className="lg:hidden">
+            <LottieAnimation
+              animation={mainLottieMobile}
+              style={{ height: "584px", width: "100%" }}
+              rendererSettings={{ preserveAspectRatio: "xMidYMax slice" }}
+              justPlayInView
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="hidden lg:block">
+            <LottieAnimation
+              animation={mainLottie}
+              style={{ height: "584px", width: "100%" }}
+              rendererSettings={{ preserveAspectRatio: "xMinYMax slice" }}
+              currentTimeline={timeline}
+              frames={[0, 61]}
+            />
+          </div>
+          <div className="lg:hidden">
             <LottieAnimation
               animation={mainLottieMobile}
               style={{ height: "584px", width: "100%" }}

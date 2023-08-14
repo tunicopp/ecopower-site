@@ -17,12 +17,12 @@ export default async function Home() {
       <Header />
       <Hero />
       <SectionSlide />
+      <SectionTestimonial />
       <SectionMap />
       <SectionVideo />
       <SectionCampaings />
       <SectionSolutions />
       <SectionProject />
-      <SectionTestimonial />
       <BlogSection />
       <SectionFAQ />
     </main>

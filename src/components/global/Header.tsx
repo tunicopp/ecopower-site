@@ -26,12 +26,12 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed top-0 left-0 z-[800] w-full ${
-        isAtTop ? "" : "header-blur"
+        isAtTop ? "" : "bg-hero-green"
       }`}
     >
-      <ContactsBar />
+      {/* <ContactsBar /> */}
       <GridContainer className="py-4 items-center">
-        <div className="relative mr-auto">
+        <Link href="/" className="relative mr-auto">
           <Image
             src={logo}
             alt="Eco Power Logo"
@@ -40,31 +40,28 @@ const Header: React.FC = () => {
             quality={100}
             priority
           />
-        </div>
-        <div className="hidden md:flex md:items-center">
+        </Link>
+        <div className="hidden lg:flex lg:items-center">
           <Link
-            href="/"
+            href="/products"
             className="text-sm leading-4 font-medium text-white flex items-center"
           >
             Produtos
-            <div className="text-base ml-1 rotate-90">
+            {/* <div className="text-base ml-1 rotate-90">
               <MdChevronRight />
-            </div>
+            </div> */}
           </Link>
           <Link
-            href="/"
+            href="/about-us"
             className="text-sm leading-4 font-medium text-white mx-6 flex items-center"
           >
             Sobre Nós
-            <div className="text-base ml-1 rotate-90">
+            {/* <div className="text-base ml-1 rotate-90">
               <MdChevronRight />
-            </div>
-          </Link>
-          <Link href="/" className="text-sm leading-4 font-medium text-white">
-            Unidades
+            </div> */}
           </Link>
         </div>
-        <button className="text-white md:ml-[70px] text-xl">
+        <button className="text-white lg:ml-[70px] text-xl block lg:hidden">
           <MdOutlineMenu />
         </button>
       </GridContainer>
