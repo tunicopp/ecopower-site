@@ -26,7 +26,7 @@ a {
 }
 
 .hero-slider-wrapper {
-  @apply w-full min-h-[582px];
+  @apply w-full lg:min-h-[582px] min-h-[512px];
 }
 
 .header-blur {
@@ -86,7 +86,7 @@ a {
   @apply group-hover/arrow:translate-x-8 transition-all duration-500 ease-in-out;
 }
 .style-navigation-hero {
-  @apply w-10 h-10 bg-white rounded-full absolute z-20 bottom-[597px] lg:bottom-auto lg:top-[47%] flex-center cursor-pointer text-xl;
+  @apply w-10 h-10 bg-white rounded-full absolute z-20 bottom-[500px] lg:bottom-auto lg:top-[47%] flex-center cursor-pointer text-xl;
 }
 .style-navigation-products {
   @apply w-10 h-10 bg-white rounded-full absolute z-20 -top-16 lg:top-[47%] flex-center cursor-pointer text-xl;

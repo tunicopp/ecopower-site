@@ -7,7 +7,7 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-[1101px] flex flex-col-reverse lg:block lg:min-h-[582px] pt-10 lg:pt-32 bg-hero-green w-full relative group">
+    <section className="min-h-[1000px] flex flex-col-reverse lg:block lg:min-h-[582px] pt-16 lg:pt-32 bg-hero-green w-full relative group">
       <HeroSlider />
       <div className="z-10 relative">
         <GridContainer className="pt-8 lg:pt-[103px] flex-col">
