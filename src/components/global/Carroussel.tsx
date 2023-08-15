@@ -18,7 +18,7 @@ const Carroussel: React.FC<RevealProps> = ({
 }) => {
   return (
     <div
-      className={twMerge("flex  w-full scrollDiv group", className)}
+      className={twMerge("flex relative w-full scrollDiv group", className)}
       {...rest}
     >
       <Swiper
@@ -29,33 +29,33 @@ const Carroussel: React.FC<RevealProps> = ({
         slidesPerView={1}
         spaceBetween={20}
         grabCursor={true}
-        className="mySwiper w-full md:w-auto px-6 md:!px-[110px]"
+        className="mySwiper w-full lg:w-auto px-6 lg:!px-[110px]"
         modules={[Navigation]}
         navigation={{
           nextEl: "#next",
           prevEl: "#prev",
         }}
         breakpoints={{
-          768: {
+          768: { slidesPerView: 2 },
+          1024: {
             slidesPerView: 3.2,
           },
         }}
       >
         {children}
-
-        <button
-          id="prev"
-          className="style-navigation-hero !hidden md:!flex left-6 !bg-beige-200 md:opacity-0 group-hover:opacity-100 transition-opacity"
-        >
-          <MdChevronLeft />
-        </button>
-        <button
-          id="next"
-          className="style-navigation-hero !hidden md:!flex right-6 !bg-beige-200 md:opacity-0 group-hover:opacity-100 transition-opacity"
-        >
-          <MdChevronRight />
-        </button>
       </Swiper>
+      <button
+        id="prev"
+        className="style-navigation-products flex right-16 lg:left-6 !bg-beige-200 lg:opacity-0 group-hover:opacity-100 transition-opacity"
+      >
+        <MdChevronLeft />
+      </button>
+      <button
+        id="next"
+        className="style-navigation-products flex right-0 lg:right-6 !bg-beige-200 lg:opacity-0 group-hover:opacity-100 transition-opacity"
+      >
+        <MdChevronRight />
+      </button>
     </div>
   );
 };

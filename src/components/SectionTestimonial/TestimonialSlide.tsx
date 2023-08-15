@@ -26,7 +26,7 @@ const TestimonialSlide: React.FC<TestimonialSlideProps> = ({
           width={376}
           height={240}
           quality={100}
-          className="object-cover rounded-2xl w-full md:h-auto"
+          className="object-cover rounded-2xl w-full lg:h-auto"
         />
         <button className="absolute w-[56px] h-[56px] text-[56px] text-white inset-0 m-auto hover:scale-125 transition-all duration-500 ease-in-out">
           <MdPlayCircle />

@@ -48,9 +48,9 @@ const SectionSolutions: React.FC = () => {
   // }, [isInView]);
 
   return (
-    <section className="flex pt-[110px] md:pt-0 w-full  md:min-h-[1000px] relative flex-col md:items-center md:p-[108px] bg-solutions">
-      <Reveal className="max-w-[690px] md:text-center px-6">
-        <TitleComponent>
+    <section className="flex pt-[110px] w-full lg:min-h-[1000px] relative flex-col lg:items-center lg:p-[108px] bg-solutions">
+      <Reveal className="max-w-[690px] lg:text-center px-6">
+        <TitleComponent className="leading-tight lg:leading-[52px]">
           Soluções feitas sob medida para o seu segmento
         </TitleComponent>
       </Reveal>
@@ -61,7 +61,7 @@ const SectionSolutions: React.FC = () => {
       </Reveal>
 
       <div
-        className=" flex max-w-full flex-col md:flex-row items-center justify-center mt-[100px] bg-white md:bg-transparent"
+        className=" flex max-w-full flex-col lg:flex-row items-center justify-center mt-[100px] bg-white lg:bg-transparent"
         ref={centerRef}
         id="scrollDiv"
       >
@@ -75,7 +75,7 @@ const SectionSolutions: React.FC = () => {
             sensitivity: 2,
           }}
           modules={[Mousewheel, Navigation]}
-          className="mySwiper w-full md:max-w-[515px]"
+          className="mySwiper w-full lg:max-w-[515px]"
         >
           {cards.map((i) => (
             <SwiperSlide
@@ -88,7 +88,7 @@ const SectionSolutions: React.FC = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className=" relative w-full mb-[110px] md:mb-0 h-[208px] md:w-[880px] md:h-[524px] md:bg-transparent flex items-center md:-ml-[8%] px-6 md:px-0 rounded-3xl ">
+        <div className=" relative w-full mb-[110px] lg:mb-0 h-[208px] lg:w-[880px] lg:h-[524px] lg:bg-transparent flex items-center lg:-ml-[8%] px-6 lg:px-0 rounded-3xl ">
           {cards.map((card) => (
             <card.cardImg key={card.id} id={card.id}></card.cardImg>
           ))}

@@ -9,9 +9,9 @@ const SideBlogItem: React.FC<{ blog: BlogPost }> = ({
   return (
     <a
       href={link}
-      className="bg-white flex flex-col md:flex-row w-full h-full rounded-2xl"
+      className="bg-white flex flex-col lg:flex-row w-full h-full rounded-2xl"
     >
-      <div className="overflow-hidden min-w-[200px] md:max-w-[200px] rounded-2xl">
+      <div className="overflow-hidden min-w-[200px] lg:max-w-[200px] rounded-2xl">
         <img
           src={photo}
           className="h-full w-full object-cover rounded-2xl hover:scale-125 transition-transform duration-500"

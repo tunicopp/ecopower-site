@@ -45,7 +45,7 @@ const BlogSection: React.FC = async () => {
   return (
     <section className="min-h-screen w-full bg-beige-300 py-28">
       <GridContainer className="flex flex-col h-full">
-        <header className="flex flex-col md:flex-row w-full justify-between md:items-center">
+        <header className="flex flex-col lg:flex-row w-full justify-between lg:items-center">
           <div className="flex-col w-full">
             <TitleComponent className="leading-none">
               Últimos posts do blog

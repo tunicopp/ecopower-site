@@ -21,9 +21,8 @@ const CampaingSlide: React.FC<CampaingSlideProps> = ({
         <Image
           src={src}
           alt={title}
-          width={608}
           height={208}
-          className="object-cover rounded-t-3xl"
+          className="object-cover w-full rounded-t-3xl"
         />
       </div>
       <div className="bg-campaing p-6 flex flex-col rounded-b-3xl flex-1">

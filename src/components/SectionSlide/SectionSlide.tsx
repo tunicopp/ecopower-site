@@ -19,7 +19,7 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 const SectionSlide: React.FC = () => {
   return (
-    <section className="relative w-full pb-20 px-6 md:px-0 pt-[66px] flex flex-col items-center">
+    <section className="relative w-full pb-20 px-6 lg:px-0 pt-[66px] flex flex-col items-center">
       <div className="absolute -top-[30px] z-50">
         <Image src={cloud} alt="Cloud Arrow" width={104} height={56} />
       </div>
@@ -32,18 +32,10 @@ const SectionSlide: React.FC = () => {
       <TitleComponent className="leading-none">
         Conheça nossos produtos
       </TitleComponent>
-      <Link href="/" className="z-10 self-start md:self-auto hover:underline">
+      <Link href="/" className="z-10 self-start lg:self-auto hover:underline">
         <p className="font-medium mt-4">Ver todos os produtos</p>
       </Link>
-      <div className="flex w-full md:hidden my-6 px-6 items-center justify-between">
-        <button id="prev" className="style-navigation-campaing !bg-beige-200">
-          <MdChevronLeft />
-        </button>
-        <button id="next" className="style-navigation-campaing !bg-beige-200">
-          <MdChevronRight />
-        </button>
-      </div>
-      <Carroussel className="md:mt-16">
+      <Carroussel className="mt-[88px] lg:mt-16">
         {productsCardsGroup.map((card) => (
           <SwiperSlide key={card.id}>{card.card}</SwiperSlide>
         ))}

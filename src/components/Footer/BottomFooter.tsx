@@ -8,8 +8,8 @@ import logoFooter from "../../../public/assets/images/logo-footer.png";
 
 const BottomFooter: React.FC = () => {
   return (
-    <div className="flex flex-col bg-primary-green w-full md:h-[504px] p-6 md:px-[108px] md:pt-[108px] md:pb-[40px]">
-      <div className="grid md:grid-cols-4 gap-4 w-full flex-1">
+    <div className="flex flex-col bg-primary-green w-full lg:h-[504px] p-6 lg:px-[108px] lg:pt-[108px] lg:pb-[40px]">
+      <div className="grid lg:grid-cols-4 gap-4 w-full flex-1">
         <div className="flex ">
           <div className="relative mr-auto">
             <Image
@@ -33,7 +33,7 @@ const BottomFooter: React.FC = () => {
             <a
               href={"https://www.ecopowerstore.com.br/"}
               target="_blank"
-              className="bg-grayscale-800 text-white py-2 px-5 rounded-full font-semibold w-fit mt-6 mb-6 md:mb-6 hover:border-2 hover:border-white transition-all"
+              className="bg-grayscale-800 text-white py-2 px-5 rounded-full font-semibold w-fit mt-6 mb-6 lg:mb-6 hover:border-2 hover:border-white transition-all"
             >
               Acessar Ecopower store
             </a>
@@ -77,18 +77,18 @@ const BottomFooter: React.FC = () => {
                 src={logoFooter}
                 alt="logo footer"
                 quality={100}
-                className="md:absolute mb-4 md:mb-0 w-full object-cover"
+                className="lg:absolute mb-4 lg:mb-0 w-full object-cover"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between w-full ">
+      <div className="flex flex-col lg:flex-row justify-between w-full ">
         <p className="text-white opacity-40 text-[14px]">
           © 2023 EcoPower Energia Solar - Todos os direitos reservados. CNPJ:
           18.269.815/0001-36.
         </p>
-        <a className="text-white opacity-40 mt-4 md:mt-0 text-[14px] hover:border-b cursor-pointer">
+        <a className="text-white opacity-40 mt-4 lg:mt-0 text-[14px] hover:border-b cursor-pointer">
           Termos e Políticas de Privacidade
         </a>
       </div>

@@ -22,13 +22,13 @@ const CardProject: React.FC<CardProjectProps> = ({
 }) => {
   const calculateColSpan = (index: number) => {
     if (index === 0) {
-      return "md:col-span-3";
+      return "lg:col-span-3";
     } else if (index === 1) {
-      return "md:col-span-2";
+      return "lg:col-span-2";
     } else if (index === 2) {
-      return "md:col-span-2";
+      return "lg:col-span-2";
     } else {
-      return "md:col-span-3";
+      return "lg:col-span-3";
     }
   };
 

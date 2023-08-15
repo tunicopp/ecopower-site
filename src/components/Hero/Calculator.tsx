@@ -25,34 +25,36 @@ const Calculator: React.FC = () => {
       : "Mais de R$800";
 
   return (
-    <div className="mt-14 px-3 py-8 md:p-6 md:pl-10 flex flex-col md:flex-row items-center rounded-[20px] md:rounded-full bg-white shadow-calculator max-w-[952px]">
-      <div className="flex flex-1 flex-col md:mr-8">
-        <h3 className="text-grayscale-800 font-medium leading-5 mb-[14px] md:mb-[10px]">
+    <div className="mt-5 p-3 pt-8 lg:p-6 lg:pt-6 lg:pl-10 flex flex-col lg:flex-row items-center rounded-[20px] lg:rounded-full bg-white shadow-calculator max-w-[952px]">
+      <div className="flex flex-1 flex-col w-full lg:w-auto lg:mr-8">
+        <h3 className="text-grayscale-800 font-medium leading-5 mb-[14px] lg:mb-[10px]">
           Média mensal de gasto com energia:
         </h3>
-        <Range
-          onChange={(v) => setValue(v)}
-          renderThumb={({ props, index }) => (
-            <div
-              {...props}
-              key={index}
-              className="h-6 w-6 bg-grayscale-900 rounded-full border-2 border-white outline-none thumb"
-            />
-          )}
-          renderTrack={({ props, children }) => (
-            <div
-              {...props}
-              className="h-3 rounded-full w-full"
-              style={{ background: bg }}
-            >
-              {children}
-            </div>
-          )}
-          values={value}
-          min={0}
-          max={800}
-          step={200}
-        />
+        <div className="ml-3">
+          <Range
+            onChange={(v) => setValue(v)}
+            renderThumb={({ props, index }) => (
+              <div
+                {...props}
+                key={index}
+                className="h-6 w-6 bg-grayscale-900 rounded-full border-2 border-white outline-none thumb"
+              />
+            )}
+            renderTrack={({ props, children }) => (
+              <div
+                {...props}
+                className="h-3 rounded-full w-full"
+                style={{ background: bg }}
+              >
+                {children}
+              </div>
+            )}
+            values={value}
+            min={0}
+            max={800}
+            step={200}
+          />
+        </div>
         <Tooltip
           anchorSelect=".thumb"
           place="top"
@@ -62,7 +64,7 @@ const Calculator: React.FC = () => {
         </Tooltip>
       </div>
       <select
-        className="select mt-6 mb-3 md:my-0"
+        className="select mt-6 mb-3 lg:my-0"
         placeholder="Arraste ou selecione"
         value={value[0]}
         onChange={(v) => setValue([parseInt(v.target.value)])}
@@ -73,7 +75,7 @@ const Calculator: React.FC = () => {
         <option value={600}>De R$400 a R$800</option>
         <option value={800}>Mais de R$800</option>
       </select>
-      <button className="simulate-button w-full md:w-auto md:ml-4">
+      <button className="simulate-button w-full lg:w-auto lg:ml-4">
         Simular Economia
       </button>
     </div>
