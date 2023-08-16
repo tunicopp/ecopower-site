@@ -2,8 +2,13 @@
 import React, { useState } from "react";
 import { Range, getTrackBackground } from "react-range";
 import { Tooltip } from "react-tooltip";
+import { twMerge } from "tailwind-merge";
 
-const Calculator: React.FC = () => {
+interface Props {
+  className?: string;
+}
+
+const Calculator: React.FC<Props> = ({ className }) => {
   const [value, setValue] = useState([0]);
 
   const bg = getTrackBackground({
@@ -25,7 +30,12 @@ const Calculator: React.FC = () => {
       : "Mais de R$800";
 
   return (
-    <div className="mt-5 p-3 pt-8 lg:p-6 lg:pt-6 lg:pl-10 flex flex-col lg:flex-row items-center rounded-[20px] lg:rounded-full bg-white shadow-calculator max-w-[952px]">
+    <div
+      className={twMerge(
+        "mt-5 p-3 pt-8 lg:p-6 lg:pt-6 lg:pl-10 flex flex-col lg:flex-row items-center rounded-[20px] lg:rounded-full bg-white shadow-calculator max-w-[952px] relative",
+        className
+      )}
+    >
       <div className="flex flex-1 flex-col w-full lg:w-auto lg:mr-8">
         <h3 className="text-grayscale-800 font-medium leading-5 mb-[14px] lg:mb-[10px]">
           Média mensal de gasto com energia:

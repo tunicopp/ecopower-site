@@ -31,14 +31,13 @@ const Header: React.FC = () => {
     >
       {/* <ContactsBar /> */}
       <GridContainer className="py-4 items-center">
-        <Link href="/" className="relative mr-auto">
+        <Link href="/" className="mr-auto">
           <Image
             src={logo}
             alt="Eco Power Logo"
-            width={209}
-            height={56}
             quality={100}
             priority
+            className="w-[209px] h-[56px]"
           />
         </Link>
         <div className="hidden lg:flex lg:items-center">

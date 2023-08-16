@@ -6,6 +6,7 @@ import three from "../../../public/assets/images/section-map/three-lg.png";
 import house from "../../../public/assets/images/section-map/house.png";
 import cloud from "../../../public/assets/images/section-map/cloud.png";
 import sun from "../../../public/assets/images/section-map/sun2.png";
+import Calculator from "../Hero/Calculator";
 
 const TopFooter: React.FC = () => {
   return (
@@ -79,6 +80,7 @@ const TopFooter: React.FC = () => {
             próxima:
           </p>
         </Reveal>
+        <Calculator className="max-w-[1016px] mt-12" />
       </div>
     </div>
   );

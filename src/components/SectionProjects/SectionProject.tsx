@@ -58,7 +58,7 @@ const SectionProject: React.FC = () => {
         </TitleComponent>
       </Reveal>
       <div className="flex flex-col w-full mt-6 lg:mt-0 lg:p-[108px]">
-        <div className="grid lg:grid-cols-5 gap-6">
+        <div className="grid projects-grid lg:grid-cols-5 gap-6">
           {cards.map((card, index) => (
             <CardProject
               key={card.id}
