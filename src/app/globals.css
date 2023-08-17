@@ -22,7 +22,7 @@ select,
 span,
 label,
 a {
-  color: #262833;
+  color: #2f3133;
 }
 
 .hero-slider-wrapper {
@@ -72,6 +72,10 @@ a {
 .project-grid-item:nth-child(4n-2),
 .project-grid-item:nth-child(4n-1) {
   grid-column: span 1;
+}
+
+.team-grid-item:nth-child(even) {
+  margin-top: 146px;
 }
 
 @media (min-width: 768px) {
