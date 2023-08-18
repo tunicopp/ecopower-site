@@ -40,6 +40,11 @@ a {
   background: #12131a !important;
 }
 
+.active-bullet-event {
+  background: #26c44b !important;
+  opacity: 1 !important;
+}
+
 .scale-up-slider {
   transition: transform 0.3s ease;
 }
@@ -115,6 +120,9 @@ a {
 }
 .style-navigation-hero {
   @apply w-10 h-10 bg-white rounded-full absolute z-20 bottom-[500px] lg:bottom-auto lg:top-[47%] flex-center cursor-pointer text-xl;
+}
+.style-navigation-event {
+  @apply w-10 h-10 bg-white rounded-full md:absolute z-20 md:top-0 md:bottom-0 translate-y-2/4 flex-center cursor-pointer text-xl;
 }
 .style-navigation-products {
   @apply w-10 h-10 bg-white rounded-full absolute z-20 -top-16 lg:top-[47%] flex-center cursor-pointer text-xl;

@@ -15,6 +15,9 @@ module.exports = {
       boxShadow: {
         calculator: "0px 32px 32px 0px rgba(55, 47, 25, 0.05);",
       },
+      dropShadow: {
+        "eco-power-icon": "0px 4px 108px rgba(0, 0, 0, 0.16)",
+      },
     },
     colors: {
       "primary-green": "#01B040",

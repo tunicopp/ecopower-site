@@ -11,10 +11,15 @@ import shakingHands from "../../../../public/assets/images/careers/shaking-hands
 import ourValuesOne from "../../../../public/assets/images/careers/our-values-one.png";
 import ourValuesTwo from "../../../../public/assets/images/careers/our-values-two.png";
 import ourValuesThree from "../../../../public/assets/images/careers/our-values-three.png";
+import { twMerge } from "tailwind-merge";
 
-const SectionOurValues: React.FC = () => {
+interface Props {
+  className?: string;
+}
+
+const SectionOurValues: React.FC<Props> = ({ className }) => {
   return (
-    <section className="pb-[100px]">
+    <section className={twMerge("pb-[100px]", className)}>
       <GridContainer className="flex-col items-center">
         <Reveal>
           <TitleComponent>Nossos valores</TitleComponent>
