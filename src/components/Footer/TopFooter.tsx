@@ -70,7 +70,7 @@ const TopFooter: React.FC = () => {
       </div>
       <div className="flex flex-col justify-center lg:justify-start items-center p-6 lg:p-0 w-fit lg:mt-[80px]">
         <Reveal className="max-w-[758px]">
-          <TitleComponent className=" text-center">
+          <TitleComponent className="text-center">
             Reduza sua conta de luz com energia solar
           </TitleComponent>
         </Reveal>
@@ -80,7 +80,7 @@ const TopFooter: React.FC = () => {
             próxima:
           </p>
         </Reveal>
-        <Calculator className="max-w-[1016px] mt-12" />
+        <Calculator className="max-w-[1016px] mt-12 w-full" />
       </div>
     </div>
   );

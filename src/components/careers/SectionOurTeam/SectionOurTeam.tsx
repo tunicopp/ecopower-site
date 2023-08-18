@@ -12,12 +12,12 @@ import teamFive from "../../../../public/assets/images/careers/team-five.svg";
 
 const SectionOurTeam: React.FC = () => {
   return (
-    <section className="relative pt-[450px] pb-[560px] overflow-hidden">
+    <section className="relative lg:pt-[450px] pt-[400px] lg:pb-[560px] pb-[80px] overflow-hidden">
       <Image
         src={circle}
         alt="Círculo"
         quality={100}
-        className="absolute right-0 left-0 mx-auto -top-[43%]"
+        className="absolute right-0 left-0 mx-auto lg:-top-[43%] md:-top-[30%]"
       />
       <GridContainer className="flex-col items-center relative">
         <Reveal>
@@ -26,13 +26,13 @@ const SectionOurTeam: React.FC = () => {
           </TitleComponent>
         </Reveal>
         <Reveal className="mt-6" delay={0.4}>
-          <h3 className="text-black text-xl leading-none">
+          <h3 className="text-black text-xl leading-none text-center">
             Do atendimento à instalação, contamos com profissionais extremamente
             capacitados.
           </h3>
         </Reveal>
       </GridContainer>
-      <div className="absolute left-[50%] mt-[54px] -translate-x-2/4 w-[1601px] grid grid-cols-5 gap-5">
+      <div className="lg:absolute left-[50%] mt-[54px] lg:-translate-x-2/4 lg:w-[1601px] w-full grid lg:grid-cols-5 md:grid-cols-2 lg:gap-5 gap-6 justify-items-center">
         <Image
           src={teamOne}
           alt="Nosso time"
@@ -61,7 +61,7 @@ const SectionOurTeam: React.FC = () => {
           src={teamFive}
           alt="Nosso time"
           quality={100}
-          className="team-grid-item"
+          className="team-grid-item lg:col-auto md:col-span-2 col-auto"
         />
       </div>
     </section>

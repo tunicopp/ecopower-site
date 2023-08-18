@@ -74,8 +74,10 @@ a {
   grid-column: span 1;
 }
 
-.team-grid-item:nth-child(even) {
-  margin-top: 146px;
+@media (min-width: 1024px) {
+  .team-grid-item:nth-child(even) {
+    margin-top: 146px;
+  }
 }
 
 @media (min-width: 768px) {

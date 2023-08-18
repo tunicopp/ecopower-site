@@ -23,7 +23,7 @@ const SectionOurValues: React.FC = () => {
           <h3>Com pioneirismo e dedicação, nos tornamos a maior!</h3>
         </Reveal>
       </GridContainer>
-      <GridContainer className="grid grid-cols-4 items-stretch gap-6 mt-12">
+      <GridContainer className="grid lg:grid-cols-4 md:grid-cols-2 items-stretch gap-6 mt-12">
         <div className="flex flex-col gap-6">
           <div className="flex flex-col justify-between p-6 rounded-2xl min-h-[302px] bg-beige-300">
             <div className="w-[66px] h-[66px] flex-center rounded-full bg-white">
@@ -42,14 +42,14 @@ const SectionOurValues: React.FC = () => {
           <Image
             src={ourValuesOne}
             alt="Trabalhador instalando painel solar"
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-[302px] object-cover rounded-2xl"
           />
         </div>
         <div className="flex flex-col gap-6">
           <Image
             src={ourValuesTwo}
             alt="Trabalhador instalando painel solar"
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-[302px] object-cover rounded-2xl"
           />
           <div className="flex flex-col justify-between p-6 rounded-2xl min-h-[302px] bg-beige-300">
             <div className="w-[66px] h-[66px] flex-center rounded-full bg-white">
@@ -84,7 +84,7 @@ const SectionOurValues: React.FC = () => {
           <Image
             src={ourValuesThree}
             alt="Técnico e empresario conversando"
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-[302px] object-cover rounded-2xl"
           />
         </div>
         <div className="flex flex-col gap-6">

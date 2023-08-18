@@ -12,12 +12,12 @@ import women from "../../../../public/assets/images/sustainability/women.svg";
 const SectionFutureEco: React.FC = () => {
   return (
     <section className="py-[80px] bg-beige-300">
-      <GridContainer className="gap-6">
+      <GridContainer className="lg:flex-row flex-col lg:items-start items-center gap-6">
         <div className="flex flex-col gap-6">
           <TitleComponent className="text-black">
             Iluminando o Caminho para um Futuro Ecoconsciente.
           </TitleComponent>
-          <p className="text-black text-lg">
+          <p className="text-black text-lg lg:text-start text-justify">
             Lorem ipsum dolor sit amet consectetur. Viverra interdum non turpis
             aliquam ante facilisi nisl platea. Malesuada nunc pellentesque
             lobortis vulputate lacus mauris eros quam ultricies. Quis sagittis
@@ -30,16 +30,16 @@ const SectionFutureEco: React.FC = () => {
         <Image
           src={futureEco}
           alt="Futuro Ecoconsciente"
-          className="max-w-[572px]"
+          className="lg:max-w-[572px] w-full"
         />
       </GridContainer>
-      <GridContainer className="gap-[78px] items-center mt-[80px]">
+      <GridContainer className="lg:gap-[78px] gap-6 lg:flex-row flex-col-reverse items-center mt-[80px]">
         <Image
           src={futureEcoTwo}
           alt="Futuro Ecoconsciente"
-          className="max-w-[550px]"
+          className="max-w-[550px] w-full"
         />
-        <p className="max-w-[496px] text-black text-lg">
+        <p className="max-w-[496px] text-black text-lg lg:text-start text-justify">
           <b className="font-bold">
             Campanhas de conscientização e bem-estar para colaboradores, mais de
             400 empregos diretos,
@@ -48,8 +48,8 @@ const SectionFutureEco: React.FC = () => {
           para colaboradores e franqueados se capacitarem.
         </p>
       </GridContainer>
-      <GridContainer className="py-[80px]">
-        <div className="grid grid-cols-4 gap-6 items-stretch min-h-[212px]">
+      <GridContainer className="pt-[80px] lg:pb-[80px] pb-0">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-6 items-stretch min-h-[212px] auto-rows-fr">
           <div className="p-6 bg-white rounded-2xl flex flex-col justify-between gap-[10px]">
             <Image src={ambiental} alt="Ícone Ambiental" />
             <span className="text-black text-[22px] font-bold">Ambiental</span>

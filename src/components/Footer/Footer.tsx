@@ -7,7 +7,6 @@ import JoinUs from "./JoinUs";
 
 const Footer: React.FC = () => {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <footer className="flex flex-col w-full">

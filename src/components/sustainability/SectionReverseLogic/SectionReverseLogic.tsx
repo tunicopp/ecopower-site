@@ -24,13 +24,13 @@ const SectionReverseLogic: React.FC = () => {
           </p>
         </div>
       </GridContainer>
-      <GridContainer className="mt-12 gap-6 justify-center items-center">
-        <div className="flex flex-col gap-6 max-w-[496px]">
-          <h3 className="font-bold text-2xl">
+      <GridContainer className="lg:flex-row flex-col mt-12 gap-6 justify-center items-center">
+        <div className="flex flex-col gap-6 lg:max-w-[496px]">
+          <h3 className="font-bold text-2xl lg:text-start text-center">
             Ação de combate a pobreza com doações de alimentos, ações
             beneficentes, saúde e bem-estar.
           </h3>
-          <p>
+          <p className="text-lg lg:text-start text-center">
             Apoiamos instituições sociais da região por meio de ações de
             arrecadação de alimentos além da doaçao da usina solar.
           </p>
