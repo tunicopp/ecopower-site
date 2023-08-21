@@ -5,6 +5,8 @@ import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
 import { BsWhatsapp } from "react-icons/bs";
 import logo from "../../../public/assets/icons/logo-eco-power.svg";
 import logoFooter from "../../../public/assets/images/logo-footer.png";
+import ExternalLinkFooter from "./ExternalLinkFooter";
+import Link from "next/link";
 
 const BottomFooter: React.FC = () => {
   return (
@@ -23,13 +25,13 @@ const BottomFooter: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col">
-          <p className="text-white font-semibold">Prdutos</p>
+          <p className="text-white font-semibold">Produtos</p>
           <div className="flex flex-col mt-[24px] gap-3 ">
-            <LinkFooter text="Todos os Produtos" href="" />
-            <LinkFooter text="Residencial" href="" />
-            <LinkFooter text="Empresarial" href="" />
-            <LinkFooter text="Industrial" href="" />
-            <LinkFooter text="Rural" href="" />
+            <LinkFooter href="/products">Todos os Produtos</LinkFooter>
+            <LinkFooter href="/products">Residencial</LinkFooter>
+            <LinkFooter href="/products">Empresarial</LinkFooter>
+            <LinkFooter href="/products">Industrial</LinkFooter>
+            <LinkFooter href="/products">Rural</LinkFooter>
             <a
               href={"https://www.ecopowerstore.com.br/"}
               target="_blank"
@@ -42,36 +44,39 @@ const BottomFooter: React.FC = () => {
         <div className="flex flex-col">
           <p className="text-white font-semibold">Sobre Nós</p>
           <div className="flex flex-col mt-[24px] gap-3 ">
-            <LinkFooter text="Projetos" href="" />
-            <LinkFooter text="Nossa História" href="" />
-            <LinkFooter text="Unidades" href="" />
-            <LinkFooter text="Sustentabilidade" href="" />
-            <LinkFooter text="Carreiras" href="" />
-            <LinkFooter text="Blog" href="" />
+            <LinkFooter href="/projects">Projetos</LinkFooter>
+            <LinkFooter href="/about-us">Nossa História</LinkFooter>
+            <LinkFooter href="/units">Unidades</LinkFooter>
+            <LinkFooter href="/sustainability">Sustentabilidade</LinkFooter>
+            <LinkFooter href="/careers">Carreiras</LinkFooter>
+            <LinkFooter href="/blog">Blog</LinkFooter>
           </div>
         </div>
         <div className="flex flex-col">
-          {" "}
           <p className="text-white font-semibold">Contato</p>
           <div className="flex flex-col mt-[24px] gap-3 ">
             <div className="flex items-center gap-2 text-white">
-              <IoCallOutline />{" "}
-              <LinkFooter text="4000-1722" href={`tel:40001722`} />
+              <IoCallOutline />
+              <LinkFooter href={`tel:40001722`}>4000-1722</LinkFooter>
             </div>
             <div className="flex items-center gap-2 text-white">
               <BsWhatsapp />
-              <LinkFooter text="11 99090-0999" href={`tel:11990900999`} />
+              <ExternalLinkFooter href={`tel:11990900999`}>
+                11 99090-0999
+              </ExternalLinkFooter>
             </div>
             <div className="flex items-center gap-2 text-white">
               <IoLocationOutline />
-              <LinkFooter
-                text="Rua Delmiro José de Andrade, 602 Distrito Industrial II - Barretos/SP"
+              <ExternalLinkFooter
                 href="https://goo.gl/maps/EnoKjdS1jRJRtW2z5"
                 className="leading-4"
-              />
+              >
+                Rua Delmiro José de Andrade, 602 Distrito Industrial II -
+                Barretos/SP
+              </ExternalLinkFooter>
             </div>
-            <LinkFooter text="Seja um Franqueado" href="" />
-            <LinkFooter text="Dúvidas Frequentes" href="" />
+            <LinkFooter href="">Seja um Franqueado</LinkFooter>
+            <LinkFooter href="/faq">Dúvidas Frequentes</LinkFooter>
             <div className="relative flex w-[120px]   ">
               <Image
                 src={logoFooter}
@@ -88,9 +93,12 @@ const BottomFooter: React.FC = () => {
           © 2023 EcoPower Energia Solar - Todos os direitos reservados. CNPJ:
           18.269.815/0001-36.
         </p>
-        <a className="text-white opacity-40 mt-4 lg:mt-0 text-[14px] hover:border-b cursor-pointer">
+        <Link
+          href="/privacy-policy"
+          className="text-white opacity-40 mt-4 lg:mt-0 text-[14px] hover:border-b cursor-pointer"
+        >
           Termos e Políticas de Privacidade
-        </a>
+        </Link>
       </div>
     </div>
   );

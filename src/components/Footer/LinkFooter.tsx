@@ -1,20 +1,20 @@
-import React, { AnchorHTMLAttributes } from "react";
+import Link, { LinkProps as NextLinkProps } from "next/link";
+import React from "react";
 import { twMerge } from "tailwind-merge";
 
-interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+interface LinkProps extends NextLinkProps {
   className?: string;
-  text: string;
+  children: React.ReactNode;
 }
 
-const LinkFooter: React.FC<LinkProps> = ({ className, text, ...rest }) => {
+const LinkFooter: React.FC<LinkProps> = ({ className, children, ...rest }) => {
   return (
-    <a
+    <Link
       {...rest}
-      target="_blank"
       className={twMerge("text-white nav cursor-pointer w-fit", className)}
     >
-      {text}
-    </a>
+      {children}
+    </Link>
   );
 };
 

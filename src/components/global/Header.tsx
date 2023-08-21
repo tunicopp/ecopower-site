@@ -31,14 +31,13 @@ const Header: React.FC = () => {
     >
       {/* <ContactsBar /> */}
       <GridContainer className="py-4 items-center">
-        <Link href="/" className="relative mr-auto">
+        <Link href="/" className="mr-auto">
           <Image
             src={logo}
             alt="Eco Power Logo"
-            width={209}
-            height={56}
             quality={100}
             priority
+            className="w-[209px] h-[56px]"
           />
         </Link>
         <div className="hidden lg:flex lg:items-center">
@@ -47,18 +46,18 @@ const Header: React.FC = () => {
             className="text-sm leading-4 font-medium text-white flex items-center"
           >
             Produtos
-            {/* <div className="text-base ml-1 rotate-90">
-              <MdChevronRight />
-            </div> */}
           </Link>
           <Link
             href="/about-us"
             className="text-sm leading-4 font-medium text-white mx-6 flex items-center"
           >
             Sobre Nós
-            {/* <div className="text-base ml-1 rotate-90">
-              <MdChevronRight />
-            </div> */}
+          </Link>
+          <Link
+            href="/units"
+            className="text-sm leading-4 font-medium text-white flex items-center"
+          >
+            Unidades
           </Link>
         </div>
         <button className="text-white lg:ml-[70px] text-xl block lg:hidden">

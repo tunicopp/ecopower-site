@@ -54,17 +54,13 @@ const CardProject: React.FC<CardProjectProps> = ({
       whileInView="animate"
       custom={index}
       viewport={{ once: true }}
-      className={twMerge(
-        "relative flex flex-col  h-[480px] rounded-3xl p-[32px]",
-        calculateColSpan(index)
-      )}
+      className="relative flex flex-col h-[480px] rounded-3xl p-[32px] project-grid-item"
     >
       <Image
         src={image}
         alt="card image"
-        layout="fill"
         quality={100}
-        className="rounded-3xl absolute inset-0 object-fill"
+        className="rounded-3xl absolute h-full inset-0 object-fill"
       />
       <div className="absolute inset-0 gradient-black rounded-3xl" />
       <div className="flex flex-1">
