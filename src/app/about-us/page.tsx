@@ -3,6 +3,7 @@ import SectionHero from "@/components/about-us/SectionHero/SectionHero";
 import SectionJourney from "@/components/about-us/SectionJourney/SectionJourney";
 import SectionOurHistory from "@/components/about-us/SectionOurHistory/SectionOurHistory";
 import SectionOurStructure from "@/components/about-us/SectionOurStructure/SectionOurStructure";
+import SectionOurTeam from "@/components/about-us/SectionOurTeam/SectionOurTeam";
 import SectionPartners from "@/components/about-us/SectionPartners/SectionPartners";
 import SectionWeAre from "@/components/about-us/SectionWeAre/SectionWeAre";
 import SectionOurValues from "@/components/careers/SectionOurValues/SectionOurValues";
@@ -20,6 +21,7 @@ export default async function AboutUs() {
       <SectionOurStructure />
       <SectionEvents />
       <SectionOurValues className="py-[80px]" />
+      <SectionOurTeam />
     </main>
   );
 }
