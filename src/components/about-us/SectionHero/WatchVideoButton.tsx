@@ -1,9 +1,14 @@
-import React from "react";
+import React, { ButtonHTMLAttributes } from "react";
 import { MdPlayCircle } from "react-icons/md";
 
-const WatchVideoButton: React.FC = () => {
+const WatchVideoButton: React.FC<ButtonHTMLAttributes<HTMLButtonElement>> = (
+  props
+) => {
   return (
-    <button className="flex items-center px-3 py-2 rounded-full border border-white">
+    <button
+      className="flex items-center px-3 py-2 rounded-full border border-white"
+      {...props}
+    >
       <div className="text-primary-green text-2xl mr-[14px]">
         <MdPlayCircle />
       </div>

@@ -1,11 +1,15 @@
+"use client";
 import GridContainer from "@/components/global/GridContainer";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import hero from "../../../../public/assets/images/about-us/hero/about-us-hero.png";
 import TitleComponent from "@/components/global/TitleComponent";
 import WatchVideoButton from "./WatchVideoButton";
+import Modal from "@/components/global/Modal";
 
 const SectionHero: React.FC = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <section className="relative min-h-[635px]">
       <Image
@@ -23,8 +27,16 @@ const SectionHero: React.FC = () => {
         <TitleComponent className="text-center text-white mt-6 mb-[118px]">
           Há 10 anos gerando economia e avanço sustentável em todo o Brasil
         </TitleComponent>
-        <WatchVideoButton />
+        <WatchVideoButton onClick={() => setModalOpen(true)} />
       </GridContainer>
+      <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
+        <iframe
+          className="w-full h-full rounded-3xl"
+          src="https://www.youtube.com/embed/3ZfzU6o7mP0?si=0PC1KzIVwdLQIL6i"
+          title="YouTube video player"
+          allowFullScreen
+        ></iframe>
+      </Modal>
     </section>
   );
 };
