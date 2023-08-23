@@ -12,7 +12,7 @@ const cards = [
     id: 1,
     image: factory,
     textTag: "Industrial",
-    title: "Fabrica de Rações",
+    title: "Fábrica de Rações",
     subTitle: "1 Inversor WEG 60, 167 módulos 410 Wp, 68.33 kWp",
   },
   {
@@ -55,12 +55,12 @@ const cards = [
 const SectionProjects: React.FC = () => {
   return (
     <GridContainer className="flex-col items-center py-20">
-      <div className="md:flex grid grid-cols-1 w-full gap-4 items-center justify-center">
-        <OutlineButton aria-selected>Todos</OutlineButton>
-        <OutlineButton className="md:mx-[22px]">Residencial</OutlineButton>
-        <OutlineButton className="md:mr-[22px]">Empresarial</OutlineButton>
-        <OutlineButton className="md:mr-[22px]">Industrial</OutlineButton>
-        <OutlineButton>Rural</OutlineButton>
+      <div className="md:flex grid grid-cols-1 w-full gap-6 items-center justify-center">
+        <OutlineButton aria-selected>Todos (40)</OutlineButton>
+        <OutlineButton>Residencial (10)</OutlineButton>
+        <OutlineButton>Empresarial (10)</OutlineButton>
+        <OutlineButton>Industrial (10)</OutlineButton>
+        <OutlineButton>Rural (10)</OutlineButton>
       </div>
       <div className="grid projects-grid lg:grid-cols-5 gap-6 mt-[60px]">
         {cards.map((card, index) => (

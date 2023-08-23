@@ -17,6 +17,7 @@ module.exports = {
       },
       dropShadow: {
         "eco-power-icon": "0px 4px 108px rgba(0, 0, 0, 0.16)",
+        tooltip: "0px 4px 28px rgba(0, 0, 0, 0.10)",
       },
     },
     colors: {
@@ -56,6 +57,7 @@ module.exports = {
         4: "#F1E5FF",
         "card-bg": "url('/public/assets/images/img-card.png')",
       },
+      "hover-dropdown": "rgba(0, 0, 0, 0.05)",
     },
     keyframes: {
       fly: {

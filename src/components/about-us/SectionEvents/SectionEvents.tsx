@@ -42,7 +42,7 @@ const SectionEvents: React.FC = () => {
           pagination={{
             clickable: true,
             renderBullet(_, className) {
-              return `<span class="!bg-black mx-6 !h-2 !w-[26px] !rounded-2xl !opacity-10 ${className}"></span>`;
+              return `<span class="!bg-black mx-6 !h-[6px] !w-[26px] !rounded-2xl !opacity-10 ${className}"></span>`;
             },
             bulletActiveClass: "active-bullet-event",
             el: "#bullets-event",

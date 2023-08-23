@@ -52,7 +52,7 @@ const SectionProject: React.FC = () => {
       <div className="absolute top-[35px] right-[0%] animate-fly2">
         <Cloud2 />
       </div>
-      <Reveal className="max-w-[690px] text-center">
+      <Reveal className="max-w-[550px] text-center">
         <TitleComponent className="leading-none">
           Confira os projetos mais recentes
         </TitleComponent>

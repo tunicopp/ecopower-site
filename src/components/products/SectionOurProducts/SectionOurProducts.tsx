@@ -12,7 +12,7 @@ const SectionOurProducts: React.FC = () => {
   return (
     <section className="min-h-[370px] flex flex-col items-center justify-center bg-hero-green relative overflow-hidden">
       <GridContainer className="flex-col justify-center items-center">
-        <TitleComponent className="text-white">Nossos Soluções</TitleComponent>
+        <TitleComponent className="text-white">Nossas Soluções</TitleComponent>
         <h3 className="text-white mt-6">
           Lorem ipsum dolor sit amet consectetur.
         </h3>

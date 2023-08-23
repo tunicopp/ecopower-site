@@ -5,14 +5,14 @@ import bg from "../../../../public/assets/images/sustainability/etic-conduct.png
 
 const SectionEthicConduct: React.FC = () => {
   return (
-    <section className="relative flex lg:flex-row flex-col-reverse lg:gap-0 gap-6 bg-beige-300 md:pt-[115px] pt-[80px] lg:pb-[260px]">
-      <Image
-        src={bg}
-        alt="Conduta Ética"
-        className="lg:absolute left-0 bottom-0 lg:max-w-[1008px] w-full"
-      />
-      <GridContainer className="relative justify-end">
-        <div className="lg:max-w-[496px]">
+    <section className="relative flex lg:flex-row flex-col-reverse lg:gap-0 gap-6 bg-beige-300 lg:pt-[115px] pt-[80px] lg:pb-[260px]">
+      <GridContainer className="justify-end">
+        <Image
+          src={bg}
+          alt="Conduta Ética"
+          className="2xl:static lg:absolute left-0 bottom-0 2xl:w-auto lg:max-w-[1008px] w-full"
+        />
+        <div className="lg:max-w-[391px] 2xl:flex-shrink-0">
           <p className="text-lg lg:text-start text-justify">
             Implementação do código de conduta ética para colaboradores e
             parceiros, implementação de indicadores ESG para compilar resultados

@@ -24,7 +24,7 @@ const SectionHero: React.FC = () => {
         <span className="text-white text-base font-semibold px-3 bg-primary-green rounded-full">
           Somos EcoPower
         </span>
-        <TitleComponent className="text-center text-white mt-6 mb-[118px]">
+        <TitleComponent className="text-center text-white mt-6 mb-[118px] max-w-[900px]">
           Há 10 anos gerando economia e avanço sustentável em todo o Brasil
         </TitleComponent>
         <WatchVideoButton onClick={() => setModalOpen(true)} />

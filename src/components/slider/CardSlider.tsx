@@ -1,20 +1,22 @@
 import Image from "next/image";
 import React from "react";
 import cardImage from "./../../../public/assets/images/img-card.png";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
-const CardSlider: React.FC = () => {
+interface Props {
+  image: string | StaticImport;
+}
+
+const CardSlider: React.FC<Props> = ({ image }) => {
   return (
     <div className="relative flex h-[280px] rounded-2xl scale-up-slider overflow-hidden">
       <Image
-        src={cardImage}
+        src={image}
         alt="card image"
         quality={100}
         priority
-        className="rounded-2xl absolute top-0 left-0 w-full h-[300px]  object-cover"
+        className="rounded-2xl absolute top-0 left-0 w-full h-[290px]  object-cover"
       />
-      <div className="flex absolute top-[18%] left-10 w-[120px] ">
-        <h3 className="text-[30px] font-bold">Lorem ipsum dolor sit amet</h3>
-      </div>
     </div>
   );
 };
