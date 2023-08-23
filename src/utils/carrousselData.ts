@@ -1,14 +1,11 @@
-import CardSlider from "@/components/slider/CardSlider";
+import imageCardOne from "../../public/assets/images/section-slide/product-01.svg";
+import imageCardTwo from "../../public/assets/images/section-slide/product-02.svg";
+import imageCardThree from "../../public/assets/images/section-slide/product-03.svg";
+import imageCardFour from "../../public/assets/images/section-slide/product-04.svg";
 
 export const productsCardsGroup = [
-  { id: 1, card: CardSlider },
-  { id: 2, card: CardSlider },
-  { id: 3, card: CardSlider },
-  { id: 4, card: CardSlider },
-  { id: 5, card: CardSlider },
-  { id: 6, card: CardSlider },
-  { id: 7, card: CardSlider },
-  { id: 8, card: CardSlider },
-  { id: 9, card: CardSlider },
-  { id: 10, card: CardSlider },
+  { id: 1, image: imageCardOne },
+  { id: 2, image: imageCardTwo },
+  { id: 3, image: imageCardThree },
+  { id: 4, image: imageCardFour },
 ];

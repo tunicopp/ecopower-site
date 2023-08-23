@@ -7,19 +7,38 @@ import CampaingSlide from "./CampaingSlide";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import Reveal from "../global/Reveal";
 import { campaingData } from "@/utils/campaingData";
+import GridContainer from "../global/GridContainer";
 
 const SectionCampaings: React.FC = () => {
   return (
     <section className="relative py-[110px] flex flex-col lg:items-center">
-      <Reveal className="px-6">
-        <TitleComponent>Campanhas Ativas</TitleComponent>
-      </Reveal>
-      <Reveal className="px-6 text-start" delay={0.4}>
-        <span className="font-medium text-grayscale-400">
-          A luz que não apenas ilumina, mas também protege o nosso planeta
-        </span>
-      </Reveal>
-      <div className="relative flex w-full mt-[88px]">
+      <GridContainer>
+        <div className="flex flex-col w-full items-center relative">
+          <Reveal>
+            <TitleComponent>Campanhas ativas</TitleComponent>
+          </Reveal>
+          <Reveal delay={0.4}>
+            <h3 className="text-xl text-center">
+              A luz que não apenas ilumina, mas também protege o nosso planeta
+            </h3>
+          </Reveal>
+          <div className="flex w-full justify-between">
+            <button
+              id="prev-campaing"
+              className="style-navigation-campaing left-[20px] lg:left-3"
+            >
+              <MdChevronLeft />
+            </button>
+            <button
+              id="next-campaing"
+              className="style-navigation-campaing right-[20px] lg:right-3"
+            >
+              <MdChevronRight />
+            </button>
+          </div>
+        </div>
+      </GridContainer>
+      <div className="relative flex w-full mt-[80px]">
         <Swiper
           slidesPerView={1}
           spaceBetween={24}
@@ -41,18 +60,6 @@ const SectionCampaings: React.FC = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <button
-          id="prev-campaing"
-          className="style-navigation-campaing flex right-[88px] lg:left-6 !bg-beige-200"
-        >
-          <MdChevronLeft />
-        </button>
-        <button
-          id="next-campaing"
-          className="style-navigation-campaing flex right-6 !bg-beige-200"
-        >
-          <MdChevronRight />
-        </button>
       </div>
     </section>
   );

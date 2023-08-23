@@ -17,7 +17,7 @@ const SectionPartners: React.FC = () => {
           Com pioneirismo e dedicação, nos tornamos a maior!
         </h3>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 w-full">
-          <div className="px-8 py-6 rounded-full bg-beige-300 flex items-center gap-6">
+          <div className="pl-8 pr-[30px] py-6 rounded-full bg-beige-300 flex items-center gap-6">
             <Image
               src={zeze}
               alt="Zezé di Camargo"
@@ -30,7 +30,7 @@ const SectionPartners: React.FC = () => {
               <span className="text-grey-100">Cantor</span>
             </div>
           </div>
-          <div className="px-8 py-6 rounded-full bg-beige-300 flex items-center gap-6">
+          <div className="pl-8 pr-[30px] py-6 rounded-full bg-beige-300 flex items-center gap-6">
             <Image
               src={jads}
               alt="Jads e Jadson"
@@ -43,7 +43,7 @@ const SectionPartners: React.FC = () => {
               <span className="text-grey-100">Cantores</span>
             </div>
           </div>
-          <div className="px-8 py-6 rounded-full bg-beige-300 flex items-center gap-6">
+          <div className="pl-8 pr-[30px] py-6 rounded-full bg-beige-300 flex items-center gap-6">
             <Image
               src={joaoVinicius}
               alt="João Bosco e Vinícius"
@@ -56,7 +56,7 @@ const SectionPartners: React.FC = () => {
               <span className="text-grey-100">Cantores</span>
             </div>
           </div>
-          <div className="px-8 py-6 rounded-full bg-beige-300 flex items-center gap-6">
+          <div className="pl-8 pr-[30px] py-6 rounded-full bg-beige-300 flex items-center gap-6">
             <Image
               src={fabricio}
               alt="Fabrício Taveira"
@@ -69,7 +69,7 @@ const SectionPartners: React.FC = () => {
               <span className="text-grey-100">Crossfit (Atleta)</span>
             </div>
           </div>
-          <div className="px-8 py-6 rounded-full bg-beige-300 flex items-center gap-6">
+          <div className="pl-8 pr-[30px] py-6 rounded-full bg-beige-300 flex items-center gap-6">
             <Image
               src={cuiabano}
               alt="Cuiabano Lima"

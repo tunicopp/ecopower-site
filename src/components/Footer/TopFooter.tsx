@@ -69,7 +69,7 @@ const TopFooter: React.FC = () => {
         />
       </div>
       <div className="flex flex-col justify-center lg:justify-start items-center p-6 lg:p-0 w-fit lg:mt-[80px]">
-        <Reveal className="max-w-[758px]">
+        <Reveal className="max-w-[600px]">
           <TitleComponent className="text-center">
             Reduza sua conta de luz com energia solar
           </TitleComponent>

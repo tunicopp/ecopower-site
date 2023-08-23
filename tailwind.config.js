@@ -17,11 +17,13 @@ module.exports = {
       },
       dropShadow: {
         "eco-power-icon": "0px 4px 108px rgba(0, 0, 0, 0.16)",
+        tooltip: "0px 4px 28px rgba(0, 0, 0, 0.10)",
       },
     },
     colors: {
       "primary-green": "#01B040",
       "hero-green": "#01AC3F",
+      "hover-map": "#01802E",
       "green-200": "#4AF387",
       "blue-dark": "#050245",
       "blue-soft-dark": "#240697",
@@ -55,6 +57,7 @@ module.exports = {
         4: "#F1E5FF",
         "card-bg": "url('/public/assets/images/img-card.png')",
       },
+      "hover-dropdown": "rgba(0, 0, 0, 0.05)",
     },
     keyframes: {
       fly: {

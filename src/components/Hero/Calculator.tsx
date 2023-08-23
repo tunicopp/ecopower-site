@@ -24,9 +24,9 @@ const Calculator: React.FC<Props> = ({ className }) => {
       : value[0] < 400
       ? "Até R$200"
       : value[0] < 600
-      ? "De R$200 a R$400"
+      ? "De R$200 a R$600"
       : value[0] < 800
-      ? "De R$400 a R$800"
+      ? "De R$600 a R$800"
       : "Mais de R$800";
 
   return (
@@ -59,7 +59,7 @@ const Calculator: React.FC<Props> = ({ className }) => {
                 {children}
               </div>
             )}
-            values={value}
+            values={value[0] > 800 ? [800] : value}
             min={0}
             max={800}
             step={200}
@@ -73,18 +73,22 @@ const Calculator: React.FC<Props> = ({ className }) => {
           {tooltipText}
         </Tooltip>
       </div>
-      <select
-        className="select mt-6 mb-3 lg:my-0"
-        placeholder="Arraste ou selecione"
-        value={value[0]}
-        onChange={(v) => setValue([parseInt(v.target.value)])}
-      >
-        <option value={0}>Arreste ou selecione</option>
-        <option value={200}>Até R$200</option>
-        <option value={400}>De R$200 a R$400</option>
-        <option value={600}>De R$400 a R$800</option>
-        <option value={800}>Mais de R$800</option>
-      </select>
+      <div className="relative w-full lg:max-w-[200px] flex-shrink-0">
+        <input
+          className="select mt-6 mb-3 lg:my-0"
+          placeholder="Arraste ou digite"
+          value={value[0]}
+          type="number"
+          min={0}
+          onChange={(v) => setValue([parseInt(v.target.value)])}
+        />
+        <ul className="dropdown">
+          <li onClick={() => setValue([200])}>Até R$200</li>
+          <li onClick={() => setValue([400])}>De R$200 a R$400</li>
+          <li onClick={() => setValue([600])}>De R$400 a R$800</li>
+          <li onClick={() => setValue([800])}>Mais de R$800</li>
+        </ul>
+      </div>
       <button className="simulate-button w-full lg:w-auto lg:ml-4">
         Simular Economia
       </button>
