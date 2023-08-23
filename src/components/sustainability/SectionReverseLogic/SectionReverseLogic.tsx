@@ -3,6 +3,10 @@ import TitleComponent from "@/components/global/TitleComponent";
 import Image from "next/image";
 import React from "react";
 import logoArt from "../../../../public/assets/images/sustainability/eco-power-logo-art.svg";
+import badgeOne from "../../../../public/assets/images/sustainability/badge-01.svg";
+import badgeTwo from "../../../../public/assets/images/sustainability/badge-02.svg";
+import badgeThree from "../../../../public/assets/images/sustainability/badge-03.svg";
+import badgeFour from "../../../../public/assets/images/sustainability/badge-04.svg";
 
 const SectionReverseLogic: React.FC = () => {
   return (
@@ -24,6 +28,14 @@ const SectionReverseLogic: React.FC = () => {
           </p>
         </div>
         <Image src={logoArt} alt="EcoPower Logo" />
+      </GridContainer>
+      <GridContainer className="justify-center pt-[80px]">
+        <div className="grid md:grid-cols-4 lg:gap-[120px] items-center justify-items-center md:gap-[60px] gap-6">
+          <Image src={badgeOne} alt="Excelência em Franchising" />
+          <Image src={badgeTwo} alt="Associado Absolar" />
+          <Image src={badgeThree} alt="SolarView" />
+          <Image src={badgeFour} alt="Certificado Great Place To Work" />
+        </div>
       </GridContainer>
     </section>
   );
