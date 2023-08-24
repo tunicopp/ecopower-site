@@ -11,27 +11,27 @@ const SectionInteractiveMap: React.FC = () => {
       <GridContainer>
         <div className="w-full relative">
           <Map />
-          <PinButton className="bottom-[9%] right-[45%]" id="pin-rs" />
-          <PinButton className="bottom-[15%] right-[34.5%]" />
-          <PinButton className="bottom-[23%] right-[40%] pin-pr" />
-          <PinButton className="bottom-[30%] right-[34.5%] pin-sp" />
-          <PinButton className="bottom-[35%] left-[46.7%] pin-ms" />
-          <PinButton className="bottom-[31%] right-[18%] pin-rj" />
-          <PinButton className="bottom-[36.5%] right-[14%] pin-es" />
-          <PinButton className="bottom-[38.5%] right-[22%] pin-mg" />
-          <PinButton className="bottom-[45%] right-[37%] pin-go" />
-          <PinButton className="bottom-[48.5%] right-[30.5%] pin-df" />
-          <PinButton className="top-[42%] left-[44%] pin-mt" />
-          <PinButton className="top-[41%] right-[17%] pin-ba" />
-          <PinButton className="top-[36%] right-[32%] pin-to" />
-          <PinButton className="top-[34%] right-[4%] pin-se" />
-          <PinButton className="top-[28.5%] right-[8%] pin-pe" />
-          <PinButton className="top-[24%] right-[3%] pin-rn" />
-          <PinButton className="top-[23%] right-[10%] pin-ce" />
-          <PinButton className="top-[24%] right-[25%] pin-ma" />
-          <PinButton className="top-[26%] right-[44%] pin-pa" />
-          <PinButton className="top-[8%] right-[42%] pin-ap" />
-          <PinButton className="top-[17%] left-[25%] pin-am" />
+          <PinButton anchor="#sc" state="Santa Catarina" units={11} />
+          <PinButton anchor="#rs" state="Rio Grande do Sul" units={11} />
+          <PinButton anchor="#pr" state="Paraná" units={11} />
+          <PinButton anchor="#sp" state="São Paulo" units={11} />
+          <PinButton anchor="#rj" state="Rio de Janeiro" units={11} />
+          <PinButton anchor="#es" state="Espirito Santo" units={11} />
+          <PinButton anchor="#mg" state="Minas Gerais" units={11} />
+          <PinButton anchor="#ms" state="Mato Grosso do Sul" units={11} />
+          <PinButton anchor="#mt" state="Mato Grosso" units={11} />
+          <PinButton anchor="#go" state="Goiás" units={11} />
+          <PinButton anchor="#df" state="Distrito Federal" units={11} />
+          <PinButton anchor="#ba" state="Bahia" units={11} />
+          <PinButton anchor="#to" state="Tocatins" units={11} />
+          <PinButton anchor="#se" state="Sergipe" units={11} />
+          <PinButton anchor="#pe" state="Pernambuco" units={11} />
+          <PinButton anchor="#rn" state="Rio Grande do Norte" units={11} />
+          <PinButton anchor="#ce" state="Ceará" units={11} />
+          <PinButton anchor="#ma" state="Maranhão" units={11} />
+          <PinButton anchor="#pa" state="Pará" units={11} />
+          <PinButton anchor="#ap" state="Amapá" units={11} />
+          <PinButton anchor="#am" state="Amazonas" units={11} />
         </div>
       </GridContainer>
     </section>

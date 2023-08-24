@@ -1,16 +1,32 @@
-import Image from "next/image";
+"use client";
 import React, { ButtonHTMLAttributes } from "react";
-import pin from "../../../../public/assets/icons/pin-ecopower_Verde.svg";
-import { twMerge } from "tailwind-merge";
+import { Tooltip } from "react-tooltip";
 
-const PinButton: React.FC<ButtonHTMLAttributes<HTMLButtonElement>> = ({
-  className,
-  ...rest
-}) => {
+interface Props {
+  anchor: string;
+  state: string;
+  units: number;
+}
+
+const PinButton: React.FC<Props> = ({ state, anchor, units }) => {
   return (
-    <button className={twMerge("absolute", className)} {...rest}>
-      <Image src={pin} alt="Pin EcoPower" />
-    </button>
+    <Tooltip
+      className="!px-[18px] !py-3 !bg-primary-green !w-[230px] !rounded-2xl"
+      offset={4}
+      place="top"
+      clickable
+      openOnClick
+      opacity={1}
+      anchorSelect={anchor}
+    >
+      <div className="flex flex-col">
+        <b className="text-white">{state}</b>
+        <span className="text-sm text-white">{units} unidades</span>
+        <a className="text-white font-bold underline mt-2" href={anchor}>
+          Ver unidades
+        </a>
+      </div>
+    </Tooltip>
   );
 };
 

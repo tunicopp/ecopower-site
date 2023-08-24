@@ -255,18 +255,6 @@ a {
   margin-bottom: 0px;
 }
 
-.pin-rs:hover #rs {
-  @apply fill-hover-map;
-}
-
-.pin-sc:hover #sc {
-  @apply fill-hover-map;
-}
-
-.pin-pr:hover #pr {
-  @apply fill-hover-map;
-}
-
 @layer utilities {
   .nav {
     @apply relative cursor-pointer;
