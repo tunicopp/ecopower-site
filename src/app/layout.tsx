@@ -10,13 +10,15 @@ const golos_text = Golos_Text({
   display: "swap",
   weight: ["400", "500", "600", "700", "800", "900"],
   style: "normal",
+  variable: "--font-golos-text",
 });
 
-export const montserrat = Montserrat({
+const montserrat = Montserrat({
   subsets: ["latin"],
   display: "optional",
   weight: ["500"],
   style: "normal",
+  variable: "--font-montserrat",
 });
 
 export const metadata: Metadata = {
@@ -162,7 +164,9 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={golos_text.className}>
+      <body
+        className={`${golos_text.variable} ${montserrat.variable} font-golos-text`}
+      >
         <GlobalContextProvider>{children}</GlobalContextProvider>
         <Footer />
       </body>

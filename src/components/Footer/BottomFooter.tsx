@@ -8,7 +8,6 @@ import logoFooter from "../../../public/assets/images/logo-footer.png";
 import ExternalLinkFooter from "./ExternalLinkFooter";
 import Link from "next/link";
 import atom from "../../../public/assets/images/atom-logo.svg";
-import { montserrat } from "@/app/layout";
 
 const BottomFooter: React.FC = () => {
   return (
@@ -102,9 +101,7 @@ const BottomFooter: React.FC = () => {
           18.269.815/0001-36.
         </p>
         <div className="flex items-center gap-2">
-          <span
-            className={`${montserrat.className} text-white text-sm opacity-40 font-mont font-medium font-['Montserrat'] tracking-[1.68px]`}
-          >
+          <span className="text-white text-sm opacity-40 font-mont font-medium font-montserrat tracking-[1.68px]">
             CREATED BY
           </span>
           <Image src={atom} alt="Atom6 Studio" />
