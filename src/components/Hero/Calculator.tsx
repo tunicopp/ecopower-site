@@ -77,7 +77,7 @@ const Calculator: React.FC<Props> = ({ className }) => {
         <input
           className="select mt-6 mb-3 lg:my-0"
           placeholder="Arraste ou digite"
-          value={value[0]}
+          value={value[0] === 0 ? undefined : value[0]}
           type="number"
           min={0}
           onChange={(v) => setValue([parseInt(v.target.value)])}

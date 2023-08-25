@@ -43,32 +43,32 @@ const Map: React.FC = () => {
       <circle cx="595" cy="628" r="198.773" fill="#4AF387" />
 
       <Tocantins />
-      <Sergipe />
+      <Bahia />
+      <Alagoas />
       <SaoPaulo />
       <SantaCatarina />
       <Roraima />
       <Rondonia />
       <RioGrandeDoSul />
+      <Ceara />
+      <Paraiba />
       <RioGrandeDoNorte />
-      <RioDeJaneiro />
       <Piaui />
       <Pernambuco />
+      <Sergipe />
       <Parana />
-      <Paraiba />
       <Para />
       <MinasGerais />
+      <RioDeJaneiro />
       <MatoGrossoDoSul />
       <MatoGrosso />
       <Maranhao />
-      <Ceara />
       <Goias />
-      <DistritoFederal />
       <EspiritoSanto />
-      <Bahia />
+      <DistritoFederal />
       <Amazonas />
-      <Acre />
-      <Alagoas />
       <Amapa />
+      <Acre />
     </svg>
   );
 };

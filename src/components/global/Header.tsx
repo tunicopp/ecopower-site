@@ -19,6 +19,7 @@ const Header: React.FC = () => {
         setIsAtTop(true);
       }
     };
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
