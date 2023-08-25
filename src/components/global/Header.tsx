@@ -64,7 +64,7 @@ const Header: React.FC = () => {
           </Link>
         </div>
         <button
-          className="text-white lg:ml-[70px] text-xl block lg:hidden"
+          className="text-white lg:ml-[70px] text-xl"
           onClick={() => setIsOpen(true)}
         >
           <MdOutlineMenu />
@@ -80,21 +80,45 @@ const Header: React.FC = () => {
         <div className="flex flex-col gap-6 pt-1">
           <Link
             href="/products"
-            className="text-sm leading-4 font-medium text-white flex items-center"
+            className="text-sm leading-4 font-medium text-white lg:hidden flex items-center"
           >
             Produtos
           </Link>
           <Link
             href="/about-us"
-            className="text-sm leading-4 font-medium text-white flex items-center"
+            className="text-sm leading-4 font-medium text-white lg:hidden flex items-center"
           >
             Sobre Nós
           </Link>
           <Link
             href="/units"
-            className="text-sm leading-4 font-medium text-white flex items-center"
+            className="text-sm leading-4 font-medium text-white lg:hidden flex items-center"
           >
             Unidades
+          </Link>
+          <Link
+            href="/projects"
+            className="text-sm leading-4 font-medium text-white flex items-center"
+          >
+            Projetos
+          </Link>
+          <Link
+            href="/blog"
+            className="text-sm leading-4 font-medium text-white flex items-center"
+          >
+            Blog
+          </Link>
+          <Link
+            href="/sustainability"
+            className="text-sm leading-4 font-medium text-white flex items-center"
+          >
+            Sustentabilidade
+          </Link>
+          <Link
+            href="/careers"
+            className="text-sm leading-4 font-medium text-white flex items-center"
+          >
+            Carreiras
           </Link>
         </div>
         <button
