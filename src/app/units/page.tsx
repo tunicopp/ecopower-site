@@ -1,6 +1,7 @@
 import Header from "@/components/global/Header";
 import SectionHero from "@/components/units/SectionHero/SectionHero";
 import SectionInteractiveMap from "@/components/units/SectionInteractiveMap/SectionInteractiveMap";
+import SectionStateAccordion from "@/components/units/SectionStateAccordion/SectionStateAccordion";
 
 export default async function Units() {
   return (
@@ -8,6 +9,7 @@ export default async function Units() {
       <Header />
       <SectionHero />
       <SectionInteractiveMap />
+      <SectionStateAccordion />
     </main>
   );
 }

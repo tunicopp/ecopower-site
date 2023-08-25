@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const BottomFooter: React.FC = () => {
   return (
-    <div className="flex flex-col bg-primary-green w-full lg:h-[504px] p-6 lg:px-[108px] lg:pt-[108px] lg:pb-[40px]">
+    <div className="relative flex flex-col bg-primary-green w-full lg:h-[504px] p-6 lg:px-[108px] lg:pt-[108px] lg:pb-[40px]">
       <div className="grid lg:grid-cols-4 gap-4 w-full flex-1">
         <div className="flex ">
           <div className="relative mr-auto">
