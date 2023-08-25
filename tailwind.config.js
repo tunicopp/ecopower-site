@@ -19,6 +19,10 @@ module.exports = {
         "eco-power-icon": "0px 4px 108px rgba(0, 0, 0, 0.16)",
         tooltip: "0px 4px 28px rgba(0, 0, 0, 0.10)",
       },
+      fontFamily: {
+        montserrat: ["var(--font-montserrat)"],
+        "golos-text": ["var(--font-golos-text)"],
+      },
     },
     colors: {
       "primary-green": "#01B040",
