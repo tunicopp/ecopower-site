@@ -7,6 +7,7 @@ import logo from "../../../public/assets/icons/logo-eco-power.svg";
 import logoFooter from "../../../public/assets/images/logo-footer.png";
 import ExternalLinkFooter from "./ExternalLinkFooter";
 import Link from "next/link";
+import atom from "../../../public/assets/images/atom-logo.svg";
 
 const BottomFooter: React.FC = () => {
   return (
@@ -88,17 +89,23 @@ const BottomFooter: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row justify-between w-full ">
-        <p className="text-white opacity-40 text-[14px]">
-          © 2023 EcoPower Energia Solar - Todos os direitos reservados. CNPJ:
-          18.269.815/0001-36.
-        </p>
+      <div className="flex flex-col lg:flex-row items-center justify-between w-full">
         <Link
           href="/privacy-policy"
           className="text-white opacity-40 mt-4 lg:mt-0 text-[14px] hover:border-b cursor-pointer"
         >
           Termos e Políticas de Privacidade
         </Link>
+        <p className="text-white opacity-40 text-[14px]">
+          © 2023 EcoPower Energia Solar - Todos os direitos reservados. CNPJ:
+          18.269.815/0001-36.
+        </p>
+        <div className="flex items-center gap-2">
+          <span className="text-white text-sm opacity-40 font-mont font-medium tracking-[1.68px]">
+            CREATED BY
+          </span>
+          <Image src={atom} alt="Atom6 Studio" />
+        </div>
       </div>
     </div>
   );

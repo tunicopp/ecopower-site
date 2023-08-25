@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Golos_Text } from "next/font/google";
+import { Golos_Text, Montserrat } from "next/font/google";
 import { GlobalContextProvider } from "./context/store";
 import Footer from "@/components/Footer/Footer";
 import Script from "next/script";
@@ -9,6 +9,13 @@ const golos_text = Golos_Text({
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "600", "700", "800", "900"],
+  style: "normal",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "optional",
+  weight: ["500"],
   style: "normal",
 });
 
@@ -155,7 +162,7 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={golos_text.className}>
+      <body className={`${golos_text.className} ${montserrat.className}`}>
         <GlobalContextProvider>{children}</GlobalContextProvider>
         <Footer />
       </body>
