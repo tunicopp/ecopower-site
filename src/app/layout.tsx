@@ -12,7 +12,7 @@ const golos_text = Golos_Text({
   style: "normal",
 });
 
-const montserrat = Montserrat({
+export const montserrat = Montserrat({
   subsets: ["latin"],
   display: "optional",
   weight: ["500"],
@@ -162,7 +162,7 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={`${golos_text.className} ${montserrat.className}`}>
+      <body className={golos_text.className}>
         <GlobalContextProvider>{children}</GlobalContextProvider>
         <Footer />
       </body>
