@@ -3,21 +3,18 @@ import Cloud1 from "../../../public/assets/icons/Cloud1";
 import Cloud2 from "../../../public/assets/icons/Cloud2";
 import Reveal from "../global/Reveal";
 import TitleComponent from "../global/TitleComponent";
-import { twMerge } from "tailwind-merge";
-import Image from "next/image";
 import house from "../../../public/assets/images/sectionProjects/img-card-house.png";
 import factory from "../../../public/assets/images/sectionProjects/img-card-factory.png";
 import store from "../../../public/assets/images/sectionProjects/img-card-store.png";
 import farm from "../../../public/assets/images/sectionProjects/img-card-farm.png";
-import RigthArrowWhite from "../../../public/assets/icons/RigthArrowWhite";
-import CardProject, { CardProjectProps } from "./CardProject";
+import CardProject from "./CardProject";
 
 const cards = [
   {
     id: 1,
     image: factory,
     textTag: "Industrial",
-    title: "Fabrica de Rações",
+    title: "Fábrica de Rações",
     subTitle: "1 Inversor WEG 60, 167 módulos 410 Wp, 68.33 kWp",
   },
   {
@@ -37,7 +34,7 @@ const cards = [
   {
     id: 4,
     image: farm,
-    textTag: "rural",
+    textTag: "Rural",
     title: "Dois Lagos",
     subTitle: "1 Inversor WEG 60, 167 módulos 410 Wp, 68.33 kWp",
   },

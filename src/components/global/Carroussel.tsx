@@ -18,7 +18,10 @@ const Carroussel: React.FC<RevealProps> = ({
 }) => {
   return (
     <div
-      className={twMerge("flex relative w-full scrollDiv group", className)}
+      className={twMerge(
+        "flex relative w-full scrollDiv group h-auto",
+        className
+      )}
       {...rest}
     >
       <Swiper
@@ -29,7 +32,7 @@ const Carroussel: React.FC<RevealProps> = ({
         slidesPerView={1}
         spaceBetween={20}
         grabCursor={true}
-        className="mySwiper w-full lg:w-auto px-6 lg:!px-[110px]"
+        className="mySwiper w-full h-auto lg:w-auto px-6 lg:!px-[110px]"
         modules={[Navigation]}
         navigation={{
           nextEl: "#next",
@@ -41,6 +44,7 @@ const Carroussel: React.FC<RevealProps> = ({
             slidesPerView: 3.2,
           },
         }}
+        autoHeight
       >
         {children}
       </Swiper>

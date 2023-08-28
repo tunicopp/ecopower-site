@@ -60,7 +60,7 @@ const TopFooter: React.FC = () => {
           className="absolute w-full object-cover"
         />
       </div>
-      <div className="absolute top-[25%] lg:top-[30%] right-[5%] flex w-[49px] lg:w-[98px] items-end  group-hover:scale-150 transition-all duration-1000 ease-in-out; ">
+      <div className="absolute top-[30%] lg:top-[32%] right-[5%] flex w-[49px] lg:w-[98px] items-end  group-hover:scale-150 transition-all duration-1000 ease-in-out; ">
         <Image
           src={sun}
           alt="sun"
@@ -69,7 +69,7 @@ const TopFooter: React.FC = () => {
         />
       </div>
       <div className="flex flex-col justify-center lg:justify-start items-center p-6 lg:p-0 w-fit lg:mt-[80px]">
-        <Reveal className="max-w-[600px]">
+        <Reveal className="max-w-[600px] overflow-visible">
           <TitleComponent className="text-center">
             Reduza sua conta de luz com energia solar
           </TitleComponent>

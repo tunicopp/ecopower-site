@@ -49,7 +49,7 @@ const SectionSolutions: React.FC = () => {
 
   return (
     <section className="flex pt-[110px] w-full lg:min-h-[1000px] relative flex-col lg:items-center lg:p-[108px] bg-solutions">
-      <Reveal className="max-w-[690px] lg:text-center px-6">
+      <Reveal className="max-w-[690px] lg:text-center px-6 overflow-visible">
         <TitleComponent className="leading-9 lg:leading-[56px]">
           Soluções feitas sob medida para o seu segmento
         </TitleComponent>

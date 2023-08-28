@@ -162,6 +162,48 @@ export const stateAccordionLeftData: Data[] = [
       },
     ],
   },
+  {
+    id: "ac_al",
+    state: "Alagoas",
+    units: [
+      {
+        address: "Rua 25 de Julho, Nº 1191. Bairro América",
+        phone: "48 99090-0099",
+        name: "Araranguá 1",
+        image,
+        facebook: "https://www.facebook.com/ecopowerenergia/",
+        instagram: "https://www.instagram.com/ecopowerenergia/",
+      },
+    ],
+  },
+  {
+    id: "ac_pi",
+    state: "Piauí",
+    units: [
+      {
+        address: "Rua 25 de Julho, Nº 1191. Bairro América",
+        phone: "48 99090-0099",
+        name: "Araranguá 1",
+        image,
+        facebook: "https://www.facebook.com/ecopowerenergia/",
+        instagram: "https://www.instagram.com/ecopowerenergia/",
+      },
+    ],
+  },
+  {
+    id: "ac_ro",
+    state: "Rondônia",
+    units: [
+      {
+        address: "Rua 25 de Julho, Nº 1191. Bairro América",
+        phone: "48 99090-0099",
+        name: "Araranguá 1",
+        image,
+        facebook: "https://www.facebook.com/ecopowerenergia/",
+        instagram: "https://www.instagram.com/ecopowerenergia/",
+      },
+    ],
+  },
 ];
 
 export const stateAccordionRightData: Data[] = [
@@ -294,6 +336,48 @@ export const stateAccordionRightData: Data[] = [
   {
     id: "ac_ap",
     state: "Amapá",
+    units: [
+      {
+        address: "Rua 25 de Julho, Nº 1191. Bairro América",
+        phone: "48 99090-0099",
+        name: "Araranguá 1",
+        image,
+        facebook: "https://www.facebook.com/ecopowerenergia/",
+        instagram: "https://www.instagram.com/ecopowerenergia/",
+      },
+    ],
+  },
+  {
+    id: "ac_ac",
+    state: "Acre",
+    units: [
+      {
+        address: "Rua 25 de Julho, Nº 1191. Bairro América",
+        phone: "48 99090-0099",
+        name: "Araranguá 1",
+        image,
+        facebook: "https://www.facebook.com/ecopowerenergia/",
+        instagram: "https://www.instagram.com/ecopowerenergia/",
+      },
+    ],
+  },
+  {
+    id: "ac_pb",
+    state: "Paraíba",
+    units: [
+      {
+        address: "Rua 25 de Julho, Nº 1191. Bairro América",
+        phone: "48 99090-0099",
+        name: "Araranguá 1",
+        image,
+        facebook: "https://www.facebook.com/ecopowerenergia/",
+        instagram: "https://www.instagram.com/ecopowerenergia/",
+      },
+    ],
+  },
+  {
+    id: "ac_rr",
+    state: "Roraima",
     units: [
       {
         address: "Rua 25 de Julho, Nº 1191. Bairro América",
