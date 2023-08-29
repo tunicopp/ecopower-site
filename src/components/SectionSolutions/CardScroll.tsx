@@ -42,7 +42,7 @@ export const CardScrollContent = {
         <h3 className="text-[32px] font-semibold">Residencial</h3>
         <p className="text-lg leading-6 mt-2">
           Energia solar já é realidade em muitos lares por ser limpa,
-          sustentável, e trazer economia.
+          sustentável e trazer economia.
         </p>
         <div className="flex flex-col gap-4">
           <div className="flex gap-2 items-center mt-10">

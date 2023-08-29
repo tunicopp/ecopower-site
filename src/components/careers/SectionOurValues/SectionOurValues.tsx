@@ -109,11 +109,11 @@ const SectionOurValues: React.FC<Props> = ({ className }) => {
           </div>
           <div className="flex flex-col justify-between p-6 rounded-2xl min-h-[302px] bg-beige-300">
             <div className="w-[66px] h-[66px] flex-center rounded-full bg-white">
-              <Image src={shakingHands} alt="Ícone de Apoio Irrestrito" />
+              <Image src={shakingHands} alt="Ícone de Apoio Total" />
             </div>
             <div>
               <h2 className="text-black text-base leading-none font-bold">
-                Apoio Irrestrito
+                Apoio Total
               </h2>
               <p className="text-grey-100 mt-2">
                 Estamos em todo o país, com unidades e pontos de apoio para

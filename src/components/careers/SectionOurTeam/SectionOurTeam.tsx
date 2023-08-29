@@ -12,12 +12,12 @@ import teamFive from "../../../../public/assets/images/careers/team-five.svg";
 
 const SectionOurTeam: React.FC = () => {
   return (
-    <section className="relative lg:pt-[450px] pt-[400px] lg:pb-[560px] pb-[80px] overflow-hidden">
+    <section className="relative lg:pt-[450px] md:pt-[400px] pt-[200px] lg:pb-[560px] pb-[80px] overflow-hidden">
       <Image
         src={circle}
         alt="Círculo"
         quality={100}
-        className="absolute right-0 left-0 mx-auto lg:-top-[43%] md:-top-[30%]"
+        className="absolute right-0 left-0 mx-auto lg:-top-[43%] md:-top-[20%] -top-[10%]"
       />
       <GridContainer className="flex-col items-center relative">
         <Reveal>

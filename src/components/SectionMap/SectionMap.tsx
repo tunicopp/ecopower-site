@@ -21,7 +21,9 @@ const SectionMap: React.FC = () => {
       <div className="relative flex mt-[180px] lg:mt-0 flex-col max-w-full lg:flex-row lg:max-w-[912px] p-6 pt-14 lg:p-10 group bg-white z-10 rounded-3xl lg:ml-[110px] lg:mb-[110px]">
         <div className="flex lg:w-[60%] flex-col">
           <h2 className="text-4xl lg:text-[44px] font-semibold leading-none lg:leading-[52px]">
-            Somos a energia que move o futuro. Somos Eco. Somos Power.
+            Somos a energia que move o futuro.{" "}
+            <span className="lg:inline block">Somos Eco.</span>{" "}
+            <span className="lg:inline block">Somos Power.</span>
           </h2>
           <p className="text-[20px] mt-[24px]">
             Presente em todo o país, a EcoPower é a empresa de energia solar que
