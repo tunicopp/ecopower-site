@@ -58,8 +58,8 @@ const ProductsGrid: React.FC = () => {
         peilentesque eget ipsum.
       </Tooltip>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 md:mt-[88px] mt-10">
-        <ProductGridItem />
-        <ProductGridItem />
+        <ProductGridItem isOnGrid />
+        <ProductGridItem isOnGrid />
         <ProductGridItem />
         <ProductGridItem />
         <ProductGridItem />

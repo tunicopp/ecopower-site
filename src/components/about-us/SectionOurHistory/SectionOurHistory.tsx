@@ -5,9 +5,9 @@ import ourHistoryImage from "../../../../public/assets/images/about-us/our-histo
 
 const SectionOurHistory: React.FC = () => {
   return (
-    <section className="relative flex bg-beige-300 pt-10 pb-[28px] overflow-hidden">
+    <section className="relative lg:flex-row flex-col flex bg-beige-300 pt-10 pb-[28px] overflow-hidden">
       <GridContainer className="mt-[70px]">
-        <div className="flex flex-col max-w-[496px]">
+        <div className="flex flex-col lg:max-w-[496px]">
           <h2 className="text-xl leading-[30px] text-black font-bold">
             A história da EcoPower teve início com uma estrutura familiar em
             Barretos (interior de SP) em 2013, acompanhando o desenvolvimento,
@@ -39,7 +39,7 @@ const SectionOurHistory: React.FC = () => {
         src={ourHistoryImage}
         alt="Nossa História"
         quality={100}
-        className="absolute max-w-[801px] max-h-[657px] bottom-0 -right-16"
+        className="lg:absolute max-w-[801px] max-h-[657px] bottom-0 -right-16"
       />
     </section>
   );

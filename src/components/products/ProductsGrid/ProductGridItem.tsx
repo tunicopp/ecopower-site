@@ -3,7 +3,11 @@ import React from "react";
 import productImage from "../../../../public/assets/images/products/solar-panel.png";
 import OutlineButton from "@/components/global/OutlineButton";
 
-const ProductGridItem: React.FC = () => {
+interface Props {
+  isOnGrid?: boolean;
+}
+
+const ProductGridItem: React.FC<Props> = ({ isOnGrid }) => {
   return (
     <div className="rounded-2xl bg-beige-300 pt-4 pb-12">
       <Image
@@ -23,10 +27,12 @@ const ProductGridItem: React.FC = () => {
           peilentesque eget ipsum.
         </h3>
         <span className="text-sm leading-7 font-bold">
-          Chama a gente no WhatsApp
+          {isOnGrid ? "Faça um simulação" : "Chama a gente no WhatsApp"}
         </span>
       </div>
-      <OutlineButton className="mx-6 mt-2">WhatsApp</OutlineButton>
+      <button className="mx-6 mt-2 simulate-button min-w-[165px]">
+        Saiba mais
+      </button>
     </div>
   );
 };
