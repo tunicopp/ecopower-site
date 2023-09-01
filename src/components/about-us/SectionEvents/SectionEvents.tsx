@@ -14,7 +14,7 @@ const SectionEvents: React.FC = () => {
     <section className="bg-beige-300 pb-[110px]">
       <GridContainer className="flex-col items-center">
         <div className="flex flex-col w-full items-center relative mb-12">
-          <TitleComponent>Eventos que patrocinamos</TitleComponent>
+          <TitleComponent>A energia que move os grandes eventos</TitleComponent>
           <h3 className="mt-3 text-xl">
             Lorem ipsum dolor sit amet consectetur elit
           </h3>
