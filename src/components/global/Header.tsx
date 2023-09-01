@@ -118,7 +118,7 @@ const Header: React.FC = () => {
             href="/careers"
             className="text-sm leading-4 font-medium text-white flex items-center"
           >
-            Carreiras
+            Pessoas
           </Link>
         </div>
         <button
