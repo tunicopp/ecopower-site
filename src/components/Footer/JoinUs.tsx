@@ -13,6 +13,7 @@ import houseTwo from "../../../public/assets/images/join-us/join-us-house-two.sv
 import trees from "../../../public/assets/images/join-us/join-us-trees.svg";
 import panel from "../../../public/assets/images/join-us/join-us-panel.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const JoinUs: React.FC = () => {
   return (
@@ -76,9 +77,12 @@ const JoinUs: React.FC = () => {
             Agora que você já nos conhece, saiba mais sobre carreiras na
             EcoPower.
           </h3>
-          <OutlineButton aria-selected className="relative">
-            Carreira na EcoPower
-          </OutlineButton>
+
+          <Link href="https://ecopower.vagas.solides.com.br/" target="_blank">
+            <OutlineButton aria-selected className="relative">
+              Carreira na EcoPower
+            </OutlineButton>
+          </Link>
         </div>
       </GridContainer>
     </section>
