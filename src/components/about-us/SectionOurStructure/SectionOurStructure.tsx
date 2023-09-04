@@ -10,7 +10,7 @@ const SectionOurStructure: React.FC = () => {
       <Image
         src={bg}
         alt="Nossa Estrutura"
-        className="absolute top-0 left-0 lg:max-w-[1440px] lg:h-auto lg:w-auto w-full md:h-[303px] object-cover"
+        className="absolute top-0 left-0 lg:h-auto lg:w-auto w-full md:h-[303px] object-cover"
       />
       <GridContainer className="flex-col relative items-center">
         <TitleComponent className="text-white">Nossa estrutura</TitleComponent>
