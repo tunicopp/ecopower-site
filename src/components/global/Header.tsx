@@ -7,6 +7,7 @@ import { MdOutlineMenu } from "react-icons/md";
 import Link from "next/link";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
+import ContactsBar from "../Hero/ContactsBar";
 
 const Header: React.FC = () => {
   const [isAtTop, setIsAtTop] = useState(true);
@@ -32,6 +33,7 @@ const Header: React.FC = () => {
         isAtTop ? "" : "bg-hero-green"
       }`}
     >
+      <ContactsBar />
       <GridContainer className="py-4 items-center">
         <Link href="/" className="mr-auto">
           <Image

@@ -7,7 +7,7 @@ import { faqData } from "@/utils/faqData";
 
 const SectionFAQ: React.FC = () => {
   return (
-    <section>
+    <section id="FAQ">
       <GridContainer className="flex-col py-[110px]">
         <Reveal>
           <TitleComponent className="leading-none">
