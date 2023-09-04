@@ -7,6 +7,7 @@ import jads from "../../../../public/assets/images/about-us/partners/jads-jadson
 import joaoVinicius from "../../../../public/assets/images/about-us/partners/joao-vinicius-partner.png";
 import fabricio from "../../../../public/assets/images/about-us/partners/fabricio-partner.png";
 import cuiabano from "../../../../public/assets/images/about-us/partners/cuiabano-partner.png";
+import brunoBarreto from "../../../../public/assets/images/about-us/partners/bruno-barreto-partner.png";
 
 const SectionPartners: React.FC = () => {
   return (
@@ -80,6 +81,19 @@ const SectionPartners: React.FC = () => {
             <div className="flex flex-col gap-2">
               <b className="text-2xl">Cuiabano Lima</b>
               <span className="text-grey-100">Locutor</span>
+            </div>
+          </div>
+          <div className="pl-8 pr-[30px] py-6 rounded-full bg-beige-300 flex items-center gap-6">
+            <Image
+              src={brunoBarreto}
+              alt="Bruno e Barreto"
+              width={112}
+              height={112}
+              className="rounded-full"
+            />
+            <div className="flex flex-col gap-2">
+              <b className="text-2xl">Bruno e Barreto</b>
+              <span className="text-grey-100">Cantores</span>
             </div>
           </div>
         </div>

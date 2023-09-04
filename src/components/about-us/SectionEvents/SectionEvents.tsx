@@ -8,6 +8,10 @@ import EventSlide from "./EventSlide";
 import "swiper/css";
 import "swiper/css/pagination";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import placeholder from "../../../../public/assets/images/about-us/events/event-placeholder.png";
+import abfExpo from "../../../../public/assets/images/about-us/events/abf-expo.png";
+import agrishow from "../../../../public/assets/images/about-us/events/agrishow.png";
+import rdSummit from "../../../../public/assets/images/about-us/events/rd-summit.png";
 
 const SectionEvents: React.FC = () => {
   return (
@@ -60,28 +64,32 @@ const SectionEvents: React.FC = () => {
           }}
         >
           <SwiperSlide>
-            <EventSlide />
+            <EventSlide
+              src={placeholder}
+              subTitle="A maior festa da América Latina"
+              title="Festa do Peão de Barretos"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <EventSlide />
+            <EventSlide
+              src={abfExpo}
+              subTitle="Maior feira de franquias do mundo"
+              title="ABF Expo"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <EventSlide />
+            <EventSlide
+              src={agrishow}
+              subTitle="Uma das maiores feiras agrícolas"
+              title="Agrishow"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <EventSlide />
-          </SwiperSlide>
-          <SwiperSlide>
-            <EventSlide />
-          </SwiperSlide>
-          <SwiperSlide>
-            <EventSlide />
-          </SwiperSlide>
-          <SwiperSlide>
-            <EventSlide />
-          </SwiperSlide>
-          <SwiperSlide>
-            <EventSlide />
+            <EventSlide
+              src={rdSummit}
+              subTitle="O maior evento de marketing"
+              title="RD Summit"
+            />
           </SwiperSlide>
         </Swiper>
         <div id="bullets-event" className="text-center mt-[50px]"></div>
