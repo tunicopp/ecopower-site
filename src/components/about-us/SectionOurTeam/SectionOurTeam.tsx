@@ -1,16 +1,51 @@
+"use client";
 import GridContainer from "@/components/global/GridContainer";
 import TitleComponent from "@/components/global/TitleComponent";
 import Image from "next/image";
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import circle from "../../../../public/assets/images/careers/circles.svg";
-import teamOne from "../../../../public/assets/images/careers/team-one.svg";
-import teamTwo from "../../../../public/assets/images/careers/team-two.svg";
-import teamThree from "../../../../public/assets/images/careers/team-three.svg";
-import teamFour from "../../../../public/assets/images/careers/team-four.svg";
-import teamFive from "../../../../public/assets/images/careers/team-five.svg";
 import greatPlace from "../../../../public/assets/images/careers/great-place-to-work.svg";
+import teamEight from "../../../../public/assets/images/careers/team-eight.png";
+import teamEleven from "../../../../public/assets/images/careers/team-eleven.png";
+import teamFifteen from "../../../../public/assets/images/careers/team-fifteen.png";
+import teamFive from "../../../../public/assets/images/careers/team-five.png";
+import teamFour from "../../../../public/assets/images/careers/team-four.png";
+import teamFourteen from "../../../../public/assets/images/careers/team-fourteen.png";
+import teamNine from "../../../../public/assets/images/careers/team-nine.png";
+import teamOne from "../../../../public/assets/images/careers/team-one.png";
+import teamSeven from "../../../../public/assets/images/careers/team-seven.png";
+import teamSeventeen from "../../../../public/assets/images/careers/team-seventeen.png";
+import teamSix from "../../../../public/assets/images/careers/team-six.png";
+import teamSixteen from "../../../../public/assets/images/careers/team-sixteen.png";
+import teamTen from "../../../../public/assets/images/careers/team-ten.png";
+import teamThirteen from "../../../../public/assets/images/careers/team-thirteen.png";
+import teamThree from "../../../../public/assets/images/careers/team-three.png";
+import teamTwelve from "../../../../public/assets/images/careers/team-twelve.png";
+import teamTwo from "../../../../public/assets/images/careers/team-two.png";
 
 const SectionOurTeam: React.FC = () => {
+  const team = [
+    teamOne,
+    teamTwo,
+    teamThree,
+    teamFour,
+    teamFive,
+    teamSix,
+    teamSeven,
+    teamEight,
+    teamNine,
+    teamTen,
+    teamEleven,
+    teamTwelve,
+    teamThirteen,
+    teamFourteen,
+    teamFifteen,
+    teamSixteen,
+    teamSeventeen,
+  ];
+
   return (
     <section className="relative pb-[184px] overflow-hidden">
       <GridContainer className="flex-col items-center relative">
@@ -22,39 +57,30 @@ const SectionOurTeam: React.FC = () => {
           capacitados.
         </h3>
       </GridContainer>
-      <div className="lg:absolute relative lg:left-[50%] mt-[54px] lg:-translate-x-2/4 lg:w-[1601px] w-full grid lg:grid-cols-5 md:grid-cols-2 z-10 lg:gap-5 gap-6 justify-items-center">
-        <Image
-          src={teamOne}
-          alt="Nosso time"
-          quality={100}
-          className="team-grid-item"
-        />
-        <Image
-          src={teamTwo}
-          alt="Nosso time"
-          quality={100}
-          className="team-grid-item"
-        />
-        <Image
-          src={teamThree}
-          alt="Nosso time"
-          quality={100}
-          className="team-grid-item"
-        />
-        <Image
-          src={teamFour}
-          alt="Nosso time"
-          quality={100}
-          className="team-grid-item"
-        />
-        <Image
-          src={teamFive}
-          alt="Nosso time"
-          quality={100}
-          className="team-grid-item lg:col-auto md:col-span-2 col-auto"
-        />
+
+      <div className="relative flex w-full mt-[54px]">
+        <Swiper
+          slidesPerView={4.5}
+          spaceBetween={24}
+          className="w-full !px-6 lg:!px-[110px]"
+          direction="horizontal"
+          draggable
+          breakpoints={{
+            768: { slidesPerView: 2 },
+            1024: {
+              slidesPerView: 3.2,
+            },
+          }}
+        >
+          {team.map((c, i) => (
+            <SwiperSlide key={i} className="even:mt-[136px] odd:mb-[136px]">
+              <Image src={c} alt="Nosso time" quality={100} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-      <GridContainer className="flex-center lg:mt-[514px] mt-12">
+
+      <GridContainer className="flex-center lg:mt-[16px] mt-12">
         <Image
           src={circle}
           alt="Círculo"
