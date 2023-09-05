@@ -144,6 +144,14 @@ export default function RootLayout({
     `,
         }}
       />
+      <Script
+        type="text/javascript"
+        id="ra-embed-reputation"
+        src="https://s3.amazonaws.com/raichu-beta/selos/bundle.js"
+        data-id="cjBzOUJkaDFvbnNVVFdnNzplY29wb3dlci1zaXN0ZW1hcy1kZS1lbmVyZ2lh"
+        data-target="reputation-ra"
+        data-model="1"
+      ></Script>
       <head>
         <link
           rel="apple-touch-icon"

@@ -88,7 +88,7 @@ const StateAccordion: React.FC<StateAccordionProps> = ({
                 <BsFacebook />
               </a>
               <a
-                href={u.facebook}
+                href={u.instagram}
                 target="_blank"
                 className="flex-center bg-white w-10 h-10 rounded-full"
               >

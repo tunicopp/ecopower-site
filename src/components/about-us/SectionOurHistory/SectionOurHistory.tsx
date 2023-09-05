@@ -39,7 +39,7 @@ const SectionOurHistory: React.FC = () => {
         src={ourHistoryImage}
         alt="Nossa História"
         quality={100}
-        className="lg:absolute max-w-[801px] max-h-[657px] bottom-0 -right-16"
+        className="lg:absolute w-full lg:w-auto max-w-[801px] max-h-[657px] bottom-0 -right-16"
       />
     </section>
   );
