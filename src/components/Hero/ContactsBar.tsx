@@ -27,10 +27,10 @@ const ContactsBar: React.FC = () => {
           <span className="text-sm ml-2">4000-1722</span>
         </Link>
 
-        <Link href="/" className="flex items-center text-xl text-grayscale-800">
+        {/* <Link href="/" className="flex items-center text-xl text-grayscale-800">
           <MdWhatsapp />
           <span className="text-sm ml-2">4000-1722</span>
-        </Link>
+        </Link> */}
 
         {/* <div className="flex items-center text-grayscale-900 ml-[41px] mr-[28px]">
           <a href="/" className="mr-6">

@@ -1,52 +1,13 @@
-"use client";
 import GridContainer from "@/components/global/GridContainer";
 import Reveal from "@/components/global/Reveal";
 import TitleComponent from "@/components/global/TitleComponent";
 import Image from "next/image";
 import React from "react";
 import "swiper/css";
-import { Swiper, SwiperSlide } from "swiper/react";
 import circle from "../../../../public/assets/images/careers/circles.svg";
-
-import teamOne from "../../../../public/assets/images/careers/team-one.png";
-import teamTwo from "../../../../public/assets/images/careers/team-two.png";
-import teamThree from "../../../../public/assets/images/careers/team-three.png";
-import teamFour from "../../../../public/assets/images/careers/team-four.png";
-import teamFive from "../../../../public/assets/images/careers/team-five.png";
-import teamSix from "../../../../public/assets/images/careers/team-six.png";
-import teamSeven from "../../../../public/assets/images/careers/team-seven.png";
-import teamEight from "../../../../public/assets/images/careers/team-eight.png";
-import teamNine from "../../../../public/assets/images/careers/team-nine.png";
-import teamTen from "../../../../public/assets/images/careers/team-ten.png";
-import teamEleven from "../../../../public/assets/images/careers/team-eleven.png";
-import teamTwelve from "../../../../public/assets/images/careers/team-twelve.png";
-import teamThirteen from "../../../../public/assets/images/careers/team-thirteen.png";
-import teamFourteen from "../../../../public/assets/images/careers/team-fourteen.png";
-import teamFifteen from "../../../../public/assets/images/careers/team-fifteen.png";
-import teamSixteen from "../../../../public/assets/images/careers/team-sixteen.png";
-import teamSeventeen from "../../../../public/assets/images/careers/team-seventeen.png";
+import AutoCarrousel from "@/components/global/AutoCarrousel";
 
 const SectionOurTeam: React.FC = () => {
-  const team = [
-    teamOne,
-    teamTwo,
-    teamThree,
-    teamFour,
-    teamFive,
-    teamSix,
-    teamSeven,
-    teamEight,
-    teamNine,
-    teamTen,
-    teamEleven,
-    teamTwelve,
-    teamThirteen,
-    teamFourteen,
-    teamFifteen,
-    teamSixteen,
-    teamSeventeen,
-  ];
-
   return (
     <section className="relative lg:pt-[450px] md:pt-[400px] pt-[200px] lg:pb-[109px] pb-[80px] overflow-hidden">
       <Image
@@ -69,30 +30,7 @@ const SectionOurTeam: React.FC = () => {
         </Reveal>
       </GridContainer>
       <div className="relative flex w-full mt-[54px]">
-        <Swiper
-          slidesPerView={4.5}
-          spaceBetween={24}
-          className="w-full !px-6 lg:!px-[110px]"
-          direction="horizontal"
-          draggable
-          breakpoints={{
-            768: { slidesPerView: 2 },
-            1024: {
-              slidesPerView: 3.2,
-            },
-          }}
-        >
-          {team.map((c, i) => (
-            <SwiperSlide key={i} className="even:mt-[136px] odd:mb-[136px]">
-              <Image
-                src={c}
-                alt="Nosso time"
-                quality={100}
-                // className="team-grid-item"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <AutoCarrousel />
       </div>
     </section>
   );

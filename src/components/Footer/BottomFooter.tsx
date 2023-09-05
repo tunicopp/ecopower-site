@@ -4,7 +4,11 @@ import LinkFooter from "./LinkFooter";
 import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
 import { BsWhatsapp } from "react-icons/bs";
 import logo from "../../../public/assets/icons/logo-eco-power.svg";
-import logoFooter from "../../../public/assets/images/logo-footer.png";
+import badgeOne from "../../../public/assets/images/footer/footer-badge-01.svg";
+import badgeTwo from "../../../public/assets/images/footer/footer-badge-02.svg";
+import badgeThree from "../../../public/assets/images/footer/footer-badge-03.svg";
+import badgeFour from "../../../public/assets/images/footer/footer-badge-04.svg";
+import badgeFive from "../../../public/assets/images/footer/footer-badge-05.svg";
 import ExternalLinkFooter from "./ExternalLinkFooter";
 import Link from "next/link";
 import atom from "../../../public/assets/images/atom-logo.svg";
@@ -38,7 +42,7 @@ const BottomFooter: React.FC = () => {
               target="_blank"
               className="bg-grayscale-800 text-white py-2 px-5 rounded-full font-semibold w-fit mt-6 mb-6 lg:mb-6 hover:border-2 hover:border-white transition-all"
             >
-              Acessar Ecopower store
+              Acessar EcoPower store
             </a>
           </div>
         </div>
@@ -77,14 +81,14 @@ const BottomFooter: React.FC = () => {
               </ExternalLinkFooter>
             </div>
             <LinkFooter href="">Seja um Franqueado</LinkFooter>
-            <LinkFooter href="/faq">Dúvidas Frequentes</LinkFooter>
-            <div className="relative flex w-[120px]   ">
-              <Image
-                src={logoFooter}
-                alt="logo footer"
-                quality={100}
-                className="lg:absolute mb-4 lg:mb-0 w-full object-cover"
-              />
+            <LinkFooter href="/#FAQ">Dúvidas Frequentes</LinkFooter>
+            <div className="relative flex w-full justify-between gap-4 flex-wrap">
+              <Image src={badgeOne} alt="Experiência em Franchising" />
+              <Image src={badgeTwo} alt="Associado Absolar" />
+              <Image src={badgeThree} alt="SolarView" />
+              <Image src={badgeFour} alt="Great Place To Work" />
+              <Image src={badgeFive} alt="Weg" />
+              <div id="reputation-ra"></div>
             </div>
           </div>
         </div>
@@ -100,12 +104,16 @@ const BottomFooter: React.FC = () => {
           © 2023 EcoPower Energia Solar - Todos os direitos reservados. CNPJ:
           18.269.815/0001-36.
         </p>
-        <div className="flex items-center gap-2">
+        <a
+          href="https://atom6studio.com/"
+          target="_blank"
+          className="flex items-center gap-2"
+        >
           <span className="text-white text-sm opacity-40 font-mont font-medium font-montserrat tracking-[1.68px]">
             CREATED BY
           </span>
           <Image src={atom} alt="Atom6 Studio" />
-        </div>
+        </a>
       </div>
     </div>
   );

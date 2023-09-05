@@ -52,10 +52,14 @@ const SectionFutureEco: React.FC = () => {
             atividades são orientadas por aspectos ambientais, sociais e de
             governança.
           </p>
-          <button className="simulate-button flex items-center gap-2">
+          <a
+            href="/assets/pdf/POLITICA-DE-SUSTENTABILIDADE-ECOPOWER.pdf"
+            download="POLITICA-DE-SUSTENTABILIDADE-ECOPOWER"
+            className="simulate-button flex items-center gap-2"
+          >
             Veja nossa política de sustentabilidade
             <Image src={arrow} alt="Ir para página" />
-          </button>
+          </a>
         </GridContainer>
         <GridContainer className="lg:gap-[78px] gap-6 lg:flex-row flex-col-reverse items-center pt-10">
           <Image
