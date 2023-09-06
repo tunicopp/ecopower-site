@@ -8,6 +8,7 @@ import factory from "../../../public/assets/images/sectionProjects/img-card-fact
 import store from "../../../public/assets/images/sectionProjects/img-card-store.png";
 import farm from "../../../public/assets/images/sectionProjects/img-card-farm.png";
 import CardProject from "./CardProject";
+import Link from "next/link";
 
 const cards = [
   {
@@ -68,9 +69,12 @@ const SectionProject: React.FC = () => {
           ))}
         </div>
       </div>
-      <button className="h-12 w-full mt-6 lg:mt-0 lg:w-auto rounded-3xl border-2 px-5 hover:bg-grayscale-100 transition-all font-semibold">
+      <Link
+        href="/projetos"
+        className="h-12 flex items-center w-full mt-6 lg:mt-0 lg:w-auto rounded-3xl border-2 px-5 hover:bg-grayscale-100 transition-all font-semibold"
+      >
         Ver todos os projetos
-      </button>
+      </Link>
     </section>
   );
 };

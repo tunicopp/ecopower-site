@@ -70,7 +70,11 @@ const CardProject: React.FC<CardProjectProps> = ({
       </div>
       <h3 className="text-white text-[32px] font-bold z-10">{title}</h3>
       <p className="text-white  z-10">{subTitle}</p>
-      <LinkArrow className="text-white z-10" text="Ver Projeto" />
+      <LinkArrow
+        className="text-white z-10"
+        text="Ver Projeto"
+        to="/projetos"
+      />
     </motion.div>
   );
 };

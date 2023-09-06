@@ -27,7 +27,7 @@ import sun from "../../../public/assets/images/hero/sun.png";
 
 const HeroSlider: React.FC = () => {
   return (
-    <div className="lg:absolute hero-slider-wrapper mt-16 lg:mt-10 -top-[40px] left-0 z-0">
+    <div className="lg:absolute hero-slider-wrapper mt-16 lg:mt-10 bottom-0 left-0 z-0">
       <Swiper
         slidesPerView={1}
         className="lg:h-[582px] h-[512px]"

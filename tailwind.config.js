@@ -23,6 +23,9 @@ module.exports = {
         montserrat: ["var(--font-montserrat)"],
         "golos-text": ["var(--font-golos-text)"],
       },
+      height: {
+        "height-mobile": "calc(100vh - 129px)",
+      },
     },
     colors: {
       "primary-green": "#01B040",

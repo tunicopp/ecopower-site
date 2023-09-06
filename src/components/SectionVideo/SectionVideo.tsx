@@ -18,6 +18,7 @@ import SolarPateLarge from "../../../public/assets/icons/SolarPateLarge";
 import PlayCircle from "../../../public/assets/icons/PlayCircle";
 import Modal from "../global/Modal";
 import LinkArrow from "../global/LinkArrow";
+import { MdChevronRight } from "react-icons/md";
 
 const SectionVideo: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -37,7 +38,7 @@ const SectionVideo: React.FC = () => {
     }
   }, [modalOpen]);
   return (
-    <>
+    <section>
       <div className="flex flex-col lg:flex-row items-center justify-between p-6 lg:pl-0 relative w-full h-full lg:h-[690px] lg:bg-grayscale-600 group overflow-hidden">
         <motion.div
           ref={ref}
@@ -60,11 +61,15 @@ const SectionVideo: React.FC = () => {
             pellentesque eget ipsum.
           </p>
 
-          <LinkArrow
-            className="text-white"
-            text="Assistir Video"
+          <button
+            className="text-white font-semibold mt-10 flex items-center gap-2 group/arrow cursor-pointer"
             onClick={() => setModalOpen(true)}
-          />
+          >
+            <p className="text-white">Assistir Vídeo</p>
+            <div className="slide-arrow text-xl">
+              <MdChevronRight />
+            </div>
+          </button>
 
           <div className="absolute bottom-0 -right-3">
             <SolarPateLarge />
@@ -74,7 +79,7 @@ const SectionVideo: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative mt-6 w-full lg:hidden">
+        {/* <div className="relative mt-6 w-full lg:hidden">
           <Image
             src={thumb1}
             alt="thumbnail"
@@ -87,7 +92,7 @@ const SectionVideo: React.FC = () => {
           >
             <PlayCircle />
           </button>
-        </div>
+        </div> */}
 
         <button
           onClick={() => setModalOpen(true)}
@@ -104,7 +109,7 @@ const SectionVideo: React.FC = () => {
           allowFullScreen
         ></iframe>
       </Modal>
-    </>
+    </section>
   );
 };
 

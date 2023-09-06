@@ -19,7 +19,7 @@ const SectionMap: React.FC = () => {
       <BgMapMobile />
 
       <div className="relative flex mt-[180px] lg:mt-0 flex-col max-w-full lg:flex-row lg:max-w-[912px] p-6 pt-14 lg:p-10 group bg-white z-10 rounded-3xl lg:ml-[110px] lg:mb-[110px]">
-        <div className="flex lg:w-[60%] flex-col">
+        <div className="flex lg:w-[60%] flex-col md:pb-0 pb-[100px]">
           <h2 className="text-4xl lg:text-[44px] font-semibold leading-none lg:leading-[52px]">
             Somos a energia que move o futuro.{" "}
             <span className="lg:inline block">Somos Eco.</span>{" "}
@@ -45,6 +45,7 @@ const SectionMap: React.FC = () => {
           <LinkArrow
             className="text-primary-green"
             text="Conheça nossa historia"
+            to="/sobre-nos"
           />
         </div>
 
@@ -83,13 +84,13 @@ const SectionMap: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex justify-center lg:hidden mt-12">
+        <div className="absolute bottom-0 right-6 lg:hidden">
           <Image
             src={mobileThree}
             alt="Mobile Ecopower"
             quality={100}
-            width={191}
-            height={375}
+            width={141}
+            height={251}
           />
         </div>
       </div>

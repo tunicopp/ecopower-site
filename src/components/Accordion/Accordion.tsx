@@ -15,7 +15,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, isH3, children }) => {
     <div className="rounded-[20px] bg-beige-300">
       <button
         onClick={() => setIsOpen((old) => !old)}
-        className="px-8 w-full py-[18px] flex items-center justify-between"
+        className="px-8 w-full py-[18px] flex items-center justify-between text-start"
       >
         {isH3 ? (
           <h3 className="text-lg text-black leading-6">{title}</h3>

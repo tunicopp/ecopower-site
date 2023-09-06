@@ -2,23 +2,23 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Image from "next/image";
-import teamEight from "../../../public/assets/images/careers/team-eight.png";
-import teamEleven from "../../../public/assets/images/careers/team-eleven.png";
-import teamFifteen from "../../../public/assets/images/careers/team-fifteen.png";
-import teamFive from "../../../public/assets/images/careers/team-five.png";
-import teamFour from "../../../public/assets/images/careers/team-four.png";
-import teamFourteen from "../../../public/assets/images/careers/team-fourteen.png";
-import teamNine from "../../../public/assets/images/careers/team-nine.png";
-import teamOne from "../../../public/assets/images/careers/team-one.png";
-import teamSeven from "../../../public/assets/images/careers/team-seven.png";
-import teamSeventeen from "../../../public/assets/images/careers/team-seventeen.png";
-import teamSix from "../../../public/assets/images/careers/team-six.png";
-import teamSixteen from "../../../public/assets/images/careers/team-sixteen.png";
-import teamTen from "../../../public/assets/images/careers/team-ten.png";
-import teamThirteen from "../../../public/assets/images/careers/team-thirteen.png";
-import teamThree from "../../../public/assets/images/careers/team-three.png";
-import teamTwelve from "../../../public/assets/images/careers/team-twelve.png";
-import teamTwo from "../../../public/assets/images/careers/team-two.png";
+import teamEight from "../../../public/assets/images/carreiras/team-eight.png";
+import teamEleven from "../../../public/assets/images/carreiras/team-eleven.png";
+import teamFifteen from "../../../public/assets/images/carreiras/team-fifteen.png";
+import teamFive from "../../../public/assets/images/carreiras/team-five.png";
+import teamFour from "../../../public/assets/images/carreiras/team-four.png";
+import teamFourteen from "../../../public/assets/images/carreiras/team-fourteen.png";
+import teamNine from "../../../public/assets/images/carreiras/team-nine.png";
+import teamOne from "../../../public/assets/images/carreiras/team-one.png";
+import teamSeven from "../../../public/assets/images/carreiras/team-seven.png";
+import teamSeventeen from "../../../public/assets/images/carreiras/team-seventeen.png";
+import teamSix from "../../../public/assets/images/carreiras/team-six.png";
+import teamSixteen from "../../../public/assets/images/carreiras/team-sixteen.png";
+import teamTen from "../../../public/assets/images/carreiras/team-ten.png";
+import teamThirteen from "../../../public/assets/images/carreiras/team-thirteen.png";
+import teamThree from "../../../public/assets/images/carreiras/team-three.png";
+import teamTwelve from "../../../public/assets/images/carreiras/team-twelve.png";
+import teamTwo from "../../../public/assets/images/carreiras/team-two.png";
 
 const teams = [
   teamOne,
