@@ -74,7 +74,7 @@ const SectionVideo: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative mt-6 w-full lg:hidden">
+        {/* <div className="relative mt-6 w-full lg:hidden">
           <Image
             src={thumb1}
             alt="thumbnail"
@@ -87,7 +87,7 @@ const SectionVideo: React.FC = () => {
           >
             <PlayCircle />
           </button>
-        </div>
+        </div> */}
 
         <button
           onClick={() => setModalOpen(true)}

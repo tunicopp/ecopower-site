@@ -19,7 +19,7 @@ const SectionTestimonial: React.FC = () => {
           O que dizem nossos clientes
         </TitleComponent>
       </Reveal>
-      <Reveal className="px-6 mb-10 mb:mb-[112px] mt-6" delay={0.4}>
+      <Reveal className="px-6 mb-0 mb:mb-[112px] mt-6" delay={0.4}>
         <span className="font-medium text-grayscale-400">
           Lorem ipsum dolor sit amet consectetur.
         </span>
