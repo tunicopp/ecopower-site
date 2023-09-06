@@ -64,7 +64,7 @@ const MegaMenuProductItem: React.FC<Props> = ({
       <b className="text-xl text-grayscale-900 font-semibold">{title}</b>
       <p className="text-base text-grayscale-400">{children}</p>
       <Link
-        href="/products"
+        href="/produtos"
         className="flex items-center gap-1 mt-auto text-2xl text-primary-green"
       >
         <span

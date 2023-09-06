@@ -60,7 +60,7 @@ export const CardScrollContent = {
           <LinkArrow
             className="text-primary-green"
             text="Ver Projetos Residenciais"
-            to="/products"
+            to="/produtos"
           />
         </div>
       </>
@@ -91,7 +91,7 @@ export const CardScrollContent = {
           <LinkArrow
             className="text-primary-green"
             text=" Ver Projetos Empresariais"
-            to="/products"
+            to="/produtos"
           />
         </div>
       </>
@@ -122,7 +122,7 @@ export const CardScrollContent = {
           <LinkArrow
             className="text-primary-green"
             text="Ver Projetos Indutriais"
-            to="/products"
+            to="/produtos"
           />
         </div>
       </>
@@ -153,7 +153,7 @@ export const CardScrollContent = {
           <LinkArrow
             className="text-primary-green"
             text="Ver Projetos Rurais"
-            to="/products"
+            to="/produtos"
           />
         </div>
       </>

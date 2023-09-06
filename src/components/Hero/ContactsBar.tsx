@@ -7,7 +7,7 @@ const ContactsBar: React.FC = () => {
     <div className="bg-white md:h-[40px] py-2.5 relative">
       <div className="flex w-full items-center px-6 md:gap-6 gap-1 md:justify-end justify-between">
         <Link
-          href="/units"
+          href="/unidades"
           className="flex items-center md:text-xl text-grayscale-800"
         >
           <MdCardTravel />

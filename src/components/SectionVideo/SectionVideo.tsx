@@ -38,7 +38,7 @@ const SectionVideo: React.FC = () => {
     }
   }, [modalOpen]);
   return (
-    <>
+    <section>
       <div className="flex flex-col lg:flex-row items-center justify-between p-6 lg:pl-0 relative w-full h-full lg:h-[690px] lg:bg-grayscale-600 group overflow-hidden">
         <motion.div
           ref={ref}
@@ -79,7 +79,7 @@ const SectionVideo: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative mt-6 w-full lg:hidden">
+        {/* <div className="relative mt-6 w-full lg:hidden">
           <Image
             src={thumb1}
             alt="thumbnail"
@@ -92,7 +92,7 @@ const SectionVideo: React.FC = () => {
           >
             <PlayCircle />
           </button>
-        </div>
+        </div> */}
 
         <button
           onClick={() => setModalOpen(true)}
@@ -109,7 +109,7 @@ const SectionVideo: React.FC = () => {
           allowFullScreen
         ></iframe>
       </Modal>
-    </>
+    </section>
   );
 };
 

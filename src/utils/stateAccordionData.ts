@@ -1,5 +1,5 @@
 import { Unit } from "@/@types/app/unit.app.interface";
-import image from "../../public/assets/images/units/placeholder-unit.png";
+import image from "../../public/assets/images/unidades/placeholder-unit.png";
 
 interface Data {
   state: string;

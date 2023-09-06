@@ -53,17 +53,15 @@ const Header: React.FC = () => {
               className="w-auto h-auto"
             />
           </Link>
-          <div
-            className="hidden lg:flex lg:items-center"
-            onClick={() => {
-              setIsOpenProducts((old) => !old);
-              setIsOpen(false);
-            }}
-          >
+          <div className="hidden lg:flex lg:items-center">
             <button
               className={`text-sm leading-4 font-medium text-white flex rounded-lg items-center transition-colors py-[6px] -mr-3 px-3 duration-300 ${
                 isOpenProducts && "bg-white/25"
               }`}
+              onClick={() => {
+                setIsOpenProducts((old) => !old);
+                setIsOpen(false);
+              }}
             >
               Produtos
               <div
@@ -75,13 +73,13 @@ const Header: React.FC = () => {
               </div>
             </button>
             <Link
-              href="/about-us"
+              href="/sobre-nos"
               className="text-sm leading-4 font-medium text-white mx-6 flex items-center"
             >
               Sobre Nós
             </Link>
             <Link
-              href="/units"
+              href="/unidades"
               className="text-sm leading-4 font-medium text-white flex items-center"
             >
               Unidades
@@ -107,34 +105,37 @@ const Header: React.FC = () => {
           <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-6 flex-wrap mt-10 pb-6">
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
-              href="/products"
+              href="/produtos"
               title="Produtos"
               image="/assets/images/megamenu/megamenu-1.png"
+              className="md:!hidden"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
-              href="/about-us"
+              href="/sobre-nos"
               title="Sobre Nós"
               image="/assets/images/megamenu/megamenu-1.png"
+              className="md:!hidden"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
-              href="/units"
+              href="/unidades"
               title="Unidades"
               image="/assets/images/megamenu/megamenu-1.png"
+              className="md:!hidden"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
-              href="/projects"
+              href="/projetos"
               title="Projetos"
               image="/assets/images/megamenu/megamenu-1.png"
             >
@@ -152,7 +153,7 @@ const Header: React.FC = () => {
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
-              href="/sustainability"
+              href="/sustentabilidade"
               title="Sustentabilidade"
               image="/assets/images/megamenu/megamenu-3.png"
             >
@@ -161,7 +162,7 @@ const Header: React.FC = () => {
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
-              href="/careers"
+              href="/carreiras"
               title="Pessoas"
               image="/assets/images/megamenu/megamenu-4.png"
             >
@@ -182,7 +183,7 @@ const Header: React.FC = () => {
               Nossos Produtos
             </h2>
             <Link
-              href="/products"
+              href="/produtos"
               className="text-white flex items-center gap-1 font-semibold"
               onClick={() => setIsOpenProducts(false)}
             >

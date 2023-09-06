@@ -73,7 +73,7 @@ const CardProject: React.FC<CardProjectProps> = ({
       <LinkArrow
         className="text-white z-10"
         text="Ver Projeto"
-        to="/projects"
+        to="/projetos"
       />
     </motion.div>
   );

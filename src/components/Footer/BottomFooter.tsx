@@ -32,11 +32,11 @@ const BottomFooter: React.FC = () => {
         <div className="flex flex-col">
           <p className="text-white font-semibold">Produtos</p>
           <div className="flex flex-col mt-[24px] gap-3 ">
-            <LinkFooter href="/products">Todos os Produtos</LinkFooter>
-            <LinkFooter href="/products">Residencial</LinkFooter>
-            <LinkFooter href="/products">Empresarial</LinkFooter>
-            <LinkFooter href="/products">Industrial</LinkFooter>
-            <LinkFooter href="/products">Rural</LinkFooter>
+            <LinkFooter href="/produtos">Todos os Produtos</LinkFooter>
+            <LinkFooter href="/produtos">Residencial</LinkFooter>
+            <LinkFooter href="/produtos">Empresarial</LinkFooter>
+            <LinkFooter href="/produtos">Industrial</LinkFooter>
+            <LinkFooter href="/produtos">Rural</LinkFooter>
             <a
               href={"https://www.ecopowerstore.com.br/"}
               target="_blank"
@@ -49,11 +49,11 @@ const BottomFooter: React.FC = () => {
         <div className="flex flex-col">
           <p className="text-white font-semibold">Sobre Nós</p>
           <div className="flex flex-col mt-[24px] gap-3 ">
-            <LinkFooter href="/projects">Projetos</LinkFooter>
-            <LinkFooter href="/about-us">Nossa História</LinkFooter>
-            <LinkFooter href="/units">Unidades</LinkFooter>
-            <LinkFooter href="/sustainability">Sustentabilidade</LinkFooter>
-            <LinkFooter href="/careers">Carreiras</LinkFooter>
+            <LinkFooter href="/projetos">Projetos</LinkFooter>
+            <LinkFooter href="/sobre-nos">Nossa História</LinkFooter>
+            <LinkFooter href="/unidades">Unidades</LinkFooter>
+            <LinkFooter href="/sustentabilidade">Sustentabilidade</LinkFooter>
+            <LinkFooter href="/carreiras">Carreiras</LinkFooter>
             <LinkFooter href="/blog">Blog</LinkFooter>
           </div>
         </div>
@@ -95,7 +95,7 @@ const BottomFooter: React.FC = () => {
       </div>
       <div className="flex flex-col lg:flex-row items-center justify-between w-full">
         <Link
-          href="/privacy-policy"
+          href="/politica-de-privacidade"
           className="text-white opacity-40 mt-4 lg:mt-0 text-[14px] hover:border-b cursor-pointer"
         >
           Termos e Políticas de Privacidade
