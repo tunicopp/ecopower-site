@@ -1,8 +1,6 @@
 import React, { HTMLProps, ReactNode } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
-import { productsCardsGroup } from "@/utils/carrousselData";
 import { twMerge } from "tailwind-merge";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 

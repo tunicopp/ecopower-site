@@ -7,9 +7,9 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-[1000px] flex flex-col-reverse lg:block lg:min-h-[582px] pt-16 lg:pt-32 bg-hero-green w-full relative group">
+    <section className="min-h-[1000px] flex flex-col-reverse lg:block lg:min-h-[620px] pt-16 lg:pt-32 bg-hero-green w-full relative group">
       <HeroSlider />
-      <div className="z-10 relative">
+      <div className="z-10 relative lg:pt-0 pt-[80px]">
         <GridContainer className="pt-8 lg:pt-[103px] flex-col">
           <h1 className="text-base text-white font-bold">EcoPower te faz</h1>
           <h2 className="text-4xl leading-none lg:text-[3.5rem] lg:leading-[4rem] text-white font-semibold my-2 lg:my-0">

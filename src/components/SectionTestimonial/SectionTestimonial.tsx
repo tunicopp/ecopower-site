@@ -1,12 +1,9 @@
 "use client";
 import React from "react";
-import GridContainer from "../global/GridContainer";
 import TitleComponent from "../global/TitleComponent";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import TestimonialSlide from "./TestimonialSlide";
-import campaing1 from "../../../public/assets/images/section-campaing/campaing-1.png";
-import campaing2 from "../../../public/assets/images/section-campaing/campaing-2.png";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import Reveal from "../global/Reveal";
 import { testimonialData } from "@/utils/testimonialData";
@@ -33,14 +30,14 @@ const SectionTestimonial: React.FC = () => {
           modules={[Navigation]}
           navigation={{
             nextEl: "#next-testimonial",
-            prevEl: "#next-testimonial",
+            prevEl: "#prev-testimonial",
           }}
           breakpoints={{
             768: {
               slidesPerView: 2,
             },
             1024: {
-              slidesPerView: 3.2,
+              slidesPerView: 3.1,
             },
           }}
         >
@@ -51,7 +48,7 @@ const SectionTestimonial: React.FC = () => {
           ))}
         </Swiper>
         <button
-          id="next-testimonial"
+          id="prev-testimonial"
           className="style-navigation-products !hidden lg:!flex left-6 !bg-beige-200"
         >
           <MdChevronLeft />

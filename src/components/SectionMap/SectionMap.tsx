@@ -45,6 +45,7 @@ const SectionMap: React.FC = () => {
           <LinkArrow
             className="text-primary-green"
             text="Conheça nossa historia"
+            to="/about-us"
           />
         </div>
 

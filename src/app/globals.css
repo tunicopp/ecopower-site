@@ -37,6 +37,13 @@ a {
   box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
 }
 
+.mega-menu {
+  max-height: calc(100vh - 129px);
+}
+.mega-menu-products {
+  height: calc(100vh - 129px);
+}
+
 .active-bullet {
   background: #12131a !important;
 }
