@@ -51,11 +51,11 @@ const BottomFooter: React.FC = () => {
           <div className="flex-1 flex-col">
             <p className="text-white font-semibold">Sobre Nós</p>
             <div className="flex flex-col mt-[24px] gap-3 ">
-              <LinkFooter href="/projects">Projetos</LinkFooter>
-              <LinkFooter href="/about-us">Nossa História</LinkFooter>
-              <LinkFooter href="/units">Unidades</LinkFooter>
-              <LinkFooter href="/sustainability">Sustentabilidade</LinkFooter>
-              <LinkFooter href="/careers">Carreiras</LinkFooter>
+              <LinkFooter href="/projetos">Projetos</LinkFooter>
+              <LinkFooter href="/sobre-nos">Nossa História</LinkFooter>
+              <LinkFooter href="/unidades">Unidades</LinkFooter>
+              <LinkFooter href="/sustentabilidade">Sustentabilidade</LinkFooter>
+              <LinkFooter href="/carreiras">Carreiras</LinkFooter>
               <LinkFooter href="/blog">Blog</LinkFooter>
             </div>
           </div>
@@ -93,11 +93,41 @@ const BottomFooter: React.FC = () => {
             <LinkFooter href="">Seja um Franqueado</LinkFooter>
             <LinkFooter href="/#FAQ">Dúvidas Frequentes</LinkFooter>
             <div className="relative flex w-full justify-between gap-4 items-center flex-wrap my-3">
-              <Image src={badgeFour} alt="Great Place To Work" />
-              <Image src={badgeOne} alt="Experiência em Franchising" />
-              <Image src={badgeFive} alt="Weg" />
-              <Image src={badgeTwo} alt="Associado Absolar" />
-              <Image src={badgeThree} alt="SolarView" />
+              <a
+                className="block"
+                target="_blank"
+                href="https://franquias.portaldofranchising.com.br/franquia-ecopower-energia-solar/"
+              >
+                <Image src={badgeOne} alt="Experiência em Franchising" />
+              </a>
+              <a
+                className="block"
+                target="_blank"
+                href="https://www.absolar.org.br/associados/ecopower/"
+              >
+                <Image src={badgeTwo} alt="Associado Absolar" />
+              </a>
+              <a
+                className="block"
+                target="_blank"
+                href="https://www.instagram.com/p/Ch7talduPk8"
+              >
+                <Image src={badgeThree} alt="SolarView" />
+              </a>
+              <a
+                className="block"
+                target="_blank"
+                href="https://certificadas.gptw.com.br/18269815000136"
+              >
+                <Image src={badgeFour} alt="Great Place To Work" />
+              </a>
+              <a
+                className="block"
+                target="_blank"
+                href="https://certificadas.gptw.com.br/18269815000136"
+              >
+                <Image src={badgeFive} alt="Weg" />
+              </a>
               <a
                 className="block"
                 target="_blank"
