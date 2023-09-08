@@ -33,7 +33,10 @@ const SectionSlide: React.FC = () => {
       <TitleComponent className="leading-none">
         Conheça nossos produtos
       </TitleComponent>
-      <Link href="/" className="z-10 self-start lg:self-auto hover:underline">
+      <Link
+        href="/produtos"
+        className="z-10 self-start lg:self-auto hover:underline"
+      >
         <p className="font-medium mt-4 underline">Ver todos os produtos</p>
       </Link>
       <Carroussel className="mt-[88px] lg:mt-16">
