@@ -75,23 +75,23 @@ export default function RootLayout({
         id="Organization"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: `[
+          __html: `   [
             {
                 "@context": "http://schema.org",
                 "@type": "Organization",
-                "name": "EcoPower",
-                "legalName": "EcoPower Energia Solar",
+                "name": "Ecopower Energia Solar",
+                "legalName": "Ecopower Energia Solar",
                 "logo": "https://www.ecopower.com.br/wp-content/uploads/2023/05/Logo-Branca.png.webp",
                 "image": "https://www.ecopower.com.br/wp-content/uploads/2023/05/Logo-Branca.png.webp",
-                "description": "Use a nossa calculadora para saber o quanto você pode economizar em sua conta de luz. EcoPower é a energia que move o futuro. Somos Eco. Somos Power.",
+                "description": "Implementamos sistemas de energia solar on-grid com alto e rigoroso padrão de qualidade trazendo benefícios práticos para os nossos clientes.",
                 "url": "https://www.ecopower.com.br/",
                 "sameAs": [
-                    "https://www.instagram.com/ecopowerenergia/",
                     "https://www.facebook.com/ecopowerenergia",
                     "https://twitter.com/ecopowerenergia",
-                    "https://linkedin.com/company/ecopowerenergia",
+                    "https://www.instagram.com/ecopowerenergia/",
+                    "https://tiktok.com/@ecopowerenergia",
                     "https://www.youtube.com/EcoPowerEnergiaSolar",
-                    "https://tiktok.com/@ecopowerenergia"
+                    "https://www.linkedin.com/company/ecopowerenergia"
                 ],
                 "knowsLanguage": [
                     {
@@ -100,7 +100,7 @@ export default function RootLayout({
                         "alternateName": "pt-BR"
                     }
                 ],
-                "foundingDate": "1946-07-25",
+                "foundingDate": "2013-07-25",
                 "foundingLocation": [
                     {
                         "@type": "Place",
@@ -108,23 +108,23 @@ export default function RootLayout({
                     }
                 ],
                 "funder": [
-                    "EcoPower Energia Solar"
+                    "Ecopower Energia Solar"
                 ]
             },
             {
                 "@context": "http://schema.org",
                 "@type": "WebSite",
-                "name": "EcoPower",
+                "name": "Ecopower Energia Solar",
                 "image": "https://www.ecopower.com.br/wp-content/uploads/2023/05/Logo-Branca.png.webp",
-                "description": "Use a nossa calculadora para saber o quanto você pode economizar em sua conta de luz. EcoPower é a energia que move o futuro. Somos Eco. Somos Power.",
-                 "url": "https://www.ecopower.com.br/",
+                "description": "Implementamos sistemas de energia solar on-grid com alto e rigoroso padrão de qualidade trazendo benefícios práticos para os nossos clientes.",
+                "url": "https://www.ecopower.com.br/",
                 "sameAs": [
-                    "https://www.instagram.com/ecopowerenergia/",
                     "https://www.facebook.com/ecopowerenergia",
                     "https://twitter.com/ecopowerenergia",
-                    "https://linkedin.com/company/ecopowerenergia",
+                    "https://www.instagram.com/ecopowerenergia/",
+                    "https://tiktok.com/@ecopowerenergia",
                     "https://www.youtube.com/EcoPowerEnergiaSolar",
-                    "https://tiktok.com/@ecopowerenergia"
+                    "https://www.linkedin.com/company/ecopowerenergia"
                 ],
                 "inLanguage": [
                     {
@@ -133,14 +133,13 @@ export default function RootLayout({
                         "alternateName": "pt-BR"
                     }
                 ],
-                "dateCreated": "2016-01-01",
-                "copyrightYear": "2022",
+                "dateCreated": "2013-01-01",
+                "copyrightYear": "2023",
                 "funder": [
                     "EcoPower Energia Solar"
                 ]
             }
         ]
-    
     `,
         }}
       />
