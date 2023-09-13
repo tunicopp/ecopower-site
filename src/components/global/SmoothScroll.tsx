@@ -4,8 +4,6 @@ import Lenis from "@studio-freight/lenis";
 
 const SmoothScroll: React.FC = () => {
   useEffect(() => {
-    console.log("dickkkk");
-
     const lenis = new Lenis({
       duration: 1,
     });
