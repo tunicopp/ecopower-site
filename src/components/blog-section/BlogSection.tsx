@@ -54,7 +54,7 @@ const BlogSection: React.FC = async () => {
           </div>
 
           <LinkArrow
-            to="https://www.ecopower.com.br/blog/"
+            to="/blog/"
             className="whitespace-nowrap"
             text="Ver todos os posts"
           />
