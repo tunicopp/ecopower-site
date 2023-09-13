@@ -49,7 +49,7 @@ const SectionSolutions: React.FC = () => {
 
   return (
     <section
-      className="flex relative pt-[110px] w-full lg:min-h-[2300px] relative flex-col lg:items-center z-[801] bg-white"
+      className="flex relative pt-[110px] w-full min-h-[2500px] lg:min-h-[2300px] relative flex-col lg:items-center z-[801] bg-white"
       id="scrollDiv"
     >
       <div className="flex flex-col w-full lg:items-center sticky inset-0 bg-solutions lg:p-[108px]">
@@ -65,7 +65,7 @@ const SectionSolutions: React.FC = () => {
         </Reveal>
 
         <div
-          className=" flex max-w-full flex-col lg:flex-row items-center justify-center mt-[100px] bg-white lg:bg-transparent"
+          className=" flex max-w-full flex-col lg:flex-row items-center justify-center mt-2 md:mt-[100px] bg-white lg:bg-transparent"
           ref={centerRef}
         >
           <Swiper
@@ -91,7 +91,7 @@ const SectionSolutions: React.FC = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className=" relative w-full mb-[110px] lg:mb-0 h-[208px] lg:w-[880px] lg:h-[524px] lg:bg-transparent flex items-center lg:-ml-[8%] px-6 lg:px-0 rounded-3xl ">
+          <div className="relative w-full mb-[110px] lg:mb-0 h-[208px] lg:w-[880px] lg:h-[524px] lg:bg-transparent flex items-center lg:-ml-[8%] px-6 lg:px-0 rounded-3xl ">
             {cards.map((card) => (
               <card.cardImg key={card.id} id={card.id}></card.cardImg>
             ))}
