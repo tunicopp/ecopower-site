@@ -14,7 +14,7 @@ import BgMapMobile from "./BgMapMobile";
 
 const SectionMap: React.FC = () => {
   return (
-    <section className="relative flex w-full lg:h-screen min-h-[1460px] lg:min-h-[1040px] bg-beige-300 overflow-hidden items-end">
+    <section className="relative flex w-full lg:h-screen lg:min-h-[1040px] bg-beige-300 overflow-hidden lg:items-end">
       <BgMap />
       <BgMapMobile />
 

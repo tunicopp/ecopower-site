@@ -43,9 +43,9 @@ const BottomFooter: React.FC = () => {
             <a
               href={"https://www.ecopowerstore.com.br/"}
               target="_blank"
-              className="hidden md:block bg-grayscale-800 text-white py-2 px-5 rounded-full font-semibold w-fit mt-6 block lg:mb-6 hover:border-2 hover:border-white transition-all"
+              className="hidden md:block bg-font-black text-white py-2 px-5 rounded-full font-semibold w-fit mt-6 lg:mb-6 hover:bg-white hover:text-grayscale-800 transition-all duration-300"
             >
-              Acessar EcoPower Store
+              EcoPower Store
             </a>
           </div>
           <div className="flex-1 flex-col">
@@ -55,7 +55,7 @@ const BottomFooter: React.FC = () => {
               <LinkFooter href="/sobre-nos">Nossa História</LinkFooter>
               <LinkFooter href="/unidades">Unidades</LinkFooter>
               <LinkFooter href="/sustentabilidade">Sustentabilidade</LinkFooter>
-              <LinkFooter href="/carreiras">Carreiras</LinkFooter>
+              <LinkFooter href="/carreiras">Pessoas</LinkFooter>
               <LinkFooter href="/blog">Blog</LinkFooter>
             </div>
           </div>
