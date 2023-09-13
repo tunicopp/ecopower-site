@@ -35,23 +35,39 @@ const SectionReverseLogic: React.FC = () => {
       </GridContainer>
       <GridContainer className="justify-center pt-[80px]">
         <div className="grid md:grid-cols-6 lg:gap-[120px] items-center justify-items-center md:gap-[60px] gap-6">
-          <a href="https://franquias.portaldofranchising.com.br/franquia-ecopower-energia-solar/">
+          <a
+            href="https://franquias.portaldofranchising.com.br/franquia-ecopower-energia-solar/"
+            target="_blank"
+          >
             <Image src={badgeOne} alt="Excelência em Franchising" />
           </a>
-          <a href="https://www.absolar.org.br/associados/ecopower/">
+          <a
+            href="https://www.absolar.org.br/associados/ecopower/"
+            target="_blank"
+          >
             <Image src={badgeTwo} alt="Associado Absolar" />
           </a>
-          <a href="https://www.instagram.com/p/Ch7talduPk8">
+          <a href="https://www.instagram.com/p/Ch7talduPk8" target="_blank">
             <Image src={badgeThree} alt="SolarView" />
           </a>
-          <a href="https://certificadas.gptw.com.br/18269815000136">
+          <a
+            href="https://certificadas.gptw.com.br/18269815000136"
+            target="_blank"
+          >
             <Image src={badgeFour} alt="Certificado Great Place To Work" />
           </a>
-          <a href="https://certificadas.gptw.com.br/18269815000136">
+          <a
+            href="https://certificadas.gptw.com.br/18269815000136"
+            target="_blank"
+          >
             <Image src={badgeFive} alt="Weg Solar" />
           </a>
-          <div id="reputation-ra"></div>
-          {/* <Image src={badgeSix} alt="Reclame Aqui" /> */}
+          <a
+            href="https://www.reclameaqui.com.br/empresa/ecopower-sistemas-de-energia/?utm_source=referral&utm_medium=embbed&utm_campaign=reputacao&utm_term=vertical"
+            target="_blank"
+          >
+            <Image src={badgeSix} alt="Reclame Aqui" />
+          </a>
         </div>
       </GridContainer>
     </section>

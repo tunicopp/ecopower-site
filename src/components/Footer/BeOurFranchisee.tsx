@@ -19,7 +19,7 @@ const BeOurFranchisee: React.FC = () => {
           Lorem ipsum dolor sit amet consectetur elit.
         </p>
         <a
-          className="simulate-button flex-center h-[44px] max-w-[207px] lg:ml-4"
+          className="simulate-button flex-center h-[44px] max-w-[207px]"
           href=""
         >
           Clique aqui

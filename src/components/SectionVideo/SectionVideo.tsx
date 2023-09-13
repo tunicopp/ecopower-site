@@ -53,10 +53,10 @@ const SectionVideo: React.FC = () => {
           />
         </motion.div>
         <div className="flex relative flex-col lg:ml-[64px] lg:w-[615px] p-6 pb-[150px] lg:p-[45px] bg-primary-green z-10 rounded-3xl ">
-          <h2 className="text-white text-[44px] font-semibold leading-[52px]">
+          <h2 className="text-white text-[20px] md:text-[44px] font-semibold leading-[30px] md:leading-[52px]">
             Renovável, limpa e infinita. Entenda como a energia solar funciona.
           </h2>
-          <p className="text-white">
+          <p className="text-white mt-2">
             Lorem ipsum dolor sit amet consectetur. Feugiat mi habitasse
             pellentesque eget ipsum.
           </p>
