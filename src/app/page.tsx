@@ -10,10 +10,12 @@ import SectionTestimonial from "@/components/SectionTestimonial/SectionTestimoni
 import SectionFAQ from "@/components/SectionFAQ/SectionFAQ";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/global/Header";
+import SmoothScroll from "@/components/global/SmoothScroll";
 
 export default async function Home() {
   return (
     <main className="relative">
+      <SmoothScroll />
       <Header />
       <Hero />
       <SectionSlide />
