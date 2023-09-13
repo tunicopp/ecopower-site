@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
       <HeroSlider />
       <div className="z-10 relative lg:pt-0 pt-[80px]">
         <GridContainer className="pt-8 lg:pt-[103px] flex-col">
-          <h1 className="text-base text-white font-bold">EcoPower te faz</h1>
+          <h1 className="text-base text-white font-bold">EcoPower</h1>
           <h2 className="text-4xl leading-none lg:text-[3.5rem] lg:leading-[4rem] text-white font-semibold my-2 lg:my-0">
             Reduzir sua conta de luz
           </h2>

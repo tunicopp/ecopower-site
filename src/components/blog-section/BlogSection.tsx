@@ -43,7 +43,7 @@ const BlogSection: React.FC = async () => {
   const data = await getData();
 
   return (
-    <section className="min-h-screen w-full bg-beige-300 py-28">
+    <section className="w-full bg-beige-300 pt-28 pb-16">
       <GridContainer className="flex flex-col h-full">
         <header className="flex flex-col lg:flex-row w-full justify-between lg:items-center">
           <div className="flex-col w-full">
