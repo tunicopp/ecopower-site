@@ -5,8 +5,8 @@ import bg from "../../../../public/assets/images/sustentabilidade/etic-conduct.p
 
 const SectionEthicConduct: React.FC = () => {
   return (
-    <section className="relative flex flex-col-reverse md:flex-row lg:gap-0 gap-6 bg-beige-300 lg:pt-[115px] pt-[80px] lg:pb-[260px] 2xl:pt-0 2xl:pb-0">
-      <GridContainer className="justify-end flex-col md:flex-row">
+    <section className="relative flex lg:flex-row flex-col-reverse lg:gap-0 gap-6 bg-beige-300 lg:pt-[115px] pt-[80px] lg:pb-[260px] 2xl:pt-0 2xl:pb-0">
+      <GridContainer className="flex-col-reverse lg:flex-row gap-6 justify-end">
         <Image
           src={bg}
           alt="Conduta Ética"
