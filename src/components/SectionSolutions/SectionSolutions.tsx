@@ -48,50 +48,54 @@ const SectionSolutions: React.FC = () => {
   // }, [isInView]);
 
   return (
-    <section className="flex pt-[110px] w-full lg:min-h-[1000px] relative flex-col lg:items-center lg:p-[108px] bg-solutions">
-      <Reveal className="max-w-[690px] lg:text-center px-6 overflow-visible">
-        <TitleComponent className="lg:leading-[56px]">
-          Soluções feitas sob medida para o seu segmento
-        </TitleComponent>
-      </Reveal>
-      <Reveal delay={0.4} className="px-6">
-        <p className="font-medium mt-4 text-lg">
-          Lorem ipsum dolor sit amet consectetur.
-        </p>
-      </Reveal>
+    <section
+      className="flex relative pt-[110px] w-full lg:min-h-[2300px] relative flex-col lg:items-center z-[801] bg-white"
+      id="scrollDiv"
+    >
+      <div className="flex flex-col w-full lg:items-center sticky inset-0 bg-solutions lg:p-[108px]">
+        <Reveal className="max-w-[690px] lg:text-center px-6 overflow-visible">
+          <TitleComponent className="lg:leading-[56px]">
+            Soluções feitas sob medida para o seu segmento
+          </TitleComponent>
+        </Reveal>
+        <Reveal delay={0.4} className="px-6">
+          <p className="font-medium mt-4 text-lg">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+        </Reveal>
 
-      <div
-        className=" flex max-w-full flex-col lg:flex-row items-center justify-center mt-[100px] bg-white lg:bg-transparent"
-        ref={centerRef}
-        id="scrollDiv"
-      >
-        <Swiper
-          direction={"horizontal"}
-          slidesPerView={1}
-          spaceBetween={10}
-          mousewheel={{
-            eventsTarget: "#scrollDiv",
-            releaseOnEdges: true,
-            sensitivity: 2,
-          }}
-          modules={[Mousewheel, Navigation]}
-          className="mySwiper w-full lg:max-w-[515px]"
+        <div
+          className=" flex max-w-full flex-col lg:flex-row items-center justify-center mt-[100px] bg-white lg:bg-transparent"
+          ref={centerRef}
         >
-          {cards.map((i) => (
-            <SwiperSlide
-              key={i.id}
-              style={{
-                display: "flex",
-              }}
-            >
-              <CardScroll id={i.id}>{<i.card />}</CardScroll>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <div className=" relative w-full mb-[110px] lg:mb-0 h-[208px] lg:w-[880px] lg:h-[524px] lg:bg-transparent flex items-center lg:-ml-[8%] px-6 lg:px-0 rounded-3xl ">
-          {cards.map((card) => (
-            <card.cardImg key={card.id} id={card.id}></card.cardImg>
-          ))}
+          <Swiper
+            direction={"horizontal"}
+            slidesPerView={1}
+            spaceBetween={10}
+            mousewheel={{
+              eventsTarget: "#scrollDiv",
+              releaseOnEdges: true,
+              sensitivity: 2,
+            }}
+            modules={[Mousewheel, Navigation]}
+            className="mySwiper w-full lg:max-w-[515px]"
+          >
+            {cards.map((i) => (
+              <SwiperSlide
+                key={i.id}
+                style={{
+                  display: "flex",
+                }}
+              >
+                <CardScroll id={i.id}>{<i.card />}</CardScroll>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <div className=" relative w-full mb-[110px] lg:mb-0 h-[208px] lg:w-[880px] lg:h-[524px] lg:bg-transparent flex items-center lg:-ml-[8%] px-6 lg:px-0 rounded-3xl ">
+            {cards.map((card) => (
+              <card.cardImg key={card.id} id={card.id}></card.cardImg>
+            ))}
+          </div>
         </div>
       </div>
     </section>
