@@ -6,7 +6,7 @@ import greatPlace from "../../../../public/assets/images/carreiras/great-place-t
 
 const SectionHero: React.FC = () => {
   return (
-    <section className="relative min-h-[580px] z-10">
+    <section className="relative min-h-[650px] md:min-h-[580px] z-10">
       <Image
         src={hero}
         alt="Carreiras Eco Power"
@@ -21,7 +21,7 @@ const SectionHero: React.FC = () => {
         quality={100}
         className="absolute right-0 left-0 -bottom-[140px] mx-auto"
       />
-      <GridContainer className="relative flex-col items-center justify-center md:pt-[210px] pt-[110px]">
+      <GridContainer className="relative flex-col items-center justify-center md:pt-[210px] pt-[180px]">
         <h2 className="max-w-[550px] text-center text-white text-[56px] leading-[64px] font-semibold">
           Somos Ecopower. Somos a maior!
         </h2>
