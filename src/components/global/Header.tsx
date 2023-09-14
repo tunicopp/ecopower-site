@@ -174,7 +174,7 @@ const Header: React.FC = () => {
         <div
           className={`mega-menu transition-all duration-300 ${
             isOpenProducts
-              ? "mega-menu-products overflow-auto"
+              ? "overflow-auto overflow-auto"
               : "h-0 overflow-hidden"
           }`}
         >

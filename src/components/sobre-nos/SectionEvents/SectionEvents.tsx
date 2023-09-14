@@ -25,11 +25,11 @@ const events = [
     subTitle: "Umas das maiores feiras agrícolas",
     title: "Agrishow",
   },
-  {
-    src: "/assets/images/sobre-nos/events/rd-summit.png",
-    subTitle: "O maior evento de marketing",
-    title: "RD Summit",
-  },
+  // {
+  //   src: "/assets/images/sobre-nos/events/rd-summit.png",
+  //   subTitle: "O maior evento de marketing",
+  //   title: "RD Summit",
+  // },
   {
     src: "/assets/images/sobre-nos/events/bahia-farm-show.png",
     subTitle: "Feira de Tecnologia Agrícola",

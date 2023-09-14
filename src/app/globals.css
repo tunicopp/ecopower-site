@@ -39,9 +39,6 @@ a {
 .mega-menu {
   max-height: calc(100vh - 129px);
 }
-.mega-menu-products {
-  height: calc(100vh - 129px);
-}
 
 .active-bullet {
   background: #12131a !important;

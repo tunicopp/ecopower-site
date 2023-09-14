@@ -20,7 +20,7 @@ const BeOurFranchisee: React.FC = () => {
         </p>
         <a
           className="simulate-button flex-center h-[44px] max-w-[207px]"
-          href=""
+          href="https://conteudo.ecopower.com.br/franquias"
         >
           Clique aqui
         </a>
