@@ -46,7 +46,7 @@ export const testimonialData: TestimonialData[] = [
   },
   {
     text: "“A segurança de um valor justo, a segurança de uma empresa idônea, a segurança de ter qualidade, com certeza é a EcoPower.”",
-    link: "https://www.youtube.com/embed/LnOsnluNH9Y",
+    link: "https://www.youtube.com/embed/bQOm2MZ5ekE",
     person: {
       image: personImage5,
       name: "Flavio",
@@ -64,7 +64,7 @@ export const testimonialData: TestimonialData[] = [
   },
   {
     text: "“Superou minhas expectativas. A EcoPower entregou antes do prazo e eu recomendo a empresa”",
-    link: "https://www.youtube.com/embed/bQOm2MZ5ekE",
+    link: "https://www.youtube.com/embed/LnOsnluNH9Y",
     person: {
       image: personImage7,
       name: "Propriedade Fazenda Barro Preto",
