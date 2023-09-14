@@ -16,7 +16,7 @@ const BeOurFranchisee: React.FC = () => {
           Seja um Franqueado EcoPower
         </h2>
         <p className="text-xl mt-4 mb-10">
-          Lorem ipsum dolor sit amet consectetur elit.
+          Saiba aqui como fazer parte da empresa que mais cresce no Brasil.
         </p>
         <a
           className="simulate-button flex-center h-[44px] max-w-[207px]"

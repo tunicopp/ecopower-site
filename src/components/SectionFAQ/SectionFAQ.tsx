@@ -16,7 +16,7 @@ const SectionFAQ: React.FC = () => {
         </Reveal>
         <Reveal className="mt-[10px] mb-[42px]" delay={0.4}>
           <span className="text-lg text-grayscale-800">
-            Lorem ipsum dolor sit amet consectetur.
+            A resposta que procura, para as suas perguntas de sempre
           </span>
         </Reveal>
         <div className="h-stack-18">

@@ -57,8 +57,7 @@ const SectionVideo: React.FC = () => {
             Renovável, limpa e infinita. Entenda como a energia solar funciona.
           </h2>
           <p className="text-white mt-2">
-            Lorem ipsum dolor sit amet consectetur. Feugiat mi habitasse
-            pellentesque eget ipsum.
+            Eletricidade de forma sustentável aproveitando ao máximo da energia solar.
           </p>
 
           <button

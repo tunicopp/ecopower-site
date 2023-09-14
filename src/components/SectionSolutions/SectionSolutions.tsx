@@ -60,7 +60,7 @@ const SectionSolutions: React.FC = () => {
         </Reveal>
         <Reveal delay={0.4} className="px-6">
           <p className="font-medium mt-4 text-lg">
-            Lorem ipsum dolor sit amet consectetur.
+            Cada projeto pensado de maneira única para nossos clientes.
           </p>
         </Reveal>
 

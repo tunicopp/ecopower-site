@@ -13,11 +13,10 @@ const Hero: React.FC = () => {
         <GridContainer className="pt-8 lg:pt-[103px] flex-col">
           <h1 className="text-base text-white font-bold">EcoPower</h1>
           <h2 className="text-4xl leading-none lg:text-[3.5rem] lg:leading-[4rem] text-white font-semibold my-2 lg:my-0">
-            Reduzir sua conta de luz
+            Energia Solar ao seu alcance
           </h2>
           <p className="text-white lg:text-base text-lg lg:mt-6">
-            Use a nossa calculadora de economia e receba um orçamento da unidade
-            mais próxima:
+            Gere economia, use nossa calculadora e aproveite para reduzir ao máximo sua conta de energia
           </p>
           <Calculator />
         </GridContainer>
