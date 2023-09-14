@@ -74,7 +74,8 @@ const SectionEvents: React.FC = () => {
         <div className="flex flex-col w-full items-center relative mb-12">
           <TitleComponent>A energia que move os grandes eventos</TitleComponent>
           <h3 className="mt-3 text-xl">
-            Lorem ipsum dolor sit amet consectetur elit
+            A EcoPower está presente e patrocina mais de 100 eventos em todo o
+            Brasil.
           </h3>
           <div className="flex w-full justify-between">
             <button

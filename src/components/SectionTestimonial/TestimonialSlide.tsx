@@ -6,6 +6,7 @@ import { MdPlayCircle } from "react-icons/md";
 
 interface TestimonialSlideProps {
   text: string;
+  link: string;
   person: {
     image: string | StaticImport;
     name: string;
@@ -16,21 +17,17 @@ interface TestimonialSlideProps {
 const TestimonialSlide: React.FC<TestimonialSlideProps> = ({
   person: { image, location, name },
   text,
+  link,
 }) => {
   return (
     <div>
-      <div className="relative">
-        <Image
-          src={testimonialImage}
-          alt="Testimonial Video"
-          width={376}
-          height={240}
-          quality={100}
-          className="object-cover rounded-2xl w-full lg:h-auto"
-        />
-        <button className="absolute w-[56px] h-[56px] text-[56px] text-white inset-0 m-auto hover:scale-125 transition-all duration-500 ease-in-out">
-          <MdPlayCircle />
-        </button>
+      <div className="relative h-[300px]">
+        <iframe
+          className="w-full h-full rounded-3xl"
+          src={link}
+          title="YouTube video player"
+          allowFullScreen
+        ></iframe>
       </div>
       <p className="text-grayscale-800 text-lg my-8">{text}</p>
       <div className="flex items-center">
