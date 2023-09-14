@@ -13,7 +13,7 @@ const BeOurFranchisee: React.FC = () => {
       />
       <GridContainer className="flex-col relative">
         <h2 className="md:text-5xl text-4xl font-semibold text-grayscale-800 max-w-[328px]">
-          Seja um Franqueado Ecopower
+          Seja um Franqueado EcoPower
         </h2>
         <p className="text-xl mt-4 mb-10">
           Lorem ipsum dolor sit amet consectetur elit.

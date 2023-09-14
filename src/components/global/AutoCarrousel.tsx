@@ -19,26 +19,82 @@ import teamThirteen from "../../../public/assets/images/carreiras/team-thirteen.
 import teamThree from "../../../public/assets/images/carreiras/team-three.png";
 import teamTwelve from "../../../public/assets/images/carreiras/team-twelve.png";
 import teamTwo from "../../../public/assets/images/carreiras/team-two.png";
+import teamEighteen from "../../../public/assets/images/carreiras/team-eighteen.png";
 
 const teams = [
-  teamOne,
-  teamTwo,
-  teamThree,
-  teamFour,
-  teamFive,
-  teamSix,
-  teamSeven,
-  teamEight,
-  teamNine,
-  teamTen,
-  teamEleven,
-  teamTwelve,
-  teamThirteen,
-  teamFourteen,
-  teamFifteen,
-  teamSixteen,
-  teamSeventeen,
-];
+  {
+    image: teamOne,
+    link: "https://www.linkedin.com/in/elisangelaguilar"
+  },
+  {
+    image: teamTwo,
+    link: "https://www.linkedin.com/in/advmelissabarbosa"
+  },
+  {
+    image: teamThree,
+    link: "https://www.linkedin.com/in/murilo-mazer-santos-044542219/"
+  },
+  {
+    image: teamFour,
+    link: "https://www.linkedin.com/in/danielabenevides-rh/"
+  },
+  {
+    image: teamFive,
+    link: "https://www.linkedin.com/in/n%C3%A1chila-santos-19165764"
+  },
+  {
+    image: teamSix,
+    link: "https://www.linkedin.com/in/antonio-sergio-poliselli-filho-599429aa/ "
+  },
+  {
+    image: teamSeven,
+    link: "https://www.linkedin.com/in/joaolbr/"
+  },
+  {
+    image: teamEight,
+    link: "https://www.linkedin.com/in/fabio-freitas-lima-24a949205/"
+  },
+  {
+    image: teamNine,
+    link: "https://www.linkedin.com/in/juniorcezar-gerencia-contabil-financeira/"
+  },
+  {
+    image: teamTen,
+    link: "https://www.linkedin.com/in/vinicius-guilherme-de-freitas-62b24934"
+  },
+  {
+    image: teamEleven,
+    link: "https://www.linkedin.com/in/laurye-borim"
+  },
+  {
+    image: teamTwelve,
+    link: "https://www.linkedin.com/in/leandro-oliveira-nunes-a5536a62/"
+  },
+  {
+    image: teamThirteen,
+    link: "https://www.linkedin.com/in/flavia-rodrigues/"
+  },
+  {
+    image: teamFourteen,
+    link: "https://www.linkedin.com/in/maria-eduarda-pereira-garcia-666189212/"
+  },
+  {
+    image: teamFifteen,
+    link: "https://www.linkedin.com/in/maiky-julio-avila-58ba4228a"
+  },
+  {
+    image: teamSixteen,
+    link: "https://www.linkedin.com/in/anne-esquivel-80737480/"
+  },
+  {
+    image: teamSeventeen,
+    link: "https://www.linkedin.com/in/bianca-romero-da-rocha-2a135a197/"
+  },
+  {
+    image: teamEighteen,
+    link: "https://www.linkedin.com/in/josemarialobato"
+  }
+]
 
 const AutoCarrousel: React.FC = () => {
   const team = useRef<HTMLDivElement[]>([]);
@@ -87,13 +143,15 @@ const AutoCarrousel: React.FC = () => {
           ref={addToRefs}
           className="absolute even:top-0 odd:bottom-0"
         >
-          <Image
-            src={c}
-            alt="Nosso time"
-            quality={100}
-            width={156}
-            height={156}
-          />
+          <a href={c.link}>
+            <Image
+              src={c.image}
+              alt="Nosso time"
+              quality={100}
+              width={156}
+              height={156}
+            />
+          </a>
         </div>
       ))}
     </div>

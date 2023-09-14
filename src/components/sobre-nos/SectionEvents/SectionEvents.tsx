@@ -11,7 +11,7 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 const events = [
   {
-    src: "/assets/images/sobre-nos/events/event-placeholder.png",
+    src: "/assets/images/sobre-nos/events/barretos.png",
     subTitle: "A maior festa da América Latina",
     title: "Festa do Peão de Barretos",
   },
@@ -25,11 +25,11 @@ const events = [
     subTitle: "Umas das maiores feiras agrícolas",
     title: "Agrishow",
   },
-  // {
-  //   src: "/assets/images/sobre-nos/events/rd-summit.png",
-  //   subTitle: "O maior evento de marketing",
-  //   title: "RD Summit",
-  // },
+  {
+    src: "/assets/images/sobre-nos/events/expointer.png",
+    subTitle: "Exposição Internacional de Animais",
+    title: "Expointer",
+  },
   {
     src: "/assets/images/sobre-nos/events/bahia-farm-show.png",
     subTitle: "Feira de Tecnologia Agrícola",
