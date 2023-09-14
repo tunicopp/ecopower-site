@@ -11,6 +11,7 @@ interface Props {
 
 const Calculator: React.FC<Props> = ({ className }) => {
   const [value, setValue] = useState([0]);
+  const [isOpen, setIsOpen] = useState(false);
 
   const bg = getTrackBackground({
     min: 0,
@@ -75,9 +76,12 @@ const Calculator: React.FC<Props> = ({ className }) => {
             {tooltipText}
           </Tooltip>
         </div>
-        <div className="relative w-full lg:max-w-[200px] flex-shrink-0">
+        <div className="relative w-full lg:max-w-[200px] flex-shrink-0 mt-6 mb-3 lg:my-0">
+          <span className="absolute left-5 top-[15px] text-sm font-medium">
+            R$
+          </span>
           <input
-            className="select mt-6 mb-3 lg:my-0"
+            className="select"
             placeholder="Arraste ou digite"
             value={value[0] === 0 ? undefined : value[0]}
             type="number"
@@ -91,11 +95,18 @@ const Calculator: React.FC<Props> = ({ className }) => {
             <li onClick={() => setValue([800])}>Mais de R$800</li>
           </ul>
         </div>
-        <button className="simulate-button w-full lg:w-auto lg:ml-4">
+        <button
+          className="simulate-button w-full lg:w-auto lg:ml-4"
+          onClick={() => setIsOpen(true)}
+        >
           Simular Economia
         </button>
       </div>
-      <CalculatorModal />
+      <CalculatorModal
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+        initialValue={value[0]}
+      />
     </>
   );
 };
