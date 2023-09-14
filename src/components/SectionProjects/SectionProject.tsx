@@ -21,7 +21,7 @@ const cards = [
   {
     id: 2,
     image: house,
-    textTag: "Residencial",
+    textTag: "Industrial",
     title: "Casa Geraldo",
     subTitle: "1 Inversor WEG 60, 167 módulos 410 Wp, 68.33 kWp",
   },
