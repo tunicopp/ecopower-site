@@ -36,8 +36,9 @@ const ProductsGrid: React.FC = () => {
         className="!text-grayscale-800 !bg-white !opacity-100 !p-6 !text-sm drop-shadow-tooltip !rounded-2xl max-w-[264px]"
         offset={30}
       >
-        Lorem ipsum dolor sit amet consectetur. Feugiat mi habitasse
-        peilentesque eget ipsum.
+        A energia que não é consumida é enviada para a rede externa, que fica
+        como crédito. Nesse sistema não é utilizado baterias para armazenar o
+        que é gerado.
       </Tooltip>
       <Tooltip
         anchorSelect=".offline"
@@ -45,8 +46,9 @@ const ProductsGrid: React.FC = () => {
         className="!text-grayscale-800 !bg-white !opacity-100 !p-6 !text-sm drop-shadow-tooltip !rounded-2xl max-w-[264px]"
         offset={30}
       >
-        Lorem ipsum dolor sit amet consectetur. Feugiat mi habitasse
-        peilentesque eget ipsum.
+        Seu projeto não é conectado na rede da companhia, podendo utilizar
+        baterias para o armazenamento ou sem baterias para consumir a energia
+        enquanto gera.
       </Tooltip>
       <Tooltip
         anchorSelect=".hybrid"
@@ -54,8 +56,8 @@ const ProductsGrid: React.FC = () => {
         className="!text-grayscale-800 !bg-white !opacity-100 !p-6 !text-sm drop-shadow-tooltip !rounded-2xl max-w-[264px]"
         offset={30}
       >
-        Lorem ipsum dolor sit amet consectetur. Feugiat mi habitasse
-        peilentesque eget ipsum.
+        Aproveite o melhor dos 2 mundos. Conectado e desconectado da companhia
+        você pode armazenar e gerenciar a energia que injeta na rede.
       </Tooltip>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 md:mt-[88px] mt-10">
         <ProductGridItem isOnGrid />

@@ -7,5 +7,5 @@ export const companyIinfoGroup1 = [
 export const companyIinfoGroup2 = [
   { id: 4, number: "310", text: "Franqueados ativos" },
   { id: 5, number: "420", text: "Colaboradores CLT" },
-  { id: 6, number: "250", text: "Equipe de instalação" },
+  { id: 6, number: "+250", text: "Equipe de instalação" },
 ];

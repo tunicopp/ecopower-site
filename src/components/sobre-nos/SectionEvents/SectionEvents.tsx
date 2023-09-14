@@ -12,17 +12,17 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 const events = [
   {
     src: "/assets/images/sobre-nos/events/barretos.png",
-    subTitle: "A maior festa da América Latina",
+    subTitle: "O maior rodeio do mundo",
     title: "Festa do Peão de Barretos",
   },
   {
     src: "/assets/images/sobre-nos/events/abf-expo.png",
-    subTitle: "Maior feira de franquias do mundo",
+    subTitle: "Maior feira de franquias do Brasil",
     title: "ABF Expo",
   },
   {
     src: "/assets/images/sobre-nos/events/agrishow.png",
-    subTitle: "Umas das maiores feiras agrícolas",
+    subTitle: "A maior feira agro do Brasil",
     title: "Agrishow",
   },
   {
