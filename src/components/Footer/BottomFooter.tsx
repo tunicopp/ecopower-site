@@ -55,7 +55,7 @@ const BottomFooter: React.FC = () => {
               <LinkFooter href="/sobre-nos">Nossa História</LinkFooter>
               <LinkFooter href="/unidades">Unidades</LinkFooter>
               <LinkFooter href="/sustentabilidade">Sustentabilidade</LinkFooter>
-              <LinkFooter href="/carreiras">Pessoas</LinkFooter>
+              <LinkFooter href="/pessoas">Pessoas</LinkFooter>
               <LinkFooter href="/blog">Blog</LinkFooter>
             </div>
           </div>

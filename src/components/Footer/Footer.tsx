@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
     <footer className="flex flex-col w-full">
       {pathname === "/unidades" ? (
         <BeOurFranchisee />
-      ) : pathname === "/sobre-nos" || pathname === "/carreiras" ? (
+      ) : pathname === "/sobre-nos" || pathname === "/pessoas" ? (
         <JoinUs />
       ) : (
         <TopFooter />

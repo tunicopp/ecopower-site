@@ -162,7 +162,7 @@ const Header: React.FC = () => {
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
-              href="/carreiras"
+              href="/pessoas"
               title="Pessoas"
               image="/assets/images/megamenu/megamenu-4.png"
             >
