@@ -3,6 +3,7 @@ import { Unit } from "@/@types/app/unit.app.interface";
 import Image from "next/image";
 import React, { useState } from "react";
 import { BsFacebook, BsInstagram, BsPlus, BsWhatsapp } from "react-icons/bs";
+import { BiMinus } from "react-icons/bi";
 import { LuMapPin } from "react-icons/lu";
 
 interface StateAccordionProps {
@@ -44,7 +45,7 @@ const StateAccordion: React.FC<StateAccordionProps> = ({
           </span>
         </div>
         <div className="text-full-black text-2xl">
-          <BsPlus />
+          {isOpen ? <BiMinus /> : <BsPlus />}
         </div>
       </button>
       <div

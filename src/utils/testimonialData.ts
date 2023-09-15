@@ -50,7 +50,7 @@ export const testimonialData: TestimonialData[] = [
     person: {
       image: personImage5,
       name: "Flavio",
-      location: "Barretos/SP",
+      location: "Alto Paraná/PR",
     },
   },
   {

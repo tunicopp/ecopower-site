@@ -37,7 +37,7 @@ const events = [
   },
   {
     src: "/assets/images/sobre-nos/events/maior-rodeio.png",
-    subTitle: "O maior rodeio do Brasil",
+    subTitle: "Um dos maiores rodeios do Brasil",
     title: "Festa do Peão de Americana",
   },
   {
@@ -57,7 +57,7 @@ const events = [
   },
   {
     src: "/assets/images/sobre-nos/events/divinaexpo.png",
-    subTitle: "O Maior Rodeio Completo do Brasil",
+    subTitle: "Um dos maiores rodeios do Brasil",
     title: "Divinaexpo",
   },
   {

@@ -14,14 +14,11 @@ const SectionCareers: React.FC = () => {
       <GridContainer className="relative">
         <div className="lg:max-w-[496px]">
           <p className="text-black text-lg lg:text-start text-justify">
-            Lorem ipsum dolor sit amet consectetur. Viverra interdum non turpis
-            aliquam ante facilisi nisl platea. Malesuada nunc pellentesque
-            lobortis vulputate lacus mauris eros quam ultricies. Quis sagittis
-            nisl placerat in proin in. Cursus massa morbi elementum quis morbi.
-            Lacus amet mauris at vestibulum dignissim. Eget scelerisque tempor
-            dui vitae ultrices quisque amet elementum. Vel iaculis ridiculus
-            tristique in enim sodales tortor adipiscing id. Nisi scelerisque
-            vestibulum dictumst nisl massa ipsum.
+            Junte-se a Ecopower e ilumine seu futuro! Se você busca por
+            crescimento profissional, em um ambiente saudável e sustentável,
+            múltiplo e desafiador, o seu lugar é aqui! Seja parte da nossa
+            equipe e impulsione sua carreira com energia renovável. Somos Eco,
+            Somos Power, Somos a Energia que Move o Futuro
           </p>
         </div>
       </GridContainer>

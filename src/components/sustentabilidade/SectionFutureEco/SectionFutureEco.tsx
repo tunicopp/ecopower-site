@@ -24,13 +24,11 @@ const SectionFutureEco: React.FC = () => {
               sustentável em todas as regiões do Brasil.
             </h3>
             <p className="text-black text-lg lg:text-start text-justify">
-              Lorem ipsum dolor sit amet consectetur. Viverra interdum non
-              turpis aliquam ante facilisi nisl platea. Malesuada nunc
-              pellentesque lobortis vulputate lacus mauris eros quam ultricies.
-              Quis sagittis nisl placerat in proin in. Cursus massa morbi
-              elementum quis morbi. Lacus amet mauris at vestibulum dignissim.
-              Eget scelerisque tempor dui vitae ultrices quisque amet elementum.
-              Vel iaculis ridiculus tristique.
+              Na EcoPower entendemos que todos nós, precisamos pensar e agir de
+              forma sustentável. Por isso, reforçamos nosso propósito de
+              fornecer energia de fontes renováveis aos clientes por meio de
+              iniciativas e atitudes que buscam a responsabilidade
+              socioambiental.
             </p>
           </div>
           <Image
@@ -53,7 +51,7 @@ const SectionFutureEco: React.FC = () => {
             governança.
           </p>
           <a
-            href="/assets/pdf/POLITICA-DE-SUSTENTABILIDADE-ECOPOWER.pdf"
+            href="/assets/pdf/POLITICA-DE-SUSTENTABILIDADE-ECOPOWER-2023.pdf"
             download="POLITICA-DE-SUSTENTABILIDADE-ECOPOWER"
             className="simulate-button flex items-center gap-2"
           >
@@ -67,20 +65,29 @@ const SectionFutureEco: React.FC = () => {
             alt="Futuro Ecoconsciente"
             className="max-w-[550px] w-full"
           />
-          <p className="max-w-[496px] text-black text-lg lg:text-start text-justify">
-            <b className="font-bold">
-              Campanhas de conscientização e bem-estar para colaboradores, mais
-              de 400 empregos diretos,
-            </b>{" "}
-            ações que promovem mulheres ao mercado solar, treinamentos e
-            programas para colaboradores e franqueados se capacitarem.
-          </p>
+          <div className="max-w-[496px] text-black text-lg lg:text-start text-justify">
+            <p className="block mb-4">
+              Geramos + de 400 empregos diretos e + de 580 empregos indiretos.
+              Nossa cultura corporativa promove o bem-estar e o desenvolvimento
+              profissional de nossos colaboradores, instaladores e franqueados.
+            </p>
+
+            <p>
+              <b className="font-bold">
+                Campanhas de conscientização e bem-estar para colaboradores,
+                mais de 400 empregos diretos,
+              </b>{" "}
+              ações que promovem mulheres ao mercado solar, treinamentos e
+              programas para colaboradores e franqueados se capacitarem.
+            </p>
+          </div>
         </GridContainer>
         <GridContainer className="py-10 justify-center">
           <p className="text-2xl max-w-[808px] text-center">
-            Geramos + de 400 empregos diretos e + de 580 empregos indiretos.
-            Nossa cultura corporativa promove o bem-estar e o desenvolvimento
-            profissional de nossos colaboradores, instaladores e franqueados.
+            Construímos a nossa matriz de materialidade e a agenda de
+            sustentabilidade, com definição das ações para atendermos os temas
+            materiais mais relevantes apontados pelas partes interessadas, como
+            também os Objetivos de Desenvolvimento Sustentável.
           </p>
         </GridContainer>
         <GridContainer className="py-[80px]">
