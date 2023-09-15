@@ -287,7 +287,7 @@ const CalculatorModal: React.FC<Props> = ({
             </div>
           </div>
         </div>,
-        document.querySelector("#calc")
+        document.querySelector("#calc") as any
       )}
     </>
   );
