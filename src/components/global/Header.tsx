@@ -110,7 +110,7 @@ const Header: React.FC = () => {
               image="/assets/images/megamenu/megamenu-1.png"
               className="md:!hidden"
             >
-              Aqui você descobre o futuro da energia solar em nossos projetos!
+              Descubra o que há de mais inovador no mercado de energia solar.
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
@@ -119,7 +119,7 @@ const Header: React.FC = () => {
               image="/assets/images/megamenu/megamenu-1.png"
               className="md:!hidden"
             >
-              Aqui você descobre o futuro da energia solar em nossos projetos!
+              Conheça nossa jornada e história inspiradora.
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
@@ -128,7 +128,7 @@ const Header: React.FC = () => {
               image="/assets/images/megamenu/megamenu-1.png"
               className="md:!hidden"
             >
-              Aqui você descobre o futuro da energia solar em nossos projetos!
+              Explore nossas unidades e descubra nossa presença pelo Brasil.
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
