@@ -32,7 +32,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 z-[800] w-full transition-colors duration-300 ${
+      className={`fixed top-0 left-0 z-[100] w-full transition-colors duration-300 ${
         isAtTop
           ? isOpen || isOpenProducts
             ? "bg-hero-green"

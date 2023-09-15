@@ -30,6 +30,7 @@
     "react-lottie-tools": "^1.1.6",
     "react-modern-drawer": "^1.2.2",
     "react-range": "^1.8.14",
+    "react-select": "^5.7.4",
     "react-tooltip": "^5.20.0",
     "swiper": "^10.1.0",
     "tailwind-merge": "^1.14.0",
