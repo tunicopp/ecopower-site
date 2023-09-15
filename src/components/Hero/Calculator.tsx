@@ -11,7 +11,6 @@ interface Props {
 }
 
 const Calculator: React.FC<Props> = ({ className }) => {
-  const { openModal, closeModal } = useGlobalContext();
   const [value, setValue] = useState([0]);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -101,7 +100,6 @@ const Calculator: React.FC<Props> = ({ className }) => {
           className="simulate-button w-full lg:w-auto lg:ml-4"
           onClick={() => {
             setIsOpen(true);
-            openModal();
           }}
         >
           Simular Economia
@@ -112,7 +110,6 @@ const Calculator: React.FC<Props> = ({ className }) => {
           isOpen={isOpen}
           onClose={() => {
             setIsOpen(false);
-            closeModal();
           }}
           initialValue={value[0]}
         />
