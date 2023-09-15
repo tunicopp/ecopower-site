@@ -86,8 +86,7 @@ const BottomFooter: React.FC = () => {
                 href="https://goo.gl/maps/EnoKjdS1jRJRtW2z5"
                 className="leading-4"
               >
-                Rua Delmiro José de Andrade, 602 Distrito Industrial II -
-                Barretos/SP
+                Chegar na matriz
               </ExternalLinkFooter>
             </div>
             <LinkFooter href="">Seja um Franqueado</LinkFooter>
