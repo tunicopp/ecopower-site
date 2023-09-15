@@ -56,7 +56,7 @@ const CalculatorModal: React.FC<Props> = ({
       {
         method: "GET",
         cache: "force-cache",
-      }
+      },
     );
     const data = await response.json();
 
@@ -98,7 +98,7 @@ const CalculatorModal: React.FC<Props> = ({
         headers: {
           "Content-Type": "application/json",
         },
-      }
+      },
     );
 
     const simulationData = await resp.json();
@@ -122,7 +122,7 @@ const CalculatorModal: React.FC<Props> = ({
             className="absolute w-full h-full bg-full-black/30"
             onClick={() => onClose()}
           />
-          <div className="absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 max-w-[668px] w-full p-6">
+          <div className="absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 max-w-[668px] w-full p-2 md:p-6">
             <div className="w-full rounded-3xl max-h-[80vh] overflow-auto">
               <div className="bg-beige-300 relative py-6 rounded-t-3xl">
                 <Image
@@ -139,7 +139,7 @@ const CalculatorModal: React.FC<Props> = ({
                   <Close />
                 </button>
               </div>
-              <div className="flex flex-col p-10 bg-white">
+              <div className="flex flex-col p-6 md:p-10 bg-white">
                 <h1 className="text-[32px] leading-[1.25em] font-bold max-w-[385px] text-center self-center">
                   Simulador Economia de Energia EcoPower
                 </h1>
@@ -212,10 +212,10 @@ const CalculatorModal: React.FC<Props> = ({
                     Onde será instalado?
                   </p>
                   <div
-                    className="flex w-full justify-between items-center"
+                    className="flex flex-wrap w-full justify-start md:justify-between items-center gap-2"
                     onChange={(e) =>
                       handleOnChangeLocation(
-                        e as React.ChangeEvent<HTMLInputElement>
+                        e as React.ChangeEvent<HTMLInputElement>,
                       )
                     }
                   >
@@ -287,7 +287,7 @@ const CalculatorModal: React.FC<Props> = ({
             </div>
           </div>
         </div>,
-        document.querySelector("#calc") as any
+        document.querySelector("#calc") as any,
       )}
     </>
   );

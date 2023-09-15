@@ -16,7 +16,8 @@ const Hero: React.FC = () => {
             Energia Solar ao seu alcance
           </h2>
           <p className="text-white lg:text-base text-lg lg:mt-6">
-            Gere economia, use nossa calculadora e aproveite para reduzir ao máximo sua conta de energia
+            Gere economia, use nossa calculadora e aproveite para reduzir ao
+            máximo sua conta de energia
           </p>
           <Calculator />
         </GridContainer>
