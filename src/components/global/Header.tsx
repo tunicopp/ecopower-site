@@ -110,8 +110,7 @@ const Header: React.FC = () => {
               image="/assets/images/megamenu/megamenu-1.png"
               className="md:!hidden"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore
+              Aqui você descobre o futuro da energia solar em nossos projetos!
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
@@ -120,8 +119,7 @@ const Header: React.FC = () => {
               image="/assets/images/megamenu/megamenu-1.png"
               className="md:!hidden"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore
+              Aqui você descobre o futuro da energia solar em nossos projetos!
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
@@ -130,8 +128,7 @@ const Header: React.FC = () => {
               image="/assets/images/megamenu/megamenu-1.png"
               className="md:!hidden"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore
+              Aqui você descobre o futuro da energia solar em nossos projetos!
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
@@ -139,8 +136,7 @@ const Header: React.FC = () => {
               title="Projetos"
               image="/assets/images/megamenu/megamenu-1.png"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore
+              Aqui você descobre o futuro da energia solar em nossos projetos!
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
@@ -148,8 +144,7 @@ const Header: React.FC = () => {
               title="Blog"
               image="/assets/images/megamenu/megamenu-2.png"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore
+              Explore nosso blog e amplie seu conhecimento sobre energia solar!
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
@@ -157,8 +152,7 @@ const Header: React.FC = () => {
               title="Sustentabilidade"
               image="/assets/images/megamenu/megamenu-3.png"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore
+              Nosso compromisso é com a sustentabilidade.
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
@@ -166,8 +160,8 @@ const Header: React.FC = () => {
               title="Pessoas"
               image="/assets/images/megamenu/megamenu-4.png"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore
+              Explore oportunidades emocionantes em nossa seção de carreiras.
+              Seja um Ecolover!
             </MegaMenuItem>
           </div>
         </div>
