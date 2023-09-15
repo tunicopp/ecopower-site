@@ -119,11 +119,11 @@ const CalculatorModal: React.FC<Props> = ({
           }`}
         >
           <div
-            className="absolute w-full h-full bg-full-black/20"
+            className="absolute w-full h-full bg-full-black/30"
             onClick={() => onClose()}
           />
           <div className="absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 max-w-[668px] w-full p-6">
-            <div className="w-full bg-white rounded-3xl max-h-[80vh] overflow-auto">
+            <div className="w-full rounded-3xl max-h-[80vh] overflow-auto">
               <div className="bg-beige-300 relative py-6 rounded-t-3xl">
                 <Image
                   src="/assets/images/footer/calculator-modal-image.svg"
@@ -139,7 +139,7 @@ const CalculatorModal: React.FC<Props> = ({
                   <Close />
                 </button>
               </div>
-              <div className="flex flex-col p-10">
+              <div className="flex flex-col p-10 bg-white">
                 <h1 className="text-[32px] leading-[1.25em] font-bold max-w-[385px] text-center self-center">
                   Simulador Economia de Energia EcoPower
                 </h1>
@@ -153,9 +153,9 @@ const CalculatorModal: React.FC<Props> = ({
                   onSubmit={(e) => submitForm(e)}
                 >
                   <div className="flex flex-1 flex-col w-full lg:w-auto lg:mr-8">
-                    <label className="text-grayscale-800 font-medium leading-5 mb-[14px] lg:mb-[10px]">
+                    <p className="text-grayscale-800 font-medium leading-5 mb-[14px] lg:mb-[10px]">
                       Média mensal de gasto com energia:
-                    </label>
+                    </p>
                     <div className="ml-3">
                       <Range
                         onChange={(v) => setValue(v)}
@@ -208,12 +208,9 @@ const CalculatorModal: React.FC<Props> = ({
                       <li onClick={() => setValue([800])}>Mais de R$800</li>
                     </ul>
                   </div>
-                  <label
-                    htmlFor="location"
-                    className="font-medium text-font-black"
-                  >
+                  <p className="font-medium text-font-black">
                     Onde será instalado?
-                  </label>
+                  </p>
                   <div
                     className="flex w-full justify-between items-center"
                     onChange={(e) =>
@@ -222,16 +219,16 @@ const CalculatorModal: React.FC<Props> = ({
                       )
                     }
                   >
-                    <Radio name="location" value="RESIDENCIAL">
+                    <Radio id="RESIDENCIAL" name="location" value="RESIDENCIAL">
                       Residencial
                     </Radio>
-                    <Radio name="location" value="EMPRESARIAL">
+                    <Radio id="EMPRESARIAL" name="location" value="EMPRESARIAL">
                       Empresarial
                     </Radio>
-                    <Radio name="location" value="INDUSTRIAL">
+                    <Radio id="INDUSTRIAL" name="location" value="INDUSTRIAL">
                       Industrial
                     </Radio>
-                    <Radio name="location" value="RURAL">
+                    <Radio id="RURAL" name="location" value="RURAL">
                       Rural
                     </Radio>
                   </div>

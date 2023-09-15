@@ -4,12 +4,14 @@ import { Range, getTrackBackground } from "react-range";
 import { Tooltip } from "react-tooltip";
 import { twMerge } from "tailwind-merge";
 import CalculatorModal from "./CalculatorModal";
+import { useGlobalContext } from "@/app/context/store";
 
 interface Props {
   className?: string;
 }
 
 const Calculator: React.FC<Props> = ({ className }) => {
+  const { openModal, closeModal } = useGlobalContext();
   const [value, setValue] = useState([0]);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -97,16 +99,24 @@ const Calculator: React.FC<Props> = ({ className }) => {
         </div>
         <button
           className="simulate-button w-full lg:w-auto lg:ml-4"
-          onClick={() => setIsOpen(true)}
+          onClick={() => {
+            setIsOpen(true);
+            openModal();
+          }}
         >
           Simular Economia
         </button>
       </div>
-      <CalculatorModal
-        isOpen={isOpen}
-        onClose={() => setIsOpen(false)}
-        initialValue={value[0]}
-      />
+      {isOpen && (
+        <CalculatorModal
+          isOpen={isOpen}
+          onClose={() => {
+            setIsOpen(false);
+            closeModal();
+          }}
+          initialValue={value[0]}
+        />
+      )}
     </>
   );
 };
