@@ -6,7 +6,7 @@ const SmoothScroll: React.FC = () => {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1,
-      wheelEventsTarget: document.querySelector("main")
+      wheelEventsTarget: document.querySelector("main") as any
     });
 
     function raf(time: any) {
