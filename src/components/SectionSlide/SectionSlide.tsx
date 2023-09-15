@@ -40,9 +40,9 @@ const SectionSlide: React.FC = () => {
         <p className="font-medium mt-4 underline">Ver todos os produtos</p>
       </Link>
       <Carroussel className="mt-[88px] lg:mt-16">
-        {productsCardsGroup.map((card) => (
+        {productsCardsGroup.map((card, index) => (
           <SwiperSlide key={card.id}>
-            <CardSlider image={card.image} />
+            <CardSlider image={card.image} index={index} />
           </SwiperSlide>
         ))}
       </Carroussel>
