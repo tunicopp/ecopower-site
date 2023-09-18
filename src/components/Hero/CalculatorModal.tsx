@@ -243,20 +243,20 @@ const CalculatorModal: React.FC<Props> = ({
                         name="location"
                         value="RESIDENCIAL"
                       >
-                        Residencial
+                        Residência
                       </Radio>
                       <Radio
                         id="EMPRESARIAL"
                         name="location"
                         value="EMPRESARIAL"
                       >
-                        Empresarial
+                        Empresa
                       </Radio>
                       <Radio id="INDUSTRIAL" name="location" value="INDUSTRIAL">
-                        Industrial
+                        Indústria
                       </Radio>
                       <Radio id="RURAL" name="location" value="RURAL">
-                        Rural
+                        Área Rural
                       </Radio>
                     </div>
                     <Input
