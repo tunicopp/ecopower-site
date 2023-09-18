@@ -66,6 +66,7 @@ module.exports = {
       },
       "hover-dropdown": "rgba(0, 0, 0, 0.05)",
       "radio-border": "rgba(118, 120, 123, 0.30)",
+      danger: "#FF6464",
     },
     keyframes: {
       fly: {

@@ -13,7 +13,7 @@ const EventSlide: React.FC<EventSlideProps> = (props) => {
       <Image
         src={props.src}
         alt="Foto do Evento"
-        className="rounded-2xl object-cover"
+        className="rounded-2xl object-cover w-full max-h-[216px]"
         width={288}
         height={216}
       />
