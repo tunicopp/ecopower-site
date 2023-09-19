@@ -16,13 +16,13 @@ import SimulationDataContent from "./SimulationDataContent";
 interface Props {
   isOpen: boolean;
   onClose: () => void;
-  initialValue: number;
+  initialValue?: number;
 }
 
 const CalculatorModal: React.FC<Props> = ({
   isOpen,
   onClose,
-  initialValue,
+  initialValue = 0,
 }) => {
   const [cities, setCities] = useState<City[]>([]);
   const [value, setValue] = useState([initialValue]);
