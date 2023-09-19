@@ -13,6 +13,9 @@ const SectionCareers: React.FC = () => {
       />
       <GridContainer className="relative">
         <div className="lg:max-w-[496px]">
+          <h2 className="text-black font-bold text-5xl mb-4">
+            <span className="text-primary-green">#</span>SejaEcolover
+          </h2>
           <p className="text-black text-lg lg:text-start text-justify">
             Junte-se a Ecopower e ilumine seu futuro! Se você busca por
             crescimento profissional, em um ambiente saudável e sustentável,
