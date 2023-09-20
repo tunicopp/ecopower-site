@@ -13,7 +13,7 @@ export default async function Careers() {
       <SectionOurTeam />
       <SectionOurValues />
       <SectionCareers />
-      <SectionCareersTwo />
+      {/* <SectionCareersTwo /> */}
     </main>
   );
 }

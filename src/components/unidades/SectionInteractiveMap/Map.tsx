@@ -43,7 +43,6 @@ const Map: React.FC = () => {
 
       <Tocantins />
       <Bahia />
-      <Alagoas />
       <SaoPaulo />
       <SantaCatarina />
       <Roraima />
@@ -54,6 +53,7 @@ const Map: React.FC = () => {
       <RioGrandeDoNorte />
       <Piaui />
       <Pernambuco />
+      <Alagoas />
       <Sergipe />
       <Parana />
       <Para />
