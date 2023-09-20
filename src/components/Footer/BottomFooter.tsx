@@ -74,12 +74,12 @@ const BottomFooter: React.FC = () => {
               <IoCallOutline />
               <LinkFooter href={`tel:40001722`}>4000-1722</LinkFooter>
             </div>
-            <div className="flex items-center gap-2 text-white">
+            {/* <div className="flex items-center gap-2 text-white">
               <BsWhatsapp />
               <ExternalLinkFooter href={`tel:11990900999`}>
                 11 99090-0999
               </ExternalLinkFooter>
-            </div>
+            </div> */}
             <div className="flex items-center gap-2 text-white">
               <IoLocationOutline />
               <ExternalLinkFooter

@@ -5,10 +5,13 @@ import React from "react";
 
 export default async function Products() {
   return (
-    <main className="relative">
-      <Header />
-      <SectionOurProducts />
-      <ProductsGrid />
-    </main>
+    <>
+      <main className="relative">
+        <Header />
+        <SectionOurProducts />
+        <ProductsGrid />
+      </main>
+      <div id="calc"></div>
+    </>
   );
 }

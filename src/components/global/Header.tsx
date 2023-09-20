@@ -1,8 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import GridContainer from "./GridContainer";
-import Image from "next/image";
-import logo from "../../../public/assets/icons/logo-eco-power.svg";
 import { MdOutlineMenu, MdClose, MdChevronRight } from "react-icons/md";
 import Link from "next/link";
 import "react-modern-drawer/dist/index.css";
@@ -10,11 +8,14 @@ import ContactsBar from "../Hero/ContactsBar";
 import MegaMenuItem from "./MegaMenuItem";
 import { BiChevronDown } from "react-icons/bi";
 import MegaMenuProductItem from "./MegaMenuProductItem";
+import { useGlobalContext } from "@/app/context/store";
+import Logo from "../../../public/assets/icons/Logo";
 
 const Header: React.FC = () => {
   const [isAtTop, setIsAtTop] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenProducts, setIsOpenProducts] = useState(false);
+  const { currentSlide } = useGlobalContext();
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 20) {
@@ -43,20 +44,24 @@ const Header: React.FC = () => {
       <ContactsBar />
       <GridContainer className="flex-col">
         <div className="flex items-center w-full min-h-[89px] max-h-[89px]">
-          <Link href="/" className="mr-auto">
-            <Image
-              src={logo}
-              alt="Eco Power Logo"
-              width={209}
-              height={56}
-              quality={100}
-              className="w-auto h-auto"
-            />
+          <Link
+            href="/"
+            className={`mr-auto ${
+              currentSlide === 3 && !isOpen && !isOpenProducts
+                ? "text-banner-two"
+                : "text-white"
+            }`}
+          >
+            <Logo />
           </Link>
           <div className="hidden lg:flex lg:items-center">
             <button
-              className={`text-sm leading-4 font-medium text-white flex rounded-lg items-center transition-colors py-[6px] -mr-3 px-3 duration-300 ${
+              className={`text-sm leading-4 font-medium flex rounded-lg items-center transition-colors py-[6px] -mr-3 px-3 duration-300 ${
                 isOpenProducts && "bg-white/25"
+              } ${
+                currentSlide === 3 && !isOpen && !isOpenProducts
+                  ? "text-banner-two"
+                  : "text-white"
               }`}
               onClick={() => {
                 setIsOpenProducts((old) => !old);
@@ -74,19 +79,31 @@ const Header: React.FC = () => {
             </button>
             <Link
               href="/sobre-nos"
-              className="text-sm leading-4 font-medium text-white mx-6 flex items-center"
+              className={`text-sm leading-4 font-medium mx-6 flex ${
+                currentSlide === 3 && !isOpen && !isOpenProducts
+                  ? "text-banner-two"
+                  : "text-white"
+              } items-center`}
             >
               Sobre Nós
             </Link>
             <Link
               href="/unidades"
-              className="text-sm leading-4 font-medium text-white flex items-center"
+              className={`text-sm leading-4 font-medium flex items-center ${
+                currentSlide === 3 && !isOpen && !isOpenProducts
+                  ? "text-banner-two"
+                  : "text-white"
+              }`}
             >
               Unidades
             </Link>
           </div>
           <button
-            className="text-white lg:ml-[70px] text-xl"
+            className={`lg:ml-[70px] text-xl ${
+              currentSlide === 3 && !isOpen && !isOpenProducts
+                ? "text-banner-two"
+                : "text-white"
+            }`}
             onClick={() => {
               setIsOpen((old) => !old);
               setIsOpenProducts(false);
@@ -167,9 +184,7 @@ const Header: React.FC = () => {
         </div>
         <div
           className={`mega-menu transition-all duration-300 ${
-            isOpenProducts
-              ? "overflow-auto overflow-auto"
-              : "h-0 overflow-hidden"
+            isOpenProducts ? "overflow-auto" : "h-0 overflow-hidden"
           }`}
         >
           <div className="flex justify-between items-center mt-4">
@@ -190,10 +205,10 @@ const Header: React.FC = () => {
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mt-10 pb-6 overflow-hidden">
             <MegaMenuProductItem
               onClick={() => setIsOpenProducts(false)}
-              title="On Grid"
+              title="Kit Meu Solar"
               images={[
-                "/assets/images/megamenu/product-placeholder.png",
-                "/assets/images/megamenu/product-placeholder.png",
+                "/assets/images/produtos/kit-meu-solar.png",
+                "/assets/images/produtos/kit-meu-solar.png",
               ]}
             >
               Sistema fotovoltaico e placas solares instaladas conectadas à rede
@@ -201,10 +216,10 @@ const Header: React.FC = () => {
             </MegaMenuProductItem>
             <MegaMenuProductItem
               onClick={() => setIsOpenProducts(false)}
-              title="Off Grid"
+              title="Cota de Crédito"
               images={[
-                "/assets/images/megamenu/product-placeholder.png",
-                "/assets/images/megamenu/product-placeholder.png",
+                "/assets/images/produtos/cota-credito.png",
+                "/assets/images/produtos/cota-credito.png",
               ]}
             >
               Toda a energia absorvida e produzida é armazenada nas baterias
@@ -213,10 +228,10 @@ const Header: React.FC = () => {
             </MegaMenuProductItem>
             <MegaMenuProductItem
               onClick={() => setIsOpenProducts(false)}
-              title="Híbrido"
+              title="Investidor"
               images={[
-                "/assets/images/megamenu/product-placeholder.png",
-                "/assets/images/megamenu/product-placeholder.png",
+                "/assets/images/produtos/investidor.png",
+                "/assets/images/produtos/investidor.png",
               ]}
             >
               O modelo híbrido funciona de ambas as maneiras, mas de modo

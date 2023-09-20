@@ -105,9 +105,13 @@ const SimulationDataContent: React.FC<Props> = ({ data }) => {
         <span className="text-center my-6 text-sm text-black font-medium">
           {data.promocao}
         </span>
-        <button className="h-12 w-full text-white px-5 py-[6px] bg-primary-green rounded-full">
+        <a
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone=5517988418893&text=Ol%C3%A1,%20acabei%20de%20simular%20meu%20projeto%20no%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es"
+          className="h-12 w-full text-white px-5 py-[6px] bg-primary-green rounded-full flex items-center justify-center"
+        >
           Falar com o consultor agora
-        </button>
+        </a>
       </div>
     </>
   );

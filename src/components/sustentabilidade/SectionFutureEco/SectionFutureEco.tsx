@@ -1,16 +1,23 @@
+"use client";
 import GridContainer from "@/components/global/GridContainer";
 import TitleComponent from "@/components/global/TitleComponent";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import futureEco from "../../../../public/assets/images/sustentabilidade/future-eco.png";
 import futureEcoTwo from "../../../../public/assets/images/sustentabilidade/future-eco-two.png";
 import ambiental from "../../../../public/assets/images/sustentabilidade/ambiental.svg";
 import social from "../../../../public/assets/images/sustentabilidade/social.svg";
 import governance from "../../../../public/assets/images/sustentabilidade/governance.svg";
-import women from "../../../../public/assets/images/sustentabilidade/women.svg";
 import arrow from "../../../../public/assets/icons/arrow-up-right.svg";
+import ModalEnvironmental from "./ModalEnvironmental";
+import ModalSocial from "./ModalSocial";
+import ModalGovernance from "./ModalGovernance";
 
 const SectionFutureEco: React.FC = () => {
+  const [isEnviromentOpen, setIsEnviromentOpen] = useState(false);
+  const [isSocialOpen, setIsSocialOpen] = useState(false);
+  const [isGovernanceOpen, setIsGovernanceOpen] = useState(false);
+
   return (
     <>
       <section className="pt-[80px] pb-10">
@@ -67,23 +74,23 @@ const SectionFutureEco: React.FC = () => {
           />
           <div className="max-w-[496px] text-black text-lg lg:text-start text-justify">
             <p className="block mb-4">
-              Geramos + de 400 empregos diretos e + de 580 empregos indiretos.
-              Nossa cultura corporativa promove o bem-estar e o desenvolvimento
-              profissional de nossos colaboradores, instaladores e franqueados.
-            </p>
-
-            <p>
-              <b className="font-bold">
+              <b>
                 Campanhas de conscientização e bem-estar para colaboradores,
                 mais de 400 empregos diretos,
               </b>{" "}
               ações que promovem mulheres ao mercado solar, treinamentos e
               programas para colaboradores e franqueados se capacitarem.
             </p>
+
+            <p>
+              Geramos + de 400 empregos diretos e + de 580 empregos indiretos.
+              Nossa cultura corporativa promove o bem-estar e o desenvolvimento
+              profissional de nossos colaboradores, instaladores e franqueados.
+            </p>
           </div>
         </GridContainer>
-        <GridContainer className="py-10 justify-center">
-          <p className="text-2xl max-w-[808px] text-center">
+        <GridContainer className="lg:py-[128px] py-10 justify-center">
+          <p className="text-lg max-w-[842px] text-center">
             Construímos a nossa matriz de materialidade e a agenda de
             sustentabilidade, com definição das ações para atendermos os temas
             materiais mais relevantes apontados pelas partes interessadas, como
@@ -92,17 +99,26 @@ const SectionFutureEco: React.FC = () => {
         </GridContainer>
         <GridContainer className="py-[80px]">
           <div className="grid w-full md:grid-cols-3 gap-6 items-stretch min-h-[212px] auto-rows-fr">
-            <div className="p-6 bg-white rounded-2xl flex flex-col justify-between gap-[10px]">
+            <div
+              onClick={() => setIsEnviromentOpen(true)}
+              className="p-6 bg-white rounded-2xl cursor-pointer flex flex-col justify-between gap-[10px]"
+            >
               <Image src={ambiental} alt="Ícone Ambiental" />
               <span className="text-black text-[22px] font-bold">
                 Ambiental
               </span>
             </div>
-            <div className="p-6 bg-white rounded-2xl flex flex-col justify-between gap-[10px]">
+            <div
+              onClick={() => setIsSocialOpen(true)}
+              className="p-6 bg-white rounded-2xl cursor-pointer flex flex-col justify-between gap-[10px]"
+            >
               <Image src={social} alt="Ícone Social" />
               <span className="text-black text-[22px] font-bold">Social</span>
             </div>
-            <div className="p-6 bg-white rounded-2xl flex flex-col justify-between gap-[10px]">
+            <div
+              onClick={() => setIsGovernanceOpen(true)}
+              className="p-6 bg-white rounded-2xl cursor-pointer flex flex-col justify-between gap-[10px]"
+            >
               <Image src={governance} alt="Ícone Governança" />
               <span className="text-black text-[22px] font-bold">
                 Governança
@@ -111,6 +127,24 @@ const SectionFutureEco: React.FC = () => {
           </div>
         </GridContainer>
       </section>
+      {isEnviromentOpen && (
+        <ModalEnvironmental
+          isOpen={isEnviromentOpen}
+          onClose={() => setIsEnviromentOpen(false)}
+        />
+      )}
+      {isSocialOpen && (
+        <ModalSocial
+          isOpen={isSocialOpen}
+          onClose={() => setIsSocialOpen(false)}
+        />
+      )}
+      {isGovernanceOpen && (
+        <ModalGovernance
+          isOpen={isGovernanceOpen}
+          onClose={() => setIsGovernanceOpen(false)}
+        />
+      )}
     </>
   );
 };

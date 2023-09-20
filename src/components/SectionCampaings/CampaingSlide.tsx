@@ -7,6 +7,7 @@ interface CampaingSlideProps {
   title: string;
   description: string;
   price: string;
+  link?: string;
 }
 
 const CampaingSlide: React.FC<CampaingSlideProps> = ({
@@ -14,15 +15,16 @@ const CampaingSlide: React.FC<CampaingSlideProps> = ({
   description,
   price,
   title,
+  link,
 }) => {
   return (
-    <div>
+    <a href={link ? link : undefined} target="_blank">
       <div className="relative">
         <Image
           src={src}
           alt={title}
-          height={208}
-          className="object-cover w-full rounded-t-3xl"
+          height={138}
+          className="object-cover w-full rounded-t-3xl h-[138px]"
         />
       </div>
       <div className="bg-campaing p-6 flex flex-col rounded-b-3xl flex-1">
@@ -34,7 +36,7 @@ const CampaingSlide: React.FC<CampaingSlideProps> = ({
           {price}
         </span>
       </div>
-    </div>
+    </a>
   );
 };
 

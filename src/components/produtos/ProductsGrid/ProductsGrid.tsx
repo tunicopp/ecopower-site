@@ -23,7 +23,7 @@ const products = [
     text: "Produza energia solar de forma sustentável, gere créditos de energia limpa e venda esses créditos conforme os meios previstos e regulamentados.",
   },
   {
-    image: "/assets/images/produtos/investidor.png",
+    image: "/assets/images/produtos/off-grid.png",
     title: "Off Grid",
     text: "É um sistema isolado, que não está conectado à rede de distribuição elétrica. Geralmente utilizado em regiões onde não há eletricidade ou distribuição elétrica.",
   },
