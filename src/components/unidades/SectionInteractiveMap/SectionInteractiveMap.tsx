@@ -13,61 +13,61 @@ const SectionInteractiveMap: React.FC = () => {
             anchor="#sc"
             accordion_anchor="ac_sc"
             state="Santa Catarina"
-            units={11}
+            units={2}
           />
           <StateTooltip
             anchor="#rs"
             accordion_anchor="ac_rs"
             state="Rio Grande do Sul"
-            units={11}
+            units={4}
           />
           <StateTooltip
             anchor="#pr"
             accordion_anchor="ac_pr"
             state="Paraná"
-            units={11}
+            units={4}
           />
           <StateTooltip
             anchor="#sp"
             accordion_anchor="ac_sp"
             state="São Paulo"
-            units={11}
+            units={26}
           />
           <StateTooltip
             anchor="#rj"
             accordion_anchor="ac_rj"
             state="Rio de Janeiro"
-            units={11}
+            units={2}
           />
           <StateTooltip
             anchor="#es"
             accordion_anchor="ac_es"
             state="Espirito Santo"
-            units={11}
+            units={2}
           />
           <StateTooltip
             anchor="#mg"
             accordion_anchor="ac_mg"
             state="Minas Gerais"
-            units={11}
+            units={6}
           />
           <StateTooltip
             anchor="#ms"
             accordion_anchor="ac_ms"
             state="Mato Grosso do Sul"
-            units={11}
+            units={3}
           />
           <StateTooltip
             anchor="#mt"
             accordion_anchor="ac_mt"
             state="Mato Grosso"
-            units={11}
+            units={8}
           />
           <StateTooltip
             anchor="#go"
             accordion_anchor="ac_go"
             state="Goiás"
-            units={11}
+            units={1}
           />
           <StateTooltip
             anchor="#df"
@@ -79,7 +79,7 @@ const SectionInteractiveMap: React.FC = () => {
             anchor="#ba"
             accordion_anchor="ac_ba"
             state="Bahia"
-            units={11}
+            units={5}
           />
           <StateTooltip
             anchor="#to"
@@ -121,7 +121,7 @@ const SectionInteractiveMap: React.FC = () => {
             anchor="#pa"
             accordion_anchor="ac_pa"
             state="Pará"
-            units={11}
+            units={3}
           />
           <StateTooltip
             anchor="#ap"
@@ -134,6 +134,12 @@ const SectionInteractiveMap: React.FC = () => {
             accordion_anchor="ac_am"
             state="Amazonas"
             units={11}
+          />
+          <StateTooltip
+            anchor="#al"
+            accordion_anchor="ac_al"
+            state="Alagoas"
+            units={1}
           />
         </div>
       </GridContainer>
