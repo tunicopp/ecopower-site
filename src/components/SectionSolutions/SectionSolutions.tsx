@@ -49,7 +49,7 @@ const SectionSolutions: React.FC = () => {
 
   return (
     <section
-      className="flex relative pt-[110px] w-full min-h-[2500px] lg:min-h-[2300px] relative flex-col lg:items-center z-[801] bg-white"
+      className="flex relative pt-[110px] w-full min-h-[2500px] lg:min-h-[2300px] flex-col lg:items-center z-[801] bg-white"
       id="scrollDiv"
     >
       <div className="flex flex-col w-full lg:items-center sticky inset-0 bg-solutions lg:p-[108px]">

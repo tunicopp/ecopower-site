@@ -135,6 +135,10 @@ a {
   @apply w-10 h-10 bg-beige-200 rounded-full md:absolute z-20 md:top-0 md:bottom-0 translate-y-2/4 flex-center cursor-pointer text-xl;
 }
 
+.see-global-impact {
+  @apply h-[44px] bg-black rounded-full flex items-center justify-center px-6 py-[6px] gap-2 text-white;
+}
+
 .select {
   @apply rounded-full focus:rounded-b-none focus:rounded-t-3xl focus:border-[#7c7c7c] focus:border-b-0 h-12 pl-12 py-[6px] pr-12 text-sm font-medium bg-white border border-grayscale-200 w-full outline-none flex-shrink-0;
   background: url(../../public/assets/icons/expand_more.png);

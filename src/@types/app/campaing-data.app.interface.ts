@@ -5,4 +5,5 @@ export default interface CampaingData {
   title: string;
   description: string;
   price: string;
+  link?: string;
 }

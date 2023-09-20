@@ -30,6 +30,8 @@ module.exports = {
     colors: {
       "primary-green": "#01B040",
       "hero-green": "#01AC3F",
+      "banner-two": "#0C7E40",
+      "banner-three": "#D9D3C3",
       "hover-map": "#01802E",
       "green-200": "#4AF387",
       "blue-dark": "#050245",
@@ -52,6 +54,7 @@ module.exports = {
       "font-black": "#262833",
       black: "#2F3133",
       "full-black": "#000000",
+      dark: "#0D0C0C",
       "beige-300": "#F8F6F1",
       "beige-200": "#EBE7DF",
       "slide-description": "#5A5C6B",
