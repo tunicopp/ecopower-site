@@ -2,7 +2,6 @@ import GridContainer from "@/components/global/GridContainer";
 import React from "react";
 import Map from "./Map";
 import StateTooltip from "./StateTooltip";
-import data from "../../../../public/assets/json/unidades.json";
 
 const SectionInteractiveMap: React.FC = () => {
   return (
@@ -14,133 +13,133 @@ const SectionInteractiveMap: React.FC = () => {
             anchor="#sc"
             accordion_anchor="ac_sc"
             state="Santa Catarina"
-            units={data.filter((d) => d.Uf === "SC").length}
+            units={2}
           />
           <StateTooltip
             anchor="#rs"
             accordion_anchor="ac_rs"
             state="Rio Grande do Sul"
-            units={data.filter((d) => d.Uf === "RS").length}
+            units={4}
           />
           <StateTooltip
             anchor="#pr"
             accordion_anchor="ac_pr"
             state="Paraná"
-            units={data.filter((d) => d.Uf === "PR").length}
+            units={4}
           />
           <StateTooltip
             anchor="#sp"
             accordion_anchor="ac_sp"
             state="São Paulo"
-            units={data.filter((d) => d.Uf === "SP").length}
+            units={26}
           />
           <StateTooltip
             anchor="#rj"
             accordion_anchor="ac_rj"
             state="Rio de Janeiro"
-            units={data.filter((d) => d.Uf === "RJ").length}
+            units={2}
           />
           <StateTooltip
             anchor="#es"
             accordion_anchor="ac_es"
             state="Espirito Santo"
-            units={data.filter((d) => d.Uf === "ES").length}
+            units={2}
           />
           <StateTooltip
             anchor="#mg"
             accordion_anchor="ac_mg"
             state="Minas Gerais"
-            units={data.filter((d) => d.Uf === "MG").length}
+            units={6}
           />
           <StateTooltip
             anchor="#ms"
             accordion_anchor="ac_ms"
             state="Mato Grosso do Sul"
-            units={data.filter((d) => d.Uf === "SC").length}
+            units={3}
           />
           <StateTooltip
             anchor="#mt"
             accordion_anchor="ac_mt"
             state="Mato Grosso"
-            units={data.filter((d) => d.Uf === "MT").length}
+            units={8}
           />
           <StateTooltip
             anchor="#go"
             accordion_anchor="ac_go"
             state="Goiás"
-            units={data.filter((d) => d.Uf === "GO").length}
+            units={1}
           />
           <StateTooltip
             anchor="#df"
             accordion_anchor="ac_df"
             state="Distrito Federal"
-            units={data.filter((d) => d.Uf === "DF").length}
+            units={11}
           />
           <StateTooltip
             anchor="#ba"
             accordion_anchor="ac_ba"
             state="Bahia"
-            units={data.filter((d) => d.Uf === "BA").length}
+            units={5}
           />
           <StateTooltip
             anchor="#to"
             accordion_anchor="ac_to"
             state="Tocatins"
-            units={data.filter((d) => d.Uf === "TO").length}
+            units={11}
           />
           <StateTooltip
             anchor="#se"
             accordion_anchor="ac_se"
             state="Sergipe"
-            units={data.filter((d) => d.Uf === "SE").length}
+            units={11}
           />
           <StateTooltip
             anchor="#pe"
             accordion_anchor="ac_pe"
             state="Pernambuco"
-            units={data.filter((d) => d.Uf === "PE").length}
+            units={11}
           />
           <StateTooltip
             anchor="#rn"
             accordion_anchor="ac_rn"
             state="Rio Grande do Norte"
-            units={data.filter((d) => d.Uf === "RN").length}
+            units={11}
           />
           <StateTooltip
             anchor="#ce"
             accordion_anchor="ac_ce"
             state="Ceará"
-            units={data.filter((d) => d.Uf === "CE").length}
+            units={11}
           />
           <StateTooltip
             anchor="#ma"
             accordion_anchor="ac_ma"
             state="Maranhão"
-            units={data.filter((d) => d.Uf === "MA").length}
+            units={11}
           />
           <StateTooltip
             anchor="#pa"
             accordion_anchor="ac_pa"
             state="Pará"
-            units={data.filter((d) => d.Uf === "PA").length}
+            units={3}
           />
           <StateTooltip
             anchor="#ap"
             accordion_anchor="ac_ap"
             state="Amapá"
-            units={data.filter((d) => d.Uf === "AP").length}
+            units={11}
           />
           <StateTooltip
             anchor="#am"
             accordion_anchor="ac_am"
             state="Amazonas"
-            units={data.filter((d) => d.Uf === "AM").length}
+            units={11}
           />
           <StateTooltip
             anchor="#al"
             accordion_anchor="ac_al"
             state="Alagoas"
-            units={data.filter((d) => d.Uf === "AL").length}
+            units={1}
           />
         </div>
       </GridContainer>
