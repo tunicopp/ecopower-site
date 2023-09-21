@@ -10,15 +10,7 @@ const Hero: React.FC = () => {
   const { currentSlide } = useGlobalContext();
 
   return (
-    <section
-      className={`flex flex-col lg:block pb-[100px] lg:min-h-[620px] pt-16 transition-colors lg:pt-32 lg:bg-transparent w-full relative group ${
-        currentSlide === 1
-          ? "bg-primary-green"
-          : currentSlide === 2
-          ? "bg-banner-two"
-          : "bg-banner-three"
-      }`}
-    >
+    <section className="flex flex-col lg:block pb-10 lg:min-h-[620px] pt-16 lg:pt-32 lg:bg-transparent bg-hero-green w-full relative group">
       <HeroSlider />
       <div className="z-10 relative lg:pt-0">
         <GridContainer className="pt-6 lg:pt-[103px] flex-col">
