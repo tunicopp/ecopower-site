@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
 
   return (
     <section
-      className={`flex flex-col lg:block pb-[100px] lg:min-h-[620px] pt-16 transition-colors lg:pt-32 lg:bg-transparent w-full relative group ${
+      className={`flex flex-col lg:block pb-[100px] lg:min-h-[620px] pt-16 transition-colors lg:pt-32 w-full relative group ${
         currentSlide === 1
           ? "bg-primary-green"
           : currentSlide === 2
