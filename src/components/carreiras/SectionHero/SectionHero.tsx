@@ -23,7 +23,7 @@ const SectionHero: React.FC = () => {
       />
       <GridContainer className="relative flex-col items-center justify-center md:pt-[210px] pt-[180px]">
         <h2 className="max-w-[550px] text-center text-white text-[56px] leading-[64px] font-semibold">
-          Somos Ecopower. Somos a maior!
+          Somos EcoPower. Somos a maior!
         </h2>
         <h3 className="mt-3 text-xl leading-none text-white text-center">
           Do atendimento à instalação, contamos com profissionais extremamente
