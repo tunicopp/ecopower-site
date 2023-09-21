@@ -14,7 +14,6 @@ import circle from "../../../public/assets/images/hero/circle.png";
 import panel from "../../../public/assets/images/hero/panel.png";
 import doubleTree from "../../../public/assets/images/hero/double-tree.png";
 import sun from "../../../public/assets/images/hero/sun.png";
-import heroMobile from "../../../public/assets/images/hero/banner-hero-mobile.png";
 import { useSwiperSlide } from "swiper/react";
 import { useGlobalContext } from "@/app/context/store";
 
@@ -24,15 +23,11 @@ const BannerOne: React.FC = () => {
 
   useEffect(() => {
     if (swiperSlide.isActive) onChangeSlide(1);
-
-    return () => {
-      onChangeSlide(1);
-    };
   }, [swiperSlide.isActive]);
 
   return (
     <>
-      <div className="absolute hidden lg:block lg:-right-[69px] right-[219px] lg:-bottom-[138px] -bottom-[55px] lg:group-hover:right-[11px] lg:group-hover:rotate-[30deg] transition-all duration-1000 ease-in-out">
+      <div className="absolute lg:-right-[69px] right-[219px] lg:-bottom-[138px] -bottom-[55px] lg:group-hover:right-[11px] lg:group-hover:rotate-[30deg] transition-all duration-1000 ease-in-out">
         <Image
           loading="eager"
           src={circle}
@@ -50,7 +45,7 @@ const BannerOne: React.FC = () => {
           className="h-[205px] w-[82px]"
         />
       </div>
-      <div className="absolute hidden lg:block lg:-right-[317px] -right-[140px] bottom-[133px] lg:group-hover:-right-[180px] transition-all duration-1000 ease-in-out">
+      <div className="absolute lg:-right-[317px] -right-[140px] bottom-[133px] lg:group-hover:-right-[180px] transition-all duration-1000 ease-in-out">
         <Image
           loading="eager"
           src={panel}
@@ -68,7 +63,7 @@ const BannerOne: React.FC = () => {
           className="h-[168px] w-[168px]"
         />
       </div>
-      <div className="absolute hidden lg:block -right-[190px] lg:top-0 lg:bottom-auto bottom-0 lg:group-hover:right-[71px] group-hover:-right-[40px] transition-all duration-1000 ease-in-out">
+      <div className="absolute -right-[190px] lg:top-0 lg:bottom-auto bottom-0 lg:group-hover:right-[71px] group-hover:-right-[40px] transition-all duration-1000 ease-in-out">
         <Image
           loading="eager"
           src={zezeDiCamargo}
@@ -148,24 +143,6 @@ const BannerOne: React.FC = () => {
           quality={100}
           className="h-[263px] w-[417px]"
         />
-      </div>
-      <div className="lg:hidden block relative overflow-hidden">
-        <div className="absolute -right-[43px] top-[44px]">
-          <Image
-            loading="eager"
-            src={cloudTwo}
-            alt="Nuvem"
-            quality={100}
-            className="h-[36px] w-[130px]"
-          />
-        </div>
-        <div className="relative flex flex-col items-center gap-2 w-[307px] top-[40px] left-0 right-0 mx-auto">
-          <span className="text-white text-lg">EcoPower</span>
-          <h1 className="text-white font-semibold text-[30px] text-center">
-            Energia Solar ao seu alcance
-          </h1>
-        </div>
-        <Image src={heroMobile} alt="Zezé di Camargo" className="w-full" />
       </div>
     </>
   );
