@@ -8,27 +8,6 @@ interface Data {
   id: string;
 }
 
-// export const stateAccordionLeftData: Data[] = data.flatMap((d, i) => {
-//   if (
-//     d.Uf === "SC" ||
-//     d.Uf === "AP" ||
-//     d.Uf === "BA" ||
-//     d.Uf === "DF" ||
-//     d.Uf === "GO" ||
-//     d.Uf === "MT" ||
-//     d.Uf === "MG" ||
-//     d.Uf === "PB" ||
-//     d.Uf === "PE" ||
-//     d.Uf === "RJ" ||
-//     d.Uf === "RS" ||
-//     d.Uf === "RR" ||
-//     d.Uf === "SP" ||
-//     d.Uf === "TO"
-//   ) {
-//     return {id: i, state};
-//   } else return [];
-// });
-
 export const stateAccordionLeftData: Data[] = [
   {
     id: "ac_rs",
