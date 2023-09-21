@@ -47,7 +47,7 @@ const Header: React.FC = () => {
           <Link
             href="/"
             className={`mr-auto ${
-              currentSlide === 3 && !isOpen && !isOpenProducts
+              currentSlide === 3 && !isOpen && !isOpenProducts && isAtTop
                 ? "text-banner-two"
                 : "text-white"
             }`}
@@ -59,7 +59,7 @@ const Header: React.FC = () => {
               className={`text-sm leading-4 font-medium flex rounded-lg items-center transition-colors py-[6px] -mr-3 px-3 duration-300 ${
                 isOpenProducts && "bg-white/25"
               } ${
-                currentSlide === 3 && !isOpen && !isOpenProducts
+                currentSlide === 3 && !isOpen && !isOpenProducts && isAtTop
                   ? "text-banner-two"
                   : "text-white"
               }`}
@@ -80,7 +80,7 @@ const Header: React.FC = () => {
             <Link
               href="/sobre-nos"
               className={`text-sm leading-4 font-medium mx-6 flex ${
-                currentSlide === 3 && !isOpen && !isOpenProducts
+                currentSlide === 3 && !isOpen && !isOpenProducts && isAtTop
                   ? "text-banner-two"
                   : "text-white"
               } items-center`}
@@ -90,7 +90,7 @@ const Header: React.FC = () => {
             <Link
               href="/unidades"
               className={`text-sm leading-4 font-medium flex items-center ${
-                currentSlide === 3 && !isOpen && !isOpenProducts
+                currentSlide === 3 && !isOpen && !isOpenProducts && isAtTop
                   ? "text-banner-two"
                   : "text-white"
               }`}
@@ -100,7 +100,7 @@ const Header: React.FC = () => {
           </div>
           <button
             className={`lg:ml-[70px] text-xl ${
-              currentSlide === 3 && !isOpen && !isOpenProducts
+              currentSlide === 3 && !isOpen && !isOpenProducts && isAtTop
                 ? "text-banner-two"
                 : "text-white"
             }`}
