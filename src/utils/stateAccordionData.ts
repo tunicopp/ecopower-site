@@ -36,7 +36,7 @@ export const stateAccordionLeftData: Data[] = [
     units: data
       .filter((d) => d.Uf === "RS")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -50,7 +50,7 @@ export const stateAccordionLeftData: Data[] = [
     units: data
       .filter((d) => d.Uf === "PR")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -64,7 +64,7 @@ export const stateAccordionLeftData: Data[] = [
     units: data
       .filter((d) => d.Uf === "RJ")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -78,7 +78,7 @@ export const stateAccordionLeftData: Data[] = [
     units: data
       .filter((d) => d.Uf === "MS")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -92,7 +92,7 @@ export const stateAccordionLeftData: Data[] = [
     units: data
       .filter((d) => d.Uf === "GO")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -106,7 +106,7 @@ export const stateAccordionLeftData: Data[] = [
     units: data
       .filter((d) => d.Uf === "MT")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -120,7 +120,7 @@ export const stateAccordionLeftData: Data[] = [
     units: data
       .filter((d) => d.Uf === "BA")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -134,7 +134,7 @@ export const stateAccordionLeftData: Data[] = [
     units: data
       .filter((d) => d.Uf === "PE")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -148,7 +148,7 @@ export const stateAccordionLeftData: Data[] = [
     units: data
       .filter((d) => d.Uf === "CE")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -162,7 +162,7 @@ export const stateAccordionLeftData: Data[] = [
     units: data
       .filter((d) => d.Uf === "PA")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -176,7 +176,7 @@ export const stateAccordionLeftData: Data[] = [
     units: data
       .filter((d) => d.Uf === "AM")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -190,7 +190,7 @@ export const stateAccordionLeftData: Data[] = [
     units: data
       .filter((d) => d.Uf === "AL")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -204,7 +204,7 @@ export const stateAccordionLeftData: Data[] = [
     units: data
       .filter((d) => d.Uf === "PI")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -218,7 +218,7 @@ export const stateAccordionLeftData: Data[] = [
     units: data
       .filter((d) => d.Uf === "RO")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -235,7 +235,7 @@ export const stateAccordionRightData: Data[] = [
     units: data
       .filter((d) => d.Uf === "SC")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -249,7 +249,7 @@ export const stateAccordionRightData: Data[] = [
     units: data
       .filter((d) => d.Uf === "SP")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -263,7 +263,7 @@ export const stateAccordionRightData: Data[] = [
     units: data
       .filter((d) => d.Uf === "ES")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -277,7 +277,7 @@ export const stateAccordionRightData: Data[] = [
     units: data
       .filter((d) => d.Uf === "MG")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -291,7 +291,7 @@ export const stateAccordionRightData: Data[] = [
     units: data
       .filter((d) => d.Uf === "DF")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -305,7 +305,7 @@ export const stateAccordionRightData: Data[] = [
     units: data
       .filter((d) => d.Uf === "TO")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -319,7 +319,7 @@ export const stateAccordionRightData: Data[] = [
     units: data
       .filter((d) => d.Uf === "SE")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -333,7 +333,7 @@ export const stateAccordionRightData: Data[] = [
     units: data
       .filter((d) => d.Uf === "RN")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -347,7 +347,7 @@ export const stateAccordionRightData: Data[] = [
     units: data
       .filter((d) => d.Uf === "MA")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -361,7 +361,7 @@ export const stateAccordionRightData: Data[] = [
     units: data
       .filter((d) => d.Uf === "AP")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -375,7 +375,7 @@ export const stateAccordionRightData: Data[] = [
     units: data
       .filter((d) => d.Uf === "AC")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -389,7 +389,7 @@ export const stateAccordionRightData: Data[] = [
     units: data
       .filter((d) => d.Uf === "PB")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
@@ -403,7 +403,7 @@ export const stateAccordionRightData: Data[] = [
     units: data
       .filter((d) => d.Uf === "RR")
       .flatMap((d) => ({
-        name: d.Nome,
+        name: d.Municipio,
         address: d.Endereco,
         facebook: d.Facebook,
         instagram: d.Instagram,
