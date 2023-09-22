@@ -130,10 +130,10 @@ const BannerTwo: React.FC = () => {
           <span className="text-white text-lg">
             Mês do cliente, até 30x sem juros
           </span>
-          <h1 className="text-white font-semibold text-[30px] text-center">
+          <h2 className="text-white font-semibold text-[30px] text-center">
             Aproveite as
             <span className="block text-white">melhores condições</span>
-          </h1>
+          </h2>
         </div>
         <Image
           src={heroMobile}
