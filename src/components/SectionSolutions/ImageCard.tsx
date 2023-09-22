@@ -42,7 +42,7 @@ export const StoreImage = ({ id }: Cards) => {
   return (
     <ImageCard id={id} bg="bg-store">
       <a className="absolute flex items-center gap-1 text-white bottom-6 lg:left-[130px] left-6 underline cursor-pointer">
-        Projeto Casa Geraldo
+        Projeto Sperta Honda
         <Image src={arrowUpRight} alt="Acessar" />
       </a>
     </ImageCard>
@@ -53,7 +53,7 @@ export const FactoryImage = ({ id }: Cards) => {
   return (
     <ImageCard id={id} bg="bg-factory">
       <a className="absolute flex items-center gap-1 text-white bottom-6 lg:left-[130px] left-6 underline cursor-pointer">
-        Projeto Casa Geraldo
+        Projeto Metalúrgica Igarapava
         <Image src={arrowUpRight} alt="Acessar" />
       </a>
     </ImageCard>
@@ -64,7 +64,7 @@ export const FarmImage = ({ id }: Cards) => {
   return (
     <ImageCard id={id} bg="bg-farm">
       <a className="absolute flex items-center gap-1 text-white bottom-6 lg:left-[130px] left-6 underline cursor-pointer">
-        Projeto Casa Geraldo
+        Projeto Dois Lagos
         <Image src={arrowUpRight} alt="Acessar" />
       </a>
     </ImageCard>

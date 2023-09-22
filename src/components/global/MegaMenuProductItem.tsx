@@ -21,7 +21,7 @@ const MegaMenuProductItem: React.FC<Props> = ({
   onClick,
 }) => {
   return (
-    <div className="p-4 bg-white flex flex-col gap-4 rounded-3xl flex-1 h-[560px]">
+    <div className="p-4 bg-white flex flex-col gap-4 rounded-3xl flex-1 min-h-[500px]">
       <div className="flex gap-4 justify-between relative">
         <button
           id={`prev-product-menu-${title.replace(" ", "")}`}

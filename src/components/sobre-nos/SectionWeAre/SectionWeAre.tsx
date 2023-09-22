@@ -33,8 +33,8 @@ const SectionWeAre: React.FC = () => {
                 Somos Eco
               </h2>
               <p className="text-xl text-grayscale-900 text-center">
-                Presente em todo o país, a EcoPower é a empresa de energia solar
-                que mais cresce no Brasil.
+                Estamos preocupados com a sustentabilidade, meio ambiente e
+                todas as pautas de ESG.
               </p>
             </div>
             <Image
@@ -63,8 +63,8 @@ const SectionWeAre: React.FC = () => {
                 Somos Power
               </h2>
               <p className="text-xl text-white text-center">
-                Presente em todo o país, a EcoPower é a empresa de energia solar
-                que mais cresce no Brasil.
+                Energia, redução de custos e a energia solar como poder de
+                transformação na economia.
               </p>
             </div>
           </div>

@@ -15,9 +15,6 @@ const SectionHero: React.FC = () => {
         <TitleComponent className="text-white">
           Termos de Uso e Privacidade
         </TitleComponent>
-        <h3 className="text-white mt-6">
-          Lorem ipsum dolor sit amet consectetur.
-        </h3>
       </GridContainer>
       <div className="absolute lg:-right-[104px] -right-[270px] lg:-bottom-[24px] md:-bottom-[50px] -bottom-[30px]">
         <Image

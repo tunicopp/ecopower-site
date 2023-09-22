@@ -39,7 +39,7 @@ const SectionOurStructure: React.FC = () => {
           </div>
           <div className="lg:p-6 p-4 border-r border-[#000] border-opacity-[0.07] bg-white flex-center flex-col gap-2">
             <b className="lg:text-[40px]">
-              <CountUp end={30} duration={5} enableScrollSpy /> mil
+              <CountUp end={40} duration={5} enableScrollSpy /> mil
             </b>
             <span className="lg:text-base text-xs text-center">
               Projetos instalados

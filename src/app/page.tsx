@@ -8,23 +8,25 @@ import SectionSolutions from "@/components/SectionSolutions/SectionSolutions";
 import SectionProject from "@/components/SectionProjects/SectionProject";
 import SectionTestimonial from "@/components/SectionTestimonial/SectionTestimonial";
 import SectionFAQ from "@/components/SectionFAQ/SectionFAQ";
-import Footer from "@/components/Footer/Footer";
 import Header from "@/components/global/Header";
 
 export default async function Home() {
   return (
-    <main className="relative">
-      <Header />
-      <Hero />
-      <SectionSlide />
-      <SectionMap />
-      <SectionVideo />
-      <SectionCampaings />
-      <SectionSolutions />
-      <SectionProject />
-      <SectionTestimonial />
-      <BlogSection />
-      <SectionFAQ />
-    </main>
+    <>
+      <main className="relative">
+        <Header />
+        <Hero />
+        <SectionSlide />
+        <SectionMap />
+        <SectionVideo />
+        <SectionCampaings />
+        <SectionSolutions />
+        <SectionProject />
+        <SectionTestimonial />
+        <BlogSection />
+        <SectionFAQ />
+      </main>
+      <div id="calc"></div>
+    </>
   );
 }

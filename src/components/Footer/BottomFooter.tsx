@@ -18,8 +18,8 @@ const BottomFooter: React.FC = () => {
   return (
     <div className="relative flex flex-col bg-primary-green w-full lg:h-[504px] p-6 lg:px-[108px] lg:pt-[108px] lg:pb-[40px]">
       <div className="grid lg:grid-cols-3 gap-4 w-full flex-1">
-        <div className="flex">
-          <div className="relative mr-auto">
+        <div className="flex justify-center md:jutify-start">
+          <div className="relative">
             <Image
               src={logo}
               alt="Eco Power Logo"
@@ -43,9 +43,9 @@ const BottomFooter: React.FC = () => {
             <a
               href={"https://www.ecopowerstore.com.br/"}
               target="_blank"
-              className="hidden md:block bg-grayscale-800 text-white py-2 px-5 rounded-full font-semibold w-fit mt-6 block lg:mb-6 hover:border-2 hover:border-white transition-all"
+              className="hidden md:block bg-font-black text-white py-2 px-5 rounded-full font-semibold w-fit mt-6 lg:mb-6 hover:bg-white hover:text-grayscale-800 transition-all duration-300"
             >
-              Acessar EcoPower Store
+              EcoPower Store
             </a>
           </div>
           <div className="flex-1 flex-col">
@@ -55,7 +55,7 @@ const BottomFooter: React.FC = () => {
               <LinkFooter href="/sobre-nos">Nossa História</LinkFooter>
               <LinkFooter href="/unidades">Unidades</LinkFooter>
               <LinkFooter href="/sustentabilidade">Sustentabilidade</LinkFooter>
-              <LinkFooter href="/carreiras">Carreiras</LinkFooter>
+              <LinkFooter href="/pessoas">Pessoas</LinkFooter>
               <LinkFooter href="/blog">Blog</LinkFooter>
             </div>
           </div>
@@ -74,20 +74,19 @@ const BottomFooter: React.FC = () => {
               <IoCallOutline />
               <LinkFooter href={`tel:40001722`}>4000-1722</LinkFooter>
             </div>
-            <div className="flex items-center gap-2 text-white">
+            {/* <div className="flex items-center gap-2 text-white">
               <BsWhatsapp />
               <ExternalLinkFooter href={`tel:11990900999`}>
                 11 99090-0999
               </ExternalLinkFooter>
-            </div>
+            </div> */}
             <div className="flex items-center gap-2 text-white">
               <IoLocationOutline />
               <ExternalLinkFooter
                 href="https://goo.gl/maps/EnoKjdS1jRJRtW2z5"
                 className="leading-4"
               >
-                Rua Delmiro José de Andrade, 602 Distrito Industrial II -
-                Barretos/SP
+                Chegar na matriz
               </ExternalLinkFooter>
             </div>
             <LinkFooter href="">Seja um Franqueado</LinkFooter>

@@ -1,38 +1,47 @@
-import Image from "next/image";
-import React from "react";
-import productImage from "../../../../public/assets/images/produtos/solar-panel.png";
-import OutlineButton from "@/components/global/OutlineButton";
+"use client";
+import CalculatorModal from "@/components/Hero/CalculatorModal";
+import Image, { StaticImageData } from "next/image";
+import React, { useState } from "react";
 
 interface Props {
-  isOnGrid?: boolean;
+  image: string | StaticImageData;
+  title: string;
+  text: string;
 }
 
-const ProductGridItem: React.FC<Props> = ({ isOnGrid }) => {
+const ProductGridItem: React.FC<Props> = ({ image, text, title }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="rounded-2xl bg-beige-300 pt-4 pb-12">
+    <div className="flex flex-col rounded-2xl bg-beige-300 p-6">
       <Image
-        src={productImage}
-        alt="Foto nosso Produto"
+        src={image}
+        alt={title}
         quality={100}
-        width={225}
+        width={240}
         height={225}
-        className="w-auto h-auto mx-auto max-w-[225px]"
+        className="w-full max-h-[225px] object-cover"
       />
-      <div className="px-6 py-4">
-        <h2 className="text-[22px] leading-7 font-bold">
-          Energia Solar OnGrid
-        </h2>
-        <h3 className="text-lg my-6">
-          Lorem ipsum dolor sit amet consectetur. Feugiat mi habitasse
-          peilentesque eget ipsum.
-        </h3>
-        <span className="text-sm leading-7 font-bold">
-          {isOnGrid ? "Faça um simulação" : "Chama a gente no WhatsApp"}
+      <div className="mt-6 mb-5">
+        <h2 className="text-[22px] leading-7 font-bold">{title}</h2>
+        <h3 className="text-lg my-6">{text}</h3>
+        <span
+          className="text-sm leading-7 font-bold cursor-pointer"
+          onClick={() => setIsOpen(true)}
+        >
+          Faça uma simulação
         </span>
       </div>
-      <button className="mx-6 mt-2 simulate-button min-w-[165px]">
+      <a
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=5517988418893&text=Ol%C3%A1,%20acabei%20de%20simular%20meu%20projeto%20no%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es"
+        className="mt-auto flex items-center justify-center simulate-button min-w-[165px]"
+      >
         Saiba mais
-      </button>
+      </a>
+      {isOpen && (
+        <CalculatorModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
+      )}
     </div>
   );
 };

@@ -16,11 +16,7 @@ const SectionHero: React.FC = () => {
         className="absolute top-0 left-0 w-full h-full object-cover"
       />
       <GridContainer className="relative flex-col items-center justify-center">
-        <TitleComponent className="text-white">Sustentabilidade</TitleComponent>
-        <h3 className="mt-3 text-white text-xl text-center">
-          Lorem ipsum dolor sit amet consectetur. Feugiat mi habitasse
-          pellentesque eget ipsum.
-        </h3>
+        <TitleComponent className="text-white">ESG e Sustentabilidade</TitleComponent>
       </GridContainer>
     </section>
   );

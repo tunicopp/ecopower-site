@@ -17,7 +17,7 @@ import Link from "next/link";
 
 const JoinUs: React.FC = () => {
   return (
-    <section className="pb-[80px] lg:px-0 px-6">
+    <section className="py-[80px] lg:px-0 px-6">
       <GridContainer>
         <div className="w-full flex flex-col items-center justify-center bg-primary-green rounded-[20px] py-[80px] gap-6 relative overflow-hidden">
           <Image

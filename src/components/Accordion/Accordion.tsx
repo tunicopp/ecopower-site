@@ -2,6 +2,7 @@
 import ComponentWithChildren from "@/@types/ComponentWithChildren";
 import React, { useState } from "react";
 import { BsPlus } from "react-icons/bs";
+import { BiMinus } from "react-icons/bi";
 
 interface AccordionProps extends ComponentWithChildren {
   title: string;
@@ -23,7 +24,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, isH3, children }) => {
           <h2 className="text-lg text-black leading-6">{title}</h2>
         )}
         <div className="text-full-black text-2xl">
-          <BsPlus />
+          {isOpen ? <BiMinus /> : <BsPlus />}
         </div>
       </button>
       <div

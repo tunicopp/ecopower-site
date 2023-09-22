@@ -11,24 +11,24 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 const events = [
   {
-    src: "/assets/images/sobre-nos/events/event-placeholder.png",
-    subTitle: "A maior festa da América Latina",
+    src: "/assets/images/sobre-nos/events/barretos.png",
+    subTitle: "O maior rodeio do mundo",
     title: "Festa do Peão de Barretos",
   },
   {
     src: "/assets/images/sobre-nos/events/abf-expo.png",
-    subTitle: "Maior feira de franquias do mundo",
+    subTitle: "Maior feira de franquias do Brasil",
     title: "ABF Expo",
   },
   {
     src: "/assets/images/sobre-nos/events/agrishow.png",
-    subTitle: "Umas das maiores feiras agrícolas",
+    subTitle: "A maior feira agro do Brasil",
     title: "Agrishow",
   },
   {
-    src: "/assets/images/sobre-nos/events/rd-summit.png",
-    subTitle: "O maior evento de marketing",
-    title: "RD Summit",
+    src: "/assets/images/sobre-nos/events/expointer.png",
+    subTitle: "Exposição Internacional de Animais",
+    title: "Expointer",
   },
   {
     src: "/assets/images/sobre-nos/events/bahia-farm-show.png",
@@ -37,7 +37,7 @@ const events = [
   },
   {
     src: "/assets/images/sobre-nos/events/maior-rodeio.png",
-    subTitle: "O maior rodeio do Brasil",
+    subTitle: "Um dos maiores rodeios do Brasil",
     title: "Festa do Peão de Americana",
   },
   {
@@ -57,7 +57,7 @@ const events = [
   },
   {
     src: "/assets/images/sobre-nos/events/divinaexpo.png",
-    subTitle: "O Maior Rodeio Completo do Brasil",
+    subTitle: "Um dos maiores rodeios do Brasil",
     title: "Divinaexpo",
   },
   {
@@ -74,7 +74,8 @@ const SectionEvents: React.FC = () => {
         <div className="flex flex-col w-full items-center relative mb-12">
           <TitleComponent>A energia que move os grandes eventos</TitleComponent>
           <h3 className="mt-3 text-xl">
-            Lorem ipsum dolor sit amet consectetur elit
+            A EcoPower está presente e patrocina mais de 100 eventos em todo o
+            Brasil.
           </h3>
           <div className="flex w-full justify-between">
             <button

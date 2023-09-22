@@ -12,6 +12,9 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      objectPosition: {
+        "pessoas-hero": "35% top",
+      },
       boxShadow: {
         calculator: "0px 32px 32px 0px rgba(55, 47, 25, 0.05);",
       },
@@ -30,6 +33,8 @@ module.exports = {
     colors: {
       "primary-green": "#01B040",
       "hero-green": "#01AC3F",
+      "banner-two": "#0C7E40",
+      "banner-three": "#D9D3C3",
       "hover-map": "#01802E",
       "green-200": "#4AF387",
       "blue-dark": "#050245",
@@ -52,6 +57,7 @@ module.exports = {
       "font-black": "#262833",
       black: "#2F3133",
       "full-black": "#000000",
+      dark: "#0D0C0C",
       "beige-300": "#F8F6F1",
       "beige-200": "#EBE7DF",
       "slide-description": "#5A5C6B",
@@ -65,6 +71,8 @@ module.exports = {
         "card-bg": "url('/public/assets/images/img-card.png')",
       },
       "hover-dropdown": "rgba(0, 0, 0, 0.05)",
+      "radio-border": "rgba(118, 120, 123, 0.30)",
+      danger: "#FF6464",
     },
     keyframes: {
       fly: {

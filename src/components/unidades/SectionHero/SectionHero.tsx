@@ -21,8 +21,7 @@ const SectionHero: React.FC = () => {
           Unidades
         </TitleComponent>
         <h3 className="text-white text-xl">
-          Lorem ipsum dolor sit amet consectetur. Feugiat mi habitasse
-          pellentesque eget.
+          Confira aqui onde encontrar a franquia da EcoPower mais próxima de você.
         </h3>
       </GridContainer>
       <SearchInput />

@@ -14,7 +14,7 @@ const SectionOurProducts: React.FC = () => {
       <GridContainer className="flex-col justify-center items-center">
         <TitleComponent className="text-white">Nossas Soluções</TitleComponent>
         <h3 className="text-white mt-6">
-          Lorem ipsum dolor sit amet consectetur.
+          O que há de melhor no mercado de energia solar no Brasil.
         </h3>
       </GridContainer>
       <div className="absolute lg:-right-[104px] -right-[270px] lg:-bottom-[24px] md:-bottom-[50px] -bottom-[30px]">

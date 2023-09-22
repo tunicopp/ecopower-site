@@ -10,7 +10,7 @@ import LinkArrow from "../global/LinkArrow";
 
 async function getData(): Promise<BlogPost[]> {
   const response = await fetch(
-    "https://www.ecopower.com.br/wp-json/wp/v2/posts?per_page=4&_embed",
+    "https://ecopower.com.br/blog/wp-json/wp/v2/posts?per_page=4&_embed",
     {
       next: { revalidate: 14400 }, // 4h
       method: "GET",
@@ -43,18 +43,20 @@ const BlogSection: React.FC = async () => {
   const data = await getData();
 
   return (
-    <section className="min-h-screen w-full bg-beige-300 py-28">
+    <section className="w-full bg-beige-300 pt-28 pb-16">
       <GridContainer className="flex flex-col h-full">
         <header className="flex flex-col lg:flex-row w-full justify-between lg:items-center">
           <div className="flex-col w-full">
             <TitleComponent className="leading-none">
               Últimos posts do blog
             </TitleComponent>
-            <p className="pt-6">Lorem ipsum dolor sit amet consectetur.</p>
+            <p className="pt-6">
+              Tudo para se manter informado você encontra aqui.
+            </p>
           </div>
 
           <LinkArrow
-            to="https://www.ecopower.com.br/blog/"
+            to="/blog/"
             className="whitespace-nowrap"
             text="Ver todos os posts"
           />

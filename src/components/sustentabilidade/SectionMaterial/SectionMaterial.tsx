@@ -37,18 +37,16 @@ const SectionMaterial: React.FC = () => {
             energia dos beneficiados, gerando economia financeira.
           </p>
         </div>
-        <div className="flex flex-1 relative rounded-2xl">
-          <Image
-            src={ourMaterial}
-            alt="Nossos materiais vídeo"
-            className="object-cover"
-          />
-          <button className="absolute w-[56px] h-[56px] text-[56px] text-white inset-0 m-auto hover:scale-125 transition-all duration-500 ease-in-out">
-            <MdPlayCircle />
-          </button>
+        <div className="flex flex-1 h-[338px] relative">
+          <iframe
+            className="w-full h-full rounded-2xl"
+            src="https://www.youtube.com/embed/cDXtcENSjDU?si=RES5tcjUdHTEf2nD"
+            title="YouTube video player"
+            allowFullScreen
+          ></iframe>
         </div>
       </GridContainer>
-      <GridContainer className="pt-[80px]">
+      {/* <GridContainer className="pt-[80px]">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 w-full auto-rows-fr gap-6">
           <div className="bg-white p-6 pb-[56px] flex flex-col gap-6 justify-between rounded-2xl">
             <Image src={cleanEnergy} alt="Energia Limpa e Acessível" />
@@ -72,7 +70,7 @@ const SectionMaterial: React.FC = () => {
             <b className="text-2xl">Energia Renovável ODS 09</b>
           </div>
         </div>
-      </GridContainer>
+      </GridContainer> */}
     </section>
   );
 };

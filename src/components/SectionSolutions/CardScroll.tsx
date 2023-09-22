@@ -27,7 +27,7 @@ const CardScroll: React.FC<Props> = ({ children, id }) => {
   return (
     <div
       ref={ref}
-      className="flex flex-col bg-white p-10 lg:max-w-[515px] h-fit rounded-3xl z-10"
+      className="flex flex-col bg-white p-4 md:p-10 lg:max-w-[515px] h-fit rounded-3xl z-10"
     >
       {children}
     </div>
@@ -38,24 +38,30 @@ export const CardScrollContent = {
   house: () => {
     return (
       <>
-        <HouseIcon />
-        <h3 className="text-[32px] font-semibold">Residencial</h3>
-        <p className="text-lg leading-6 mt-2">
+        <div className="flex flex-row md:flex-col items-center md:items-start">
+          <HouseIcon />
+          <h3 className="text-[20px] md:text-[32px] font-semibold">
+            Residencial
+          </h3>
+        </div>
+        <p className="text-md md:text-lg leading-6 mt-2">
           Energia solar já é realidade em muitos lares por ser limpa,
           sustentável e trazer economia.
         </p>
-        <div className="flex flex-col gap-4">
-          <div className="flex gap-2 items-center mt-10">
+        <div className="flex flex-col gap-2 md:gap-4">
+          <div className="flex gap-2 items-center mt-4 md:mt-10">
             <CheckIcon />
-            <p className="text-lg leading-6 ">Economia Garantida</p>
+            <p className="text-md md:text-lg leading-6 ">Economia Garantida</p>
           </div>
           <div className="flex gap-2 items-center ">
             <CheckIcon />
-            <p className="text-lg leading-6 ">Valorização do Imóvel</p>
+            <p className="text-md md:text-lg leading-6 ">
+              Valorização do Imóvel
+            </p>
           </div>
-          <div className="flex gap-2 items-center ">
+          <div className="flex gap-2 items-center">
             <CheckIcon />
-            <p className="text-lg leading-6 ">Garantia Nacional</p>
+            <p className="text-md md:text-lg leading-6">Garantia Nacional</p>
           </div>
           <LinkArrow
             className="text-primary-green"
@@ -69,24 +75,28 @@ export const CardScrollContent = {
   store: () => {
     return (
       <>
-        <StoreIcon />
-        <h3 className="text-[32px] font-semibold">Empresarial</h3>
-        <p className="text-lg leading-6 mt-2">
+        <div className="flex flex-row md:flex-col items-center md:items-start">
+          <StoreIcon />
+          <h3 className="text-[20px] md:text-[32px] font-semibold">
+            Empresarial
+          </h3>
+        </div>
+        <p className="text-md md:text-lg leading-6 mt-2">
           Opção inteligente para empresas, diminui gastos com contas de energia,
           trazendo investimentos.
         </p>
-        <div className="flex flex-col gap-4">
-          <div className="flex gap-2 items-center mt-10">
+        <div className="flex flex-col gap-2 md:gap-4">
+          <div className="flex gap-2 items-center mt-4 md:mt-10">
             <CheckIcon />
-            <p className="text-lg leading-6 ">Menos Custo Fixo</p>
+            <p className="text-md md:text-lg leading-6 ">Menos Custo Fixo</p>
           </div>
           <div className="flex gap-2 items-center ">
             <CheckIcon />
-            <p className="text-lg leading-6 ">Sustentabilidade</p>
+            <p className="text-md md:text-lg leading-6 ">Sustentabilidade</p>
           </div>
           <div className="flex gap-2 items-center ">
             <CheckIcon />
-            <p className="text-lg leading-6 ">Investimento</p>
+            <p className="text-md md:text-lg leading-6 ">Investimento</p>
           </div>
           <LinkArrow
             className="text-primary-green"
@@ -100,24 +110,28 @@ export const CardScrollContent = {
   factory: () => {
     return (
       <>
-        <FactoryIcon />
-        <h3 className="text-[32px] font-semibold">Industrial</h3>
-        <p className="text-lg leading-6 mt-2">
+        <div className="flex flex-row md:flex-col items-end md:items-start">
+          <FactoryIcon />
+          <h3 className="text-[20px] md:text-[32px] font-semibold">
+            Industrial
+          </h3>
+        </div>
+        <p className="text-md md:text-lg leading-6 mt-2">
           Empresas que implantam sistemas sustentáveis podem ganhar prêmios e
           conseguir certificados.
         </p>
-        <div className="flex flex-col gap-4">
-          <div className="flex gap-2 items-center mt-10">
+        <div className="flex flex-col gap-2 md:gap-4">
+          <div className="flex gap-2 items-center mt-4 md:mt-10">
             <CheckIcon />
-            <p className="text-lg leading-6 ">ROI Imediato</p>
+            <p className="text-md md:text-lg leading-6 ">ROI Imediato</p>
           </div>
           <div className="flex gap-2 items-center ">
             <CheckIcon />
-            <p className="text-lg leading-6 ">Custo Previsível</p>
+            <p className="text-md md:text-lg leading-6 ">Custo Previsível</p>
           </div>
           <div className="flex gap-2 items-center ">
             <CheckIcon />
-            <p className="text-lg leading-6 ">Ecológico</p>
+            <p className="text-md md:text-lg leading-6 ">Ecológico</p>
           </div>
           <LinkArrow
             className="text-primary-green"
@@ -131,24 +145,26 @@ export const CardScrollContent = {
   farm: () => {
     return (
       <>
-        <FarmIcon />
-        <h3 className="text-[32px] font-semibold">Rural</h3>
-        <p className="text-lg leading-6 mt-2">
+        <div className="flex flex-row md:flex-col items-center md:items-start">
+          <FarmIcon />
+          <h3 className="text-[20px] md:text-[32px] font-semibold">Rural</h3>
+        </div>
+        <p className="text-md md:text-lg leading-6 mt-2">
           Além da economia, a implantação da energia solar é uma
           responsabilidade ambiental.
         </p>
-        <div className="flex flex-col gap-4">
-          <div className="flex gap-2 items-center mt-10">
+        <div className="flex flex-col gap-2 md:gap-4">
+          <div className="flex gap-2 items-center mt-4 md:mt-10">
             <CheckIcon />
-            <p className="text-lg leading-6 ">Economia Garantida</p>
+            <p className="text-md md:text-lg leading-6 ">Economia Garantida</p>
           </div>
           <div className="flex gap-2 items-center ">
             <CheckIcon />
-            <p className="text-lg leading-6 ">Sustentável</p>
+            <p className="text-md md:text-lg leading-6 ">Sustentável</p>
           </div>
           <div className="flex gap-2 items-center ">
             <CheckIcon />
-            <p className="text-lg leading-6 ">Autossuficiente</p>
+            <p className="text-md md:text-lg leading-6 ">Autossuficiente</p>
           </div>
           <LinkArrow
             className="text-primary-green"

@@ -3,7 +3,6 @@ import Reveal from "@/components/global/Reveal";
 import TitleComponent from "@/components/global/TitleComponent";
 import Image from "next/image";
 import React from "react";
-import "swiper/css";
 import circle from "../../../../public/assets/images/carreiras/circles.svg";
 import AutoCarrousel from "@/components/global/AutoCarrousel";
 
