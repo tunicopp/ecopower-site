@@ -23,7 +23,7 @@ export default async function Home() {
         <SectionSolutions />
         <SectionProject />
         <SectionTestimonial />
-        {/* <BlogSection /> */}
+        <BlogSection />
         <SectionFAQ />
       </main>
       <div id="calc"></div>
