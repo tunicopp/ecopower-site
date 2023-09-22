@@ -50,7 +50,9 @@ const BlogSection: React.FC = async () => {
             <TitleComponent className="leading-none">
               Últimos posts do blog
             </TitleComponent>
-            <p className="pt-6">Tudo para se manter informado você encontra aqui.</p>
+            <p className="pt-6">
+              Tudo para se manter informado você encontra aqui.
+            </p>
           </div>
 
           <LinkArrow

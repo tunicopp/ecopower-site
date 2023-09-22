@@ -7,14 +7,16 @@ import greatPlace from "../../../../public/assets/images/carreiras/great-place-t
 const SectionHero: React.FC = () => {
   return (
     <section className="relative min-h-[650px] md:min-h-[580px] z-10">
-      <Image
-        src={hero}
-        alt="Carreiras Eco Power"
-        priority
-        quality={100}
-        loading="eager"
-        className="absolute top-0 left-0 w-full h-full object-cover"
-      />
+      <div className="max-w-full overflow-hidden">
+        <Image
+          src={hero}
+          alt="Carreiras Eco Power"
+          priority
+          quality={100}
+          loading="eager"
+          className="absolute top-0 left-0 lg:w-full w-auto h-full object-cover object-pessoas-hero"
+        />
+      </div>
       <Image
         src={greatPlace}
         alt="Great Place To Work"
