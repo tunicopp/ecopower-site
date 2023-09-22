@@ -10,7 +10,7 @@ import LinkArrow from "../global/LinkArrow";
 
 async function getData(): Promise<BlogPost[]> {
   const response = await fetch(
-    "https://www.ecopower.com.br/wp-json/wp/v2/posts?per_page=4&_embed",
+    "https://ecopower.com.br/blog/wp-json/wp/v2/posts?per_page=4&_embed",
     {
       next: { revalidate: 14400 }, // 4h
       method: "GET",
@@ -50,7 +50,9 @@ const BlogSection: React.FC = async () => {
             <TitleComponent className="leading-none">
               Últimos posts do blog
             </TitleComponent>
-            <p className="pt-6">Tudo para se manter informado você encontra aqui.</p>
+            <p className="pt-6">
+              Tudo para se manter informado você encontra aqui.
+            </p>
           </div>
 
           <LinkArrow

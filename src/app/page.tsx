@@ -9,7 +9,6 @@ import SectionProject from "@/components/SectionProjects/SectionProject";
 import SectionTestimonial from "@/components/SectionTestimonial/SectionTestimonial";
 import SectionFAQ from "@/components/SectionFAQ/SectionFAQ";
 import Header from "@/components/global/Header";
-import SectionSolutionsV2 from "@/components/SectionSolutions/SectionSolutionsV2";
 
 export default async function Home() {
   return (
@@ -22,7 +21,6 @@ export default async function Home() {
         <SectionVideo />
         <SectionCampaings />
         <SectionSolutions />
-        {/* <SectionSolutionsV2 /> */}
         <SectionProject />
         <SectionTestimonial />
         <BlogSection />

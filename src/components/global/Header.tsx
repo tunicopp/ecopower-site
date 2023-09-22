@@ -122,30 +122,12 @@ const Header: React.FC = () => {
           <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-6 flex-wrap mt-10 pb-6">
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
-              href="/produtos"
-              title="Produtos"
-              image="/assets/images/megamenu/megamenu-1.png"
-              className="md:!hidden"
+              href="/pessoas"
+              title="Pessoas"
+              image="/assets/images/megamenu/megamenu-4.png"
             >
-              Descubra o que há de mais inovador no mercado de energia solar.
-            </MegaMenuItem>
-            <MegaMenuItem
-              onClick={() => setIsOpen(false)}
-              href="/sobre-nos"
-              title="Sobre Nós"
-              image="/assets/images/megamenu/megamenu-1.png"
-              className="md:!hidden"
-            >
-              Conheça nossa jornada e história inspiradora.
-            </MegaMenuItem>
-            <MegaMenuItem
-              onClick={() => setIsOpen(false)}
-              href="/unidades"
-              title="Unidades"
-              image="/assets/images/megamenu/megamenu-1.png"
-              className="md:!hidden"
-            >
-              Explore nossas unidades e descubra nossa presença pelo Brasil.
+              Explore oportunidades emocionantes em nossa seção de carreiras.
+              Seja um Ecolover!
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
@@ -173,12 +155,30 @@ const Header: React.FC = () => {
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
-              href="/pessoas"
-              title="Pessoas"
-              image="/assets/images/megamenu/megamenu-4.png"
+              href="/produtos"
+              title="Produtos"
+              image="/assets/images/megamenu/megamenu-1.png"
+              className="md:!hidden"
             >
-              Explore oportunidades emocionantes em nossa seção de carreiras.
-              Seja um Ecolover!
+              Descubra o que há de mais inovador no mercado de energia solar.
+            </MegaMenuItem>
+            <MegaMenuItem
+              onClick={() => setIsOpen(false)}
+              href="/sobre-nos"
+              title="Sobre Nós"
+              image="/assets/images/megamenu/megamenu-1.png"
+              className="md:!hidden"
+            >
+              Conheça nossa jornada e história inspiradora.
+            </MegaMenuItem>
+            <MegaMenuItem
+              onClick={() => setIsOpen(false)}
+              href="/unidades"
+              title="Unidades"
+              image="/assets/images/megamenu/megamenu-1.png"
+              className="md:!hidden"
+            >
+              Explore nossas unidades e descubra nossa presença pelo Brasil.
             </MegaMenuItem>
           </div>
         </div>

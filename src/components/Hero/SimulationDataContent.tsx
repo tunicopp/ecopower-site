@@ -36,7 +36,7 @@ const SimulationDataContent: React.FC<Props> = ({ data }) => {
             </b>
           </div>
           <div className="flex flex-col flex-1 items-center rounded-r-2xl px-6 py-10 bg-primary-green text-center">
-            <p className="text-white">Valor da Conta Atual</p>
+            <p className="text-white">Valor da Sua Parcela</p>
             <b className="text-[32px] text-white mt-2">
               {formatCurrency.format(data.valorParcela)}
             </b>

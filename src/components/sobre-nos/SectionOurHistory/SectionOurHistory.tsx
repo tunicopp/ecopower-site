@@ -5,7 +5,7 @@ import ourHistoryImage from "../../../../public/assets/images/sobre-nos/our-hist
 
 const SectionOurHistory: React.FC = () => {
   return (
-    <section className="relative lg:flex-row flex-col flex bg-beige-300 pt-10 pb-[28px] overflow-hidden">
+    <section className="relative lg:flex-row flex-col flex pt-10 pb-[28px] overflow-hidden">
       <GridContainer className="mt-[70px]">
         <div className="flex flex-col lg:max-w-[496px]">
           <h2 className="text-xl leading-[30px] text-black font-bold">

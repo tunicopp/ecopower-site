@@ -97,10 +97,7 @@ const CalculatorModal: React.FC<Props> = ({
             isOpen ? "block" : "hidden"
           }`}
         >
-          <div
-            className="absolute w-full h-full bg-full-black/30"
-            onClick={() => onClose()}
-          />
+          <div className="absolute w-full h-full bg-full-black/30" />
           <div className="absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 max-w-[668px] w-full p-2 md:p-6">
             <div className="w-full rounded-3xl max-h-[80vh] overflow-auto">
               <div
@@ -276,7 +273,11 @@ const CalculatorModal: React.FC<Props> = ({
                     <button
                       type="submit"
                       className="h-12 w-full text-white px-5 py-[6px] bg-primary-green rounded-full disabled:opacity-60 disabled:cursor-not-allowed"
-                      disabled={!data.city || !data.location || value[0] === 0}
+                      disabled={
+                        data.city.value === "" ||
+                        data.location === "" ||
+                        value[0] === 0
+                      }
                     >
                       Ver Resultado da Simulação
                     </button>

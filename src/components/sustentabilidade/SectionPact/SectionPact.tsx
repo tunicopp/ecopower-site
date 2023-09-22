@@ -1,13 +1,19 @@
 import GridContainer from "@/components/global/GridContainer";
 import React from "react";
-import UNGC from "./UNGC";
 import ArrowRightDown from "../../../../public/assets/icons/ArrowRightDown";
+import Image from "next/image";
 
 const SectionPact: React.FC = () => {
   return (
     <section className="bg-beige-300 py-[80px]">
-      <GridContainer className="items-center gap-[106px]">
-        <UNGC />
+      <GridContainer className="lg:flex-row flex-col items-center lg:gap-[106px] gap-6">
+        <Image
+          src="/assets/images/sustentabilidade/ungc.svg"
+          alt="United Nations Global Compact"
+          width={562}
+          height={166}
+          className="max-w-full"
+        />
         <div className="flex flex-col items-start gap-4 max-w-[496px]">
           <h2 className="text-[40px] leading-[1.5em] font-bold">
             Adesão ao Pacto Global

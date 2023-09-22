@@ -12,6 +12,9 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      objectPosition: {
+        "pessoas-hero": "35% top",
+      },
       boxShadow: {
         calculator: "0px 32px 32px 0px rgba(55, 47, 25, 0.05);",
       },
