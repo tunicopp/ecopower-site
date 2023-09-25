@@ -1,4 +1,5 @@
 import Header from "@/components/global/Header";
+import SmoothScroll from "@/components/global/SmoothScroll";
 import SectionArt from "@/components/sustentabilidade/SectionArt/SectionArt";
 import SectionEthicConduct from "@/components/sustentabilidade/SectionEthicConduct/SectionEthicConduct";
 import SectionFutureEco from "@/components/sustentabilidade/SectionFutureEco/SectionFutureEco";
@@ -21,6 +22,7 @@ export default async function Sustainability() {
         <SectionReverseLogic />
       </main>
       <div id="calc"></div>
+      <SmoothScroll />
     </>
   );
 }

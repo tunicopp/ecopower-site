@@ -1,4 +1,5 @@
 import Header from "@/components/global/Header";
+import SmoothScroll from "@/components/global/SmoothScroll";
 import SectionHero from "@/components/politica-de-privacidade/SectionHero/SectionHero";
 import SectionOne from "@/components/politica-de-privacidade/Sections/SectionOne";
 import SectionThree from "@/components/politica-de-privacidade/Sections/SectionThree";
@@ -17,6 +18,7 @@ export default async function PrivacyPolicy() {
         <SectionTwo />
         <SectionThree />
       </div>
+      <SmoothScroll />
     </main>
   );
 }

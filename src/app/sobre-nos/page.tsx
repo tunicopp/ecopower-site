@@ -8,6 +8,7 @@ import SectionPartners from "@/components/sobre-nos/SectionPartners/SectionPartn
 import SectionWeAre from "@/components/sobre-nos/SectionWeAre/SectionWeAre";
 import SectionOurValues from "@/components/carreiras/SectionOurValues/SectionOurValues";
 import Header from "@/components/global/Header";
+import SmoothScroll from "@/components/global/SmoothScroll";
 
 export default async function AboutUs() {
   return (
@@ -22,6 +23,7 @@ export default async function AboutUs() {
       <SectionEvents />
       <SectionOurValues className="py-[80px]" />
       <SectionOurTeam />
+      <SmoothScroll />
     </main>
   );
 }

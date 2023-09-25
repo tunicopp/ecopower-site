@@ -9,6 +9,7 @@ import SectionProject from "@/components/SectionProjects/SectionProject";
 import SectionTestimonial from "@/components/SectionTestimonial/SectionTestimonial";
 import SectionFAQ from "@/components/SectionFAQ/SectionFAQ";
 import Header from "@/components/global/Header";
+import SmoothScroll from "@/components/global/SmoothScroll";
 
 export default async function Home() {
   return (
@@ -27,6 +28,7 @@ export default async function Home() {
         <SectionFAQ />
       </main>
       <div id="calc"></div>
+      <SmoothScroll />
     </>
   );
 }

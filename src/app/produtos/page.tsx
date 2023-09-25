@@ -1,4 +1,5 @@
 import Header from "@/components/global/Header";
+import SmoothScroll from "@/components/global/SmoothScroll";
 import ProductsGrid from "@/components/produtos/ProductsGrid/ProductsGrid";
 import SectionOurProducts from "@/components/produtos/SectionOurProducts/SectionOurProducts";
 import React from "react";
@@ -12,6 +13,7 @@ export default async function Products() {
         <ProductsGrid />
       </main>
       <div id="calc"></div>
+      <SmoothScroll />
     </>
   );
 }

@@ -4,7 +4,6 @@ import { Golos_Text, Montserrat } from "next/font/google";
 import { GlobalContextProvider } from "./context/store";
 import Footer from "@/components/Footer/Footer";
 import Script from "next/script";
-import SmoothScroll from "@/components/global/SmoothScroll";
 
 const golos_text = Golos_Text({
   subsets: ["latin"],
@@ -175,7 +174,6 @@ export default function RootLayout({
       <body
         className={`${golos_text.variable} ${montserrat.variable} font-golos-text`}
       >
-        <SmoothScroll />
         <GlobalContextProvider>{children}</GlobalContextProvider>
         <Footer />
       </body>
