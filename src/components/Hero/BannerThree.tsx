@@ -130,10 +130,10 @@ const BannerThree: React.FC = () => {
           <span className="text-banner-two text-lg">
             Somos Eco, Somos Power
           </span>
-          <h1 className="text-banner-two font-semibold text-[30px] text-center">
+          <h2 className="text-banner-two font-semibold text-[30px] text-center">
             Somos a energia
             <span className="block text-banner-two">que move o futuro</span>
-          </h1>
+          </h2>
         </div>
         <Image
           src={heroMobile}
