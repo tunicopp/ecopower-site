@@ -80,7 +80,11 @@ const SimulationDataContent: React.FC<Props> = ({ data }) => {
             <span className="text-grayscale-900 mt-4 mb-[10px] font-medium">
               Inversor:
             </span>
-            <b className="text-center">{data.inversores[0].inversorModelo}</b>
+            <b className="text-center">
+              {data.inversores[0].inversorQtd +
+                " " +
+                data.inversores[0].inversorModelo}
+            </b>
           </div>
           <div className="p-6 bg-beige-300 rounded-2xl flex flex-col items-center">
             <Dollar />
