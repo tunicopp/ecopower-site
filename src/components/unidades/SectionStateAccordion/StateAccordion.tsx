@@ -61,14 +61,14 @@ const StateAccordion: React.FC<StateAccordionProps> = ({
             }`}
           >
             <Image
-              src={u.image}
-              alt={u.name}
+              src={u.photo}
+              alt={u.municipio}
               width={95}
               height={95}
-              className="object-cover rounded-lg max-w-[95px] max-h-[95px]"
+              className="object-cover rounded-lg w-[95px] h-[95px]"
             />
             <div className="flex-1">
-              <b className="text-lg">{u.name}</b>
+              <b className="text-lg">{u.municipio}</b>
               <div className="flex items-center gap-2">
                 <LuMapPin />
                 <span className="text-sm">{u.address}</span>
