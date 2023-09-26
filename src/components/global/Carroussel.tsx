@@ -26,7 +26,11 @@ const Carroussel: React.FC<RevealProps> = ({
         onInit={(swiper) => {
           swiper.animating = false;
         }}
-        autoplay
+        autoplay={{
+          delay: 3000,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: true
+        }}
         loop
         direction={"horizontal"}
         slidesPerView={1}

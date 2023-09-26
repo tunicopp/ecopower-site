@@ -18,6 +18,7 @@ export default interface SimulationData {
   geracaoMediaUnidade: string;
   inversores: {
     inversor: number;
+    inversorQtd: number;
     inversorModelo: string;
   }[];
   valorProjeto: number;
