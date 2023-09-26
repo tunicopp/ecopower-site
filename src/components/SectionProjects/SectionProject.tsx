@@ -73,7 +73,7 @@ const SectionProject: React.FC = () => {
         href="/projetos"
         className="h-12 flex items-center w-full mt-6 lg:mt-0 lg:w-auto rounded-3xl border-2 px-5 hover:bg-grayscale-100 transition-all font-semibold"
       >
-        Ver todos os projetos
+        Ver mais projetos
       </Link>
     </section>
   );

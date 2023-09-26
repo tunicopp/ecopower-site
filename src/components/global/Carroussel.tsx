@@ -1,6 +1,6 @@
 import React, { HTMLProps, ReactNode } from "react";
 import { Swiper } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { twMerge } from "tailwind-merge";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
@@ -26,12 +26,14 @@ const Carroussel: React.FC<RevealProps> = ({
         onInit={(swiper) => {
           swiper.animating = false;
         }}
+        autoplay
+        loop
         direction={"horizontal"}
         slidesPerView={1}
         spaceBetween={20}
         grabCursor={true}
         className="mySwiper w-full h-auto lg:w-auto px-6 lg:!px-[110px]"
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         navigation={{
           nextEl: "#next",
           prevEl: "#prev",

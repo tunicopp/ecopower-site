@@ -35,10 +35,10 @@ const BottomFooter: React.FC = () => {
             <p className="text-white font-semibold">Produtos</p>
             <div className="flex flex-col mt-[24px] gap-3">
               <LinkFooter href="/produtos">Todos os Produtos</LinkFooter>
-              <LinkFooter href="/produtos">Residencial</LinkFooter>
-              <LinkFooter href="/produtos">Empresarial</LinkFooter>
-              <LinkFooter href="/produtos">Industrial</LinkFooter>
-              <LinkFooter href="/produtos">Rural</LinkFooter>
+              <LinkFooter href="/residencial">Residencial</LinkFooter>
+              <LinkFooter href="/empresarial">Empresarial</LinkFooter>
+              <LinkFooter href="/industrial">Industrial</LinkFooter>
+              <LinkFooter href="/rural">Rural</LinkFooter>
             </div>
             <a
               href={"https://www.ecopowerstore.com.br/"}
@@ -123,7 +123,7 @@ const BottomFooter: React.FC = () => {
               <a
                 className="block"
                 target="_blank"
-                href="https://certificadas.gptw.com.br/18269815000136"
+                href="https://www.instagram.com/p/CjbI6yapdMy/?igshid=MzRlODBiNWFlZA=="
               >
                 <Image src={badgeFive} alt="Weg" />
               </a>

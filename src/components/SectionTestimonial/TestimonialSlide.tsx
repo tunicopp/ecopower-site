@@ -20,7 +20,7 @@ const TestimonialSlide: React.FC<TestimonialSlideProps> = ({
   link,
 }) => {
   return (
-    <div>
+    <div className="h-full flex flex-col">
       <div className="relative h-[300px]">
         <iframe
           className="w-full h-full rounded-3xl"
@@ -30,7 +30,7 @@ const TestimonialSlide: React.FC<TestimonialSlideProps> = ({
         ></iframe>
       </div>
       <p className="text-grayscale-800 text-lg my-8">{text}</p>
-      <div className="flex items-center">
+      <div className="flex items-center mt-auto">
         <Image
           src={image}
           alt={`${name} photo`}

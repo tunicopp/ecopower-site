@@ -11,7 +11,7 @@ import GridContainer from "../global/GridContainer";
 
 const SectionCampaings: React.FC = () => {
   return (
-    <section className="relative py-[110px] flex flex-col lg:items-center">
+    <section className="relative pt-[110px] flex flex-col lg:items-center">
       <GridContainer>
         <div className="flex flex-col w-full items-center relative">
           <Reveal>
