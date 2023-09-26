@@ -81,12 +81,14 @@ const CalculatorModal: React.FC<Props> = ({
 
     const json = await resp.json();
 
-    const respData: SimulationData = {
-      ...json,
-      valorConta: value[0],
-    };
+    if (resp.status === 200) {
+      const respData: SimulationData = {
+        ...json,
+        valorConta: value[0],
+      };
 
-    setSimulationData(respData);
+      setSimulationData(respData);
+    }
   }
 
   return (
@@ -262,7 +264,7 @@ const CalculatorModal: React.FC<Props> = ({
                         value: c.code,
                         label: c.name,
                       }))}
-                      placeholder="Cidade/Estado"
+                      placeholder="Cidade"
                       onChange={(a) =>
                         setData((old) => ({
                           ...old,
