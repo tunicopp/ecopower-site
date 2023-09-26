@@ -2,7 +2,14 @@ export default interface SimulationData {
   potencia: number;
   valorParcela: number;
   valorConta: number;
-  condicaoEspecial: string;
+  condicoesEspeciais: {
+    carencia: number;
+    condicaoEspecial: string;
+    descricao: string;
+    parcelas: number;
+    valorEntrada: number;
+    valorParcela: number;
+  }[];
   promocao: string;
   moduloQtd: number;
   moduloModelo: string;
