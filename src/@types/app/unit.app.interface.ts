@@ -1,10 +1,10 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export interface Unit {
-  name: string;
+  municipio: string;
   address: string;
   phone: string;
   instagram: string;
   facebook: string;
-  image: string | StaticImport;
+  photo: string | StaticImport;
 }

@@ -1,6 +1,5 @@
 import { Unit } from "@/@types/app/unit.app.interface";
-import image from "../../public/assets/images/unidades/placeholder-unit.png";
-import data from "../../public/assets/json/unidades.json";
+import { units } from "./units";
 
 interface Data {
   state: string;
@@ -8,201 +7,203 @@ interface Data {
   id: string;
 }
 
+const data = units;
+
 export const stateAccordionLeftData: Data[] = [
   {
     id: "ac_rs",
     state: "Rio Grande do Sul",
     units: data
-      .filter((d) => d.Uf === "RS")
+      .filter((d) => d.uf === "RS")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_pr",
     state: "Paraná",
     units: data
-      .filter((d) => d.Uf === "PR")
+      .filter((d) => d.uf === "PR")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_rj",
     state: "Rio de Janeiro",
     units: data
-      .filter((d) => d.Uf === "RJ")
+      .filter((d) => d.uf === "RJ")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_ms",
     state: "Mato Grosso do Sul",
     units: data
-      .filter((d) => d.Uf === "MS")
+      .filter((d) => d.uf === "MS")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_go",
     state: "Goiás",
     units: data
-      .filter((d) => d.Uf === "GO")
+      .filter((d) => d.uf === "GO")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_mt",
     state: "Mato Grosso",
     units: data
-      .filter((d) => d.Uf === "MT")
+      .filter((d) => d.uf === "MT")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_ba",
     state: "Bahia",
     units: data
-      .filter((d) => d.Uf === "BA")
+      .filter((d) => d.uf === "BA")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_pe",
     state: "Pernambuco",
     units: data
-      .filter((d) => d.Uf === "PE")
+      .filter((d) => d.uf === "PE")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_ce",
     state: "Ceará",
     units: data
-      .filter((d) => d.Uf === "CE")
+      .filter((d) => d.uf === "CE")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_pa",
     state: "Pará",
     units: data
-      .filter((d) => d.Uf === "PA")
+      .filter((d) => d.uf === "PA")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_am",
     state: "Amazonas",
     units: data
-      .filter((d) => d.Uf === "AM")
+      .filter((d) => d.uf === "AM")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_al",
     state: "Alagoas",
     units: data
-      .filter((d) => d.Uf === "AL")
+      .filter((d) => d.uf === "AL")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_pi",
     state: "Piauí",
     units: data
-      .filter((d) => d.Uf === "PI")
+      .filter((d) => d.uf === "PI")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_ro",
     state: "Rondônia",
     units: data
-      .filter((d) => d.Uf === "RO")
+      .filter((d) => d.uf === "RO")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
 ];
@@ -212,182 +213,182 @@ export const stateAccordionRightData: Data[] = [
     id: "ac_sc",
     state: "Santa Catarina",
     units: data
-      .filter((d) => d.Uf === "SC")
+      .filter((d) => d.uf === "SC")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_sp",
     state: "São Paulo",
     units: data
-      .filter((d) => d.Uf === "SP")
+      .filter((d) => d.uf === "SP")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_es",
     state: "Espírito Santo",
     units: data
-      .filter((d) => d.Uf === "ES")
+      .filter((d) => d.uf === "ES")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_mg",
     state: "Minas Gerais",
     units: data
-      .filter((d) => d.Uf === "MG")
+      .filter((d) => d.uf === "MG")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_df",
     state: "Distrito Federal",
     units: data
-      .filter((d) => d.Uf === "DF")
+      .filter((d) => d.uf === "DF")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_to",
     state: "Tocatins",
     units: data
-      .filter((d) => d.Uf === "TO")
+      .filter((d) => d.uf === "TO")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_se",
     state: "Sergipe",
     units: data
-      .filter((d) => d.Uf === "SE")
+      .filter((d) => d.uf === "SE")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_rn",
     state: "Rio Grande do Norte",
     units: data
-      .filter((d) => d.Uf === "RN")
+      .filter((d) => d.uf === "RN")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_ma",
     state: "Maranhão",
     units: data
-      .filter((d) => d.Uf === "MA")
+      .filter((d) => d.uf === "MA")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_ap",
     state: "Amapá",
     units: data
-      .filter((d) => d.Uf === "AP")
+      .filter((d) => d.uf === "AP")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_ac",
     state: "Acre",
     units: data
-      .filter((d) => d.Uf === "AC")
+      .filter((d) => d.uf === "AC")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_pb",
     state: "Paraíba",
     units: data
-      .filter((d) => d.Uf === "PB")
+      .filter((d) => d.uf === "PB")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
   {
     id: "ac_rr",
     state: "Roraima",
     units: data
-      .filter((d) => d.Uf === "RR")
+      .filter((d) => d.uf === "RR")
       .flatMap((d) => ({
-        name: d.Municipio,
-        address: d.Endereco,
-        facebook: d.Facebook,
-        instagram: d.Instagram,
-        image,
-        phone: d.Telefone,
+        municipio: d.municipio,
+        address: d.address,
+        facebook: d.facebook,
+        instagram: d.instagram,
+        photo: d.photo,
+        phone: d.phone,
       })) as any,
   },
 ];
