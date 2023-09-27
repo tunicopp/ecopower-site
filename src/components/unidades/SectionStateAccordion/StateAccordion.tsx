@@ -49,7 +49,7 @@ const StateAccordion: React.FC<StateAccordionProps> = ({
         </div>
       </button>
       <div
-        className={`flex flex-col gap-4 w-full transition-all px-8 duration-300 max-h-[660px] overflow-auto ${
+        className={`flex flex-col gap-4 w-full transition-all px-8 duration-300 overflow-auto ${
           isOpen ? "h-auto pt-[6px] pb-[18px]" : "h-0 pt-0 pb-0 overflow-hidden"
         }`}
       >
@@ -61,7 +61,7 @@ const StateAccordion: React.FC<StateAccordionProps> = ({
             }`}
           >
             <Image
-              src={u.photo}
+              src={`/assets/images/unidades/images/${u.photo}`}
               alt={u.municipio}
               width={95}
               height={95}
