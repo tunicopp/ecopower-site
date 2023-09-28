@@ -7,4 +7,5 @@ export interface Unit {
   instagram: string;
   facebook: string;
   photo: string | StaticImport;
+  uf: string;
 }
