@@ -55,7 +55,7 @@ const Header: React.FC = () => {
             <Logo />
           </Link>
           <div className="hidden lg:flex lg:items-center">
-            <button
+            {/* <button
               className={`text-sm leading-4 font-medium flex rounded-lg items-center transition-colors py-[6px] -mr-3 px-3 duration-300 ${
                 isOpenProducts && "bg-white/25"
               } ${
@@ -76,7 +76,17 @@ const Header: React.FC = () => {
               >
                 <BiChevronDown />
               </div>
-            </button>
+            </button> */}
+            <Link
+              href="/produtos"
+              className={`text-sm leading-4 font-medium  flex ${
+                currentSlide === 3 && !isOpen && !isOpenProducts && isAtTop
+                  ? "text-banner-two"
+                  : "text-white"
+              } items-center`}
+            >
+              Produtos
+            </Link>
             <Link
               href="/sobre-nos"
               className={`text-sm leading-4 font-medium mx-6 flex ${
@@ -183,7 +193,7 @@ const Header: React.FC = () => {
             </MegaMenuItem>
           </div>
         </div>
-        <div
+        {/* <div
           className={`mega-menu transition-all duration-300 ${
             isOpenProducts ? "overflow-auto" : "h-0 overflow-hidden"
           }`}
@@ -240,7 +250,7 @@ const Header: React.FC = () => {
               inversores autônomos do sistema off-grid.
             </MegaMenuProductItem>
           </div>
-        </div>
+        </div> */}
       </GridContainer>
     </header>
   );
