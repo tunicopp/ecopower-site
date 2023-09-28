@@ -22,6 +22,7 @@ export const stateAccordionLeftData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -36,6 +37,7 @@ export const stateAccordionLeftData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -50,6 +52,7 @@ export const stateAccordionLeftData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -64,6 +67,7 @@ export const stateAccordionLeftData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -78,6 +82,7 @@ export const stateAccordionLeftData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -92,6 +97,7 @@ export const stateAccordionLeftData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -106,6 +112,7 @@ export const stateAccordionLeftData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -120,6 +127,7 @@ export const stateAccordionLeftData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -134,6 +142,7 @@ export const stateAccordionLeftData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -148,6 +157,7 @@ export const stateAccordionLeftData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -162,6 +172,7 @@ export const stateAccordionLeftData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -176,6 +187,7 @@ export const stateAccordionLeftData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -190,6 +202,7 @@ export const stateAccordionLeftData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -204,6 +217,7 @@ export const stateAccordionLeftData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
 ];
@@ -221,6 +235,7 @@ export const stateAccordionRightData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -235,6 +250,7 @@ export const stateAccordionRightData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -249,6 +265,7 @@ export const stateAccordionRightData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -263,6 +280,7 @@ export const stateAccordionRightData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -277,6 +295,7 @@ export const stateAccordionRightData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -291,6 +310,7 @@ export const stateAccordionRightData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -305,6 +325,7 @@ export const stateAccordionRightData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -319,6 +340,7 @@ export const stateAccordionRightData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -333,6 +355,7 @@ export const stateAccordionRightData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -347,6 +370,7 @@ export const stateAccordionRightData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -361,6 +385,7 @@ export const stateAccordionRightData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -375,6 +400,7 @@ export const stateAccordionRightData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
   {
@@ -389,6 +415,7 @@ export const stateAccordionRightData: Data[] = [
         instagram: d.instagram,
         photo: d.photo,
         phone: d.phone,
+        uf: d.uf,
       })) as any,
   },
 ];
