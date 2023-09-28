@@ -23,6 +23,12 @@ const StateAccordion: React.FC<StateAccordionProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const orderUnits = [...units];
+
+  orderUnits.sort((a, b) => {
+    return a.name.localeCompare(b.name);
+  });
+
   return (
     <div className={`flex flex-col rounded-[20px] bg-beige-300`}>
       <button
@@ -53,7 +59,7 @@ const StateAccordion: React.FC<StateAccordionProps> = ({
           isOpen ? "h-auto pt-[6px] pb-[18px]" : "h-0 pt-0 pb-0 overflow-hidden"
         }`}
       >
-        {units.map((u, i) => (
+        {orderUnits.map((u, i) => (
           <div
             key={i}
             className={`flex gap-4 items-center transition-opacity duration-300 ${

@@ -137,6 +137,15 @@ const Header: React.FC = () => {
             >
               Aqui você descobre o futuro da energia solar em nossos projetos!
             </MegaMenuItem>
+
+            <MegaMenuItem
+              onClick={() => setIsOpen(false)}
+              href="/sustentabilidade"
+              title="Sustentabilidade"
+              image="/assets/images/megamenu/megamenu-3-v2.png"
+            >
+              Nosso compromisso é com a sustentabilidade.
+            </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
               href="/blog"
@@ -144,14 +153,6 @@ const Header: React.FC = () => {
               image="/assets/images/megamenu/megamenu-2.png"
             >
               Explore nosso blog e amplie seu conhecimento sobre energia solar!
-            </MegaMenuItem>
-            <MegaMenuItem
-              onClick={() => setIsOpen(false)}
-              href="/sustentabilidade"
-              title="Sustentabilidade"
-              image="/assets/images/megamenu/megamenu-3.png"
-            >
-              Nosso compromisso é com a sustentabilidade.
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}

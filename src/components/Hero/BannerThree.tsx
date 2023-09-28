@@ -27,7 +27,7 @@ const BannerThree: React.FC = () => {
 
   return (
     <>
-      <div className="absolute lg:block hidden top-[150px] left-[80px]">
+      <div className="absolute lg:block hidden top-[150px] left-[80px] group-hover:left-[190px] group-hover:scale-125 transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={cloudOne}
@@ -36,7 +36,7 @@ const BannerThree: React.FC = () => {
           className="h-[36px] w-[129px]"
         />
       </div>
-      <div className="absolute lg:block hidden -bottom-[50px] left-[10px]">
+      <div className="absolute lg:block hidden -bottom-[90px] left-[10px]  group-hover:-bottom-[50px]  transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={houseOne}
@@ -45,7 +45,7 @@ const BannerThree: React.FC = () => {
           className="h-[363px] w-[310px]"
         />
       </div>
-      <div className="absolute lg:block hidden -bottom-[20px] -left-[110px]">
+      <div className="absolute lg:block hidden -bottom-[30px] -left-[110px] group-hover:-bottom-[0px] group-hover:-left-[90px] transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={houseTwo}
@@ -54,7 +54,7 @@ const BannerThree: React.FC = () => {
           className="h-[200px] w-[320px]"
         />
       </div>
-      <div className="absolute lg:block hidden -bottom-[20px] left-[350px]">
+      <div className="absolute lg:block hidden -bottom-[20px] left-[350px] group-hover:-bottom-[10px] transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={tree}
@@ -63,7 +63,7 @@ const BannerThree: React.FC = () => {
           className="w-[29px] h-[143px]"
         />
       </div>
-      <div className="absolute lg:block hidden right-[37%] -bottom-[90px]">
+      <div className="absolute lg:block hidden right-[35%] -bottom-[120px] group-hover:-bottom-[90px] group-hover:right-[37%]   transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={houseThree}
@@ -72,7 +72,7 @@ const BannerThree: React.FC = () => {
           className="h-[240px] w-[320px]"
         />
       </div>
-      <div className="flex items-end gap-6 absolute lg:block hidden right-[400px] -bottom-[10px]">
+      <div className="lg:flex items-end gap-6 absolute  hidden right-[400px] -bottom-[10px] group-hover:-bottom-[0px] transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={treeOne}
@@ -88,7 +88,7 @@ const BannerThree: React.FC = () => {
           className="h-[140px] w-[29px]"
         />
       </div>
-      <div className="absolute lg:block hidden bottom-0 -right-[162px]">
+      <div className="absolute lg:block hidden bottom-0 -right-[150px] group-hover:-right-[162px] transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={houseTwo}
@@ -97,7 +97,7 @@ const BannerThree: React.FC = () => {
           className="h-[200px] w-[320px]"
         />
       </div>
-      <div className="absolute lg:block hidden right-[40px] bottom-0">
+      <div className="absolute lg:block hidden right-[40px] -bottom-[20px] group-hover:-bottom-0 transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={motherAndDaughter}
@@ -107,8 +107,8 @@ const BannerThree: React.FC = () => {
         />
       </div>
 
-      <div className="lg:hidden block relative overflow-hidden">
-        <div className="absolute -left-[20px] top-[194px]">
+      <div className="lg:hidden block relative overflow-hidden   transition-all duration-1000 ease-in-out">
+        <div className="absolute -left-[20px] top-[194px] ">
           <Image
             loading="eager"
             src={cloudOne}
@@ -117,7 +117,7 @@ const BannerThree: React.FC = () => {
             className="h-[27px] w-[98px]"
           />
         </div>
-        <div className="absolute -right-[50px] top-[198px]">
+        <div className="absolute -right-[50px] top-[198px] transition-all duration-1000 ease-in-out">
           <Image
             loading="eager"
             src={cloudOne}
