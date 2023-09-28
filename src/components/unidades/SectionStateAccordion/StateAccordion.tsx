@@ -53,51 +53,61 @@ const StateAccordion: React.FC<StateAccordionProps> = ({
           isOpen ? "h-auto pt-[6px] pb-[18px]" : "h-0 pt-0 pb-0 overflow-hidden"
         }`}
       >
-        {units.map((u, i) => (
-          <div
-            key={i}
-            className={`flex gap-4 items-center transition-opacity duration-300 ${
-              isOpen ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <Image
-              src={`/assets/images/unidades/images/${u.photo}`}
-              alt={u.municipio}
-              width={95}
-              height={95}
-              className="object-cover rounded-lg w-[95px] h-[95px]"
-            />
-            <div className="flex-1">
-              <b className="text-lg">{u.municipio}</b>
-              <div className="flex items-center gap-2">
-                <LuMapPin />
-                <span className="text-sm">{u.address}</span>
+        {units
+          .sort(function (a, b) {
+            if (a.municipio < b.municipio) {
+              return -1;
+            }
+            if (a.municipio > b.municipio) {
+              return 1;
+            }
+            return 0;
+          })
+          .map((u, i) => (
+            <div
+              key={i}
+              className={`flex gap-4 items-center transition-opacity duration-300 ${
+                isOpen ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <Image
+                src={`/assets/images/unidades/images/${u.photo}`}
+                alt={u.municipio}
+                width={95}
+                height={95}
+                className="object-cover rounded-lg w-[95px] h-[95px]"
+              />
+              <div className="flex-1">
+                <b className="text-lg">{u.municipio}</b>
+                <div className="flex items-center gap-2">
+                  <LuMapPin />
+                  <span className="text-sm">{u.address}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <BsWhatsapp />
+                  <a className="text-sm underline" href={`tel:${u.phone}`}>
+                    {u.phone}
+                  </a>
+                </div>
               </div>
               <div className="flex items-center gap-2">
-                <BsWhatsapp />
-                <a className="text-sm underline" href={`tel:${u.phone}`}>
-                  {u.phone}
+                <a
+                  href={u.facebook}
+                  target="_blank"
+                  className="flex-center bg-white w-10 h-10 rounded-full"
+                >
+                  <BsFacebook />
+                </a>
+                <a
+                  href={u.instagram}
+                  target="_blank"
+                  className="flex-center bg-white w-10 h-10 rounded-full"
+                >
+                  <BsInstagram />
                 </a>
               </div>
             </div>
-            <div className="flex items-center gap-2">
-              <a
-                href={u.facebook}
-                target="_blank"
-                className="flex-center bg-white w-10 h-10 rounded-full"
-              >
-                <BsFacebook />
-              </a>
-              <a
-                href={u.instagram}
-                target="_blank"
-                className="flex-center bg-white w-10 h-10 rounded-full"
-              >
-                <BsInstagram />
-              </a>
-            </div>
-          </div>
-        ))}
+          ))}
       </div>
     </div>
   );
