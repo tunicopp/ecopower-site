@@ -1,12 +1,12 @@
-import imageCard1 from "../../public/assets/images/section-slide/product-1.svg";
-import imageCard2 from "../../public/assets/images/section-slide/product-2.svg";
-import imageCard3 from "../../public/assets/images/section-slide/product-3.svg";
-import imageCard4 from "../../public/assets/images/section-slide/product-4.svg";
-import imageCard5 from "../../public/assets/images/section-slide/product-5.svg";
-import imageCard6 from "../../public/assets/images/section-slide/product-6.svg";
-import imageCard7 from "../../public/assets/images/section-slide/product-7.svg";
-import imageCard8 from "../../public/assets/images/section-slide/product-8.svg";
-import imageCard9 from "../../public/assets/images/section-slide/product-9.svg";
+import imageCard1 from "../../public/assets/images/section-slide/img-card1.png";
+import imageCard2 from "../../public/assets/images/section-slide/img-card02.png";
+import imageCard3 from "../../public/assets/images/section-slide/img-card03.png";
+import imageCard4 from "../../public/assets/images/section-slide/img-card04.png";
+import imageCard5 from "../../public/assets/images/section-slide/img-card05.png";
+import imageCard6 from "../../public/assets/images/section-slide/img-card06.png";
+import imageCard7 from "../../public/assets/images/section-slide/img-card07.png";
+import imageCard8 from "../../public/assets/images/section-slide/img-card08.png";
+import imageCard9 from "../../public/assets/images/section-slide/img-card09.png";
 
 export const productsCardsGroup = [
   { id: 1, image: imageCard1 },

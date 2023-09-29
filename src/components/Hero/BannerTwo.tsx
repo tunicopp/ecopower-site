@@ -26,7 +26,7 @@ const BannerTwo: React.FC = () => {
 
   return (
     <>
-      <div className="absolute lg:block hidden top-[60px] -right-[40px]">
+      <div className="absolute lg:block hidden top-[60px] -right-[40px] group-hover:-right-[10px] transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={cloudOne}
@@ -35,7 +35,7 @@ const BannerTwo: React.FC = () => {
           className="h-[36px] w-[129px]"
         />
       </div>
-      <div className="absolute lg:block hidden top-[160px] left-0 right-0 w-[129px] mx-auto">
+      <div className="absolute lg:block hidden top-[160px] left-0 right-0 group-hover:right-[100px] group-hover:scale-125   w-[129px] mx-auto transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={cloudOne}
@@ -44,7 +44,7 @@ const BannerTwo: React.FC = () => {
           className="h-[36px] w-[129px]"
         />
       </div>
-      <div className="absolute lg:block hidden top-[40%] -left-[50px]">
+      <div className="absolute lg:block hidden top-[40%] -left-[50px]  group-hover:-left-[10px] transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={cloudOne}
@@ -53,7 +53,7 @@ const BannerTwo: React.FC = () => {
           className="h-[36px] w-[129px]"
         />
       </div>
-      <div className="absolute lg:block hidden bottom-[320px] right-[210px]">
+      <div className="absolute lg:block hidden bottom-[320px] right-[210px] group-hover:scale-150 group-hover:rotate-90 transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={sun}
@@ -62,7 +62,7 @@ const BannerTwo: React.FC = () => {
           className="h-[168px] w-[168px]"
         />
       </div>
-      <div className="absolute lg:block hidden bottom-0 right-0">
+      <div className="absolute lg:block hidden bottom-0 right-0 group-hover:-right-[30px] group-hover:scale-105 transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={family}
@@ -71,7 +71,7 @@ const BannerTwo: React.FC = () => {
           className="w-[1002px] h-[598px]"
         />
       </div>
-      <div className="absolute lg:block hidden bottom-0 right-[80px]">
+      <div className="absolute lg:block hidden bottom-0 right-[80px] group-hover:right-[100px] group-hover:-bottom-[40px] transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={houseRight}
@@ -80,7 +80,7 @@ const BannerTwo: React.FC = () => {
           className="w-[285px] h-[147px]"
         />
       </div>
-      <div className="absolute lg:block hidden -bottom-[10px] left-0">
+      <div className="absolute lg:block hidden -bottom-[10px] -left-[30px]  group-hover:-left-[0px] group-hover:-bottom-[0px] transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={houseLeftOne}
@@ -89,7 +89,7 @@ const BannerTwo: React.FC = () => {
           className="w-[320px] h-[272px]"
         />
       </div>
-      <div className="absolute lg:block hidden -bottom-[20px] left-[300px]">
+      <div className="absolute lg:block hidden -bottom-[40px] left-[300px] group-hover:left-[340px] group-hover:-bottom-[20px] transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={houseLeftTwo}
@@ -98,7 +98,7 @@ const BannerTwo: React.FC = () => {
           className="w-[259px] h-[155px]"
         />
       </div>
-      <div className="absolute lg:block hidden -bottom-[20px] left-[590px]">
+      <div className="absolute lg:block hidden -bottom-[20px] left-[590px] group-hover:-bottom-[0px] transition-all duration-1000 ease-in-out">
         <Image
           loading="lazy"
           src={tree}
@@ -107,8 +107,8 @@ const BannerTwo: React.FC = () => {
           className="w-[29px] h-[143px]"
         />
       </div>
-      <div className="lg:hidden block relative overflow-hidden">
-        <div className="absolute left-[20%] top-[194px]">
+      <div className="lg:hidden block relative overflow-hidden ">
+        <div className="absolute left-[20%] top-[194px] ">
           <Image
             loading="eager"
             src={cloudOne}
@@ -117,7 +117,7 @@ const BannerTwo: React.FC = () => {
             className="h-[27px] w-[98px]"
           />
         </div>
-        <div className="absolute -right-[40px] top-[240px]">
+        <div className="absolute -right-[40px] top-[240px] ">
           <Image
             loading="eager"
             src={cloudOne}

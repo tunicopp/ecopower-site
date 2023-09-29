@@ -14,7 +14,7 @@ const CardSlider: React.FC<Props> = ({ image, index }) => {
       alt="card image"
       quality={100}
       priority={index < 3}
-      className="rounded-2xl w-full 2xl:h-auto h-[290px] scale-up-slider object-cover"
+      className="rounded-2xl w-full 2xl:h-auto h-[290px] scale-up-slider object-contain"
     />
   );
 };
