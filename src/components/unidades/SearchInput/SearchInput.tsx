@@ -70,8 +70,8 @@ const SearchInput: React.FC = () => {
               Ver todas unidades
             </p>
           </div>
-          {list.map((d) => (
-            <div className="flex bg-white p-4 rounded-xl">
+          {list.map((d, i) => (
+            <div className="flex bg-white p-4 rounded-xl" key={i}>
               <div className="flex-1">
                 <b className="text-lg">{d.municipio}</b>
                 <div className="flex items-center gap-2 mt-4">
