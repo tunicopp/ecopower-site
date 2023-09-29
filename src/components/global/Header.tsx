@@ -132,24 +132,6 @@ const Header: React.FC = () => {
           <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-6 flex-wrap mt-10 pb-6">
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
-              href="/pessoas"
-              title="Pessoas"
-              image="/assets/images/megamenu/megamenu-4.png"
-            >
-              Explore oportunidades emocionantes em nossa seção de carreiras.
-              Seja um Ecolover!
-            </MegaMenuItem>
-            <MegaMenuItem
-              onClick={() => setIsOpen(false)}
-              href="/projetos"
-              title="Projetos"
-              image="/assets/images/megamenu/megamenu-1.png"
-            >
-              Aqui você descobre o futuro da energia solar em nossos projetos!
-            </MegaMenuItem>
-
-            <MegaMenuItem
-              onClick={() => setIsOpen(false)}
               href="/sustentabilidade"
               title="Sustentabilidade"
               image="/assets/images/megamenu/megamenu-3-v2.png"
@@ -158,9 +140,27 @@ const Header: React.FC = () => {
             </MegaMenuItem>
             <MegaMenuItem
               onClick={() => setIsOpen(false)}
+              href="/projetos"
+              title="Projetos"
+              image="/assets/images/megamenu/megamenu-4-v2.png"
+            >
+              Aqui você descobre o futuro da energia solar em nossos projetos!
+            </MegaMenuItem>
+            <MegaMenuItem
+              onClick={() => setIsOpen(false)}
+              href="/pessoas"
+              title="Pessoas"
+              image="/assets/images/megamenu/megamenu-4.png"
+            >
+              Explore oportunidades emocionantes em nossa seção de carreiras.
+              Seja um Ecolover!
+            </MegaMenuItem>
+
+            <MegaMenuItem
+              onClick={() => setIsOpen(false)}
               href="/blog"
               title="Blog"
-              image="/assets/images/megamenu/megamenu-2.png"
+              image="/assets/images/megamenu/megamenu-2-v2.png"
             >
               Explore nosso blog e amplie seu conhecimento sobre energia solar!
             </MegaMenuItem>
