@@ -47,6 +47,7 @@ const products = [
     image: "/assets/images/produtos/bombeamento-solar.png",
     title: "Bombeamento Solar",
     text: "O cliente utiliza a mesma bomba d’agua que ele já utilizava e o acionamento do motor passa a ser realizado através da energia gerada pelos painéis solares.",
+    type: ["all", "disconnected"],
   },
   {
     image: "/assets/images/produtos/power-livre.png",
@@ -66,6 +67,8 @@ const ProductsGrid: React.FC = () => {
   const [selected, setSelected] = useState<
     "all" | "connected" | "disconnected" | "hybrid"
   >("all");
+
+  console.log(selected);
 
   return (
     <GridContainer className="flex-col items-center py-20">
