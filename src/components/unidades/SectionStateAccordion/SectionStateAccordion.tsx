@@ -27,28 +27,32 @@ const SectionStateAccordion: React.FC = () => {
     <section className="pb-[110px]">
       <GridContainer className="lg:flex-row flex-col gap-6">
         <div className="flex flex-col gap-6">
-          {evenarray.map((u, i) => (
-            <StateAccordion
-              key={i}
-              id={u.id}
-              units={u.units}
-              state={u.state}
-              units_number={u.units.length}
-              isH3={i % 2 === 0}
-            />
-          ))}
+          {oddArray
+            .filter((u) => u.units.length > 0)
+            .map((u, i) => (
+              <StateAccordion
+                key={i}
+                id={u.id}
+                units={u.units}
+                state={u.state}
+                units_number={u.units.length}
+                isH3={i % 2 === 0}
+              />
+            ))}
         </div>
         <div className="flex flex-col gap-6">
-          {oddArray.map((u, i) => (
-            <StateAccordion
-              key={i}
-              id={u.id}
-              units={u.units}
-              state={u.state}
-              units_number={u.units.length}
-              isH3={i % 2 === 0}
-            />
-          ))}
+          {evenarray
+            .filter((u) => u.units.length > 0)
+            .map((u, i) => (
+              <StateAccordion
+                key={i}
+                id={u.id}
+                units={u.units}
+                state={u.state}
+                units_number={u.units.length}
+                isH3={i % 2 === 0}
+              />
+            ))}
         </div>
       </GridContainer>
     </section>
