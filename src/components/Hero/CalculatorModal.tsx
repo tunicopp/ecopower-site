@@ -32,7 +32,7 @@ const CalculatorModal: React.FC<Props> = ({
     city: { value: "", label: "" },
   });
   const [simulationData, setSimulationData] = useState<SimulationData | null>(
-    null
+    null,
   );
   const { cities } = useGlobalContext();
 
@@ -65,7 +65,7 @@ const CalculatorModal: React.FC<Props> = ({
     e.preventDefault();
 
     const resp = await fetch(
-      "https://ecopower-dev.fluig.cloudtotvs.com.br/ws_simulador/rest/simulador/simular",
+      `${process.env.NEXT_PUBLIC_CALCULATOR_BASE_URL}/ws_simulador/rest/simulador/simular`,
       {
         method: "POST",
         body: JSON.stringify({
@@ -76,7 +76,7 @@ const CalculatorModal: React.FC<Props> = ({
         headers: {
           "Content-Type": "application/json",
         },
-      }
+      },
     );
 
     const json = await resp.json();
@@ -88,6 +88,19 @@ const CalculatorModal: React.FC<Props> = ({
       };
 
       setSimulationData(respData);
+
+      const searchResp = await fetch("/api/hubspot", {
+        method: "POST",
+        body: JSON.stringify({
+          calculator: {
+            ...respData,
+          },
+          data: {
+            ...data,
+          },
+          currentCost: value[0],
+        }),
+      });
     }
   }
 
@@ -204,7 +217,7 @@ const CalculatorModal: React.FC<Props> = ({
                       className="flex flex-wrap w-full justify-start md:justify-between items-center gap-2"
                       onChange={(e) =>
                         handleOnChangeLocation(
-                          e as React.ChangeEvent<HTMLInputElement>
+                          e as React.ChangeEvent<HTMLInputElement>,
                         )
                       }
                     >
@@ -229,6 +242,27 @@ const CalculatorModal: React.FC<Props> = ({
                         Área Rural
                       </Radio>
                     </div>
+                    <Select
+                      styles={{
+                        control: (baseStyles, state) => ({
+                          ...baseStyles,
+                          height: 48,
+                          borderRadius: 1000,
+                          padding: "0px 14px",
+                        }),
+                      }}
+                      options={cities.map((c) => ({
+                        value: c.code,
+                        label: c.name,
+                      }))}
+                      placeholder="Cidade"
+                      onChange={(a) =>
+                        setData((old) => ({
+                          ...old,
+                          city: a as any,
+                        }))
+                      }
+                    />
                     <Input
                       placeholder="Nome e sobrenome"
                       value={data.name}
@@ -251,27 +285,6 @@ const CalculatorModal: React.FC<Props> = ({
                         setData((old) => ({ ...old, phone: e.target.value }))
                       }
                     />
-                    <Select
-                      styles={{
-                        control: (baseStyles, state) => ({
-                          ...baseStyles,
-                          height: 48,
-                          borderRadius: 1000,
-                          padding: "0px 14px",
-                        }),
-                      }}
-                      options={cities.map((c) => ({
-                        value: c.code,
-                        label: c.name,
-                      }))}
-                      placeholder="Cidade"
-                      onChange={(a) =>
-                        setData((old) => ({
-                          ...old,
-                          city: a as any,
-                        }))
-                      }
-                    />
                     <button
                       type="submit"
                       className="h-12 w-full text-white px-5 py-[6px] bg-primary-green rounded-full disabled:opacity-60 disabled:cursor-not-allowed"
@@ -289,7 +302,7 @@ const CalculatorModal: React.FC<Props> = ({
             </div>
           </div>
         </div>,
-        document.querySelector("#calc") as any
+        document.querySelector("#calc") as any,
       )}
     </>
   );
