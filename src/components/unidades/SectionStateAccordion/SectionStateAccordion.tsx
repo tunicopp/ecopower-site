@@ -11,8 +11,6 @@ const allArrays = stateAccordionLeftData.concat(stateAccordionRightData);
 
 allArrays.sort((a, b) => a.state.localeCompare(b.state));
 
-console.log(allArrays);
-
 let evenarray: Data[] = [];
 let oddArray: Data[] = [];
 
