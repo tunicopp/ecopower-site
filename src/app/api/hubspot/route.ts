@@ -49,7 +49,7 @@ export async function POST(request: NextRequest) {
       inversoressimul: calculator.inversores[0].inversorModelo,
       valordescontosimul: calculator.valorProjeto,
       condicao_especial_site: calculator.condicoesEspeciais[0].condicaoEspecial,
-      utm_campaign: "?",
+      utm_campaign: "Simulacao Site",
       gatilho_conversao_padrao_ecopower: true,
     },
   };
