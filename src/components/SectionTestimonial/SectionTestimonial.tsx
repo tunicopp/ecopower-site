@@ -6,10 +6,7 @@ import { Navigation } from "swiper/modules";
 import TestimonialSlide from "./TestimonialSlide";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import Reveal from "../global/Reveal";
-import {
-  testimonialData,
-  testimonialDataLocalVideos,
-} from "@/utils/testimonialData";
+import { testimonialData } from "@/utils/testimonialData";
 import TestimonialSlideLocalVid from "@/components/SectionTestimonial/TestimonialSlideLocalVid";
 
 const SectionTestimonial: React.FC = () => {
