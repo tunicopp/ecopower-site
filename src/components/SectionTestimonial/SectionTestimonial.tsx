@@ -7,6 +7,7 @@ import TestimonialSlide from "./TestimonialSlide";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import Reveal from "../global/Reveal";
 import { testimonialData } from "@/utils/testimonialData";
+import TestimonialSlideLocalVid from "@/components/SectionTestimonial/TestimonialSlideLocalVid";
 
 const SectionTestimonial: React.FC = () => {
   return (
@@ -41,11 +42,21 @@ const SectionTestimonial: React.FC = () => {
             },
           }}
         >
-          {testimonialData.map((t, i) => (
-            <SwiperSlide key={i}>
-              <TestimonialSlide {...t} />
-            </SwiperSlide>
-          ))}
+          {testimonialData.map((t, i) => {
+            if (i < 2) {
+              return (
+                <SwiperSlide key={i}>
+                  <TestimonialSlideLocalVid {...t} />
+                </SwiperSlide>
+              );
+            }
+
+            return (
+              <SwiperSlide key={i}>
+                <TestimonialSlide {...t} />
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
         <button
           id="prev-testimonial"

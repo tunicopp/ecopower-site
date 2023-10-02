@@ -10,7 +10,7 @@ import personImage7 from "../../public/assets/images/section-testimonial/person-
 export const testimonialData: TestimonialData[] = [
   {
     text: "“Estou satisfeito com a redução do preço que pago. Antes eram cerca de R$ 230 reais, agora são apenas R$ 90 a cada dois meses, quase a taxa mínima”",
-    link: "https://www.youtube.com/embed/S7ZGrwldVYA?si=fgs3tQpyNt425AkM",
+    link: "/assets/videos/vid_jose_batista.mp4",
     person: {
       image: personImage1,
       name: "José Batista da Costa",
@@ -19,7 +19,7 @@ export const testimonialData: TestimonialData[] = [
   },
   {
     text: "“O atendimento foi maravilhoso, não tive nenhum problema, questão de materiais assim, tudo de excelente qualidade.”",
-    link: "https://www.youtube.com/embed/Zebvg5X1PSQ",
+    link: "/assets/videos/vid_edimar_ap.mp4",
     person: {
       image: personImage2,
       name: "Edimar Aparecido Ricci",
