@@ -160,7 +160,7 @@ const BannerOne: React.FC = () => {
           />
         </div>
         <div className="relative flex flex-col items-center gap-2 w-[307px] top-[40px] left-0 right-0 mx-auto">
-          <span className="text-white text-lg">EcoPower</span>
+          <span className="text-white text-2xl">EcoPower</span>
           <h2 className="text-white font-semibold text-[30px] text-center">
             Energia Solar ao seu alcance
           </h2>
