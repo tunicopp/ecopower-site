@@ -63,12 +63,12 @@ export const testimonialData: TestimonialData[] = [
     },
   },
   {
-    text: "“Superou minhas expectativas. A EcoPower entregou antes do prazo e eu recomendo a empresa”",
+    text: "Hoje é o grande dia da entrega das placas solares da EcoPower, daqui pra frente nós não pagamos mais energia",
     link: "/assets/videos/vid_barro_preto.mp4",
     person: {
       image: personImage7,
-      name: "Propriedade Fazenda Barro Preto",
-      location: "Riberão Preto/SP",
+      name: "Bruno & Barreto",
+      location: "Maringá/PR",
     },
   },
 ];

@@ -16,6 +16,7 @@ const SideBlogItem: React.FC<{ blog: BlogPost }> = ({
           src={photo}
           className="h-full w-full object-cover rounded-2xl hover:scale-125 transition-transform duration-500"
           alt="blog main post photo"
+          loading="lazy"
         />
       </div>
       <div className="flex flex-col p-3 gap-4">
