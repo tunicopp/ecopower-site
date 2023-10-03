@@ -43,11 +43,11 @@ export const GlobalContextProvider = ({
 
   async function getCities(): Promise<City[]> {
     const response = await fetch(
-      "https://ecopower-dev.fluig.cloudtotvs.com.br/ws_simulador/rest/simulador/cidades",
+      `${process.env.NEXT_PUBLIC_CALCULATOR_BASE_URL}/ws_simulador/rest/simulador/cidades`,
       {
         method: "GET",
         cache: "force-cache",
-      }
+      },
     );
     const data = await response.json();
 
