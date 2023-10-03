@@ -36,6 +36,8 @@ const TestimonialSlide: React.FC<TestimonialSlideProps> = ({
           height={44}
           width={44}
           className="rounded-full"
+          loading="lazy"
+          priority={false}
         />
         <div className="pl-4">
           <p className="font-semibold text-grayscale-800">{name}</p>

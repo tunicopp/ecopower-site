@@ -212,35 +212,35 @@ a {
 }
 
 .bg-solutions {
-  background: url(../../public/assets/images/section-solutions/bg-solutions.png);
+  background: url(../../public/assets/images/section-solutions/bg-solutions.webp);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bg-house {
-  background: url(../../public/assets/images/section-solutions/projeto-residencial-botucatu-min.jpg);
+  background: url(../../public/assets/images/section-solutions/projeto-residencial-botucatu-min.webp);
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
 }
 .bg-farm {
-  background: url(../../public/assets/images/section-solutions/projeto-rural-campo-grande-min.jpg);
+  background: url(../../public/assets/images/section-solutions/projeto-rural-campo-grande-min.webp);
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
 }
 .bg-store {
-  background: url(../../public/assets/images/section-solutions/projeto-empresarial-monte-alto-min.jpg);
+  background: url(../../public/assets/images/section-solutions/projeto-empresarial-monte-alto-min.webp);
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
 }
 .bg-factory {
-  background: url(../../public/assets/images/section-solutions/projeto-industrial-andradas-min.jpg);
+  background: url(../../public/assets/images/section-solutions/projeto-industrial-andradas-min.webp);
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;

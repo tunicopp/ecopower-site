@@ -16,6 +16,7 @@ const MainBlogItem: React.FC<{ blog: BlogPost }> = ({
           src={photo}
           className="max-h-[500px] object-cover rounded-2xl hover:scale-125 transition-transform duration-500"
           alt="blog main post photo"
+          loading="lazy"
         />
       </div>
       <div className=" flex flex-col w-full p-6 gap-4">
@@ -27,6 +28,7 @@ const MainBlogItem: React.FC<{ blog: BlogPost }> = ({
               className="w-8 h-8 object-cover rounded-full"
               src={author.photo}
               alt="post author photo"
+              loading="lazy"
             />
             <span className="font-semibold">{author.name}</span>
           </div>
