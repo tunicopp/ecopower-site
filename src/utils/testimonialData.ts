@@ -28,7 +28,7 @@ export const testimonialData: TestimonialData[] = [
   },
   {
     text: "“Esse é um trabalho árduo, um trabalho que demandou muita vontade, são mais de 3400 módulos instalados, então não é qualquer número.”",
-    link: "https://www.youtube.com/embed/A0sUnxDDq-c",
+    link: "/assets/videos/vid_pecuaria_br.mp4",
     person: {
       image: personImage3,
       name: "Pecuária BR",
@@ -37,7 +37,7 @@ export const testimonialData: TestimonialData[] = [
   },
   {
     text: "“Acredito que essa economia quase zerará nossas despesas com energia elétrica. Assim, poderemos investir em outras necessidades, como alimentação, roupas, educação das crianças”",
-    link: "https://www.youtube.com/embed/cDXtcENSjDU",
+    link: "/assets/videos/vid_tania.mp4",
     person: {
       image: personImage4,
       name: "Tania Diamantino",
@@ -46,7 +46,7 @@ export const testimonialData: TestimonialData[] = [
   },
   {
     text: "“A segurança de um valor justo, a segurança de uma empresa idônea, a segurança de ter qualidade, com certeza é a EcoPower.”",
-    link: "https://www.youtube.com/embed/bQOm2MZ5ekE",
+    link: "/assets/videos/vid_flavio.mp4",
     person: {
       image: personImage5,
       name: "Flavio",
@@ -55,7 +55,7 @@ export const testimonialData: TestimonialData[] = [
   },
   {
     text: "“Com dois meses já reduziu ao mínimo da minha luz, eu tinha em torno de R$ 700,00 a R$ 800,00 no mês, fora da época da colheita, ela caiu para o mínimo já.”",
-    link: "https://www.youtube.com/embed/qDirKLXPQ1E",
+    link: "/assets/videos/vid_rodrigo.mp4",
     person: {
       image: personImage6,
       name: "Rodrigo",
@@ -64,7 +64,7 @@ export const testimonialData: TestimonialData[] = [
   },
   {
     text: "“Superou minhas expectativas. A EcoPower entregou antes do prazo e eu recomendo a empresa”",
-    link: "https://www.youtube.com/embed/LnOsnluNH9Y",
+    link: "/assets/videos/vid_barro_preto.mp4",
     person: {
       image: personImage7,
       name: "Propriedade Fazenda Barro Preto",
