@@ -26,6 +26,6 @@ jobs:
             - name: Run build
               run: npm run build
               env:
-                  NEXT_PUBLIC_CALCULATOR_BASE_URL: { { NEXT_PUBLIC_CALCULATOR_BASE_URL } }
-                  HUBSPOT_BASE_URL: { { HUBSPOT_BASE_URL } }
+                  NEXT_PUBLIC_CALCULATOR_BASE_URL: ${{ env.NEXT_PUBLIC_CALCULATOR_BASE_URL }}
+                  HUBSPOT_BASE_URL: ${{ env.HUBSPOT_BASE_URL }}
 
