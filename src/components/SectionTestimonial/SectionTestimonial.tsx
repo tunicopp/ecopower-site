@@ -43,17 +43,9 @@ const SectionTestimonial: React.FC = () => {
           }}
         >
           {testimonialData.map((t, i) => {
-            if (i < 2) {
-              return (
-                <SwiperSlide key={i}>
-                  <TestimonialSlideLocalVid {...t} />
-                </SwiperSlide>
-              );
-            }
-
             return (
               <SwiperSlide key={i}>
-                <TestimonialSlide {...t} />
+                <TestimonialSlideLocalVid {...t} />
               </SwiperSlide>
             );
           })}

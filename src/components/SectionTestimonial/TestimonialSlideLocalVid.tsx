@@ -22,7 +22,11 @@ const TestimonialSlide: React.FC<TestimonialSlideProps> = ({
   return (
     <div className="h-full flex flex-col">
       <div className="relative h-[300px]">
-        <video src={link} className="w-full h-full rounded-3xl" controls />
+        <video
+          src={link}
+          className="w-full h-full rounded-3xl object-cover"
+          controls
+        />
       </div>
       <p className="text-grayscale-800 text-lg my-8">{text}</p>
       <div className="flex items-center mt-auto">
