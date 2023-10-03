@@ -18,7 +18,7 @@ const CampaingSlide: React.FC<CampaingSlideProps> = ({
   link,
 }) => {
   return (
-    <a href={link ? link : undefined} target="_blank">
+    <>
       <div className="relative">
         <Image
           src={src}
@@ -36,7 +36,7 @@ const CampaingSlide: React.FC<CampaingSlideProps> = ({
           {price}
         </span>
       </div>
-    </a>
+    </>
   );
 };
 
