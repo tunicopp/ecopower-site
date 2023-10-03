@@ -193,8 +193,10 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        <GlobalContextProvider>{children}</GlobalContextProvider>
-        <Footer />
+        <GlobalContextProvider>
+          {children}
+          <Footer />
+        </GlobalContextProvider>
       </body>
     </html>
   );
