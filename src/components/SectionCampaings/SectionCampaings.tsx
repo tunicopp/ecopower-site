@@ -56,7 +56,13 @@ const SectionCampaings: React.FC = () => {
         >
           {campaingData.map((c, i) => (
             <SwiperSlide key={i}>
-              <CampaingSlide {...c} />
+              {c.link ? (
+                <a href={c.link} target="_blank">
+                  <CampaingSlide {...c} />
+                </a>
+              ) : (
+                <CampaingSlide {...c} />
+              )}
             </SwiperSlide>
           ))}
         </Swiper>

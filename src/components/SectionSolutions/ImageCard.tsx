@@ -4,6 +4,7 @@ import { twMerge } from "tailwind-merge";
 import { useGlobalContext } from "@/app/context/store";
 import Image from "next/image";
 import arrowUpRight from "../../../public/assets/icons/arrow_outward.svg";
+import Link from "next/link";
 
 type Props = {
   children: React.ReactNode;
@@ -31,7 +32,10 @@ const ImageCard: React.FC<Props> = ({ children, id, bg }) => {
 export const HouseImage = ({ id }: Cards) => {
   return (
     <ImageCard id={id} bg="bg-house">
-      <a className="absolute flex items-center gap-1 text-white bottom-6 lg:left-[130px] left-6 underline cursor-pointer">
+      <Link
+        href="/projetos"
+        className="absolute flex items-center gap-1 text-white bottom-6 lg:left-[130px] left-6 underline cursor-pointer"
+      >
         Projeto Casa Geraldo
         <Image
           src={arrowUpRight}
@@ -39,14 +43,17 @@ export const HouseImage = ({ id }: Cards) => {
           priority={false}
           loading="lazy"
         />
-      </a>
+      </Link>
     </ImageCard>
   );
 };
 export const StoreImage = ({ id }: Cards) => {
   return (
     <ImageCard id={id} bg="bg-store">
-      <a className="absolute flex items-center gap-1 text-white bottom-6 lg:left-[130px] left-6 underline cursor-pointer">
+      <Link
+        href="/projetos"
+        className="absolute flex items-center gap-1 text-white bottom-6 lg:left-[130px] left-6 underline cursor-pointer"
+      >
         Projeto Sperta Honda
         <Image
           src={arrowUpRight}
@@ -54,7 +61,7 @@ export const StoreImage = ({ id }: Cards) => {
           priority={false}
           loading="lazy"
         />
-      </a>
+      </Link>
     </ImageCard>
   );
 };
@@ -62,7 +69,10 @@ export const StoreImage = ({ id }: Cards) => {
 export const FactoryImage = ({ id }: Cards) => {
   return (
     <ImageCard id={id} bg="bg-factory">
-      <a className="absolute flex items-center gap-1 text-white bottom-6 lg:left-[130px] left-6 underline cursor-pointer">
+      <Link
+        href="/projetos"
+        className="absolute flex items-center gap-1 text-white bottom-6 lg:left-[130px] left-6 underline cursor-pointer"
+      >
         Projeto Metalúrgica Igarapava
         <Image
           src={arrowUpRight}
@@ -70,7 +80,7 @@ export const FactoryImage = ({ id }: Cards) => {
           priority={false}
           loading="lazy"
         />
-      </a>
+      </Link>
     </ImageCard>
   );
 };
@@ -78,7 +88,10 @@ export const FactoryImage = ({ id }: Cards) => {
 export const FarmImage = ({ id }: Cards) => {
   return (
     <ImageCard id={id} bg="bg-farm">
-      <a className="absolute flex items-center gap-1 text-white bottom-6 lg:left-[130px] left-6 underline cursor-pointer">
+      <Link
+        href="/projetos"
+        className="absolute flex items-center gap-1 text-white bottom-6 lg:left-[130px] left-6 underline cursor-pointer"
+      >
         Projeto Dois Lagos
         <Image
           src={arrowUpRight}
@@ -86,7 +99,7 @@ export const FarmImage = ({ id }: Cards) => {
           priority={false}
           loading="lazy"
         />
-      </a>
+      </Link>
     </ImageCard>
   );
 };
