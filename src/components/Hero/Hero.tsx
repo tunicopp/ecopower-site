@@ -1,13 +1,20 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import GridContainer from "../global/GridContainer";
 import Calculator from "./Calculator";
 import HeroSlider from "./HeroSlider";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { useGlobalContext } from "@/app/context/store";
+import { isMobileDevice } from "@/utils/device";
 
 const Hero: React.FC = () => {
   const { currentSlide } = useGlobalContext();
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(isMobileDevice());
+  }, []);
 
   return (
     <section
@@ -19,7 +26,7 @@ const Hero: React.FC = () => {
           : "bg-banner-three"
       }`}
     >
-      <HeroSlider />
+      <HeroSlider isMobile={isMobile} />
       <div className="z-10 relative lg:pt-0">
         <GridContainer className="pt-6 lg:pt-[103px] flex-col">
           <h1
@@ -57,18 +64,22 @@ const Hero: React.FC = () => {
         </GridContainer>
       </div>
       <div id="bullets"></div>
-      <button
-        id="prev-hero"
-        className="style-navigation-hero right-[88px] lg:left-3"
-      >
-        <MdChevronLeft />
-      </button>
-      <button
-        id="next-hero"
-        className="style-navigation-hero right-6 lg:right-3"
-      >
-        <MdChevronRight />
-      </button>
+      {!isMobile && (
+        <>
+          <button
+            id="prev-hero"
+            className="style-navigation-hero right-[88px] lg:left-3"
+          >
+            <MdChevronLeft />
+          </button>
+          <button
+            id="next-hero"
+            className="style-navigation-hero right-6 lg:right-3"
+          >
+            <MdChevronRight />
+          </button>
+        </>
+      )}
     </section>
   );
 };
