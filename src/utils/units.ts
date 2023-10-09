@@ -315,7 +315,7 @@ export const units = [
     uf: "PR",
     phone: "(41) 984101013",
     address: "Pablo Picasso, 92, Fazendinha",
-    facebook: "facebook.com/ECOPOWERCURITIBAENERGIASOLAR",
+    facebook: "https://www.facebook.com/ECOPOWERCURITIBAENERGIASOLAR",
     instagram: "https://www.instagram.com/ecopowercuritiba/",
     photo: "1gTjVXtGPOWUa0gMoMRnLqyr-nFrCLH2C.png",
   },
