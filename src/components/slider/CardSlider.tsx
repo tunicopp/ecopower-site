@@ -13,7 +13,8 @@ const CardSlider: React.FC<Props> = ({ image, index }) => {
       src={image}
       alt="card image"
       quality={100}
-      priority={index < 3}
+      priority={false}
+      loading="lazy"
       className="rounded-2xl w-full 2xl:h-auto h-[290px] scale-up-slider object-contain"
     />
   );
