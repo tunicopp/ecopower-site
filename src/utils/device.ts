@@ -1,4 +1,5 @@
 export const isMobileDevice = () => {
-    return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-}
+  const windowWidth = window.innerWidth;
 
+  return windowWidth <= 500;
+};
