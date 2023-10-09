@@ -1,13 +1,18 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import BannerOne from "./BannerOne";
 import BannerTwo from "./BannerTwo";
 import BannerThree from "./BannerThree";
+import { isMobileDevice } from "@/utils/device";
 
-const HeroSlider: React.FC = () => {
+interface HeroSliderInterface {
+  isMobile: boolean;
+}
+
+const HeroSlider: React.FC<HeroSliderInterface> = ({ isMobile }) => {
   return (
     <>
       <div className="lg:absolute overflow-hidden hero-slider-wrapper mt-16 lg:mt-10 bottom-0 left-0 z-0">
@@ -18,6 +23,7 @@ const HeroSlider: React.FC = () => {
           className="lg:h-[582px] h-[605px]"
           direction="horizontal"
           modules={[Navigation, Pagination, Autoplay]}
+          draggable={!isMobile}
           pagination={{
             clickable: true,
             renderBullet(_, className) {
@@ -32,12 +38,16 @@ const HeroSlider: React.FC = () => {
           <SwiperSlide className="overflow-hidden">
             <BannerOne />
           </SwiperSlide>
-          <SwiperSlide className="overflow-hidden">
-            <BannerTwo />
-          </SwiperSlide>
-          <SwiperSlide className="overflow-hidden">
-            <BannerThree />
-          </SwiperSlide>
+          {!isMobile && (
+            <>
+              <SwiperSlide className="overflow-hidden">
+                <BannerTwo />
+              </SwiperSlide>
+              <SwiperSlide className="overflow-hidden">
+                <BannerThree />
+              </SwiperSlide>
+            </>
+          )}
         </Swiper>
       </div>
     </>
