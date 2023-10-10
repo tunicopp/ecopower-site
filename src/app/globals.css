@@ -211,7 +211,7 @@ a {
   -webkit-box-orient: vertical;
 }
 
-.bg-solutions {
+/* .bg-solutions {
   background: url(../../public/assets/images/section-solutions/bg-solutions.webp);
   background-position: top;
   background-repeat: no-repeat;
@@ -245,7 +245,7 @@ a {
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
-}
+} */
 
 .gradient-black {
   background: linear-gradient(

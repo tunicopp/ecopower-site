@@ -165,7 +165,13 @@ const BannerOne: React.FC = () => {
             Energia Solar ao seu alcance
           </h2>
         </div>
-        <Image src={heroMobile} alt="Zezé di Camargo" className="w-full" />
+        <Image
+          src={heroMobile}
+          alt="Zezé di Camargo"
+          className="w-full"
+          loading="eager"
+          priority
+        />
       </div>
     </>
   );

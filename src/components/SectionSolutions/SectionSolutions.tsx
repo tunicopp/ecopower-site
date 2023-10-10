@@ -12,6 +12,7 @@ import { useGlobalContext } from "@/app/context/store";
 import CardScroll, { CardScrollContent } from "./CardScroll";
 import { FactoryImage, FarmImage, HouseImage, StoreImage } from "./ImageCard";
 import { useInView } from "framer-motion";
+import Image from "next/image";
 
 const cards = [
   {
@@ -52,7 +53,13 @@ const SectionSolutions: React.FC = () => {
       className="flex relative pt-[110px] w-full min-h-[2500px] lg:min-h-[2300px] flex-col lg:items-center z-[801] bg-white"
       id="scrollDiv"
     >
-      <div className="flex flex-col w-full lg:items-center sticky inset-0 bg-solutions lg:p-[108px]">
+      <div className="flex flex-col w-full lg:items-center sticky inset-0 lg:p-[108px]">
+        <Image
+          src="/assets/images/section-solutions/bg-solutions.webp"
+          alt="background solucões"
+          fill
+          objectFit="cover"
+        />
         <Reveal className="max-w-[690px] lg:text-center px-6 overflow-visible">
           <TitleComponent className="lg:leading-[56px]">
             Soluções feitas sob medida para o seu segmento
