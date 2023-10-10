@@ -43,6 +43,8 @@ const ImageCard: React.FC<Props> = ({ children, id, bg }) => {
         objectFit="cover"
         objectPosition="center"
         className="rounded-3xl"
+        priority={false}
+        loading="lazy"
       />
       {children}
     </div>
