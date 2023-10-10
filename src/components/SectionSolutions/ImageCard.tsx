@@ -14,16 +14,36 @@ type Props = {
 type Cards = {
   id: number;
 };
+
+const images = {
+  "bg-house":
+    "/assets/images/section-solutions/projeto-residencial-botucatu-min.webp",
+  "bg-store":
+    "/assets/images/section-solutions/projeto-empresarial-monte-alto-min.webp",
+  "bg-factory":
+    "/assets/images/section-solutions/projeto-industrial-andradas-min.webp",
+  "bg-farm":
+    "/assets/images/section-solutions/projeto-rural-campo-grande-min.webp",
+};
+
 const ImageCard: React.FC<Props> = ({ children, id, bg }) => {
   const { cardId } = useGlobalContext();
+
   return (
     <div
       className={twMerge(
         "absolute left-[24px] right-[24px] h-full lg:inset-0 rounded-3xl transition-opacity",
-        bg,
-        cardId === id ? "opacity-100" : "opacity-0",
+        cardId === id ? "opacity-100" : "opacity-0"
       )}
     >
+      <Image
+        src={images[bg as keyof typeof images]}
+        alt=""
+        fill
+        objectFit="cover"
+        objectPosition="center"
+        className="rounded-3xl"
+      />
       {children}
     </div>
   );
