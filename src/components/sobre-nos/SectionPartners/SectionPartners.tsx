@@ -24,6 +24,7 @@ const SectionPartners: React.FC = () => {
               alt="Zezé di Camargo"
               width={112}
               height={112}
+              quality={100}
               className="rounded-full"
             />
             <div className="flex flex-col gap-2">
@@ -37,6 +38,7 @@ const SectionPartners: React.FC = () => {
               alt="Jads e Jadson"
               width={112}
               height={112}
+              quality={100}
               className="rounded-full"
             />
             <div className="flex flex-col gap-2">
@@ -50,6 +52,7 @@ const SectionPartners: React.FC = () => {
               alt="João Bosco e Vinícius"
               width={112}
               height={112}
+              quality={100}
               className="rounded-full"
             />
             <div className="flex flex-col gap-2">
@@ -63,6 +66,7 @@ const SectionPartners: React.FC = () => {
               alt="Fabrício Taveira"
               width={112}
               height={112}
+              quality={100}
               className="rounded-full"
             />
             <div className="flex flex-col gap-2">
@@ -76,6 +80,7 @@ const SectionPartners: React.FC = () => {
               alt="Cuiabano Lima"
               width={112}
               height={112}
+              quality={100}
               className="rounded-full"
             />
             <div className="flex flex-col gap-2">
@@ -88,6 +93,7 @@ const SectionPartners: React.FC = () => {
               src={brunoBarreto}
               alt="Bruno e Barreto"
               width={112}
+              quality={100}
               height={112}
               className="rounded-full"
             />
