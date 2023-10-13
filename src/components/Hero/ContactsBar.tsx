@@ -6,13 +6,13 @@ const ContactsBar: React.FC = () => {
   return (
     <div className="bg-white md:h-[40px] py-2.5 relative">
       <div className="flex w-full items-center px-6 md:gap-6 gap-1 md:justify-end justify-between">
-        <Link
-          href="/unidades"
+        <a
+          href="https://hubs.li/Q025rsCJ0"
           className="flex items-center md:text-xl text-grayscale-800"
         >
           <MdCardTravel />
           <span className="md:text-sm text-xs ml-2">Seja um Franqueado</span>
-        </Link>
+        </a>
 
         <Link
           href="/#FAQ"

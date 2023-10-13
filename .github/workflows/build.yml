@@ -28,4 +28,5 @@ jobs:
               env:
                   NEXT_PUBLIC_CALCULATOR_BASE_URL: ${{ env.NEXT_PUBLIC_CALCULATOR_BASE_URL }}
                   HUBSPOT_BASE_URL: ${{ env.HUBSPOT_BASE_URL }}
+                  NODE_TLS_REJECT_UNAUTHORIZED: 0
 
