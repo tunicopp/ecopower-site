@@ -638,15 +638,6 @@ export const units = [
     photo: "11D2oUQcUESfuf6SnNLKYrcxpgpcmX8VC.png",
   },
   {
-    municipio: "Sertãozinho",
-    uf: "SP",
-    phone: "(16) 991857062",
-    address: "Rua Olidair Ambrosio, 1223 B, Centro",
-    facebook: "https://www.facebook.com/profile.php?id=100077708711833",
-    instagram: "https://www.instagram.com/ecopower.sertaozinhosp/",
-    photo: "1Yg2kYGGk_xZfltMXOTq73PaqBuCKyQjV.png",
-  },
-  {
     municipio: "Araçatuba",
     uf: "SP",
     phone: "(18) 998244054",
@@ -1188,15 +1179,6 @@ export const units = [
     facebook: "-",
     instagram: "-",
     photo: "1RHZag_iCphoD5XR6KxX5IBWzj7jxHr7t.png",
-  },
-  {
-    municipio: "Pelotas",
-    uf: "RS",
-    phone: "53999059686",
-    address: "Rua Santa Cruz, 2534, Centro",
-    facebook: "https://www.facebook.com/ecopowerpelotas1",
-    instagram: "https://www.instagram.com/ecopowerunidadepelotas",
-    photo: "15z9fCzjqIZHxlD5QzLVe9mX9qbhkXqUJ.png",
   },
   {
     municipio: "Santo Estevão ",
