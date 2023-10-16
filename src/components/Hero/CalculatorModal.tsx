@@ -11,6 +11,7 @@ import Select from "react-select";
 import SimulationData from "@/@types/api/simulation-data.api.interface";
 import SimulationDataContent from "./SimulationDataContent";
 import { useGlobalContext } from "@/app/context/store";
+import { useMask } from "@react-input/mask";
 
 interface Props {
   isOpen: boolean;
@@ -32,9 +33,13 @@ const CalculatorModal: React.FC<Props> = ({
     city: { value: "", label: "" },
   });
   const [simulationData, setSimulationData] = useState<SimulationData | null>(
-    null,
+    null
   );
   const { cities } = useGlobalContext();
+  const phoneMaskRef = useMask({
+    mask: "+__ (__) _____-____",
+    replacement: { _: /\d/ },
+  });
 
   const bg = getTrackBackground({
     min: 0,
@@ -76,7 +81,7 @@ const CalculatorModal: React.FC<Props> = ({
         headers: {
           "Content-Type": "application/json",
         },
-      },
+      }
     );
 
     const json = await resp.json();
@@ -217,7 +222,7 @@ const CalculatorModal: React.FC<Props> = ({
                       className="flex flex-wrap w-full justify-start md:justify-between items-center gap-2"
                       onChange={(e) =>
                         handleOnChangeLocation(
-                          e as React.ChangeEvent<HTMLInputElement>,
+                          e as React.ChangeEvent<HTMLInputElement>
                         )
                       }
                     >
@@ -278,13 +283,23 @@ const CalculatorModal: React.FC<Props> = ({
                         setData((old) => ({ ...old, email: e.target.value }))
                       }
                     />
-                    <Input
+                    <input
+                      ref={phoneMaskRef}
+                      className="h-12 text-font-black outline-none placeholder:text-grayscale-300 px-6 w-full rounded-full bg-white border border-radio-border"
+                      value={data.phone}
+                      onChange={(e) =>
+                        setData((old) => ({ ...old, phone: e.target.value }))
+                      }
+                      placeholder="Telefone ou WhatsApp"
+                    />
+                    {/* <Input
                       placeholder="Telefone ou WhatsApp"
                       value={data.phone}
                       onChange={(e) =>
                         setData((old) => ({ ...old, phone: e.target.value }))
                       }
-                    />
+                      ref={phoneMaskRef}
+                    /> */}
                     <button
                       type="submit"
                       className="h-12 w-full text-white px-5 py-[6px] bg-primary-green rounded-full disabled:opacity-60 disabled:cursor-not-allowed"
@@ -302,7 +317,7 @@ const CalculatorModal: React.FC<Props> = ({
             </div>
           </div>
         </div>,
-        document.querySelector("#calc") as any,
+        document.querySelector("#calc") as any
       )}
     </>
   );

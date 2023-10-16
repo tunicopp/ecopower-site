@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-input/mask": "^1.0.20",
     "@studio-freight/lenis": "^1.0.23",
     "@types/node": "20.4.5",
     "@types/react": "18.2.17",
