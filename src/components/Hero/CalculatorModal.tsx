@@ -37,7 +37,7 @@ const CalculatorModal: React.FC<Props> = ({
   );
   const { cities } = useGlobalContext();
   const phoneMaskRef = useMask({
-    mask: "+__ (__) _____-____",
+    mask: "(__) _____-____",
     replacement: { _: /\d/ },
   });
 
