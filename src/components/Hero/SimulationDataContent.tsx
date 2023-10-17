@@ -28,14 +28,14 @@ const SimulationDataContent: React.FC<Props> = ({ data }) => {
           Preencha os campos abaixo e veja agora mesmo o quanto você poderá
           economizar investindo na energia solar.
         </p>
-        <div className="flex items-stretch w-full">
-          <div className="flex flex-col flex-1 items-center rounded-l-2xl px-6 py-10 bg-danger text-center">
+        <div className="flex flex-col md:flex-row items-stretch w-full">
+          <div className="flex flex-col flex-1 items-center md:rounded-r-none md:!rounded-bl-2xl rounded-b-none rounded-2xl px-6 py-10 bg-danger text-center">
             <p className="text-grayscale-900">Valor da Conta Atual</p>
             <b className="text-[32px] text-grayscale-900 mt-2">
               {formatCurrency.format(data.valorConta)}
             </b>
           </div>
-          <div className="flex flex-col flex-1 items-center rounded-r-2xl px-6 py-10 bg-primary-green text-center">
+          <div className="flex flex-col flex-1 items-center md:rounded-l-none md:!rounded-tr-2xl rounded-t-none rounded-2xl px-6 py-10 bg-primary-green text-center">
             <p className="text-white">Valor da Sua Parcela</p>
             <b className="text-[32px] text-white mt-2">
               {formatCurrency.format(data.valorParcela)}
