@@ -33,7 +33,7 @@ const CalculatorModal: React.FC<Props> = ({
     city: { value: "", label: "" },
   });
   const [simulationData, setSimulationData] = useState<SimulationData | null>(
-    null
+    null,
   );
   const { cities } = useGlobalContext();
   const phoneMaskRef = useMask({
@@ -81,7 +81,7 @@ const CalculatorModal: React.FC<Props> = ({
         headers: {
           "Content-Type": "application/json",
         },
-      }
+      },
     );
 
     const json = await resp.json();
@@ -222,7 +222,7 @@ const CalculatorModal: React.FC<Props> = ({
                       className="flex flex-wrap w-full justify-start md:justify-between items-center gap-2"
                       onChange={(e) =>
                         handleOnChangeLocation(
-                          e as React.ChangeEvent<HTMLInputElement>
+                          e as React.ChangeEvent<HTMLInputElement>,
                         )
                       }
                     >
@@ -306,6 +306,9 @@ const CalculatorModal: React.FC<Props> = ({
                       disabled={
                         data.city.value === "" ||
                         data.location === "" ||
+                        data.name === "" ||
+                        data.email === "" ||
+                        data.phone === "" ||
                         value[0] === 0
                       }
                     >
@@ -317,7 +320,7 @@ const CalculatorModal: React.FC<Props> = ({
             </div>
           </div>
         </div>,
-        document.querySelector("#calc") as any
+        document.querySelector("#calc") as any,
       )}
     </>
   );
