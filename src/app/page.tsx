@@ -21,7 +21,7 @@ export default async function Home() {
         <SectionMap />
         <SectionVideo />
         <SectionCampaings />
-        <SectionSolutions />
+        {/*<SectionSolutions />*/}
         <SectionProject />
         <SectionTestimonial />
         <BlogSection />
