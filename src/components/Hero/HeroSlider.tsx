@@ -1,12 +1,12 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import BannerOne from "./BannerOne";
-import BannerTwo from "./BannerTwo";
-import BannerThree from "./BannerThree";
-import { isMobileDevice } from "@/utils/device";
+import Image from "next/image";
+//import BannerTwo from "./BannerTwo";
+//import BannerThree from "./BannerThree";
 
 interface HeroSliderInterface {
   isMobile: boolean;
@@ -41,10 +41,30 @@ const HeroSlider: React.FC<HeroSliderInterface> = ({ isMobile }) => {
           {!isMobile && (
             <>
               <SwiperSlide className="overflow-hidden">
-                <BannerTwo />
+                <div className="w-full h-full relative">
+                  <Image
+                    src="/assets/images/hero/banner-2.png"
+                    alt="banner 2 image"
+                    objectFit="cover"
+                    objectPosition="right"
+                    priority={false}
+                    quality={100}
+                    fill
+                  />
+                </div>
               </SwiperSlide>
               <SwiperSlide className="overflow-hidden">
-                <BannerThree />
+                <div className="w-full h-full relative">
+                  <Image
+                    src="/assets/images/hero/banner-3.png"
+                    alt="banner 2 image"
+                    objectFit="cover"
+                    objectPosition="right"
+                    priority={false}
+                    quality={100}
+                    fill
+                  />
+                </div>
               </SwiperSlide>
             </>
           )}
