@@ -1050,7 +1050,7 @@ export const units = [
     phone: "11 998033344",
     address: "Rua das Figueiras,1606 Bairro Campestre ",
     facebook: "https://www.facebook.com/ecopowersantoandresp",
-    instagram: "-",
+    instagram: "https://www.instagram.com/ecopowersantoandresp",
     photo: "1Y4tjazSR2HjEMeDtwUxI-RhT7o0hv6NP.png",
   },
   {
