@@ -64,22 +64,22 @@ const Hero: React.FC = () => {
         </GridContainer>
       </div>
       <div id="bullets"></div>
-      {!isMobile && (
-        <>
-          <button
-            id="prev-hero"
-            className="style-navigation-hero right-[88px] lg:left-3"
-          >
-            <MdChevronLeft />
-          </button>
-          <button
-            id="next-hero"
-            className="style-navigation-hero right-6 lg:right-3"
-          >
-            <MdChevronRight />
-          </button>
-        </>
-      )}
+      {/*{!isMobile && (*/}
+      {/*  <>*/}
+      {/*    <button*/}
+      {/*      id="prev-hero"*/}
+      {/*      className="style-navigation-hero right-[88px] lg:left-3"*/}
+      {/*    >*/}
+      {/*      <MdChevronLeft />*/}
+      {/*    </button>*/}
+      {/*    <button*/}
+      {/*      id="next-hero"*/}
+      {/*      className="style-navigation-hero right-6 lg:right-3"*/}
+      {/*    >*/}
+      {/*      <MdChevronRight />*/}
+      {/*    </button>*/}
+      {/*  </>*/}
+      {/*)}*/}
     </section>
   );
 };

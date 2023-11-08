@@ -19,16 +19,16 @@ import { useSwiperSlide } from "swiper/react";
 import { useGlobalContext } from "@/app/context/store";
 
 const BannerOne: React.FC = () => {
-  const swiperSlide = useSwiperSlide();
-  const { onChangeSlide } = useGlobalContext();
+  //  const swiperSlide = useSwiperSlide();
+  //  const { onChangeSlide } = useGlobalContext();
 
-  useEffect(() => {
-    if (swiperSlide.isActive) onChangeSlide(1);
-
-    return () => {
-      onChangeSlide(1);
-    };
-  }, [swiperSlide.isActive]);
+  //  useEffect(() => {
+  //    if (swiperSlide.isActive) onChangeSlide(1);
+  //
+  //    return () => {
+  //      onChangeSlide(1);
+  //    };
+  //  }, [swiperSlide.isActive]);
 
   return (
     <>
