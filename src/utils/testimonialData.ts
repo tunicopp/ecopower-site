@@ -19,7 +19,7 @@ export const testimonialData: TestimonialData[] = [
   },
   {
     text: "“O atendimento foi maravilhoso, não tive nenhum problema, questão de materiais assim, tudo de excelente qualidade.”",
-    link: "/assets/videos/vid_edimar_ap.mp4",
+    link: "/assets/videos/vid_edimar_ap_compressed.mp4",
     person: {
       image: personImage2,
       name: "Edimar Aparecido Ricci",
@@ -28,7 +28,7 @@ export const testimonialData: TestimonialData[] = [
   },
   {
     text: "“Esse é um trabalho árduo, um trabalho que demandou muita vontade, são mais de 3400 módulos instalados, então não é qualquer número.”",
-    link: "/assets/videos/vid_pecuaria_br.mp4",
+    link: "/assets/videos/vid_pecuaria_br_compressed.mp4",
     person: {
       image: personImage3,
       name: "Pecuária BR",
