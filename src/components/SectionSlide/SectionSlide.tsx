@@ -17,6 +17,7 @@ import cloud from "../../../public/assets/icons/cloud.svg";
 import Image from "next/image";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import CardSlider from "../slider/CardSlider";
+import { isMobileDevice } from "@/utils/device";
 
 const SectionSlide: React.FC = () => {
   return (
