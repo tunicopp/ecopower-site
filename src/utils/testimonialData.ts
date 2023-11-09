@@ -35,15 +35,15 @@ export const testimonialData: TestimonialData[] = [
       location: "Campo Grande/MS",
     },
   },
-  {
-    text: "“Acredito que essa economia quase zerará nossas despesas com energia elétrica. Assim, poderemos investir em outras necessidades, como alimentação, roupas, educação das crianças”",
-    link: "/assets/videos/vid_tania.mp4",
-    person: {
-      image: personImage4,
-      name: "Tania Diamantino",
-      location: "Barretos/SP",
-    },
-  },
+  //  {
+  //    text: "“Acredito que essa economia quase zerará nossas despesas com energia elétrica. Assim, poderemos investir em outras necessidades, como alimentação, roupas, educação das crianças”",
+  //    link: "/assets/videos/vid_tania.mp4",
+  //    person: {
+  //      image: personImage4,
+  //      name: "Tania Diamantino",
+  //      location: "Barretos/SP",
+  //    },
+  //  },
   {
     text: "“A segurança de um valor justo, a segurança de uma empresa idônea, a segurança de ter qualidade, com certeza é a EcoPower.”",
     link: "/assets/videos/vid_flavio.mp4",
@@ -53,22 +53,22 @@ export const testimonialData: TestimonialData[] = [
       location: "Alto Paraná/PR",
     },
   },
-  {
-    text: "“Com dois meses já reduziu ao mínimo da minha luz, eu tinha em torno de R$ 700,00 a R$ 800,00 no mês, fora da época da colheita, ela caiu para o mínimo já.”",
-    link: "/assets/videos/vid_rodrigo.mp4",
-    person: {
-      image: personImage6,
-      name: "Rodrigo",
-      location: "Riberão Preto/SP",
-    },
-  },
-  {
-    text: "Hoje é o grande dia da entrega das placas solares da EcoPower, daqui pra frente nós não pagamos mais energia",
-    link: "/assets/videos/vid_barro_preto.mp4",
-    person: {
-      image: personImage7,
-      name: "Bruno & Barreto",
-      location: "Maringá/PR",
-    },
-  },
+  //  {
+  //    text: "“Com dois meses já reduziu ao mínimo da minha luz, eu tinha em torno de R$ 700,00 a R$ 800,00 no mês, fora da época da colheita, ela caiu para o mínimo já.”",
+  //    link: "/assets/videos/vid_rodrigo.mp4",
+  //    person: {
+  //      image: personImage6,
+  //      name: "Rodrigo",
+  //      location: "Riberão Preto/SP",
+  //    },
+  //  },
+  //  {
+  //    text: "Hoje é o grande dia da entrega das placas solares da EcoPower, daqui pra frente nós não pagamos mais energia",
+  //    link: "/assets/videos/vid_barro_preto.mp4",
+  //    person: {
+  //      image: personImage7,
+  //      name: "Bruno & Barreto",
+  //      location: "Maringá/PR",
+  //    },
+  //  },
 ];
