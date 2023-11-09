@@ -7,18 +7,20 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 interface RevealProps extends HTMLProps<HTMLDivElement> {
   children: ReactNode;
   className?: string;
+  isMobile?: boolean;
 }
 
 const Carroussel: React.FC<RevealProps> = ({
   children,
   className,
+  isMobile = false,
   ...rest
 }) => {
   return (
     <div
       className={twMerge(
         "flex relative w-full scrollDiv group h-auto",
-        className
+        className,
       )}
       {...rest}
     >
@@ -26,18 +28,22 @@ const Carroussel: React.FC<RevealProps> = ({
         onInit={(swiper) => {
           swiper.animating = false;
         }}
-        autoplay={{
-          delay: 3000,
-          pauseOnMouseEnter: true,
-          disableOnInteraction: true
-        }}
+        autoplay={
+          isMobile
+            ? undefined
+            : {
+                delay: 3000,
+                pauseOnMouseEnter: true,
+                disableOnInteraction: true,
+              }
+        }
         loop
         direction={"horizontal"}
         slidesPerView={1}
         spaceBetween={20}
         grabCursor={true}
         className="mySwiper w-full h-auto lg:w-auto px-6 lg:!px-[110px]"
-        modules={[Navigation, Autoplay]}
+        modules={isMobile ? [Navigation] : [Navigation, Autoplay]}
         navigation={{
           nextEl: "#next",
           prevEl: "#prev",

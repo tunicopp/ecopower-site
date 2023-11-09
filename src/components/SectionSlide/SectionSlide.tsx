@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TitleComponent from "../global/TitleComponent";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -17,8 +17,16 @@ import cloud from "../../../public/assets/icons/cloud.svg";
 import Image from "next/image";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import CardSlider from "../slider/CardSlider";
+import { isMobileDevice } from "@/utils/device";
 
 const SectionSlide: React.FC = () => {
+  const [isMobile, setIsMobile] = useState(isMobileDevice());
+
+  useEffect(() => {
+    console.log(isMobileDevice());
+    setIsMobile(isMobileDevice());
+  }, []);
+
   return (
     <section className="relative w-full pb-20 px-6 lg:px-0 pt-[66px] flex flex-col items-center">
       <div className="absolute -top-[30px]">
@@ -39,7 +47,7 @@ const SectionSlide: React.FC = () => {
       >
         <p className="font-medium mt-4 underline">Ver todos os produtos</p>
       </Link>
-      <Carroussel className="mt-[88px] lg:mt-16">
+      <Carroussel isMobile={isMobile} className="mt-[88px] lg:mt-16">
         {productsCardsGroup.map((card, index) => (
           <SwiperSlide key={card.id}>
             <CardSlider image={card.image} index={index} />
