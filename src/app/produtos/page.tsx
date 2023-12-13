@@ -12,7 +12,6 @@ export default async function Products() {
         <SectionOurProducts />
         <ProductsGrid />
       </main>
-      <div id="calc"></div>
       <SmoothScroll />
     </>
   );

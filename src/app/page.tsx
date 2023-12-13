@@ -27,7 +27,6 @@ export default async function Home() {
         <BlogSection />
         <SectionFAQ />
       </main>
-      <div id="calc"></div>
       <SmoothScroll />
     </>
   );
