@@ -44,7 +44,7 @@ export default function Word() {
         <div className="flex flex-col gap-3 justify-start items-start">
           {glossary?.links.map((d, i) => (
             <a key={i} className="text-primary-green font-medium" href={d}>
-              Link
+              {d}
             </a>
           ))}
         </div>
