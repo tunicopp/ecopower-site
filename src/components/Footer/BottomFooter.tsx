@@ -56,6 +56,7 @@ const BottomFooter: React.FC = () => {
               <LinkFooter href="/unidades">Unidades</LinkFooter>
               <LinkFooter href="/sustentabilidade">Sustentabilidade</LinkFooter>
               <LinkFooter href="/pessoas">Pessoas</LinkFooter>
+              <LinkFooter href="/glossario">Glossário</LinkFooter>
               <LinkFooter href="/blog">Blog</LinkFooter>
             </div>
           </div>

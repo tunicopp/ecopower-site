@@ -197,6 +197,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </GlobalContextProvider>
+        <div id="calc"></div>
       </body>
     </html>
   );

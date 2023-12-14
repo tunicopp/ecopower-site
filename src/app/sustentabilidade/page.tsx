@@ -21,7 +21,6 @@ export default async function Sustainability() {
         <SectionEthicConduct />
         <SectionReverseLogic />
       </main>
-      <div id="calc"></div>
       <SmoothScroll />
     </>
   );
