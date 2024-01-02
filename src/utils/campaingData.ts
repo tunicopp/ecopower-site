@@ -41,5 +41,5 @@ export const campaingData: CampaingData[] = [
   //    "Iluminamos a conscientização e a prevenção unindo nossas energias.",
   //  price: "Comercial e Endomarketing",
   //  src: campaing5,
-  },
+  //},
 ];
