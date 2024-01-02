@@ -12,17 +12,20 @@ import SimulationData from "@/@types/api/simulation-data.api.interface";
 import SimulationDataContent from "./SimulationDataContent";
 import { useGlobalContext } from "@/app/context/store";
 import { useMask } from "@react-input/mask";
+import City from "@/@types/app/city.app.interface";
 
 interface Props {
   isOpen: boolean;
   onClose: () => void;
   initialValue?: number;
+  cities: City[];
 }
 
 const CalculatorModal: React.FC<Props> = ({
   isOpen,
   onClose,
   initialValue = 0,
+  cities,
 }) => {
   const [value, setValue] = useState([initialValue]);
   const [data, setData] = useState({
@@ -33,9 +36,9 @@ const CalculatorModal: React.FC<Props> = ({
     city: { value: "", label: "" },
   });
   const [simulationData, setSimulationData] = useState<SimulationData | null>(
-    null,
+    null
   );
-  const { cities } = useGlobalContext();
+  // const { cities } = useGlobalContext();
   const phoneMaskRef = useMask({
     mask: "(__) _____-____",
     replacement: { _: /\d/ },
@@ -81,7 +84,7 @@ const CalculatorModal: React.FC<Props> = ({
         headers: {
           "Content-Type": "application/json",
         },
-      },
+      }
     );
 
     const json = await resp.json();
@@ -222,7 +225,7 @@ const CalculatorModal: React.FC<Props> = ({
                       className="flex flex-wrap w-full justify-start md:justify-between items-center gap-2"
                       onChange={(e) =>
                         handleOnChangeLocation(
-                          e as React.ChangeEvent<HTMLInputElement>,
+                          e as React.ChangeEvent<HTMLInputElement>
                         )
                       }
                     >
@@ -320,7 +323,7 @@ const CalculatorModal: React.FC<Props> = ({
             </div>
           </div>
         </div>,
-        document.querySelector("#calc") as any,
+        document.querySelector("#calc") as any
       )}
     </>
   );

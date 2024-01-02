@@ -34,44 +34,44 @@ export const GlobalContextProvider = ({
   children: ReactNode;
 }) => {
   const [cardId, setCardId] = useState<number | null>(4);
-  const [cities, setCities] = useState<City[]>([]);
+  // const [cities, setCities] = useState<City[]>([]);
   const [currentSlide, setCurrentSlide] = useState<number>(1);
 
   const onChangeSlide = (slide: number) => {
     setCurrentSlide(slide);
   };
 
-  async function getCities(): Promise<City[]> {
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_CALCULATOR_BASE_URL}/ws_simulador/rest/simulador/cidades`,
-      {
-        method: "GET",
-        cache: "force-cache",
-      },
-    );
-    const data = await response.json();
+  // async function getCities(): Promise<City[]> {
+  //   const response = await fetch(
+  //     `${process.env.NEXT_PUBLIC_CALCULATOR_BASE_URL}/ws_simulador/rest/simulador/cidades`,
+  //     {
+  //       method: "GET",
+  //       cache: "force-cache",
+  //     }
+  //   );
+  //   const data = await response.json();
 
-    const cities: City[] = [];
-    for (const d of data as ApiCity[]) {
-      const city: City = {
-        code: d.codigoIBGE,
-        name: d.cidade,
-        state: d.estado,
-      };
+  //   const cities: City[] = [];
+  //   for (const d of data as ApiCity[]) {
+  //     const city: City = {
+  //       code: d.codigoIBGE,
+  //       name: d.cidade,
+  //       state: d.estado,
+  //     };
 
-      cities.push(city);
-    }
+  //     cities.push(city);
+  //   }
 
-    return cities;
-  }
+  //   return cities;
+  // }
 
-  useEffect(() => {
-    getCities().then((d) => setCities(d));
-  }, []);
+  // useEffect(() => {
+  //   getCities().then((d) => setCities(d));
+  // }, []);
 
   return (
     <GlobalContext.Provider
-      value={{ cardId, setCardId, cities, onChangeSlide, currentSlide }}
+      value={{ cardId, setCardId, cities: [], onChangeSlide, currentSlide }}
     >
       {children}
     </GlobalContext.Provider>
