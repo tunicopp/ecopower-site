@@ -35,11 +35,11 @@ export const campaingData: CampaingData[] = [
   //   price: "Endomarketing",
   //   src: campaing4,
   // },
-  {
-    title: "Outubro Rosa na EcoPower",
-    description:
-      "Iluminamos a conscientização e a prevenção unindo nossas energias.",
-    price: "Comercial e Endomarketing",
-    src: campaing5,
-  },
+  //{
+  //  title: "Outubro Rosa na EcoPower",
+  //  description:
+  //    "Iluminamos a conscientização e a prevenção unindo nossas energias.",
+  //  price: "Comercial e Endomarketing",
+  //  src: campaing5,
+  //},
 ];

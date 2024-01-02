@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Close from "../../../public/assets/icons/Close";
 import { Tooltip } from "react-tooltip";
@@ -12,6 +12,8 @@ import SimulationData from "@/@types/api/simulation-data.api.interface";
 import SimulationDataContent from "./SimulationDataContent";
 import { useGlobalContext } from "@/app/context/store";
 import { useMask } from "@react-input/mask";
+import City from "@/@types/app/city.app.interface";
+import ApiCity from "@/@types/api/city.api.interface";
 
 interface Props {
   isOpen: boolean;
@@ -24,6 +26,7 @@ const CalculatorModal: React.FC<Props> = ({
   onClose,
   initialValue = 0,
 }) => {
+  const [citiesData, setCities] = useState<City[]>([]);
   const [value, setValue] = useState([initialValue]);
   const [data, setData] = useState({
     location: "",
@@ -33,9 +36,9 @@ const CalculatorModal: React.FC<Props> = ({
     city: { value: "", label: "" },
   });
   const [simulationData, setSimulationData] = useState<SimulationData | null>(
-    null,
+    null
   );
-  const { cities } = useGlobalContext();
+  // const { cities } = useGlobalContext();
   const phoneMaskRef = useMask({
     mask: "(__) _____-____",
     replacement: { _: /\d/ },
@@ -66,6 +69,30 @@ const CalculatorModal: React.FC<Props> = ({
     }));
   }
 
+  async function getCities(): Promise<City[]> {
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_CALCULATOR_BASE_URL}/ws_simulador/rest/simulador/cidades`,
+      {
+        method: "GET",
+        cache: "force-cache",
+      }
+    );
+    const data = await response.json();
+
+    const cities: City[] = [];
+    for (const d of data as ApiCity[]) {
+      const city: City = {
+        code: d.codigoIBGE,
+        name: d.cidade,
+        state: d.estado,
+      };
+
+      cities.push(city);
+    }
+
+    return cities;
+  }
+
   async function submitForm(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
@@ -81,7 +108,7 @@ const CalculatorModal: React.FC<Props> = ({
         headers: {
           "Content-Type": "application/json",
         },
-      },
+      }
     );
 
     const json = await resp.json();
@@ -108,6 +135,12 @@ const CalculatorModal: React.FC<Props> = ({
       });
     }
   }
+
+  useEffect(() => {
+    if (isOpen && citiesData.length === 0) {
+      getCities().then((d) => setCities(d));
+    }
+  }, [isOpen, citiesData]);
 
   return (
     <>
@@ -222,7 +255,7 @@ const CalculatorModal: React.FC<Props> = ({
                       className="flex flex-wrap w-full justify-start md:justify-between items-center gap-2"
                       onChange={(e) =>
                         handleOnChangeLocation(
-                          e as React.ChangeEvent<HTMLInputElement>,
+                          e as React.ChangeEvent<HTMLInputElement>
                         )
                       }
                     >
@@ -256,7 +289,7 @@ const CalculatorModal: React.FC<Props> = ({
                           padding: "0px 14px",
                         }),
                       }}
-                      options={cities.map((c) => ({
+                      options={citiesData.map((c) => ({
                         value: c.code,
                         label: c.name,
                       }))}
@@ -320,7 +353,7 @@ const CalculatorModal: React.FC<Props> = ({
             </div>
           </div>
         </div>,
-        document.querySelector("#calc") as any,
+        document.querySelector("#calc") as any
       )}
     </>
   );

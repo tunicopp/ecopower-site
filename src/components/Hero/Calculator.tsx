@@ -1,10 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Range, getTrackBackground } from "react-range";
 import { Tooltip } from "react-tooltip";
 import { twMerge } from "tailwind-merge";
 import CalculatorModal from "./CalculatorModal";
 import { useGlobalContext } from "@/app/context/store";
+import City from "@/@types/app/city.app.interface";
+import ApiCity from "@/@types/api/city.api.interface";
 
 interface Props {
   className?: string;
@@ -107,6 +109,7 @@ const Calculator: React.FC<Props> = ({ className }) => {
       </div>
       {isOpen && (
         <CalculatorModal
+          // cities={citiesData}
           isOpen={isOpen}
           onClose={() => {
             setIsOpen(false);
