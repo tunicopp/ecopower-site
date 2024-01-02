@@ -22,37 +22,6 @@ const Calculator: React.FC<Props> = ({ className }) => {
     colors: ["#01B040", "#F8F6F1"],
     values: value,
   });
-  const [citiesData, setCities] = useState<City[]>([]);
-
-  async function getCities(): Promise<City[]> {
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_CALCULATOR_BASE_URL}/ws_simulador/rest/simulador/cidades`,
-      {
-        method: "GET",
-        cache: "force-cache",
-      }
-    );
-    const data = await response.json();
-
-    const cities: City[] = [];
-    for (const d of data as ApiCity[]) {
-      const city: City = {
-        code: d.codigoIBGE,
-        name: d.cidade,
-        state: d.estado,
-      };
-
-      cities.push(city);
-    }
-
-    return cities;
-  }
-
-  useEffect(() => {
-    if (isOpen && citiesData.length === 0) {
-      getCities().then((d) => setCities(d));
-    }
-  }, [isOpen, citiesData]);
 
   const tooltipText =
     value[0] < 200
@@ -140,7 +109,7 @@ const Calculator: React.FC<Props> = ({ className }) => {
       </div>
       {isOpen && (
         <CalculatorModal
-          cities={citiesData}
+          // cities={citiesData}
           isOpen={isOpen}
           onClose={() => {
             setIsOpen(false);

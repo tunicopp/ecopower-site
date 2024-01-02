@@ -1,4 +1,5 @@
 "use client";
+import City from "@/@types/app/city.app.interface";
 import CalculatorModal from "@/components/Hero/CalculatorModal";
 import Image, { StaticImageData } from "next/image";
 import React, { useState } from "react";
