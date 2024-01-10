@@ -68,8 +68,6 @@ const ProductsGrid: React.FC = () => {
     "all" | "connected" | "disconnected" | "hybrid"
   >("all");
 
-  console.log(selected);
-
   return (
     <GridContainer className="flex-col items-center py-20">
       <div className="md:flex grid grid-cols-1 w-full md:gap-6 gap-4 items-center justify-center">

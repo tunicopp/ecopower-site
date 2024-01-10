@@ -11,7 +11,11 @@ import MegaMenuProductItem from "./MegaMenuProductItem";
 import { useGlobalContext } from "@/app/context/store";
 import Logo from "../../../public/assets/icons/Logo";
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  isNotTransparent?: boolean;
+}
+
+const Header: React.FC<HeaderProps> = ({ isNotTransparent }) => {
   const [isAtTop, setIsAtTop] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenProducts, setIsOpenProducts] = useState(false);
@@ -35,7 +39,7 @@ const Header: React.FC = () => {
     <header
       className={`fixed top-0 left-0 z-[100] w-full transition-colors duration-300 ${
         isAtTop
-          ? isOpen || isOpenProducts
+          ? isOpen || isOpenProducts || isNotTransparent
             ? "bg-hero-green"
             : ""
           : "bg-hero-green"
