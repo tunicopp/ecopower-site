@@ -13,9 +13,9 @@ const Requirements: React.FC = () => {
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
   ];
   return (
-    <div className="flex w-full items-center justify-center relative px-[108px] py-[100px] bg-beige-300">
+    <section className="flex w-full items-center justify-center relative lg:px-[108px] px-0 md:py-[100px] py-0 bg-beige-300 mt-10 lg:mt-0">
       <div className="flex flex-col items-center bg-[#fff] pb-10 rounded-2xl ">
-        <div className="flex p-10 gap-[50px]">
+        <div className="flex flex-col lg:flex-row  lg:p-10 p-5 gap-[50px]">
           <Image
             src={bgRequirements}
             alt="bgRequirements"
@@ -24,11 +24,11 @@ const Requirements: React.FC = () => {
             loading="eager"
             width={600}
           />
-          <div className="flex flex-col">
-            <h2 className="text-grayscale-900 text-[48px] leading-[110%] font-medium max-w-[540px]">
+          <div className="flex items-center flex-col">
+            <h2 className="text-grayscale-900 lg:text-[48px] text-[36px] leading-[110%] font-medium max-w-[540px] text-center lg:text-left">
               Pré Requisitos do Kit Meu Solar
             </h2>
-            <p className="text-lg leading-[150%] max-w-[496px] mt-6 mb-[49px]">
+            <p className="text-lg leading-[150%] max-w-[496px] mt-6 mb-[49px] text-center lg:text-left">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the{" "}
             </p>
@@ -59,7 +59,7 @@ const Requirements: React.FC = () => {
           Compre agora
         </Link>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -11,7 +11,7 @@ import "swiper/css/scrollbar";
 
 const SliderProducts: React.FC = () => {
   return (
-    <div className="flex flex-col w-full items-center justify-center relative  py-[100px] ">
+    <section className="flex flex-col w-full items-center justify-center relative  py-[100px] px-5 lg:px-0 ">
       <h2 className="text-grayscale-900 text-[48px] leading-[110%] font-semibold max-w-[807px] text-center">
         Veja Outros Produtos
       </h2>
@@ -30,7 +30,7 @@ const SliderProducts: React.FC = () => {
           </SwiperSlide>
         ))}
       </Carroussel>
-    </div>
+    </section>
   );
 };
 

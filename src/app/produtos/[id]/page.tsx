@@ -12,14 +12,14 @@ const Product: React.FC = () => {
   return (
     <main className="relative">
       <Header isNotTransparent />
-      <section className="mt-[129px] ">
+      <div className="mt-[129px] ">
         <HeroSection />
         <SecondSection />
         <BenefitsSection />
         <Requirements />
         <CaseSection />
         <SliderProducts />
-      </section>
+      </div>
       <SmoothScroll />
     </main>
   );

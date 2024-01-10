@@ -17,20 +17,20 @@ const BenefitsSection: React.FC = () => {
   ];
 
   return (
-    <div className="flex w-full items-center flex-col relative px-[108px] py-[100px]">
+    <section className="flex w-full items-center flex-col relative lg:px-[108px] px-5 lg:py-[100px] py-5 mt-5 lg:mt-0">
       <Image
         src={benefitsBg}
         alt="benefitsBg"
         priority
         quality={100}
-        fill
         loading="eager"
+        fill
         className="absolute right-0 top-0 -z-10"
       />
-      <h3 className="text-5xl font-semibold text-white max-w-[653px]">
+      <h3 className="lg:text-5xl text-[36px] font-semibold text-white max-w-[653px] text-center ">
         Benefícios do Kit Meu Solar
       </h3>
-      <p className="text-lg leading-[150%] text-white max-w-[653px] text-center mt-6">
+      <p className="text-lg leading-[150%] text-white max-w-[653px] text-center mt-6 ">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text
       </p>
@@ -46,7 +46,7 @@ const BenefitsSection: React.FC = () => {
       >
         Compre agora
       </Link>
-    </div>
+    </section>
   );
 };
 
