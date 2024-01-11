@@ -32,7 +32,7 @@ const BenefitsSection: React.FC = () => {
       </h3>
       <p className="text-lg leading-[150%] text-white max-w-[653px] text-center mt-6 ">
         Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text
+        industry. Lorem Ipsum has been the industrys standard dummy text
       </p>
       <div className="flex mt-10 flex-1 flex-wrap gap-6 max-w-[1440px] justify-center">
         {benefitsArray.map((d, i) => (

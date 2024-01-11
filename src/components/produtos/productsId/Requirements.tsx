@@ -34,7 +34,10 @@ const Requirements: React.FC = () => {
             </p>
             <div className="flex flex-col gap-4">
               {requirementsArray.map((data, i) => (
-                <div className="flex p-6 gap-4 items-center bg-beige-300 rounded-lg ">
+                <div
+                  key={i}
+                  className="flex p-6 gap-4 items-center bg-beige-300 rounded-lg "
+                >
                   <Image
                     src={iconCheck}
                     alt="iconCheck"
