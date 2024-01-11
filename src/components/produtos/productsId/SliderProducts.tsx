@@ -17,7 +17,7 @@ const SliderProducts: React.FC = () => {
       </h2>
       <p className="text-lg leading-[150%] max-w-[807px] mt-6 text-center">
         Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text
+        industry. Lorem Ipsum has been the industrys standard dummy text
       </p>
       <Carroussel className="mt-[80px] lg:mt-16">
         {productsCardsGroup2.map((card, index) => (

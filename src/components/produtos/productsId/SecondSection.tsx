@@ -51,7 +51,7 @@ const SecondSection: React.FC = () => {
         </h2>
         <p className="text-lg max-w-[540px] mt-6 lg:max-h-[150px] max-h-[200px] text-center lg:text-left overflow-auto">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          industry. Lorem Ipsum has been the industrys standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
         </p>
