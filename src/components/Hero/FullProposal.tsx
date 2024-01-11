@@ -1,9 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import { createPortal } from "react-dom";
 import Close from "../../../public/assets/icons/Close";
-import { Tooltip } from "react-tooltip";
 import Radio from "../form/Radio";
 import Input from "../form/Input";
 import img1 from "../../../public/assets/images/modal-full-proposal/step1.png";
