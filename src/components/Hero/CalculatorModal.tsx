@@ -175,7 +175,6 @@ const CalculatorModal: React.FC<Props> = ({
                 <SimulationDataContent
                   data={simulationData}
                   onClose={onClose}
-                  isOpen={isOpen}
                 />
               ) : (
                 <>

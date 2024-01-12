@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 import Close from "../../../public/assets/icons/Close";
 import Radio from "../form/Radio";
 import Input from "../form/Input";
@@ -9,25 +9,62 @@ import img2 from "../../../public/assets/images/modal-full-proposal/step2.png";
 import img3 from "../../../public/assets/images/modal-full-proposal/step3.png";
 import img4 from "../../../public/assets/images/modal-full-proposal/dowload-pdf.png";
 import img5 from "../../../public/assets/images/modal-full-proposal/contact-img.png";
-import { BiInfoCircle } from "react-icons/bi";
+import { BiInfoCircle, BiX } from "react-icons/bi";
 import CustomTooltip from "../global/CustomTooltip";
+import OutlineButton from "../global/OutlineButton";
+import CustomSelect from "../global/CustomSelect";
+import { BsPlus } from "react-icons/bs";
+import TagCalculator from "../global/TagCalculator";
+import { cnpjMask, cpfMask, cpfVerify, formatCEP } from "@/utils/cpf-cnpj-mask";
 
 interface Props {
   onClose: () => void;
 }
 
+type DataTag = { date: string; kw: string };
+
 const FullProposal: React.FC<Props> = ({ onClose }) => {
   const [step, setStep] = useState(1);
   const [showPdf, setShowPdf] = useState(false);
+  const [showMonthlyInput, setShowMonthlyInput] = useState(false);
+  const [dataTag, setDataTag] = useState<DataTag[]>([]);
+  const [options, setOptions] = useState<ReactNode[]>([]);
   const [data, setData] = useState({
     cep: "",
     residenceNumber: "",
     instalationType: "",
     cpf: "",
     inputPattern: "",
-    higherExpense: "",
-    lowerExpense: "",
+    averageExpense: "",
+    monthYear: "",
+    kwSpent: "",
   });
+
+  useEffect(() => {
+    const generateMonthOptions = () => {
+      const currentDate = new Date();
+      const monthOptions = [];
+
+      for (let i = 0; i < 12; i++) {
+        const newDate = new Date(currentDate);
+        newDate.setMonth(currentDate.getMonth() - i);
+
+        const month = newDate.toLocaleString("pt-BR", { month: "short" });
+        const year = newDate.getFullYear();
+        const formattedDate = `${month}/${year}`;
+
+        monthOptions.push(
+          <option key={formattedDate} value={formattedDate}>
+            {formattedDate}
+          </option>
+        );
+      }
+
+      setOptions(monthOptions);
+    };
+
+    generateMonthOptions();
+  }, []);
 
   function handleOnChangeInstalationType(
     e: React.ChangeEvent<HTMLInputElement>
@@ -46,9 +83,24 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
 
   async function submitForm(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-
     console.log(data);
   }
+
+  const addTag = () => {
+    const date = data.monthYear;
+    const kw = data.kwSpent;
+    setDataTag((old) => [...old, { date, kw }]);
+    setData((old) => ({
+      ...old,
+      monthYear: "",
+      kwSpent: "",
+    }));
+  };
+
+  const deleteTag = (index: number) => {
+    const newList = dataTag.filter((item, i) => (index !== i ? item : null));
+    setDataTag(newList);
+  };
 
   const changeStep = () => {
     switch (step) {
@@ -68,6 +120,30 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
   const nextStep = () => {
     if (step <= 4) {
       setStep(step + 1);
+    }
+  };
+
+  const validateNextStep = () => {
+    if (showMonthlyInput) {
+      if (
+        data.cpf === "" ||
+        data.instalationType === "" ||
+        dataTag.length === 0
+      ) {
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      if (
+        data.cpf === "" ||
+        data.instalationType === "" ||
+        data.averageExpense === ""
+      ) {
+        return true;
+      } else {
+        return false;
+      }
     }
   };
 
@@ -113,11 +189,12 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
               <p className="font-medium text-sm text-font-black pl-6">CEP</p>
               <Input
                 placeholder="CEP"
-                value={data.cep}
-                type="number"
-                onChange={(e) =>
-                  setData((old) => ({ ...old, cep: e.target.value }))
-                }
+                value={formatCEP(data.cep)}
+                maxLength={9}
+                onChange={(e) => {
+                  let value = e.target.value;
+                  setData((old) => ({ ...old, cep: value }));
+                }}
               />
             </div>
             <div className="flex flex-col gap-1">
@@ -149,34 +226,28 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
                   )
                 }
               >
-                <CustomTooltip anchorSelect=".telhado1" label="change label" />
-                <CustomTooltip anchorSelect=".solo" label="change label" />
                 <CustomTooltip
                   anchorSelect=".carport"
                   label="  Carport é a estrutura de estacionamento com placas solares.
                   Muito comum em shoppings ou supermercados."
                 />
 
-                <div className="telhado1">
-                  <Radio
-                    id="Telhado"
-                    name="Instalação"
-                    value="telhado"
-                    checked={data.instalationType === "telhado"}
-                  >
-                    Telhado
-                  </Radio>
-                </div>
-                <div className="solo">
-                  <Radio
-                    id="Solo"
-                    name="Instalação"
-                    value="solo"
-                    checked={data.instalationType === "solo"}
-                  >
-                    Solo
-                  </Radio>
-                </div>
+                <Radio
+                  id="Telhado"
+                  name="Instalação"
+                  value="telhado"
+                  checked={data.instalationType === "telhado"}
+                >
+                  Telhado
+                </Radio>
+                <Radio
+                  id="Solo"
+                  name="Instalação"
+                  value="solo"
+                  checked={data.instalationType === "solo"}
+                >
+                  Solo
+                </Radio>
                 <div className="carport">
                   <Radio
                     id="Carport"
@@ -184,7 +255,10 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
                     value="carport"
                     checked={data.instalationType === "carport"}
                   >
-                    Carport
+                    <div className="flex items-center gap-2 carport">
+                      Carport
+                      <BiInfoCircle />
+                    </div>
                   </Radio>
                 </div>
               </div>
@@ -251,7 +325,8 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
               </p>
               <Input
                 placeholder="Seu CPF ou CNPJ"
-                value={data.cpf}
+                value={cpfVerify(data.cpf)}
+                maxLength={18}
                 onChange={(e) =>
                   setData((old) => ({ ...old, cpf: e.target.value }))
                 }
@@ -262,94 +337,160 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
                 Tipo de Instalação
               </p>
               <div
-                className="flex gap-3 justify-between items-center flex-wrap"
+                className="flex gap-3  items-center flex-wrap"
                 onChange={(e) =>
                   handleOnChangeInputPatern(
                     e as React.ChangeEvent<HTMLInputElement>
                   )
                 }
               >
-                <CustomTooltip
-                  anchorSelect=".monofasico"
-                  label="change label"
-                />
-                <CustomTooltip anchorSelect=".bifasico" label="change label" />
-                <CustomTooltip anchorSelect=".trifasico" label="change label" />
-
-                <div className="monofasico">
-                  <Radio
-                    id="Monofasico"
-                    name="inputPattern"
-                    value="Monofásio"
-                    checked={data.inputPattern === "Monofásio"}
-                  >
-                    Monofásio
-                  </Radio>
-                </div>
-                <div className="bifasico">
-                  <Radio
-                    id="Bifasico"
-                    name="inputPattern"
-                    value="Bifásico"
-                    checked={data.inputPattern === "Bifásico"}
-                  >
-                    Bifásico
-                  </Radio>
-                </div>
-                <div className="trifasico">
-                  <Radio
-                    id="Trifasico"
-                    name="inputPattern"
-                    value="Trifásico"
-                    checked={data.inputPattern === "Trifásico"}
-                  >
-                    Trifásico
-                  </Radio>
-                </div>
+                <Radio
+                  id="Monofasico"
+                  name="inputPattern"
+                  value="Monofásio"
+                  checked={data.inputPattern === "Monofásio"}
+                >
+                  Monofásio
+                </Radio>
+                <Radio
+                  id="Bifasico"
+                  name="inputPattern"
+                  value="Bifásico"
+                  checked={data.inputPattern === "Bifásico"}
+                >
+                  Bifásico
+                </Radio>
+                <Radio
+                  id="Trifasico"
+                  name="inputPattern"
+                  value="Trifásico"
+                  checked={data.inputPattern === "Trifásico"}
+                >
+                  Trifásico
+                </Radio>
               </div>
             </div>
-            <div className="flex flex-col gap-1">
-              <CustomTooltip anchorSelect=".info" label="change label" />
+            {showMonthlyInput ? (
+              <>
+                <div className="flex gap-4 items-center flex-wrap">
+                  <div className="flex flex-col w-full gap-1">
+                    <p className="font-medium text-sm text-font-black pl-6">
+                      Mês/Ano
+                    </p>
+                    <CustomSelect
+                      value={data.monthYear}
+                      defaultValue=""
+                      onChange={(e) => {
+                        const value = e.target.value;
+                        const itemExists = dataTag.some(
+                          (item) => item.date === value
+                        );
 
-              <p className="font-medium text-sm text-font-black pl-6 flex items-center gap-1">
-                kW/h Médio Gasto
-                <span className="info">
-                  <BiInfoCircle />
-                </span>
-              </p>
-              <div className="flex items-center gap-1 ">
-                <Input
-                  placeholder="kW/h Maior Gasto"
-                  value={data.higherExpense}
-                  onChange={(e) =>
-                    setData((old) => ({
-                      ...old,
-                      higherExpense: e.target.value,
-                    }))
-                  }
-                />
-                <Input
-                  placeholder="kW/h Menor Gasto"
-                  value={data.lowerExpense}
-                  onChange={(e) =>
-                    setData((old) => ({
-                      ...old,
-                      lowerExpense: e.target.value,
-                    }))
-                  }
-                />
-              </div>
-            </div>
+                        if (!itemExists) {
+                          setData((old) => ({
+                            ...old,
+                            monthYear: value,
+                          }));
+                        } else {
+                          window.alert(
+                            "A data jà existe na lista, escolha uma data diferente ou exclua a atual."
+                          );
+                        }
+                      }}
+                    >
+                      <option value="" disabled>
+                        Mês/Ano
+                      </option>
+                      {options}
+                    </CustomSelect>
+                  </div>
+                  <div className="flex flex-col w-full gap-1">
+                    <p className="font-medium text-sm text-font-black pl-6">
+                      kW/h Gasto
+                    </p>
+                    <Input
+                      placeholder="kW/h Gasto"
+                      value={data.kwSpent}
+                      type="number"
+                      onChange={(e) =>
+                        setData((old) => ({
+                          ...old,
+                          kwSpent: e.target.value,
+                        }))
+                      }
+                    />
+                  </div>
+                  <OutlineButton
+                    className="mt-6 border-primary-green hover:bg-white"
+                    onClick={addTag}
+                    disabled={
+                      !data.kwSpent || !data.monthYear || dataTag.length >= 12
+                    }
+                  >
+                    <div className="flex items-center text-[30px] text-primary-green">
+                      <BsPlus />{" "}
+                      <p className="text-[16px] text-primary-green">
+                        Adicionar
+                      </p>
+                    </div>
+                  </OutlineButton>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {dataTag.length > 0 &&
+                    dataTag.map((item, i) => (
+                      <TagCalculator
+                        key={i}
+                        date={item.date}
+                        kw={item.kw}
+                        handleClick={() => deleteTag(i)}
+                      />
+                    ))}
+                </div>
+                <button
+                  className="underline self-start"
+                  onClick={() => setShowMonthlyInput(false)}
+                >
+                  Informe o gasto médio
+                </button>
+              </>
+            ) : (
+              <>
+                <div className="flex flex-col gap-1">
+                  <CustomTooltip
+                    anchorSelect=".info"
+                    label="Para calcular o kW/h médio gasto, some o total de kW/h consumidos e divida pelo período de tempo correspondente."
+                  />
+
+                  <p className="font-medium text-sm text-font-black pl-6 flex items-center gap-1">
+                    kW/h Médio Gasto
+                    <span className="info">
+                      <BiInfoCircle />
+                    </span>
+                  </p>
+                  <Input
+                    placeholder="kW/h Médio Gasto"
+                    value={data.averageExpense}
+                    onChange={(e) =>
+                      setData((old) => ({
+                        ...old,
+                        averageExpense: e.target.value,
+                      }))
+                    }
+                  />
+                </div>
+                <button
+                  className="underline self-start"
+                  onClick={() => setShowMonthlyInput(true)}
+                >
+                  Informe por mês
+                </button>
+              </>
+            )}
 
             <button
               type="submit"
               className="h-12 w-full text-white px-5 py-[6px] bg-primary-green rounded-full disabled:opacity-60 disabled:cursor-not-allowed"
-              disabled={
-                data.cpf === "" ||
-                data.inputPattern === "" ||
-                data.higherExpense === "" ||
-                data.lowerExpense === ""
-              }
+              disabled={validateNextStep()}
               onClick={nextStep}
             >
               Próximo
@@ -403,8 +544,7 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
                 <Input
                   disabled
                   placeholder="CEP"
-                  value={data.cep}
-                  type="number"
+                  value={formatCEP(data.cep)}
                   onChange={(e) =>
                     setData((old) => ({ ...old, cep: e.target.value }))
                   }
@@ -436,7 +576,7 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
                 <Input
                   disabled
                   placeholder="Seu CPF ou CNPJ"
-                  value={data.cpf}
+                  value={cnpjMask(data.cpf)}
                   onChange={(e) =>
                     setData((old) => ({ ...old, cpf: e.target.value }))
                   }
@@ -472,21 +612,40 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
                 />
               </div>
             </div>
+            {showMonthlyInput ? (
+              <>
+                <p className="font-medium text-sm text-font-black pl-6">
+                  kW/h Gasto
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {dataTag.length > 0 &&
+                    dataTag.map((item, i) => (
+                      <TagCalculator
+                        key={i}
+                        date={item.date}
+                        kw={item.kw}
+                        handleClick={() => deleteTag(i)}
+                      />
+                    ))}
+                </div>
+              </>
+            ) : (
+              <div className="flex flex-col gap-1">
+                <CustomTooltip
+                  anchorSelect=".info"
+                  label="Para calcular o kW/h médio gasto, some o total de kW/h consumidos e divida pelo período de tempo correspondente."
+                />
 
-            <div className="flex flex-col gap-1">
-              <CustomTooltip anchorSelect=".info" label="change label" />
-
-              <p className="font-medium text-sm text-font-black pl-6 flex items-center gap-1">
-                kW/h Médio Gasto
-                <span className="info">
-                  <BiInfoCircle />
-                </span>
-              </p>
-              <div className="flex items-center w-full justify-between gap-4 ">
+                <p className="font-medium text-sm text-font-black pl-6 flex items-center gap-1">
+                  kW/h Médio Gasto
+                  <span className="info">
+                    <BiInfoCircle />
+                  </span>
+                </p>
                 <Input
                   disabled
                   placeholder="kW/h Maior Gasto"
-                  value={data.higherExpense}
+                  value={data.averageExpense}
                   onChange={(e) =>
                     setData((old) => ({
                       ...old,
@@ -494,19 +653,8 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
                     }))
                   }
                 />
-                <Input
-                  disabled
-                  placeholder="kW/h Menor Gasto"
-                  value={data.lowerExpense}
-                  onChange={(e) =>
-                    setData((old) => ({
-                      ...old,
-                      lowerExpense: e.target.value,
-                    }))
-                  }
-                />
               </div>
-            </div>
+            )}
 
             <button
               type="submit"

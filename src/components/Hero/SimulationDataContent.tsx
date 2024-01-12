@@ -13,10 +13,9 @@ import FullProposal from "./FullProposal";
 interface Props {
   data: SimulationData;
   onClose: () => void;
-  isOpen: boolean;
 }
 
-const SimulationDataContent: React.FC<Props> = ({ data, onClose, isOpen }) => {
+const SimulationDataContent: React.FC<Props> = ({ data, onClose }) => {
   const formatCurrency = new Intl.NumberFormat("pt-BR", {
     style: "currency",
     currency: "BRL",
