@@ -16,6 +16,9 @@ import CustomSelect from "../global/CustomSelect";
 import { BsPlus } from "react-icons/bs";
 import TagCalculator from "../global/TagCalculator";
 import { cnpjMask, cpfMask, cpfVerify, formatCEP } from "@/utils/cpf-cnpj-mask";
+import Lottie from "lottie-react";
+import animation1 from "../../lotties/animation1.json";
+import animation2 from "../../lotties/animation2.json";
 
 interface Props {
   onClose: () => void;
@@ -147,17 +150,12 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
     }
   };
 
-  // STEP 1
+  // STEP 1 ----------------------------------------------------------------------------------
   function Step1() {
     return (
       <>
         <div className={`${"bg-white"} relative  rounded-t-3xl`}>
-          <Image
-            src={img1}
-            alt="Imagem Calculadora"
-            height={240}
-            className="mx-auto"
-          />
+          <Lottie animationData={animation1} height={240} />
           <button
             className="absolute top-6 bg-beige-300 rounded-full right-6"
             onClick={() => onClose()}
@@ -282,17 +280,13 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
     );
   }
 
-  // STEP 2
+  // STEP 2 ------------------------------------------------------------------------------------
   function Step2() {
     return (
       <>
         <div className={`${"bg-white"} relative  rounded-t-3xl`}>
-          <Image
-            src={img2}
-            alt="Imagem Calculadora"
-            height={240}
-            className="mx-auto"
-          />
+          <Lottie animationData={animation2} height={240} />
+
           <button
             className="absolute top-6 bg-beige-300 rounded-full right-6"
             onClick={() => onClose()}
@@ -372,7 +366,7 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
             </div>
             {showMonthlyInput ? (
               <>
-                <div className="flex gap-4 items-center flex-wrap">
+                <div className="flex gap-4 items-center lg:flex-row flex-col">
                   <div className="flex flex-col w-full gap-1">
                     <p className="font-medium text-sm text-font-black pl-6">
                       Mês/Ano
@@ -501,7 +495,7 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
     );
   }
 
-  //STEP 3
+  //STEP 3 ------------------------------------------------------------------------------------
   function Step3() {
     return (
       <>
@@ -675,7 +669,7 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
     );
   }
 
-  // STEP 4
+  // STEP 4 ------------------------------------------------------------------------------------
   function Step4() {
     return (
       <>
