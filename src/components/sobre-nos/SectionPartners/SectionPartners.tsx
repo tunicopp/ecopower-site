@@ -17,7 +17,7 @@ const SectionPartners: React.FC = () => {
         <h3 className="text-xl mt-3 mb-12">
           Com pioneirismo e dedicação, nos tornamos a maior!
         </h3>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 w-full">
+        <div className="flex flex-wrap items-center justify-center gap-6 w-full">
           <div className="pl-8 pr-[30px] py-6 rounded-full bg-beige-300 flex items-center gap-6">
             <Image
               src={zeze}
@@ -46,20 +46,7 @@ const SectionPartners: React.FC = () => {
               <span className="text-grey-100">Cantores</span>
             </div>
           </div>
-          <div className="pl-8 pr-[30px] py-6 rounded-full bg-beige-300 flex items-center gap-6">
-            <Image
-              src={joaoVinicius}
-              alt="João Bosco e Vinícius"
-              width={112}
-              height={112}
-              quality={100}
-              className="rounded-full"
-            />
-            <div className="flex flex-col gap-2">
-              <b className="text-2xl">João Bosco e Vinícius</b>
-              <span className="text-grey-100">Cantores</span>
-            </div>
-          </div>
+
           <div className="pl-8 pr-[30px] py-6 rounded-full bg-beige-300 flex items-center gap-6">
             <Image
               src={fabricio}
