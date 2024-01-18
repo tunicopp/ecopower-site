@@ -171,7 +171,7 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
             <div className="flex flex-1 rounded-lg h-3 bg-[#E4E4E5]"></div>
             <div className="flex flex-1 rounded-lg h-3 bg-[#E4E4E5]"></div>
           </div>
-          <h1 className="text-[32px] leading-[1.25em] font-bold max-w-[300px] mt-10 text-center self-center">
+          <h1 className="text-[32px] leading-[1.25em] font-bold  mt-10 text-center self-center">
             Informe os Dados de sua Casa
           </h1>
           <p className="pt-4 pb-6 text-grayscale-400 max-w-full leading-[1.25em] self-center text-center">
