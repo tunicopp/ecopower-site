@@ -17,8 +17,8 @@ import { BsPlus } from "react-icons/bs";
 import TagCalculator from "../global/TagCalculator";
 import { cnpjMask, cpfMask, cpfVerify, formatCEP } from "@/utils/cpf-cnpj-mask";
 import Lottie from "lottie-react";
-import animation1 from "../../lotties/animation1.json";
-import animation2 from "../../lotties/animation2.json";
+import animation1 from "../../lottie/lottie1.json";
+import animation2 from "../../lottie/lottie2.json";
 
 interface Props {
   onClose: () => void;
@@ -156,6 +156,7 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
       <>
         <div className={`${"bg-white"} relative  rounded-t-3xl`}>
           <Lottie animationData={animation1} height={240} />
+
           <button
             className="absolute top-6 bg-beige-300 rounded-full right-6"
             onClick={() => onClose()}
@@ -217,7 +218,7 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
                 Tipo de Instalação
               </p>
               <div
-                className="flex gap-3  justify-start  items-center "
+                className="flex gap-3  justify-start  items-center flex-wrap"
                 onChange={(e) =>
                   handleOnChangeInstalationType(
                     e as React.ChangeEvent<HTMLInputElement>
