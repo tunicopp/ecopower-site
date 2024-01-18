@@ -171,10 +171,10 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
             <div className="flex flex-1 rounded-lg h-3 bg-[#E4E4E5]"></div>
             <div className="flex flex-1 rounded-lg h-3 bg-[#E4E4E5]"></div>
           </div>
-          <h1 className="text-[32px] leading-[1.25em] font-bold  mt-10 text-center self-center">
-            Informe os Dados de sua Casa
+          <h1 className="text-[32px] leading-[1.25em] font-bold max-w-[304px]  mt-10 text-center self-center">
+            Informe os Dados da sua Instalação
           </h1>
-          <p className="pt-4 pb-6 text-grayscale-400 max-w-full leading-[1.25em] self-center text-center">
+          <p className="pt-4 pb-10 text-grayscale-400 max-w-full leading-[1.25em] self-center text-center">
             Preencha os campos abaixo e veja agora mesmo o quanto você poderá
             economizar investindo na energia solar.
           </p>
@@ -304,7 +304,7 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
           <h1 className="text-[32px] leading-[1.25em] font-bold max-w-[400px] mt-10 text-center self-center">
             Informe os Dados da sua Conta de Energia
           </h1>
-          <p className="pt-4 pb-6 text-grayscale-400 max-w-full leading-[1.25em] self-center text-center">
+          <p className="pt-4 pb-10 text-grayscale-400 max-w-full leading-[1.25em] self-center text-center">
             Preencha os campos abaixo e veja agora mesmo o quanto você poderá
             economizar investindo na energia solar.
           </p>
@@ -489,6 +489,9 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
             >
               Próximo
             </button>
+            <button className="underline self-start" onClick={() => setStep(1)}>
+              Voltar
+            </button>
           </form>
         </div>
       </>
@@ -523,7 +526,7 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
           <h1 className="text-[32px] leading-[1.25em] font-bold max-w-[400px] mt-10 text-center self-center">
             Revise seus Dados
           </h1>
-          <p className="pt-4 pb-6 text-grayscale-400 max-w-full leading-[1.25em] self-center text-center">
+          <p className="pt-4 pb-10 text-grayscale-400 max-w-full leading-[1.25em] self-center text-center">
             Revise os campos abaixo e veja agora mesmo o quanto você poderá
             economizar investindo na energia solar.
           </p>
@@ -717,6 +720,9 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
               Fale Conosco
             </a>
           )}
+          <button className="underline  mt-6" onClick={() => setStep(3)}>
+            Voltar
+          </button>
         </div>
       </>
     );
