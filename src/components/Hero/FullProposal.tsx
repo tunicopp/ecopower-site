@@ -422,12 +422,12 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
                       !data.kwSpent || !data.monthYear || dataTag.length >= 12
                     }
                   >
-                    <div className="flex items-center text-[30px] text-primary-green">
+                    <button className="flex items-center text-[30px] text-primary-green">
                       <BsPlus />{" "}
                       <p className="text-[16px] text-primary-green">
                         Adicionar
                       </p>
-                    </div>
+                    </button>
                   </OutlineButton>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -482,17 +482,23 @@ const FullProposal: React.FC<Props> = ({ onClose }) => {
               </>
             )}
 
-            <button
-              type="submit"
-              className="h-12 w-full text-white px-5 py-[6px] bg-primary-green rounded-full disabled:opacity-60 disabled:cursor-not-allowed"
-              disabled={validateNextStep()}
-              onClick={nextStep}
-            >
-              Próximo
-            </button>
-            <button className="underline self-start" onClick={() => setStep(1)}>
-              Voltar
-            </button>
+            <div className="flex justify-between gap-3">
+              <OutlineButton
+                className=" border-primary-green hover:bg-white hover:text-primary-green flex-1 text-primary-green"
+                onClick={() => setStep(1)}
+              >
+                Voltar
+              </OutlineButton>
+
+              <button
+                type="submit"
+                className="h-12 flex-1 text-white px-5 py-[6px] bg-primary-green rounded-full disabled:opacity-60 disabled:cursor-not-allowed"
+                disabled={validateNextStep()}
+                onClick={nextStep}
+              >
+                Próximo
+              </button>
+            </div>
           </form>
         </div>
       </>
