@@ -92,7 +92,9 @@ const BottomFooter: React.FC = () => {
                 Chegar na matriz
               </ExternalLinkFooter>
             </div>
-            <LinkFooter href="">Seja um Franqueado</LinkFooter>
+            <LinkFooter href="https://hubs.li/Q025rsCJ0">
+              Seja um Franqueado
+            </LinkFooter>
             <LinkFooter href="/#FAQ">Dúvidas Frequentes</LinkFooter>
             <div className="relative flex w-full justify-between gap-4 items-center flex-wrap my-3">
               <a
