@@ -39,7 +39,7 @@ export default function Word() {
           </div>
         </div>
       </section>
-      <section className="py-20 max-w-[1222px] px-4 mx-auto flex flex-col gap-4 w-full">
+      {/* <section className="py-20 max-w-[1222px] px-4 mx-auto flex flex-col gap-4 w-full">
         <h4 className="text-3xl font-bold">Conteúdos sobre o tema</h4>
         <div className="flex flex-col gap-3 justify-start items-start">
           {glossary?.links.map((d, i) => (
@@ -48,7 +48,7 @@ export default function Word() {
             </a>
           ))}
         </div>
-      </section>
+      </section> */}
       <SmoothScroll />
     </main>
   );
