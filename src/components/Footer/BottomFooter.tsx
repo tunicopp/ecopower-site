@@ -1,9 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
-import LinkFooter from "./LinkFooter";
 import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
-import { BsWhatsapp } from "react-icons/bs";
 import logo from "../../../public/assets/icons/logo-eco-power.svg";
+import atom from "../../../public/assets/images/atom-logo.svg";
 import badgeOne from "../../../public/assets/images/footer/footer-badge-01.svg";
 import badgeTwo from "../../../public/assets/images/footer/footer-badge-02.svg";
 import badgeThree from "../../../public/assets/images/footer/footer-badge-03.svg";
@@ -11,8 +11,7 @@ import badgeFour from "../../../public/assets/images/footer/footer-badge-04.svg"
 import badgeFive from "../../../public/assets/images/footer/footer-badge-05.svg";
 import badgeSix from "../../../public/assets/images/footer/footer-badge-06.svg";
 import ExternalLinkFooter from "./ExternalLinkFooter";
-import Link from "next/link";
-import atom from "../../../public/assets/images/atom-logo.svg";
+import LinkFooter from "./LinkFooter";
 
 const BottomFooter: React.FC = () => {
   return (
@@ -33,12 +32,12 @@ const BottomFooter: React.FC = () => {
         <div className="flex flex-1 mt-6 md:mt-0">
           <div className="flex-1 flex-col">
             <p className="text-white font-semibold">Produtos</p>
-            <div className="flex flex-col mt-[24px] gap-3">
+            <div className="flex flex-col  mt-[24px] gap-3">
               <LinkFooter href="/produtos">Todos os Produtos</LinkFooter>
-              <LinkFooter href="/residencial">Residencial</LinkFooter>
-              <LinkFooter href="/empresarial">Empresarial</LinkFooter>
-              <LinkFooter href="/industrial">Industrial</LinkFooter>
-              <LinkFooter href="/rural">Rural</LinkFooter>
+              {/* <LinkFooter href="/residencial">Residencial</LinkFooter> */}
+              {/* <LinkFooter href="/empresarial">Empresarial</LinkFooter> */}
+              {/* <LinkFooter href="/industrial">Industrial</LinkFooter> */}
+              {/* <LinkFooter href="/rural">Rural</LinkFooter> */}
             </div>
             <a
               href={"https://www.ecopowerstore.com.br/"}
