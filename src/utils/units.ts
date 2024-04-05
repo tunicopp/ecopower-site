@@ -406,7 +406,7 @@ export const units = [
     uf: "SC",
     phone: "(47) 99803-5982",
     address: "Rua Manoel Francisco de Oliveira, 350 C1 , Bairro Aventureiro",
-    facebook: "facebook.com/EcoPowerEnergiaSolarJoinville",
+    facebook: "#",
     instagram: "https://www.instagram.com/ecopower_joinville/",
     photo: "1RHZag_iCphoD5XR6KxX5IBWzj7jxHr7t.png",
   },
@@ -560,8 +560,8 @@ export const units = [
     uf: "SP",
     phone: "(17) 991842077",
     address: "R Borborema 351, Jd Brasil",
-    facebook: " -",
-    instagram: "www.instagram.com/ecopower_catanduva/",
+    facebook: "#",
+    instagram: "#",
     photo: "1UWXxjWT2TWD0GpZM4eVQkrZphAJxVzJm.png",
   },
   {
@@ -951,7 +951,7 @@ export const units = [
     phone: "1199720-4889",
     address: "Home Office",
     facebook: "https://www.facebook.com/EcoPowerPaulista/",
-    instagram: "www.instagram.com/ecopower_paulista/",
+    instagram: "#",
     photo: "1RHZag_iCphoD5XR6KxX5IBWzj7jxHr7t.png",
   },
   {
