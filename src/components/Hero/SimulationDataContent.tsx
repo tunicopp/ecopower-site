@@ -1,13 +1,13 @@
 import SimulationData from "@/@types/api/simulation-data.api.interface";
+import Image from "next/image";
 import React, { useState } from "react";
+import Close from "../../../public/assets/icons/Close";
+import Dollar from "../../../public/assets/icons/Dollar";
+import DollarCircle from "../../../public/assets/icons/DollarCircle";
+import Inverse from "../../../public/assets/icons/Inverse";
 import Lightining from "../../../public/assets/icons/Lightining";
 import Plug from "../../../public/assets/icons/Plug";
 import SolarPanel from "../../../public/assets/icons/SolarPanel";
-import Inverse from "../../../public/assets/icons/Inverse";
-import Dollar from "../../../public/assets/icons/Dollar";
-import DollarCircle from "../../../public/assets/icons/DollarCircle";
-import Image from "next/image";
-import Close from "../../../public/assets/icons/Close";
 import FullProposal from "./FullProposal";
 
 interface Props {
@@ -151,6 +151,57 @@ const SimulationDataContent: React.FC<Props> = ({ data, onClose }) => {
               Fale com um consultor
             </a>
           </div>
+
+          <div className="p-6 bg-beige-300 rounded-2xl flex flex-col items-center">
+            <SolarPanel />
+            <span className="text-grayscale-900 mt-4 mb-[10px] font-medium">
+              Módulo:
+            </span>
+            <b className="text-center">
+              {data.moduloQtd} ({data.moduloModelo})
+            </b>
+          </div>
+          <div className="p-6 bg-beige-300 rounded-2xl flex flex-col items-center">
+            <Inverse />
+            <span className="text-grayscale-900 mt-4 mb-[10px] font-medium">
+              Inversor:
+            </span>
+            <b className="text-center">
+              {data.inversores[0].inversorQtd +
+                " " +
+                data.inversores[0].inversorModelo}
+            </b>
+          </div>
+          <div className="p-6 bg-beige-300 rounded-2xl flex flex-col items-center">
+            <Dollar />
+            <span className="text-grayscale-900 mt-4 mb-[10px] font-medium">
+              Valor Desconto:
+            </span>
+            <b className="text-center">
+              {formatCurrency.format(data.valorProjeto)}
+            </b>
+          </div>
+          <div className="p-6 bg-beige-300 rounded-2xl flex flex-col items-center">
+            <DollarCircle />
+            <span className="text-grayscale-900 mt-4 mb-[10px] font-medium">
+              Condição Especial:
+            </span>
+            {data.condicoesEspeciais.map((d, i) => (
+              <b key={i} className="text-center">
+                {d.condicaoEspecial}
+              </b>
+            ))}
+          </div>
+          <span className="text-center my-6 text-sm text-black font-medium">
+            {data.promocao}
+          </span>
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=17997394186&text=Ol%C3%A1,%20acabei%20de%20simular%20meu%20projeto%20no%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es"
+            className="h-12 w-full text-white px-5 py-[6px] bg-primary-green rounded-full flex items-center justify-center"
+          >
+            Falar com o consultor agora
+          </a>
         </>
       )}
     </>
