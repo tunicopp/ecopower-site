@@ -1,46 +1,46 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import points from "../../../../public/assets/images/produtos/produtos-id/points.svg";
-import banner1 from "../../../../public/assets/images/produtos/produtos-id/banner1.png";
+import hero from "../../../../public/assets/images/produtos/produtos-id/hero-product-id.png";
 import tag from "../../../../public/assets/images/produtos/produtos-id/tag-product.png";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col-reverse lg:flex-row w-full lg:h-[641px] h-auto mt-0 relative">
+    <section className="flex  justify-center lg:px-[108px] px-[20px]  w-full lg:h-[641px] h-auto -mt-2 pb-5 lg:pb-0 pt-10 lg:pt-0 relative bg-hover-map">
       <Image
-        src={tag}
-        alt="points"
-        className="absolute inset-x-0 mx-auto lg:bottom-[13px] top-16 md:top-[30%] lg:top-auto md:w-[262px] w-[190px] z-20"
+        src={hero}
+        alt="Hero Banner"
+        priority
+        quality={100}
+        loading="eager"
+        className=" absolute right-0 top-0 max-w-[812px]  h-full object-cover "
       />
-      <Image src={points} alt="points" className="absolute left-0 top-0 " />
-      <div className="flex flex-col justify-center items-center lg:w-1/2 w-full lg:pl-[120px] pl-5 lg:pr-[80px] pr-5 ">
-        <h2 className="text-grayscale-900 text-center lg:text-left lg:text-[72px] text-[40px] leading-[110%] font-semibold max-w-[467px] mt-5 lg:mt-0">
-          Conheça o Kit Meu Solar
-        </h2>
-        <p className="text-lg max-w-[467px] mt-6 lg:max-h-[150px] max-h-[200px]  overflow-auto text-center lg:text-left">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industrys standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </p>
-        <Link
-          target="_blank"
-          href="https://api.whatsapp.com/send?phone=5517988418893&text=Ol%C3%A1,%20acabei%20de%20simular%20meu%20projeto%20no%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es"
-          className="mt-[32px] self-center lg:self-baseline flex items-center justify-center simulate-button w-fit lg:ml-6 ml-0"
-        >
-          Compre agora
-        </Link>
-      </div>
-      <div className="flex lg:w-1/2 w-full relative ">
-        <Image
-          src={banner1}
-          alt="Hero Banner"
-          priority
-          quality={100}
-          loading="eager"
-          className=" w-full"
-        />
+      <div className="flex w-full flex-col items-center  lg:flex-row max-w-[1272px] justify-between ">
+        <div className="flex flex-col justify-center w-full max-w-[467px] z-20">
+          <h2 className="text-white text-center lg:text-left lg:text-[72px] text-[40px] leading-[110%] font-semibold  mt-5 lg:mt-0">
+            Conheça o Kit Meu Solar
+          </h2>
+          <p className="text-lg text-white max-w-[467px] mt-6 lg:max-h-[150px] max-h-[200px]  overflow-auto text-center lg:text-left">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industrys standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+          <Link
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=5517988418893&text=Ol%C3%A1,%20acabei%20de%20simular%20meu%20projeto%20no%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es"
+            className="mt-[32px] self-center lg:self-baseline flex items-center justify-center simulate-button w-fit "
+          >
+            Compre agora
+          </Link>
+        </div>
+        <div className="flex w-full relative items-center justify-center mt-10 lg:mt-0">
+          <Image
+            src={tag}
+            alt="tag-product"
+            className=" md:w-[262px] w-[190px] md:h-[262px] h-[190px] ml-0 lg:ml-[300px] 2xl:ml-auto"
+          />
+        </div>
       </div>
     </section>
   );

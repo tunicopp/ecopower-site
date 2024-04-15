@@ -14,7 +14,7 @@ const BenefitsCard: React.FC<BenefitsCardProps> = ({ text }) => {
         alt="iconCheck"
         priority
         quality={100}
-        className="md:w-[48px] w-[32px] self-start md:self-center"
+        className="md:w-[48px] w-[32px] "
       />
       <p className="max-w-[240px] text-lg font-medium leading-[150%] text-white max-h-[108px] overflow-auto">
         {text}
