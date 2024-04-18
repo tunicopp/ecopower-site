@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import zezeDiCamargo from "../../../public/assets/images/hero/zeze-di-camargo.png";
 import cloudOne from "../../../public/assets/images/hero/cloud-1.png";
 import cloudTwo from "../../../public/assets/images/hero/cloud-2.png";
-import houseFour from "../../.˝./public/assets/images/hero/house-4.png";
+import houseFour from "../../../public/assets/images/hero/house-4.png";
 import houseThree from "../../../public/assets/images/hero/house-3.png";
 import houseTwo from "../../../public/assets/images/hero/house-2.png";
 import houseOne from "../../../public/assets/images/hero/house-1.png";
