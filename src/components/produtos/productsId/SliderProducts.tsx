@@ -1,6 +1,5 @@
 "use client";
 import Carroussel from "@/components/global/Carroussel";
-import CardSlider from "@/components/slider/CardSlider";
 import CardSliderProduct from "@/components/slider/CardSliderProduct";
 import { productsCardsGroup2 } from "@/utils/carrousselData";
 import React from "react";
