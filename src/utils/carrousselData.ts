@@ -19,3 +19,15 @@ export const productsCardsGroup = [
   { id: 8, image: imageCard8 },
   { id: 9, image: imageCard9 },
 ];
+
+export const productsCardsGroup2 = [
+  { id: 1, image: imageCard1, title: "Vale Energia" },
+  { id: 2, image: imageCard2, title: "Cota De Crédito" },
+  { id: 3, image: imageCard3, title: "Meu Solar" },
+  { id: 4, image: imageCard4, title: "Bombeamento Solar" },
+  { id: 5, image: imageCard5, title: "Power Livre" },
+  { id: 6, image: imageCard6, title: "Trifásico" },
+  { id: 7, image: imageCard7, title: "Off Grid" },
+  { id: 8, image: imageCard8, title: "Investidor" },
+  { id: 9, image: imageCard9, title: "Locação de Área" },
+];

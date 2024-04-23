@@ -2,8 +2,8 @@
 import GridContainer from "@/components/global/GridContainer";
 import OutlineButton from "@/components/global/OutlineButton";
 import React, { useState } from "react";
-import { Tooltip } from "react-tooltip";
 import { MdHelpOutline } from "react-icons/md";
+import { Tooltip } from "react-tooltip";
 import ProductGridItem from "./ProductGridItem";
 
 const products = [
@@ -61,14 +61,18 @@ const products = [
     text: "Entendemos sua demanda, consumo e qualidade da energia na sua empresa ou fazenda. Nosso kit solar trifásico garante eficiência ao cliente.",
     type: ["all", "hybrid", "connected", "disconnected"],
   },
+  {
+    image: "/assets/images/produtos/banners_site_v3-06.png",
+    title: "EcoPower Mobi",
+    text: "A EcoPower Mobi é a linha de mobilidade elétrica da EcoPower, queremos garantir a mobilidade urbana com consciência ecológica e independência financeira.",
+    type: ["all", "hybrid", "connected", "disconnected"],
+  },
 ];
 
 const ProductsGrid: React.FC = () => {
   const [selected, setSelected] = useState<
     "all" | "connected" | "disconnected" | "hybrid"
   >("all");
-
-  console.log(selected);
 
   return (
     <GridContainer className="flex-col items-center py-20">

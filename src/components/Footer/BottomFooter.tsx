@@ -150,7 +150,7 @@ const BottomFooter: React.FC = () => {
           Termos e Políticas de Privacidade
         </Link>
         <p className="text-white opacity-40 text-[14px]">
-          © 2023 EcoPower Energia Solar - Todos os direitos reservados. CNPJ:
+          © 2024 EcoPower Energia Solar - Todos os direitos reservados. CNPJ:
           18.269.815/0001-36.
         </p>
         <a

@@ -5,6 +5,7 @@ import SectionHero from "@/components/glossario/SectionHero/SectionHero";
 import GlossaryLetterItem from "@/components/glossario/GlossaryLetterItem";
 import { getUniqueWords, glossaries } from "@/utils/glossaries";
 import Link from "next/link";
+import SmoothScroll from "@/components/global/SmoothScroll";
 
 export default function Glossary() {
   const [list, setList] = useState<string[]>(getUniqueWords());
@@ -43,6 +44,7 @@ export default function Glossary() {
           <GlossaryLetterItem letter={d} key={i} />
         ))}
       </div>
+      <SmoothScroll />
     </main>
   );
 }
