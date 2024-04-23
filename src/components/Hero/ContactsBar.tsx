@@ -23,11 +23,11 @@ const ContactsBar: React.FC = () => {
         </Link>
 
         <Link
-          href="tel:+5517992753678"
+          href="tel:+5517981281849"
           className="flex items-center md:text-xl text-grayscale-800"
         >
           <MdPhone />
-          <span className="md:text-sm text-xs ml-2">(17) 99275-3678</span>
+          <span className="md:text-sm text-xs ml-2">(17) 98128-1849</span>
         </Link>
       </div>
     </div>
