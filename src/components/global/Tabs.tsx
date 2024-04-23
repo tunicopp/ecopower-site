@@ -13,7 +13,7 @@ const TabsList = React.forwardRef<
   <TabsPrimitive.List
     ref={ref}
     className={twMerge(
-      "inline-flex h-10 items-center justify-center rounded-md  p-1 w-full self-center",
+      "flex flex-wrap h-10 items-center justify-center rounded-md  p-1 w-full self-center ",
       className
     )}
     {...props}
