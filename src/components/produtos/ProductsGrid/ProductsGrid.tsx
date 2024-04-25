@@ -8,6 +8,18 @@ import ProductGridItem from "./ProductGridItem";
 
 const products = [
   {
+    image: "/assets/images/produtos/banners_site_v3-06.png",
+    title: "EcoPower Mobi",
+    text: "A EcoPower Mobi é a linha de mobilidade elétrica da EcoPower, queremos garantir a mobilidade urbana com consciência ecológica e independência financeira.",
+    type: ["all", "hybrid", "connected", "disconnected"],
+  },
+  {
+    image: "/assets/images/produtos/banner-home.png",
+    title: "EcoPower Home",
+    text: "Torne seu o lar um ambiente mais inteligente, aconchegante e com equipamentos para facilitar a sua vida.",
+    type: ["all", "hybrid", "connected", "disconnected"],
+  },
+  {
     image: "/assets/images/produtos/kit-meu-solar.png",
     title: "Kit Meu Solar",
     text: "É a oportunidade de levar até as famílias, a viabilidade de praticamente eliminar um dos principais custos fixos de uma casa, a energia elétrica.",
@@ -59,12 +71,6 @@ const products = [
     image: "/assets/images/produtos/cliente-trifasico.png",
     title: "Cliente Trifásico",
     text: "Entendemos sua demanda, consumo e qualidade da energia na sua empresa ou fazenda. Nosso kit solar trifásico garante eficiência ao cliente.",
-    type: ["all", "hybrid", "connected", "disconnected"],
-  },
-  {
-    image: "/assets/images/produtos/banners_site_v3-06.png",
-    title: "EcoPower Mobi",
-    text: "A EcoPower Mobi é a linha de mobilidade elétrica da EcoPower, queremos garantir a mobilidade urbana com consciência ecológica e independência financeira.",
     type: ["all", "hybrid", "connected", "disconnected"],
   },
 ];
