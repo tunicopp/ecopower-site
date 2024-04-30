@@ -152,7 +152,7 @@ const SimulationDataContent: React.FC<Props> = ({ data, onClose }) => {
             </a>
           </div>
 
-          <div className="p-6 bg-beige-300 rounded-2xl flex flex-col items-center">
+          {/* <div className="p-6 bg-beige-300 rounded-2xl flex flex-col items-center">
             <SolarPanel />
             <span className="text-grayscale-900 mt-4 mb-[10px] font-medium">
               Módulo:
@@ -201,7 +201,7 @@ const SimulationDataContent: React.FC<Props> = ({ data, onClose }) => {
             className="h-12 w-full text-white px-5 py-[6px] bg-primary-green rounded-full flex items-center justify-center"
           >
             Falar com o consultor agora
-          </a>
+          </a> */}
         </>
       )}
     </>
