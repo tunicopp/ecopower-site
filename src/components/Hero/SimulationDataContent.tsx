@@ -137,12 +137,12 @@ const SimulationDataContent: React.FC<Props> = ({ data, onClose }) => {
               {data.promocao}
             </span>
             <p className="text-sm">*Carência de 30 dias e em 30x sem juros</p>
-            <button
+            {/* <button
               onClick={() => setSimulation(true)}
               className="h-12 w-full text-white px-5 py-[6px] mt-6 bg-primary-green rounded-full flex items-center justify-center"
             >
               Simular proposta completa
-            </button>
+            </button> */}
             <a
               target="_blank"
               href="https://api.whatsapp.com/send?phone=5517988418893&text=Ol%C3%A1,%20acabei%20de%20simular%20meu%20projeto%20no%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es"
