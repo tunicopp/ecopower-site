@@ -10,6 +10,8 @@ import React from "react";
 // import CJY from "../../../../public/assets/images/ecopower-mobi/CJY.png";
 import DMS from "../../../../public/assets/images/ecopower-mobi/DMS.png";
 import FY from "../../../../public/assets/images/ecopower-mobi/FY.png";
+import DropJetter from "../../../../public/assets/images/ecopower-mobi/drop-jetter.jpg";
+import DropGoKids from "../../../../public/assets/images/ecopower-mobi/drop-go-kids.jpg";
 // import M3 from "../../../../public/assets/images/ecopower-mobi/M3.png";
 // import V3 from "../../../../public/assets/images/ecopower-mobi/V3.png";
 // import XBT from "../../../../public/assets/images/ecopower-mobi/XBT.png";
@@ -25,6 +27,8 @@ const TabComponent: React.FC = () => {
     // { value: "4", label: "XCY" },
     // { value: "5", label: "CJY" },
     { value: "6", label: "FY" },
+    { value: "7", label: "Drop Jetter" },
+    { value: "8", label: "Drop Go-Kids" },
     // { value: "7", label: "XHZ" },
     // { value: "8", label: "XBT" },
   ];
@@ -131,6 +135,69 @@ const TabComponent: React.FC = () => {
       ],
       dowload: "https://we.tl/t-GdLDxAInFk",
     },
+    {
+      value: "7",
+      label: "Drop Jetter",
+      image: DropJetter,
+      itemsIncluded: [
+        "Patinete Elétrico DROP JETTER 800w Lítio 48v c/ Banco e Painel",
+      ],
+      Datasheet: [
+        "Modelo: Jetter 48V",
+        "Motor: Hub Brushless 800W",
+        "Bateria: Lítio 48v 10ah removível",
+        "Autonomia: até 40 km Velocidade Máx: 32 km/h (Limitado) / 45 km/h (Sem Limitação)",
+        "Níveis de velocidade: 3 níveis Inclinação",
+        "Max: 25º",
+        "Tempo de Recarga: 04-05 horas - Bivolt",
+        "Capacidade de Carga: até 120 kg",
+        "Roda: 10” inflável",
+        "Pressão Máx: 35 psi",
+        "Proteção a Água e Poeira: IP54 - Chuva Leve",
+        "Painel: Central de LED Iluminação: Dianteira e luz de freio em LED",
+        "Chave: 2 chaves codificadas",
+        "Acelerador: De punho progressivo",
+        "Suspensão: Dupla dianteira e traseira",
+        "Freios: A disco dianteiro e traseiro",
+        "Dobrável: Sim, guidão e banco",
+        "Peso: 28 kg",
+        "Tamanho: 112 x 113 x 55 cm",
+        "Tamanho Dobrado: 112 x 60 x 55 cm",
+        "Garantia: 1 ano - Contra defeitos de fabricação incluindo a bateria",
+      ],
+      dowload:
+        "https://drive.google.com/file/d/1L2OeOBPEsevW_NUtUdA0gq6nXbYjpFft/view?usp=sharing",
+    },
+    {
+      value: "8",
+      label: "Drop Go-Kids",
+      image: DropGoKids,
+      itemsIncluded: ["Patinete Elétrico DROP GO-KIDS 150W-24v"],
+      Datasheet: [
+        "Modelo: GO-KIDS",
+        "Motor: Hub Brushless 150W",
+        "Bateria: Lítio 24v, 2.25ah",
+        "Velocidade Máx: 15 km/h",
+        "Autonomia: até 08 km",
+        "Inclinação Max: 8º",
+        "Acelerador: De dedo progressivo",
+        "Iluminação: Lateral LED RGB",
+        "Dobrável: Sim",
+        "Painel: Lateral de LED",
+        "Proteção a Água e Poeira: IP54 - Chuva Leve",
+        "Tempo de Recarga: 03 - 04 horas - Bivolt",
+        "Capacidade de carga: 60 kg",
+        "Freio: Traseiro pedal",
+        "Roda: 6,0″ maciça",
+        "Peso: 6,5 kg",
+        "Tamanho: 112 x 113 x 55 cm",
+        "Tamanho Dobrado: 112 x 60 x 55 cm",
+        "Garantia: 3 Meses",
+        "Regulamentação: Este produto é classificado como um veículo de recreação. Deve ser utilizado apenas em ruas e propriedades particulares.",
+      ],
+      dowload:
+        "https://drop.com.br/wp-content/uploads/2021/manuais/Manual_MoTronik_GO_Kids_v04_visualizacao_reduz.pdf",
+    },
     // {
     //   value: "7",
     //   label: "XHZ",
@@ -190,6 +257,7 @@ const TabComponent: React.FC = () => {
                       priority
                       quality={100}
                       loading="eager"
+                      objectFit="contain"
                       className="lg:h-[500px] h-full lg:w-[600px] w-full  rounded-3xl object-cover  mx-auto"
                     />
                     {/* <div className="absolute rounded-3xl gradient-tab z-20 bottom-0" /> */}
