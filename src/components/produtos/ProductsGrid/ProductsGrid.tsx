@@ -12,66 +12,77 @@ const products = [
     title: "EcoPower Mobi",
     text: "A EcoPower Mobi é a linha de mobilidade elétrica da EcoPower, queremos garantir a mobilidade urbana com consciência ecológica e independência financeira.",
     type: ["all", "hybrid", "connected", "disconnected"],
+    link: "ecopower-mobi",
   },
   {
     image: "/assets/images/produtos/banner-home.png",
     title: "EcoPower Home",
     text: "Torne seu o lar um ambiente mais inteligente, aconchegante e com equipamentos para facilitar a sua vida.",
     type: ["all", "hybrid", "connected", "disconnected"],
+    link: "ecopower-home",
   },
   {
     image: "/assets/images/produtos/kit-meu-solar.png",
     title: "Kit Meu Solar",
     text: "É a oportunidade de levar até as famílias, a viabilidade de praticamente eliminar um dos principais custos fixos de uma casa, a energia elétrica.",
     type: ["all", "connected", "hybrid"],
+    link: "kit-meu-solar",
   },
   {
     image: "/assets/images/produtos/cota-credito.png",
     title: "Cota de Crédito",
     text: "As cotas do título são reservadas de acordo com a necessidade de crédito mensal médio, o cliente faz a adesão e passa a receber os créditos mensalmente",
     type: ["all", "connected"],
+    link: undefined,
   },
   {
     image: "/assets/images/produtos/investidor.png",
     title: "Investidor",
     text: "Produza energia solar de forma sustentável, gere créditos de energia limpa e venda esses créditos conforme os meios previstos e regulamentados.",
     type: ["all", "connected"],
+    link: undefined,
   },
   {
     image: "/assets/images/produtos/off-grid.png",
     title: "Off Grid",
     text: "É um sistema isolado, que não está conectado à rede de distribuição elétrica. Geralmente utilizado em regiões onde não há eletricidade ou distribuição elétrica.",
     type: ["all", "disconnected"],
+    link: undefined,
   },
   {
     image: "/assets/images/produtos/locacao-de-area.png",
     title: "Locação de Área",
     text: "Arrende seu terreno de até 1000m² em até 25 anos para a montagem e produção de uma usina de energia solar. Ideal para a renda da agricultura familiar.",
     type: ["all", "connected"],
+    link: undefined,
   },
   {
     image: "/assets/images/produtos/vale-energia.png",
     title: "Vale Energia",
     text: "Contribua com seus colaboradores a não pagar pelo uso de energia elétrica em suas residências enquanto trabalham com você.",
     type: ["all", "connected"],
+    link: undefined,
   },
   {
     image: "/assets/images/produtos/bombeamento-solar.png",
     title: "Bombeamento Solar",
     text: "O cliente utiliza a mesma bomba d’agua que ele já utilizava e o acionamento do motor passa a ser realizado através da energia gerada pelos painéis solares.",
     type: ["all", "disconnected"],
+    link: undefined,
   },
   {
     image: "/assets/images/produtos/power-livre.png",
     title: "Power Livre",
     text: "Produza energia no modelo zero grid e atenda o auto consumo. Para o consumo em horários onde não possui geração de energia, continue no mercado livre.",
     type: ["all", "disconnected"],
+    link: undefined,
   },
   {
     image: "/assets/images/produtos/cliente-trifasico.png",
     title: "Cliente Trifásico",
     text: "Entendemos sua demanda, consumo e qualidade da energia na sua empresa ou fazenda. Nosso kit solar trifásico garante eficiência ao cliente.",
     type: ["all", "hybrid", "connected", "disconnected"],
+    link: undefined,
   },
 ];
 
@@ -158,6 +169,7 @@ const ProductsGrid: React.FC = () => {
               image={p.image}
               text={p.text}
               title={p.title}
+              link={p.link}
             />
           ))}
       </div>
