@@ -4,19 +4,22 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import BannerOne from "./BannerOne";
+import BannerEnergiaEmCidade from "./BannerEnergiaEmCidade";
 import Image from "next/image";
 //import BannerTwo from "./BannerTwo";
 //import BannerThree from "./BannerThree";
 
 interface HeroSliderInterface {
   isMobile: boolean;
+  contentType?: string;
+  city?: string;
 }
 
-const HeroSlider: React.FC<HeroSliderInterface> = ({ isMobile }) => {
+const HeroSlider: React.FC<HeroSliderInterface> = ({ isMobile, contentType, city }) => {
   return (
     <>
       <div className="lg:absolute overflow-hidden hero-slider-wrapper mt-16 lg:mt-10 bottom-0 left-0 z-0">
-        <BannerOne />
+        {contentType == 'energia-em-cidade' ? <BannerEnergiaEmCidade city={city} /> : <BannerOne />}
         {/*<Swiper*/}
         {/*  loop*/}
         {/*  autoplay*/}

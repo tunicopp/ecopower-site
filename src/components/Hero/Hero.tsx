@@ -6,8 +6,14 @@ import HeroSlider from "./HeroSlider";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { useGlobalContext } from "@/app/context/store";
 import { isMobileDevice } from "@/utils/device";
+import { formatCityName } from "@/utils/formatCityName";
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  contentType?: string;
+  city?: string;
+}
+
+const Hero: React.FC<HeroProps> = ({ contentType, city }) => {
   const { currentSlide } = useGlobalContext();
 
   const [isMobile, setIsMobile] = useState(false);
@@ -26,7 +32,7 @@ const Hero: React.FC = () => {
           : "bg-banner-three"
       }`}
     >
-      <HeroSlider isMobile={isMobile} />
+      <HeroSlider isMobile={isMobile} contentType={contentType} city={formatCityName(city)} />
       <div className="z-10 relative lg:pt-0">
         <GridContainer className="pt-6 lg:pt-[103px] flex-col">
           <h1
@@ -45,7 +51,7 @@ const Hero: React.FC = () => {
               currentSlide === 3 ? "text-banner-two" : "text-white"
             }`}
           >
-            {currentSlide === 1
+            {city ? `Energia Solar em ${formatCityName(city)}` : currentSlide === 1
               ? "Energia Solar ao seu alcance"
               : currentSlide === 2
               ? "Aproveite as melhores condições"

@@ -18,15 +18,15 @@ interface RouteParams {
   }
 }
 
-export default async function Home({ params } : RouteParams) {
+export default async function EnergiaEmCidade({ params } : RouteParams) {
   console.log(`params`, params)
   return (
     <>
       <main className="relative">
-        {/* <Header /> */}
-        Energia Solar em {params.cidade ? params.cidade.charAt(0).toUpperCase() + params.cidade.slice(1) : ''}
-        {/* <Hero />
-        <SectionSlide />
+        <Header />
+        {/* Energia Solar em {params.cidade ? params.cidade.charAt(0).toUpperCase() + params.cidade.slice(1) : ''} */}
+        <Hero contentType='energia-em-cidade' city={params.cidade} />
+        {/* <SectionSlide />
         <SectionMap />
         <SectionVideo />
         <SectionCampaings /> */}
