@@ -1,15 +1,9 @@
 import SectionMap from "@/components/SectionMap/SectionMap";
 import Hero from "@/components/Hero/Hero";
-import SectionSlide from "@/components/SectionSlide/SectionSlide";
-import BlogSection from "@/components/blog-section/BlogSection";
-import SectionCampaings from "@/components/SectionCampaings/SectionCampaings";
-import SectionVideo from "@/components/SectionVideo/SectionVideo";
-import SectionSolutions from "@/components/SectionSolutions/SectionSolutions";
-import SectionProject from "@/components/SectionProjects/SectionProject";
-import SectionTestimonial from "@/components/SectionTestimonial/SectionTestimonial";
-import SectionFAQ from "@/components/SectionFAQ/SectionFAQ";
 import Header from "@/components/global/Header";
 import SmoothScroll from "@/components/global/SmoothScroll";
+import SectionValeAPena from "@/components/EnergiaEmCidade/SectionValeAPena";
+import { formatCityName } from "@/utils/formatCityName";
 
 interface RouteParams {
   params: {
@@ -24,17 +18,9 @@ export default async function EnergiaEmCidade({ params } : RouteParams) {
     <>
       <main className="relative">
         <Header />
-        {/* Energia Solar em {params.cidade ? params.cidade.charAt(0).toUpperCase() + params.cidade.slice(1) : ''} */}
         <Hero contentType='energia-em-cidade' city={params.cidade} />
-        {/* <SectionSlide />
+        <SectionValeAPena city={formatCityName(params.cidade)} />
         <SectionMap />
-        <SectionVideo />
-        <SectionCampaings /> */}
-        {/*<SectionSolutions />*/}
-        <SectionProject />
-        <SectionTestimonial />
-        <BlogSection />
-        <SectionFAQ />
       </main>
       <SmoothScroll />
     </>

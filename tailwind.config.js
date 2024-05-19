@@ -36,6 +36,7 @@ module.exports = {
     colors: {
       "primary-green": "#01B040",
       "hero-green": "#01AC3F",
+      "hero-yellow": "#FCCF5C",
       "banner-two": "#0C7E40",
       "banner-three": "#D9D3C3",
       "hover-map": "#01802E",

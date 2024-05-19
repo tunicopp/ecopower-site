@@ -18,7 +18,7 @@ import heroMobile from "../../../public/assets/images/hero/banner-hero-mobile.pn
 
 interface CityInterface {
     city?: string;
-  }
+}
 
 const BannerEnergiaEmCidade: React.FC<CityInterface> = ({ city }) => {
 
@@ -142,7 +142,7 @@ const BannerEnergiaEmCidade: React.FC<CityInterface> = ({ city }) => {
         />
       </div>
       <div className="lg:hidden block relative overflow-hidden">
-        <div className="absolute -right-[43px] top-[44px]">
+        <div className="absolute -right-[43px] top-[120px]">
           <Image
             loading="eager"
             src={cloudTwo}
@@ -152,7 +152,6 @@ const BannerEnergiaEmCidade: React.FC<CityInterface> = ({ city }) => {
           />
         </div>
         <div className="relative flex flex-col items-center gap-2 w-[307px] top-[40px] left-0 right-0 mx-auto">
-          <span className="text-white text-2xl">EcoPower</span>
           <h2 className="text-white font-semibold text-[30px] text-center">
             Energia Solar em {city}
           </h2>
