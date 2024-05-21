@@ -11,6 +11,7 @@ import cloudThree from "../../../public/assets/images/hero/cloud-2.png";
 import planetIcon from "../../../public/assets/images/energia-em-cidade/icone-planeta.svg";
 import energyIcon from "../../../public/assets/images/energia-em-cidade/icone-energia.svg";
 import moneyIcon from "../../../public/assets/images/energia-em-cidade/icone-energia.svg";
+import moneyWhiteIcon from "../../../public/assets/images/energia-em-cidade/icone-dinheiro-branco.svg";
 
 interface CityInterface {
   city?: string;
@@ -59,7 +60,7 @@ const SectionValeAPena: React.FC<CityInterface> = ({ city }) => {
       </div>
       <GridContainer className="flex-col">
         <section className="bg-white">
-          <div className="grid md:grid-cols-3 mt-[40px] gap-6">
+          <div className="grid md:grid-cols-2 mt-[40px] gap-6">
             <div className="flex item-center px-6 py-8 bg-beige-300 rounded-2xl place-content-around">
               <Image
                 src={planetIcon}
@@ -70,7 +71,7 @@ const SectionValeAPena: React.FC<CityInterface> = ({ city }) => {
                 quality={100}
               />
               <div className="max-w-[70%]">
-                <h3 className="text-xl mt-2 mb-2 font-medium text-grayscale-400">
+                <h3 className="text-lg mt-2 mb-2 font-medium text-grayscale-400">
                   Mais de {"todo 1000"} sistemas fotovoltaicos foram instalados
                   em {city}.
                 </h3>
@@ -86,7 +87,7 @@ const SectionValeAPena: React.FC<CityInterface> = ({ city }) => {
                 quality={100}
               />
               <div className="max-w-[70%]">
-                <h3 className="text-xl mt-2 mb-2 font-medium text-grayscale-400">
+                <h3 className="text-lg mt-2 mb-2 font-medium text-grayscale-400">
                   A conta de luz média em {city} é de {"to do valor"}.
                 </h3>
               </div>
@@ -101,8 +102,23 @@ const SectionValeAPena: React.FC<CityInterface> = ({ city }) => {
                 quality={100}
               />
               <div className="max-w-[70%]">
-                <h3 className="text-xl mt-2 mb-2 font-medium text-grayscale-400">
+                <h3 className="text-lg mt-2 mb-2 font-medium text-grayscale-400">
                   A principal distribuidora em {city} é a {"to do nome"}.
+                </h3>
+              </div>
+            </div>
+            <div className="flex item-center px-6 py-8 bg-primary-green rounded-2xl place-content-around">
+              <Image
+                src={moneyWhiteIcon}
+                className="mr-4"
+                alt="Principal Distribuidora Ícone"
+                width={50}
+                height={50}
+                quality={100}
+              />
+              <div className="max-w-[70%]">
+                <h3 className="text-lg mt-2 mb-2 font-medium text-white">
+                  Você pode economizar até 90% na sua conta com energia solar.
                 </h3>
               </div>
             </div>
