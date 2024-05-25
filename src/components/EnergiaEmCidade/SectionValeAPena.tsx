@@ -10,20 +10,22 @@ import cloudTwo from "../../../public/assets/images/hero/cloud-2.png";
 import cloudThree from "../../../public/assets/images/hero/cloud-2.png";
 import planetIcon from "../../../public/assets/images/energia-em-cidade/icone-planeta.svg";
 import energyIcon from "../../../public/assets/images/energia-em-cidade/icone-energia.svg";
-import moneyIcon from "../../../public/assets/images/energia-em-cidade/icone-energia.svg";
+import moneyIcon from "../../../public/assets/images/energia-em-cidade/icone-dinheiro.svg";
 import moneyWhiteIcon from "../../../public/assets/images/energia-em-cidade/icone-dinheiro-branco.svg";
+import CityDataInterface from "@/@types/app/city-data.app.interface";
 
-interface CityInterface {
-  city?: string;
-}
+const SectionValeAPena: React.FC<CityDataInterface> = ({ cityData }) => {
+  if(!cityData) {
+    return null
+  }
+  const { cidade, contagem } = cityData;
 
-const SectionValeAPena: React.FC<CityInterface> = ({ city }) => {
   return (
     <>
       <section className="min-h-[250px] flex flex-col items-center justify-center bg-hero-yellow relative overflow-hidden">
         <GridContainer className="flex-col justify-center items-center">
           <TitleComponent className="text-black">
-            Vale a pena energia solar em {city}?
+            Vale a pena energia solar em {cidade}?
           </TitleComponent>
         </GridContainer>
         <div className="absolute -right-[-40px] lg:-bottom-[24px] md:-bottom-[50px] -bottom-[0px]">
@@ -72,8 +74,8 @@ const SectionValeAPena: React.FC<CityInterface> = ({ city }) => {
               />
               <div className="max-w-[70%]">
                 <h3 className="text-lg mt-2 mb-2 font-medium text-grayscale-400">
-                  Mais de {"todo 1000"} sistemas fotovoltaicos foram instalados
-                  em {city}.
+                  Mais de {contagem} sistemas fotovoltaicos foram instalados
+                  em {cidade}.
                 </h3>
               </div>
             </div>
@@ -88,7 +90,7 @@ const SectionValeAPena: React.FC<CityInterface> = ({ city }) => {
               />
               <div className="max-w-[70%]">
                 <h3 className="text-lg mt-2 mb-2 font-medium text-grayscale-400">
-                  A conta de luz média em {city} é de {"to do valor"}.
+                  A conta de luz média em {cidade} é de {"to do valor"}.
                 </h3>
               </div>
             </div>
@@ -103,7 +105,7 @@ const SectionValeAPena: React.FC<CityInterface> = ({ city }) => {
               />
               <div className="max-w-[70%]">
                 <h3 className="text-lg mt-2 mb-2 font-medium text-grayscale-400">
-                  A principal distribuidora em {city} é a {"to do nome"}.
+                  A principal distribuidora em {cidade} é a {"to do nome"}.
                 </h3>
               </div>
             </div>
@@ -111,7 +113,7 @@ const SectionValeAPena: React.FC<CityInterface> = ({ city }) => {
               <Image
                 src={moneyWhiteIcon}
                 className="mr-4"
-                alt="Principal Distribuidora Ícone"
+                alt="Economia de energia solar Ícone"
                 width={50}
                 height={50}
                 quality={100}
