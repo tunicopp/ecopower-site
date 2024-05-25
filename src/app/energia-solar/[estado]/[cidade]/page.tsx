@@ -6,10 +6,8 @@ import SectionValeAPena from "@/components/EnergiaEmCidade/SectionValeAPena";
 import FranqueadoeEmCidade from "@/components/EnergiaEmCidade/FranqueadoeEmCidade";
 import SectionSolEmCidade from "@/components/EnergiaEmCidade/SectionSolEmCidade";
 import { formatCityName } from "@/utils/formatCityName";
-import { unslugify } from "@/utils/unslugify";
 import { slugify } from "@/utils/slugify";
 import dataCidades from "../../../../../public/assets/json/dadosCidades.json";
-import CityDataInterface from "@/@types/app/city-data.app.interface";
 
 interface RouteParams {
   params: {
@@ -32,7 +30,7 @@ export default async function EnergiaEmCidade({ params } : RouteParams) {
         <Header />
         <Hero contentType='energia-em-cidade' city={currentCityData?.cidade || 'sua cidade'} />
         <SectionValeAPena cityData={currentCityData} />
-        <SectionSolEmCidade city={formatCityName(params.cidade)} />
+        <SectionSolEmCidade cityData={currentCityData} />
         <FranqueadoeEmCidade city={formatCityName(params.cidade)} />
         <SectionMap />
       </main>

@@ -1,18 +1,27 @@
 import GridContainer from "@/components/global/GridContainer";
-import TitleComponent from "@/components/global/TitleComponent";
 import React from "react";
 import Image from "next/image";
+import CityDataInterface from "@/@types/app/city-data.app.interface";
 import adesivoEcoIcon from "../../../public/assets/images/energia-em-cidade/icone-adesivo-eco.svg";
 import incidenciaSolarImg from "../../../public/assets/images/energia-em-cidade/incidencia-solar-cidade.png";
 import lightGreenIcon from "../../../public/assets/images/energia-em-cidade/icon-light-green.png";
 import lightYellowIcon from "../../../public/assets/images/energia-em-cidade/icon-light-yellow.png";
 import lightRedIcon from "../../../public/assets/images/energia-em-cidade/icon-light-red.png";
 
-interface CityInterface {
-  city?: string;
-}
+const SectionSolEmCidade: React.FC<CityDataInterface> = ({ cityData }) => {
 
-const SectionSolEmCidade: React.FC<CityInterface> = ({ city }) => {
+  function getColorIcon(classificacao:string) {
+    switch (classificacao) {
+      case "muito intensa":
+        return lightRedIcon
+      case "forte":
+        return lightYellowIcon;
+    
+      default:
+        return lightGreenIcon
+    }
+  }
+
   return (
     <>
       <section className="min-h-[250px] flex flex-col items-center justify-center bg-primary-green relative overflow-hidden px-[20px] py-[40px] pt-[100px]">
@@ -35,7 +44,7 @@ const SectionSolEmCidade: React.FC<CityInterface> = ({ city }) => {
           </GridContainer>
           <div className="relative flex item-center p-2 pr-4 bg-beige-300 rounded-2xl place-content-flex-start text-sm sm:text-lg sm:max-w-[500px]">
             <Image
-                src={lightRedIcon}
+                src={getColorIcon(cityData?.classificacao)}
                 alt="Icon light red"
                 className="h-auto absolute top-[10px] right-[10px]"
             />
@@ -49,8 +58,8 @@ const SectionSolEmCidade: React.FC<CityInterface> = ({ city }) => {
             />
             <div className="max-w-[70%] flex items-center">
               <h3 className="font-medium text-grayscale-400">
-                O Sol em {city} é muito intenso, com uma incidência solar de
-                <div className="text-[30px] font-bold text-black mt-2">XX kWh</div>
+                O Sol em {cityData?.cidade} é muito intenso, com uma incidência solar de
+                <div className="text-[30px] font-bold text-black mt-2">{cityData?.media} kWh</div>
               </h3>
             </div>
           </div>

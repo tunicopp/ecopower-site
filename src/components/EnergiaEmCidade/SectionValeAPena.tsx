@@ -13,12 +13,13 @@ import energyIcon from "../../../public/assets/images/energia-em-cidade/icone-en
 import moneyIcon from "../../../public/assets/images/energia-em-cidade/icone-dinheiro.svg";
 import moneyWhiteIcon from "../../../public/assets/images/energia-em-cidade/icone-dinheiro-branco.svg";
 import CityDataInterface from "@/@types/app/city-data.app.interface";
+import capitalize from "@/utils/capitalize";
 
 const SectionValeAPena: React.FC<CityDataInterface> = ({ cityData }) => {
   if(!cityData) {
     return null
   }
-  const { cidade, contagem } = cityData;
+  const { cidade, contagem, distribuidora } = cityData;
 
   return (
     <>
@@ -105,7 +106,7 @@ const SectionValeAPena: React.FC<CityDataInterface> = ({ cityData }) => {
               />
               <div className="max-w-[70%]">
                 <h3 className="text-lg mt-2 mb-2 font-medium text-grayscale-400">
-                  A principal distribuidora em {cidade} é a {"to do nome"}.
+                  A principal distribuidora em {cidade} é a {capitalize(distribuidora)}.
                 </h3>
               </div>
             </div>
