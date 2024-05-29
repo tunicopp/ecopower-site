@@ -106,7 +106,7 @@ const SectionValeAPena: React.FC<CityDataInterface> = ({ cityData }) => {
               />
               <div className="max-w-[70%]">
                 <h3 className="text-lg mt-2 mb-2 font-medium text-grayscale-400">
-                  A principal distribuidora em {cidade} é a {capitalize(distribuidora)}.
+                  A principal distribuidora em {cidade} é a {capitalize(distribuidora || '')}.
                 </h3>
               </div>
             </div>

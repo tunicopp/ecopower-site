@@ -5,9 +5,9 @@ export default interface CityDataInterface {
     regiao: string;
     contagem: string | number;
     mwp: string | number;
-    distribuidora: string;
-    NomAgente: string;
-    media: string;
-    classificacao: string;
-  }
+    distribuidora?: string;
+    NomAgente?: string;
+    classificacao?: string;
+    media?: string | undefined;
+  } | undefined
 }

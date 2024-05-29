@@ -10,7 +10,9 @@ import lightRedIcon from "../../../public/assets/images/energia-em-cidade/icon-l
 
 const SectionSolEmCidade: React.FC<CityDataInterface> = ({ cityData }) => {
 
-  function getColorIcon(classificacao:string) {
+  function getColorIcon(classificacao:string|undefined) {
+    if(!classificacao) return lightGreenIcon
+
     switch (classificacao) {
       case "muito intensa":
         return lightRedIcon
@@ -58,8 +60,8 @@ const SectionSolEmCidade: React.FC<CityDataInterface> = ({ cityData }) => {
             />
             <div className="max-w-[70%] flex items-center">
               <h3 className="font-medium text-grayscale-400">
-                O Sol em {cityData?.cidade} é muito intenso, com uma incidência solar de
-                <div className="text-[30px] font-bold text-black mt-2">{cityData?.media} kWh</div>
+                O Sol em {cityData?.cidade} é {cityData?.classificacao}, com uma incidência solar de
+                <div className="text-[30px] font-bold text-black mt-2">{cityData?.media} W/m²</div>
               </h3>
             </div>
           </div>
