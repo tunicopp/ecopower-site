@@ -63,7 +63,7 @@ const SectionValeAPena: React.FC<CityDataInterface> = ({ cityData }) => {
       </div>
       <GridContainer className="flex-col">
         <section className="bg-white">
-          <div className="grid md:grid-cols-2 mt-[40px] gap-6">
+          <div className="grid md:grid-cols-3 mt-[40px] gap-6">
             <div className="flex item-center px-6 py-8 bg-beige-300 rounded-2xl place-content-around">
               <Image
                 src={planetIcon}
@@ -80,7 +80,7 @@ const SectionValeAPena: React.FC<CityDataInterface> = ({ cityData }) => {
                 </h3>
               </div>
             </div>
-            <div className="flex item-center px-6 py-8 bg-beige-300 rounded-2xl place-content-around">
+            {/* <div className="flex item-center px-6 py-8 bg-beige-300 rounded-2xl place-content-around">
               <Image
                 src={energyIcon}
                 className="mr-4"
@@ -94,7 +94,7 @@ const SectionValeAPena: React.FC<CityDataInterface> = ({ cityData }) => {
                   A conta de luz média em {cidade} é de {"to do valor"}.
                 </h3>
               </div>
-            </div>
+            </div> */}
             <div className="flex item-center px-6 py-8 bg-beige-300 rounded-2xl place-content-around">
               <Image
                 src={moneyIcon}
