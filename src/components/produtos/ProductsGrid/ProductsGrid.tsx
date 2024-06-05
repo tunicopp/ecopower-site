@@ -12,14 +12,14 @@ const products = [
     title: "EcoPower Mobi",
     text: "A EcoPower Mobi é a linha de mobilidade elétrica da EcoPower, queremos garantir a mobilidade urbana com consciência ecológica e independência financeira.",
     type: ["all", "hybrid", "connected", "disconnected"],
-    link: "ecopower-mobi",
+    link: "power-mobi",
   },
   {
     image: "/assets/images/produtos/banner-home.png",
     title: "EcoPower Home",
     text: "Torne seu o lar um ambiente mais inteligente, aconchegante e com equipamentos para facilitar a sua vida.",
     type: ["all", "hybrid", "connected", "disconnected"],
-    link: "ecopower-home",
+    link: "ecohome",
   },
   {
     image: "/assets/images/produtos/kit-meu-solar.png",
