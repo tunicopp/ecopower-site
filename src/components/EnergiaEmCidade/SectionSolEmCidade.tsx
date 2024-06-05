@@ -14,7 +14,7 @@ const SectionSolEmCidade: React.FC<CityDataInterface> = ({ cityData }) => {
     if(!classificacao) return lightGreenIcon
 
     switch (classificacao) {
-      case "muito intensa":
+      case "muito intenso":
         return lightRedIcon
       case "forte":
         return lightYellowIcon;
