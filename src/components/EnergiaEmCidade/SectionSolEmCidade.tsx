@@ -33,15 +33,15 @@ const SectionSolEmCidade: React.FC<CityDataInterface> = ({ cityData }) => {
         >
             <div className="flex text-grayscale-400 text-sm">
               <Image alt="Icon light green" className="h-auto" src={lightGreenIcon} />
-              baixa
+              moderado
             </div>
             <div className="flex text-grayscale-400 text-sm">
               <Image alt="Icon light yellow" className="h-auto" src={lightYellowIcon} />
-              média
+              forte
             </div>
             <div className="flex text-grayscale-400 text-sm">
               <Image alt="Icon light red" className="h-auto" src={lightRedIcon} />
-              alta
+              muito intenso
             </div>
           </GridContainer>
           <div className="relative flex item-center p-2 pr-4 bg-beige-300 rounded-2xl place-content-flex-start text-sm sm:text-lg sm:max-w-[500px]">
