@@ -27,10 +27,7 @@ export async function generateMetadata({ params }: RouteParams): Promise<Metadat
 function getCurrentCityData(params:any) {
   return dataCidades.find(item => {
     return slugify(item.cidade) == params.cidade.toLowerCase()
-  }) || {
-    cidade: 'sua cidade',
-    estado: ''
-  }
+  })
 }
 
 export default async function EnergiaEmCidade({ params } : RouteParams) {
