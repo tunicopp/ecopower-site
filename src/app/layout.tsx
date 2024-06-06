@@ -21,11 +21,15 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-export const metadata: Metadata = {
-  title: "Reduza a conta de Luz com Energia Solar | EcoPower",
-  description:
-    "Use a nossa calculadora da EcoPower para saber o quanto você pode economizar. EcoPower é a energia que move o futuro. Energia Solar ao seu alcance!",
-};
+export async function generateMetadata({ params }: any) {
+  return {
+    title:{
+      template: '%s | EcoPower',
+      default: "Reduza a conta de Luz com Energia Solar | EcoPower",
+    },
+    description: "Use a nossa calculadora da EcoPower para saber o quanto você pode economizar. EcoPower é a energia que move o futuro. Energia Solar ao seu alcance!",
+  }
+}
 
 export default function RootLayout({
   children,

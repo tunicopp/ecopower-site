@@ -38,7 +38,7 @@ const SectionValeAPena: React.FC<CityInterface> = ({ city }) => {
           <div className="w-[220px] sm:w-[100%] sm:max-w-[400px] z-10 flex flex-col px-3 py-4 bg-white rounded-2xl place-content-around">
             <h3 className="text-sm sm:text-lg mt-2 mb-2 font-medium text-grayscale-400">
               <span className="font-bold text-grayscale-600">
-                Nosso franqueado em {city}
+                Nosso franqueado em <h1 className="inline">{city}</h1>
               </span>{" "}
               está pronto para oferecer benefícios exclusivos para você.
             </h3>

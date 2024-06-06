@@ -153,7 +153,7 @@ const BannerEnergiaEmCidade: React.FC<CityInterface> = ({ city }) => {
         </div>
         <div className="relative flex flex-col items-center gap-2 w-[307px] top-[40px] left-0 right-0 mx-auto">
           <h2 className="text-white font-semibold text-[30px] text-center">
-            Energia Solar em {city}
+            Energia Solar em <h1 className="inline text-white">{city}</h1>
           </h2>
         </div>
         <Image

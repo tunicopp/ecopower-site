@@ -1,3 +1,5 @@
+import { Metadata } from 'next';
+import { redirect } from 'next/navigation'
 import SectionMap from "@/components/SectionMap/SectionMap";
 import Hero from "@/components/Hero/Hero";
 import Header from "@/components/global/Header";
@@ -16,17 +18,32 @@ interface RouteParams {
   }
 }
 
+export async function generateMetadata({ params }: RouteParams): Promise<Metadata> {
+  return {
+    title: `Energia Solar em ${getCurrentCityData(params)?.cidade} - ${params.estado.toUpperCase()}`,
+  }
+}
+
+function getCurrentCityData(params:any) {
+  return dataCidades.find(item => {
+    return slugify(item.cidade) == params.cidade.toLowerCase()
+  }) || {
+    cidade: 'sua cidade',
+    estado: ''
+  }
+}
+
 export default async function EnergiaEmCidade({ params } : RouteParams) {
   
-  const currentCityData = dataCidades.find(item => {
-    return slugify(item.cidade) == params.cidade.toLowerCase()
-  })
+  const currentCityData = getCurrentCityData(params)
   
-  // console.log(`currentCityData`, currentCityData)
+  if(currentCityData?.uf.toLowerCase() != params.estado.toLowerCase()) {
+    redirect('/')
+  }
 
   return (
     <>
-      <main className="relative">
+        <main className="relative">
         <Header />
         <Hero contentType='energia-em-cidade' city={currentCityData?.cidade || 'sua cidade'} />
         <SectionValeAPena cityData={currentCityData} />

@@ -26,7 +26,7 @@ const SectionValeAPena: React.FC<CityDataInterface> = ({ cityData }) => {
       <section className="min-h-[250px] flex flex-col items-center justify-center bg-hero-yellow relative overflow-hidden">
         <GridContainer className="flex-col justify-center items-center">
           <TitleComponent className="text-black">
-            Vale a pena energia solar em {cidade}?
+            Vale a pena energia solar em <h1 className="inline">{cidade}</h1>?
           </TitleComponent>
         </GridContainer>
         <div className="absolute -right-[-40px] lg:-bottom-[24px] md:-bottom-[50px] -bottom-[0px]">
@@ -76,7 +76,7 @@ const SectionValeAPena: React.FC<CityDataInterface> = ({ cityData }) => {
               <div className="max-w-[70%]">
                 <h3 className="text-lg mt-2 mb-2 font-medium text-grayscale-400">
                   Mais de {contagem} sistemas fotovoltaicos foram instalados
-                  em {cidade}.
+                  em <h1 className="inline">{cidade}</h1>.
                 </h3>
               </div>
             </div>
@@ -106,7 +106,7 @@ const SectionValeAPena: React.FC<CityDataInterface> = ({ cityData }) => {
               />
               <div className="max-w-[70%]">
                 <h3 className="text-lg mt-2 mb-2 font-medium text-grayscale-400">
-                  A principal distribuidora em {cidade} é a {capitalize(distribuidora || '')}.
+                  A principal distribuidora em <h1 className="inline">{cidade}</h1> é a {capitalize(distribuidora || '')}.
                 </h3>
               </div>
             </div>
