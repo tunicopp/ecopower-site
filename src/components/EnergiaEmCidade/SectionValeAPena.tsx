@@ -19,14 +19,14 @@ const SectionValeAPena: React.FC<CityDataInterface> = ({ cityData }) => {
   if(!cityData) {
     return null
   }
-  const { cidade, contagem, distribuidora } = cityData;
+  const { cidade, uf, contagem, distribuidora } = cityData;
 
   return (
     <>
       <section className="min-h-[250px] flex flex-col items-center justify-center bg-hero-yellow relative overflow-hidden">
         <GridContainer className="flex-col justify-center items-center">
           <TitleComponent className="text-black">
-            Vale a pena energia solar em <h1 className="inline">{cidade}</h1>?
+            Vale a pena energia solar em <h1 className="inline">{cidade} - {uf}</h1>?
           </TitleComponent>
         </GridContainer>
         <div className="absolute -right-[-40px] lg:-bottom-[24px] md:-bottom-[50px] -bottom-[0px]">
@@ -76,7 +76,7 @@ const SectionValeAPena: React.FC<CityDataInterface> = ({ cityData }) => {
               <div className="max-w-[70%]">
                 <h3 className="text-lg mt-2 mb-2 font-medium text-grayscale-400">
                   Mais de {contagem} sistemas fotovoltaicos foram instalados
-                  em <h1 className="inline">{cidade}</h1>.
+                  em <h1 className="inline">{cidade} - {uf}</h1>.
                 </h3>
               </div>
             </div>
@@ -91,7 +91,7 @@ const SectionValeAPena: React.FC<CityDataInterface> = ({ cityData }) => {
               />
               <div className="max-w-[70%]">
                 <h3 className="text-lg mt-2 mb-2 font-medium text-grayscale-400">
-                  A conta de luz média em {cidade} é de {"to do valor"}.
+                  A conta de luz média em {cidade} - {uf} é de {"to do valor"}.
                 </h3>
               </div>
             </div> */}
@@ -106,7 +106,7 @@ const SectionValeAPena: React.FC<CityDataInterface> = ({ cityData }) => {
               />
               <div className="max-w-[70%]">
                 <h3 className="text-lg mt-2 mb-2 font-medium text-grayscale-400">
-                  A principal distribuidora em <h1 className="inline">{cidade}</h1> é a {capitalize(distribuidora || '')}.
+                  A principal distribuidora em <h1 className="inline">{cidade} - {uf}</h1> é a {capitalize(distribuidora || '')}.
                 </h3>
               </div>
             </div>

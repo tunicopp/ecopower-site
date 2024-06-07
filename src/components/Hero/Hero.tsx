@@ -11,9 +11,10 @@ import { formatCityName } from "@/utils/formatCityName";
 interface HeroProps {
   contentType?: string;
   city?: string;
+  uf?: string;
 }
 
-const Hero: React.FC<HeroProps> = ({ contentType, city }) => {
+const Hero: React.FC<HeroProps> = ({ contentType, city, uf }) => {
   const { currentSlide } = useGlobalContext();
 
   const [isMobile, setIsMobile] = useState(false);
@@ -32,7 +33,7 @@ const Hero: React.FC<HeroProps> = ({ contentType, city }) => {
           : "bg-banner-three"
       }`}
     >
-      <HeroSlider isMobile={isMobile} contentType={contentType} city={formatCityName(city)} />
+      <HeroSlider isMobile={isMobile} contentType={contentType} city={formatCityName(city)} uf={uf} />
       <div className="z-10 relative lg:pt-0">
         <GridContainer className="pt-6 lg:pt-[103px] flex-col">
           <h1
@@ -51,7 +52,7 @@ const Hero: React.FC<HeroProps> = ({ contentType, city }) => {
               currentSlide === 3 ? "text-banner-two" : "text-white"
             }`}
           >
-            {city ? `Energia Solar em ${formatCityName(city)}` : currentSlide === 1
+            {city ? `Energia Solar em ${formatCityName(city)} - ${uf}` : currentSlide === 1
               ? "Energia Solar ao seu alcance"
               : currentSlide === 2
               ? "Aproveite as melhores condições"

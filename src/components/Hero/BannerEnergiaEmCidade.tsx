@@ -16,11 +16,12 @@ import doubleTree from "../../../public/assets/images/hero/double-tree.png";
 import sun from "../../../public/assets/images/hero/sun.png";
 import heroMobile from "../../../public/assets/images/hero/banner-hero-mobile.png";
 
-interface CityInterface {
+interface RegionInterface {
     city?: string;
+    uf?: string;
 }
 
-const BannerEnergiaEmCidade: React.FC<CityInterface> = ({ city }) => {
+const BannerEnergiaEmCidade: React.FC<RegionInterface> = ({ city, uf }) => {
 
   return (
     <>
@@ -153,7 +154,7 @@ const BannerEnergiaEmCidade: React.FC<CityInterface> = ({ city }) => {
         </div>
         <div className="relative flex flex-col items-center gap-2 w-[307px] top-[40px] left-0 right-0 mx-auto">
           <h2 className="text-white font-semibold text-[30px] text-center">
-            Energia Solar em <h1 className="inline text-white">{city}</h1>
+            Energia Solar em <h1 className="inline text-white">{city} - {uf}</h1>
           </h2>
         </div>
         <Image

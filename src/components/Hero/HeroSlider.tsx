@@ -13,13 +13,14 @@ interface HeroSliderInterface {
   isMobile: boolean;
   contentType?: string;
   city?: string;
+  uf?: string;
 }
 
-const HeroSlider: React.FC<HeroSliderInterface> = ({ isMobile, contentType, city }) => {
+const HeroSlider: React.FC<HeroSliderInterface> = ({ isMobile, contentType, city, uf }) => {
   return (
     <>
       <div className="lg:absolute overflow-hidden hero-slider-wrapper mt-16 lg:mt-10 bottom-0 left-0 z-0">
-        {contentType == 'energia-em-cidade' ? <BannerEnergiaEmCidade city={city} /> : <BannerOne />}
+        {contentType == 'energia-em-cidade' ? <BannerEnergiaEmCidade city={city} uf={uf} /> : <BannerOne />}
         {/*<Swiper*/}
         {/*  loop*/}
         {/*  autoplay*/}

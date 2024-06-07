@@ -60,7 +60,7 @@ const SectionSolEmCidade: React.FC<CityDataInterface> = ({ cityData }) => {
             />
             <div className="max-w-[70%] flex items-center">
               <h3 className="font-medium text-grayscale-400">
-                O Sol em <h1 className="inline">{cityData?.cidade}</h1> é {cityData?.classificacao}, com uma incidência solar de
+                O Sol em <h1 className="inline">{cityData?.cidade} - {cityData?.uf}</h1> é {cityData?.classificacao}, com uma incidência solar de
                 <div className="text-[30px] font-bold text-black mt-2">{cityData?.media} W/m²</div>
               </h3>
             </div>

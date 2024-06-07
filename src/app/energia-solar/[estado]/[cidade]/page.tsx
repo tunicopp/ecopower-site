@@ -42,10 +42,10 @@ export default async function EnergiaEmCidade({ params } : RouteParams) {
     <>
         <main className="relative">
         <Header />
-        <Hero contentType='energia-em-cidade' city={currentCityData?.cidade || 'sua cidade'} />
+        <Hero contentType='energia-em-cidade' city={currentCityData?.cidade || 'sua cidade'} uf={currentCityData?.uf} />
         <SectionValeAPena cityData={currentCityData} />
         <SectionSolEmCidade cityData={currentCityData} />
-        <FranqueadoeEmCidade city={formatCityName(params.cidade)} />
+        <FranqueadoeEmCidade city={formatCityName(params.cidade)} uf={currentCityData?.uf} />
         <SectionMap />
       </main>
       <SmoothScroll />

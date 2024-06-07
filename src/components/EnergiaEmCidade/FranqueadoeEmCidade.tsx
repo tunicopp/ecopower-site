@@ -9,11 +9,12 @@ import bgSolarFranqueado from "../../../public/assets/images/energia-em-cidade/f
 import bgSolarFranqueadoDesk from "../../../public/assets/images/energia-em-cidade/franqueado_solar_cidade-desktop.jpg";
 import simuleAquiFranquiaIcon from "../../../public/assets/images/energia-em-cidade/icone-simule-aqui-franqueado.svg";
 
-interface CityInterface {
+interface RegionInterface {
   city?: string;
+  uf?: string;
 }
 
-const SectionValeAPena: React.FC<CityInterface> = ({ city }) => {
+const SectionValeAPena: React.FC<RegionInterface> = ({ city, uf }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -29,7 +30,7 @@ const SectionValeAPena: React.FC<CityInterface> = ({ city }) => {
         <div className="flex min-h-[170px]">
           <Image
             src={bgSolarFranqueado}
-            alt={`Energia solar - franqueado em ${city}`}
+            alt={`Energia solar - franqueado em ${city} - ${uf}`}
             priority
             quality={100}
             loading="eager"
@@ -38,7 +39,7 @@ const SectionValeAPena: React.FC<CityInterface> = ({ city }) => {
           <div className="w-[220px] sm:w-[100%] sm:max-w-[400px] z-10 flex flex-col px-3 py-4 bg-white rounded-2xl place-content-around">
             <h3 className="text-sm sm:text-lg mt-2 mb-2 font-medium text-grayscale-400">
               <span className="font-bold text-grayscale-600">
-                Nosso franqueado em <h1 className="inline">{city}</h1>
+                Nosso franqueado em <h1 className="inline">{city} - {uf}</h1>
               </span>{" "}
               está pronto para oferecer benefícios exclusivos para você.
             </h3>
@@ -53,7 +54,7 @@ const SectionValeAPena: React.FC<CityInterface> = ({ city }) => {
               </h2>
               <Image
                 src={simuleAquiFranquiaIcon}
-                alt={`Ícone simule aqui - franqueado em ${city}`}
+                alt={`Ícone simule aqui - franqueado em ${city} - ${uf}`}
                 priority
                 quality={100}
                 loading="eager"
