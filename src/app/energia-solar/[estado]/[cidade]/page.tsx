@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: RouteParams): Promise<Metadat
 
 function getCurrentCityData(params:any) {
   return dataCidades.find(item => {
-    return slugify(item.cidade) == params.cidade.toLowerCase()
+    return slugify(item.cidade) == params.cidade.toLowerCase() && slugify(item.uf) == params.estado.toLowerCase()
   })
 }
 
