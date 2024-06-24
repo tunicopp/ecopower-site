@@ -17,7 +17,7 @@ export default async function Home() {
       <main className="relative">
         <Header />
         <Hero />
-        <SectionSlide />
+        {/* <SectionSlide /> */}
         <SectionMap />
         <SectionVideo />
         <SectionCampaings />
