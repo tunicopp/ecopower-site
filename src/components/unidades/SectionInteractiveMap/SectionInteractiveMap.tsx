@@ -3,7 +3,7 @@ import React from "react";
 import Map from "./Map";
 import StateTooltip from "./StateTooltip";
 // import data from "../../../../public/assets/json/unidades.json";
-import { units } from "../../../../src/utils/units.ts";
+import { units } from "../../../../src/utils/units";
 
 let data = units;
 

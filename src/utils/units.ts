@@ -1183,7 +1183,7 @@ export const units = [
   {
     municipio: "Santo Estevão ",
     uf: "BA",
-    phone: "75)9 9128-2358",
+    phone: "(75) 9 9128-2358",
     address: "Av Dom José Botelho,n°351",
     facebook: "https://www.facebook.com/ecopowerST",
     instagram: "https://www.instagram.com/ecopower_santoestevaoba/",
@@ -1237,7 +1237,7 @@ export const units = [
   {
     municipio: "Posto da mata",
     uf: "BA",
-    phone: 73999266796,
+    phone: "73999266796",
     address: "Av João Durval Carneiro 734",
     facebook: "https://www.instagram.com/juliodiasevan?igsh=dDg2bzdtaWNoeGhk&utm_source=qr",
     instagram: "https://www.instagram.com/juliodiasevan?igsh=dDg2bzdtaWNoeGhk&utm_source=qr",
@@ -1255,7 +1255,7 @@ export const units = [
   {
     municipio: "Jacarei",
     uf: "SP",
-    phone: 12991279061,
+    phone: "12991279061",
     address: "Av das Letras, 26 Lj07- Vila Branca Center- Vila Branca Cep: 12301330",
     facebook: "https://www.facebook.com/share/HA8fmw4uAXfAxNHW/?mibextid=qi2Omg",
     instagram: "https://www.instagram.com/ecopower_jacarei?igsh=dmk5ZDg0MnJ1Zm93",
@@ -1291,7 +1291,7 @@ export const units = [
   {
     municipio: "Guarujá",
     uf: "SP",
-    phone: 13996504865,
+    phone: "13996504865",
     address: "Rua Áureo Guenaga de Castro 64, Parque Enseada , Guarujá , SP",
     facebook: "https://www.facebook.com/ecopowerguarujasp",
     instagram: "https://www.instagram.com/ecopower_guaruja/",
@@ -1309,7 +1309,7 @@ export const units = [
   {
     municipio: "Campo Mourão",
     uf: "PA",
-    phone: 44999346943,
+    phone: "44 999346943",
     address: "Rua Brasil, 1559, sala",
     facebook: "https://www.facebook.com/ecopowercm",
     instagram: "https://www.instagram.com/ecopowercm/",
@@ -1336,7 +1336,7 @@ export const units = [
   {
     municipio: "Lages",
     uf: "SC",
-    phone: 49991678772,
+    phone: "49 991678772",
     address: "Av. Mal. Floriano, 1160 - Centro",
     facebook: "https://www.facebook.com/ecopowerlages",
     instagram: "https://www.instagram.com/ecopower_lagessc/",
@@ -1354,7 +1354,7 @@ export const units = [
   {
     municipio: "Toritama",
     uf: "PE",
-    phone: 81998215000,
+    phone: "81 998215000",
     address: "Rua Joaquim Tabosa, 240, centro",
     facebook: "https://www.instagram.com/ecopowertoritama?igsh=MXI3ZXFxMjZnNTl5bA%3D%3D&utm_source=qr",
     instagram: "https://www.instagram.com/ecopowertoritama?igsh=MXI3ZXFxMjZnNTl5bA%3D%3D&utm_source=qr",
@@ -1363,7 +1363,7 @@ export const units = [
   {
     municipio: "Jundiaí",
     uf: "SP",
-    phone: "1197718-6363",
+    phone: "11 97718-6363",
     address: "Em breve",
     facebook: "@ecopower_jundiaisp",
     instagram: "@ecopower_jundiaisp",
@@ -1372,7 +1372,7 @@ export const units = [
   {
     municipio: "Nova viçosa posto da mata",
     uf: "BA",
-    phone: 73999266796,
+    phone: "73 999266796",
     address: "Rua João Durval Carneiro 721, centro posto da mata Ba",
     facebook: "A",
     instagram: "A",
@@ -1381,7 +1381,7 @@ export const units = [
   {
     municipio: "Ananindeua",
     uf: "PA",
-    phone: 91983834747,
+    phone: "91 983834747",
     address: "Passagem Jarbas Passarinho, 7 - Bairro do Atalaia - CEP 67.013-599",
     facebook: "https://www.instagram.com/fernandobraun_15?igsh=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr",
     instagram: "https://www.instagram.com/fernandobraun_15?igsh=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr",
@@ -1390,7 +1390,7 @@ export const units = [
   {
     municipio: "COLINA SP",
     uf: "SP",
-    phone: 16982076403,
+    phone: "16 982076403",
     address: "AV ANGELO MARTINS TRISTAO N 211 - CENTRO - COLINA SP",
     facebook: "",
     instagram: "",
