@@ -682,7 +682,7 @@
   {
     "Nome": 1695058320502,
     "Municipio": "Ribeir\u00e3o Pires-SP ",
-    "Uf": "SP ",
+    "Uf": "SP",
     "Telefone": "(11) 96261-1140",
     "Endereco": "Rua Felipe Sabbag, 200 - Centro ",
     "Facebook": "https://www.facebook.com/EcopowerRibeiraoPires/",
@@ -692,7 +692,7 @@
   {
     "Nome": 1695059175397,
     "Municipio": "Santana de Parnaiba ",
-    "Uf": "SP ",
+    "Uf": "SP",
     "Telefone": "(11) 988378281",
     "Endereco": "Estrada Municipal Bela Vista, 917",
     "Facebook": "-",
@@ -702,7 +702,7 @@
   {
     "Nome": 1695119325712,
     "Municipio": "Sert\u00e3ozinho",
-    "Uf": "SP ",
+    "Uf": "SP",
     "Telefone": "(16) 991857062",
     "Endereco": "Rua Olidair Ambrosio, 1223 B, Centro",
     "Facebook": "https://www.facebook.com/profile.php?id=100077708711833",
@@ -712,11 +712,77 @@
   {
     "Nome": 1695121335258,
     "Municipio": "Ara\u00e7atuba",
-    "Uf": "SP ",
+    "Uf": "SP",
     "Telefone": "(18) 998244054",
     "Endereco": "Rua Humait\u00e1, 1070 - Jd. Sumar\u00e9",
     "Facebook": "https://www.facebook.com/ecopoweraracatuba/",
     "Instagram": "https://www.instagram.com/ecopoweraracatuba/",
     "Fachada": "https://drive.google.com/open?id=1oX1e8GbagJmamLvUAVY0PX7AWtH62fdC"
+  },
+  {
+    "Uf": "ES"
+  },
+  {
+    "Uf": "BA"
+  },
+  {
+    "Uf": "PA"
+  },
+  {
+    "Uf": "SP"
+  },
+  {
+    "Uf": "PA"
+  },
+  {
+    "Uf": "PA"
+  },
+  {
+    "Uf": "MT"
+  },
+  {
+    "Uf": "SP"
+  },
+  {
+    "Uf": "GO"
+  },
+  {
+    "Uf": "PA"
+  },
+  {
+    "Uf": "MS"
+  },
+  {
+    "Uf": "MT"
+  },
+  {
+    "Uf": "SP"
+  },
+  {
+    "Uf": "SC"
+  },
+  {
+    "Uf": "SP"
+  },
+  {
+    "Uf": "PE"
+  },
+  {
+    "Uf": "SP"
+  },
+  {
+    "Uf": "BA"
+  },
+  {
+    "Uf": "PA"
+  },
+  {
+    "Uf": "SP"
+  },
+  {
+    "Uf": "SP"
+  },
+  {
+    "Uf": "BA"
   }
 ]

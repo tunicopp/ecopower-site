@@ -399,7 +399,7 @@ export const units = [
     facebook:
       "https://www.facebook.com/profile.php?id=100076069398881&mibextid=ZbWKwL",
     instagram: "https://www.instagram.com/ecopowercuritibanos/",
-    photo: "13aGAVfPkzAVkuqOt5yHLe_tDbj5eHSqC.png",
+    photo: "IMG-20240411-WA0039_Douglas%20Bianki%20Perio.jpg"
   },
   {
     municipio: "Joinville",
@@ -1225,4 +1225,193 @@ export const units = [
     instagram: "https://www.instagram.com/daniel.energiasolar_mt",
     photo: "1961yjPU6torlZ-gUsqhc-BPrsT4Txzs6.png",
   },
+  {
+    municipio: "JAGUARE",
+    uf: "ES",
+    phone: "(27) 99839-6111",
+    address: "AVENIDA 9 DE AGOSTO 349, CENTRO",
+    facebook: "-",
+    instagram: "",
+    photo: "AVENIDA-9-DE-AGOSTO-349.jpeg"
+  },
+  {
+    municipio: "Posto da mata",
+    uf: "BA",
+    phone: 73999266796,
+    address: "Av João Durval Carneiro 734",
+    facebook: "https://www.instagram.com/juliodiasevan?igsh=dDg2bzdtaWNoeGhk&utm_source=qr",
+    instagram: "https://www.instagram.com/juliodiasevan?igsh=dDg2bzdtaWNoeGhk&utm_source=qr",
+    photo: "image_Julio%20Neto%20Dias%20Evan.jpg"
+  },
+  {
+    municipio: "Conceição do Araguaia",
+    uf: "PA",
+    phone: "63999186238 e 94992243058",
+    address: "Avenida 7de Setembro, 118 - Centro",
+    facebook: "",
+    instagram: "",
+    photo: "IMG_20211029_180045_Original_Paulo%20Cunha.jpg"
+  },
+  {
+    municipio: "Jacarei",
+    uf: "SP",
+    phone: 12991279061,
+    address: "Av das Letras, 26 Lj07- Vila Branca Center- Vila Branca Cep: 12301330",
+    facebook: "https://www.facebook.com/share/HA8fmw4uAXfAxNHW/?mibextid=qi2Omg",
+    instagram: "https://www.instagram.com/ecopower_jacarei?igsh=dmk5ZDg0MnJ1Zm93",
+    photo: "1RHZag_iCphoD5XR6KxX5IBWzj7jxHr7t.png"
+  },
+  {
+    municipio: "João Pessoa",
+    uf: "PA",
+    phone: "83 3690-1688 ou 83 99120-3333",
+    address: "Av Presidente Epitácio Pessoa, 201 - Sala 108 - Bairro Estados - João Pessoa/SP",
+    facebook: "https://www.facebook.com/ecopowerjoaopessoapb?mibextid=ZbWKwL",
+    instagram: "https://www.instagram.com/ecopower_joaopessoa?igsh=bGxxeTE1ZGlsdGNm",
+    photo: "1RHZag_iCphoD5XR6KxX5IBWzj7jxHr7t.png"
+  },
+  {
+    municipio: "Campina Grande",
+    uf: "PA",
+    phone: "83 99120-3333",
+    address: "Rua Presidente Epitácio Pessoa, 149 Centro",
+    facebook: "https://www.facebook.com/ecopowercityviradourosp?mibextid=ZbWKwL",
+    instagram: "https://www.instagram.com/ecopower_campinagrande?igsh=M3I2azVobHl0Yjcz",
+    photo: "IMG-20240328-WA0022_Claudenilson%20De%20Souz.jpg"
+  },
+  {
+    municipio: "São José do Rio Claro",
+    uf: "MT",
+    phone: "65992331644 /  65999542797",
+    address: "Rua Guanabara, 428, Centro",
+    facebook: "https://www.facebook.com/ecopowersjrioclaromt",
+    instagram: "https://www.instagram.com/ecopower_energiasolar_sjrcmt?utm_source=qr&igsh=MXY5cW1vb3Zrb3FiNA==",
+    photo: "fachada%20loja_Elaine%20Cristina%20De%20A.jpeg"
+  },
+  {
+    municipio: "Guarujá",
+    uf: "SP",
+    phone: 13996504865,
+    address: "Rua Áureo Guenaga de Castro 64, Parque Enseada , Guarujá , SP",
+    facebook: "https://www.facebook.com/ecopowerguarujasp",
+    instagram: "https://www.instagram.com/ecopower_guaruja/",
+    photo: "1RHZag_iCphoD5XR6KxX5IBWzj7jxHr7t.png"
+  },
+  {
+    municipio: "Goiânia",
+    uf: "GO",
+    phone: "62 3928-1016",
+    address: "R. 69-A, 321, salas 9 e 10 - Setor Norte Ferroviário",
+    facebook: "https://www.facebook.com/ecopowergoianiago/",
+    instagram: "https://www.instagram.com/ecopowergoias/",
+    photo: "1RHZag_iCphoD5XR6KxX5IBWzj7jxHr7t.png"
+  },
+  {
+    municipio: "Campo Mourão",
+    uf: "PA",
+    phone: 44999346943,
+    address: "Rua Brasil, 1559, sala",
+    facebook: "https://www.facebook.com/ecopowercm",
+    instagram: "https://www.instagram.com/ecopowercm/",
+    photo: "IMG_1135_NATALIA%20VENANCIO%20DE.jpeg"
+  },
+  {
+    municipio: "Dourados, Agua Boa, Canarana, Maracaju",
+    uf: "MS e MT",
+    phone: "67 999182377",
+    address: "Rua Aquidauana, 726 - sala 09 - Jardim Caramuru - Dourados ms",
+    facebook: "https://www.facebook.com/EcoPowerDouradosMS",
+    instagram: "https://www.instagram.com/ecopower_douradosms?igsh=bHR5OTNwbGdhMjU2",
+    photo: "Rua-Aquidauana.jpg"
+  },
+  {
+    municipio: "Sumare",
+    uf: "SP",
+    phone: "19 99300-5885",
+    address: "Av José Mancini 283 jardim São Carlos",
+    facebook: "https://www.facebook.com/share/h8QFV26ojnjuWc9M/?mibextid=WC7FNe",
+    instagram: "https://www.instagram.com/ecopower_sumaresp?igsh=dmk4b3M3dDlqanph",
+    photo: "IMG_9250_Marcio%20Henrique%20Fagi.jpeg"
+  },
+  {
+    municipio: "Lages",
+    uf: "SC",
+    phone: 49991678772,
+    address: "Av. Mal. Floriano, 1160 - Centro",
+    facebook: "https://www.facebook.com/ecopowerlages",
+    instagram: "https://www.instagram.com/ecopower_lagessc/",
+    photo: "Faxada%20loja%20lages_Carlos%20Alberto%20Amori.jpg"
+  },
+  {
+    municipio: "São Roque",
+    uf: "SP",
+    phone: "11 956198759",
+    address: "",
+    facebook: "https://www.facebook.com/profile.php?id=61550621180915&mibextid=ZbWKwL",
+    instagram: "https://www.instagram.com/ecopower_saoroquesp?igsh=MTl4ZmJyNmt6Y2JxNg==",
+    photo: "1RHZag_iCphoD5XR6KxX5IBWzj7jxHr7t.png"
+  },
+  {
+    municipio: "Toritama",
+    uf: "PE",
+    phone: 81998215000,
+    address: "Rua Joaquim Tabosa, 240, centro",
+    facebook: "https://www.instagram.com/ecopowertoritama?igsh=MXI3ZXFxMjZnNTl5bA%3D%3D&utm_source=qr",
+    instagram: "https://www.instagram.com/ecopowertoritama?igsh=MXI3ZXFxMjZnNTl5bA%3D%3D&utm_source=qr",
+    photo: "7e7b704e-4083-4ff8-b71a-384c5f21b2d7_Agberto%20Albertino%20De.jpeg"
+  },
+  {
+    municipio: "Jundiaí",
+    uf: "SP",
+    phone: "1197718-6363",
+    address: "Em breve",
+    facebook: "@ecopower_jundiaisp",
+    instagram: "@ecopower_jundiaisp",
+    photo: "1RHZag_iCphoD5XR6KxX5IBWzj7jxHr7t.png"
+  },
+  {
+    municipio: "Nova viçosa posto da mata",
+    uf: "BA",
+    phone: 73999266796,
+    address: "Rua João Durval Carneiro 721, centro posto da mata Ba",
+    facebook: "A",
+    instagram: "A",
+    photo: "image_Julio%20Neto%20Dias%20Evan%201.jpg"
+  },
+  {
+    municipio: "Ananindeua",
+    uf: "PA",
+    phone: 91983834747,
+    address: "Passagem Jarbas Passarinho, 7 - Bairro do Atalaia - CEP 67.013-599",
+    facebook: "https://www.instagram.com/fernandobraun_15?igsh=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr",
+    instagram: "https://www.instagram.com/fernandobraun_15?igsh=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr",
+    photo: "1RHZag_iCphoD5XR6KxX5IBWzj7jxHr7t.png"
+  },
+  {
+    municipio: "COLINA SP",
+    uf: "SP",
+    phone: 16982076403,
+    address: "AV ANGELO MARTINS TRISTAO N 211 - CENTRO - COLINA SP",
+    facebook: "",
+    instagram: "",
+    photo: "62e20dee-cba3-4908-8379-8ebed00734fb_Marcelo%20Polizelli%20No.jpg"
+  },
+  {
+    municipio: "Barretos",
+    uf: "SP",
+    phone: "17 997870208",
+    address: "Avenida quarenta e sete 423",
+    facebook: "",
+    instagram: "",
+    photo: "1RHZag_iCphoD5XR6KxX5IBWzj7jxHr7t.png"
+  },
+  {
+    municipio: "Teixeirade Freitas",
+    uf: "BA",
+    phone: "73-98848-8076",
+    address: "Rua Massanore Nagao , 281, centro, shopping teixeira Mall",
+    facebook: "https://www.facebook.com/ecopowertxf/",
+    instagram: "@ecopower_teixeiradefreitas",
+    photo: "WhatsApp%20Image%202024-04-25%20at%2016.55.49_Isaias%20Reis%20Barretos.jpeg"
+  }
 ];

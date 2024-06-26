@@ -21,8 +21,8 @@ import { isMobileDevice } from "@/utils/device";
 
 const SectionSlide: React.FC = () => {
   return (
-    <section className="relative w-full pb-20 px-6 lg:px-0 pt-[66px] flex flex-col items-center">
-      <div className="absolute -top-[30px]">
+    <section>
+      {/* <div className="absolute -top-[30px]">
         <Image src={cloud} alt="Cloud Arrow" width={104} height={56} />
       </div>
       <div className="absolute top-[18%] left-[0%] animate-fly">
@@ -46,7 +46,7 @@ const SectionSlide: React.FC = () => {
             <CardSlider image={card.image} index={index} />
           </SwiperSlide>
         ))}
-      </Carroussel>
+      </Carroussel> */}
     </section>
   );
 };
