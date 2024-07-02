@@ -145,6 +145,12 @@ const SectionInteractiveMap: React.FC = () => {
             state="Alagoas"
             units={data.filter((d) => d.uf === "AL").length}
           />
+          <StateTooltip
+            anchor="#pb"
+            accordion_anchor="ac_pb"
+            state="Paraíba"
+            units={data.filter((d) => d.uf === "PB").length}
+          />
         </div>
       </GridContainer>
     </section>

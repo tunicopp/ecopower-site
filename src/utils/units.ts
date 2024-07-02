@@ -1263,9 +1263,9 @@ export const units = [
   },
   {
     municipio: "João Pessoa",
-    uf: "PA",
+    uf: "PB",
     phone: "83 3690-1688 ou 83 99120-3333",
-    address: "Av Presidente Epitácio Pessoa, 201 - Sala 108 - Bairro Estados - João Pessoa/SP",
+    address: "Av Presidente Epitácio Pessoa, 201 - Sala 108 - Bairro Estados",
     facebook: "https://www.facebook.com/ecopowerjoaopessoapb?mibextid=ZbWKwL",
     instagram: "https://www.instagram.com/ecopower_joaopessoa?igsh=bGxxeTE1ZGlsdGNm",
     photo: "1RHZag_iCphoD5XR6KxX5IBWzj7jxHr7t.png"
