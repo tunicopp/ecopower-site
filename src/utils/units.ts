@@ -812,7 +812,7 @@ export const units = [
   {
     municipio: "Goiania",
     uf: "GO",
-    phone: "62 98127-6353",
+    phone: "62 98127-6353 / 62 3928-1016",
     address: "Rua 69-A, n 321. Salas 09-10. Setor Norte Ferroviário",
     facebook: "-",
     instagram: "https://www.instagram.com/ecopowergoias",
@@ -1217,15 +1217,6 @@ export const units = [
     photo: "1K0LCkG4ddvP7FzO0nOMMvzhW5L_RObVL.png",
   },
   {
-    municipio: "São José do Rio Claro",
-    uf: "MT",
-    phone: "(65) 9 9954-2797",
-    address: "Rua Guanabara, 428, Centro",
-    facebook: "https://www.facebook.com/ecopowersjrioclaromt",
-    instagram: "https://www.instagram.com/daniel.energiasolar_mt",
-    photo: "1961yjPU6torlZ-gUsqhc-BPrsT4Txzs6.png",
-  },
-  {
     municipio: "JAGUARE",
     uf: "ES",
     phone: "(27) 99839-6111",
@@ -1233,15 +1224,6 @@ export const units = [
     facebook: "-",
     instagram: "",
     photo: "AVENIDA-9-DE-AGOSTO-349.jpeg"
-  },
-  {
-    municipio: "Posto da mata",
-    uf: "BA",
-    phone: "73999266796",
-    address: "Av João Durval Carneiro 734",
-    facebook: "https://www.instagram.com/juliodiasevan?igsh=dDg2bzdtaWNoeGhk&utm_source=qr",
-    instagram: "https://www.instagram.com/juliodiasevan?igsh=dDg2bzdtaWNoeGhk&utm_source=qr",
-    photo: "image_Julio%20Neto%20Dias%20Evan.jpg"
   },
   {
     municipio: "Conceição do Araguaia",
@@ -1272,7 +1254,7 @@ export const units = [
   },
   {
     municipio: "Campina Grande",
-    uf: "PA",
+    uf: "PB",
     phone: "83 99120-3333",
     address: "Rua Presidente Epitácio Pessoa, 149 Centro",
     facebook: "https://www.facebook.com/ecopowercityviradourosp?mibextid=ZbWKwL",
@@ -1282,7 +1264,7 @@ export const units = [
   {
     municipio: "São José do Rio Claro",
     uf: "MT",
-    phone: "65992331644 /  65999542797",
+    phone: "(65) 99233-1644 / (65) 99954-2797",
     address: "Rua Guanabara, 428, Centro",
     facebook: "https://www.facebook.com/ecopowersjrioclaromt",
     instagram: "https://www.instagram.com/ecopower_energiasolar_sjrcmt?utm_source=qr&igsh=MXY5cW1vb3Zrb3FiNA==",
@@ -1298,17 +1280,8 @@ export const units = [
     photo: "1RHZag_iCphoD5XR6KxX5IBWzj7jxHr7t.png"
   },
   {
-    municipio: "Goiânia",
-    uf: "GO",
-    phone: "62 3928-1016",
-    address: "R. 69-A, 321, salas 9 e 10 - Setor Norte Ferroviário",
-    facebook: "https://www.facebook.com/ecopowergoianiago/",
-    instagram: "https://www.instagram.com/ecopowergoias/",
-    photo: "1RHZag_iCphoD5XR6KxX5IBWzj7jxHr7t.png"
-  },
-  {
     municipio: "Campo Mourão",
-    uf: "PA",
+    uf: "PR",
     phone: "44 999346943",
     address: "Rua Brasil, 1559, sala",
     facebook: "https://www.facebook.com/ecopowercm",
@@ -1332,15 +1305,6 @@ export const units = [
     facebook: "https://www.facebook.com/share/h8QFV26ojnjuWc9M/?mibextid=WC7FNe",
     instagram: "https://www.instagram.com/ecopower_sumaresp?igsh=dmk4b3M3dDlqanph",
     photo: "IMG_9250_Marcio%20Henrique%20Fagi.jpeg"
-  },
-  {
-    municipio: "Lages",
-    uf: "SC",
-    phone: "49 991678772",
-    address: "Av. Mal. Floriano, 1160 - Centro",
-    facebook: "https://www.facebook.com/ecopowerlages",
-    instagram: "https://www.instagram.com/ecopower_lagessc/",
-    photo: "Faxada%20loja%20lages_Carlos%20Alberto%20Amori.jpg"
   },
   {
     municipio: "São Roque",
