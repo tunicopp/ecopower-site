@@ -49,8 +49,8 @@ const Map: React.FC = () => {
       <Rondonia />
       <RioGrandeDoSul />
       <Ceara />
-      <Paraiba />
       <RioGrandeDoNorte />
+      <Paraiba />
       <Piaui />
       <Pernambuco />
       <Alagoas />
