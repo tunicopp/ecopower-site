@@ -151,6 +151,30 @@ const SectionInteractiveMap: React.FC = () => {
             state="Paraíba"
             units={data.filter((d) => d.uf === "PB").length}
           />
+          <StateTooltip
+            anchor="#rr"
+            accordion_anchor="ac_rr"
+            state="Roraima"
+            units={data.filter((d) => d.uf === "RR").length}
+          />
+          <StateTooltip
+            anchor="#ac"
+            accordion_anchor="ac_ac"
+            state="Acre"
+            units={data.filter((d) => d.uf === "AC").length}
+          />
+          <StateTooltip
+            anchor="#pi"
+            accordion_anchor="ac_pi"
+            state="Piauí"
+            units={data.filter((d) => d.uf === "PI").length}
+          />
+          <StateTooltip
+            anchor="#ro"
+            accordion_anchor="ac_ro"
+            state="Rondônia"
+            units={data.filter((d) => d.uf === "RO").length}
+          />
         </div>
       </GridContainer>
     </section>

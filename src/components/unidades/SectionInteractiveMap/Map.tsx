@@ -45,7 +45,6 @@ const Map: React.FC = () => {
       <Bahia />
       <SaoPaulo />
       <SantaCatarina />
-      <Roraima />
       <Rondonia />
       <RioGrandeDoSul />
       <Ceara />
@@ -68,6 +67,7 @@ const Map: React.FC = () => {
       <Amazonas />
       <Amapa />
       <Acre />
+      <Roraima />
     </svg>
   );
 };
