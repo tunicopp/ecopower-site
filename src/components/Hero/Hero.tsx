@@ -36,28 +36,50 @@ const Hero: React.FC<HeroProps> = ({ contentType, city, uf }) => {
       <HeroSlider isMobile={isMobile} contentType={contentType} city={formatCityName(city)} uf={uf} />
       <div className="z-10 relative lg:pt-0">
         <GridContainer className="pt-6 lg:pt-[103px] flex-col">
-          <h1
-            className={`text-base font-bold lg:block hidden ${
-              currentSlide === 3 ? "text-banner-two" : "text-white"
-            }`}
-          >
-            {currentSlide === 1
-              ? "EcoPower"
-              : currentSlide === 2
-              ? "Mês do cliente, até 30x sem juros"
-              : "Somos Eco, Somos Power"}
-          </h1>
-          <h2
-            className={`text-4xl leading-none lg:text-[3.5rem] lg:leading-[4rem] font-semibold my-2 lg:my-0 lg:block hidden ${
-              currentSlide === 3 ? "text-banner-two" : "text-white"
-            }`}
-          >
-            {city ? `Energia Solar em ${formatCityName(city)} - ${uf}` : currentSlide === 1
-              ? "Energia Solar ao seu alcance"
-              : currentSlide === 2
-              ? "Aproveite as melhores condições"
-              : "Somos a energia que move o futuro"}
-          </h2>
+        {
+          city ? (
+            <>
+            <h2
+                className={`text-base font-bold lg:block hidden ${currentSlide === 3 ? "text-banner-two" : "text-white"}`}
+              >
+                {currentSlide === 1
+                  ? "EcoPower"
+                  : currentSlide === 2
+                    ? "Mês do cliente, até 30x sem juros"
+                    : "Somos Eco, Somos Power"}
+              </h2><h1
+                className={`text-4xl leading-none lg:text-[3.5rem] lg:leading-[4rem] font-semibold my-2 lg:my-0 lg:block hidden ${currentSlide === 3 ? "text-banner-two" : "text-white"}`}
+              >
+                  {city ? `Energia Solar em ${formatCityName(city)} - ${uf}` : currentSlide === 1
+                    ? "Energia Solar ao seu alcance"
+                    : currentSlide === 2
+                      ? "Aproveite as melhores condições"
+                      : "Somos a energia que move o futuro"}
+                </h1>
+              </>
+          ) :
+          (
+            <><h1
+                  className={`text-base font-bold lg:block hidden ${currentSlide === 3 ? "text-banner-two" : "text-white"}`}
+                >
+                  {currentSlide === 1
+                    ? "EcoPower"
+                    : currentSlide === 2
+                      ? "Mês do cliente, até 30x sem juros"
+                      : "Somos Eco, Somos Power"}
+                </h1>
+                <h2
+                  className={`text-4xl leading-none lg:text-[3.5rem] lg:leading-[4rem] font-semibold my-2 lg:my-0 lg:block hidden ${currentSlide === 3 ? "text-banner-two" : "text-white"}`}
+                >
+                    {city ? `Energia Solar em ${formatCityName(city)} - ${uf}` : currentSlide === 1
+                      ? "Energia Solar ao seu alcance"
+                      : currentSlide === 2
+                        ? "Aproveite as melhores condições"
+                        : "Somos a energia que move o futuro"}
+                  </h2>
+            </>
+          )
+        }
           <p
             className={`lg:text-base text-lg lg:mt-6 lg:text-start text-center ${
               currentSlide === 3 ? "text-grayscale-900" : "text-white"
