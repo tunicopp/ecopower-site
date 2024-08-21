@@ -17,11 +17,11 @@ const HeroSection: React.FC = () => {
       <div className="flex w-full flex-col items-center  lg:flex-row max-w-[1272px] justify-between ">
         <div className="flex flex-col justify-center w-full max-w-[467px] z-20">
           <h2 className="text-white text-center lg:text-left lg:text-[72px] text-[40px] leading-[110%] font-semibold  mt-5 lg:mt-0">
-            Conheça o EcoPower Home
+            Conheça o EcoHome
           </h2>
           <p className="text-lg text-white max-w-[467px] mt-6  overflow-auto text-center lg:text-left">
             Torne seu o lar um ambiente mais inteligente, aconchegante e com
-            equipamentos para facilitar a sua vida. O EcoPower Home vem ao
+            equipamentos para facilitar a sua vida. O EcoHome vem ao
             mercado com o intuito de fazer com que as pessoas possam economizar
             não só na conta de energia, mas também em outros gastos da casa.
           </p>

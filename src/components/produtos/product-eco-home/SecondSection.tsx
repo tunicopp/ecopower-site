@@ -27,7 +27,7 @@ const SecondSection: React.FC = () => {
               Como Funciona?
             </h2>
             <p className="text-lg mt-4  text-center lg:text-left overflow-auto">
-              Adicionando um produto EcoPower Home ao seu projeto de energia
+              Adicionando um produto EcoHome ao seu projeto de energia
               solar, você tem o benefício de deixar sua casa mais automatizada,
               autônoma e inteligente, além claro, de economizar nos principais
               gastos mensais da família.
@@ -78,7 +78,7 @@ const SecondSection: React.FC = () => {
               Descrição Detalhada
             </h2>
             <p className="text-lg max-w-[540px] mt-6  text-center lg:text-left overflow-auto ">
-              A EcoPower Home é a linha de produtos elétricos da EcoPower, eles
+              A EcoHome é a linha de produtos elétricos da EcoPower, eles
               podem ser acoplados como adicionais ao seu projeto e entram dentro
               do financiamento também. Ar condicionado, eletrodomésticos,
               produtos de automação, tomadas inteligentes e muito mais!

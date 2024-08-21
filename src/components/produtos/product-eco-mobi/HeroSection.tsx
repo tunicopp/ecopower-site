@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
             Conheça o EcoPower Mobi
           </h2>
           <p className="text-lg text-white max-w-[467px] mt-6 lg:max-h-[150px] max-h-[200px]  overflow-auto text-center lg:text-left">
-            A EcoPower Mobi é a linha de mobilidade elétrica da EcoPower,
+            A Power Mobi é a linha de mobilidade elétrica da EcoPower,
             queremos garantir a mobilidade urbana com consciência ecológica e
             independência financeira!
           </p>

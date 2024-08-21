@@ -34,7 +34,7 @@ const BenefitsSection: React.FC = () => {
         className="absolute right-0 top-0 -z-10 block md:hidden"
       />
       <h3 className="lg:text-5xl text-[36px] font-semibold text-white max-w-[683px] text-center ">
-        Benefícios do Ecopower Home
+        Benefícios do EcoHome
       </h3>
       {/* <p className="text-lg leading-[150%] text-white max-w-[653px] text-center mt-6 ">
         Lorem Ipsum is simply dummy text of the printing and typesetting
