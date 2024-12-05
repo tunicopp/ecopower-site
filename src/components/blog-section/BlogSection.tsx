@@ -24,8 +24,10 @@ async function getData(): Promise<BlogPost[]> {
       title: d.title.rendered,
       date: d.date,
       link: d.link,
-      photo:
-        d._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url,
+      //photo:
+        //d._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url,
+      photo: 
+        d._embedded?.["wp:featuredmedia"]?.[0]?.media_details?.sizes?.large?.source_url || '/default-image.jpg',
       category: d._embedded["wp:term"][0][0].name,
       author: {
         name: d._embedded.author[0].name,
