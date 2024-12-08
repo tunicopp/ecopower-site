@@ -13,22 +13,20 @@ const nextConfig = {
         pathname: "/**",
       },
     ],
-    // Ativando a otimização de imagens com sharp
     formats: ["image/avif", "image/webp"],
   },
-  // Adicionando configuração para evitar coleta de telemetria
-  telemetry: false,
   experimental: {
-    appDir: false, // Ajuste baseado nas configurações experimentais que deseja usar
+    appDir: true, // Ativar appDir
   },
   webpack: (config) => {
-    // Configurações adicionais, como aumentar a memória para processos de build
     config.optimization = {
       ...config.optimization,
       minimize: true,
     };
     return config;
   },
+  // Adicionando suporte ao diretório src/
+  basePath: "/src",
 };
 
 module.exports = nextConfig;

@@ -17,10 +17,10 @@ RUN npm install sharp
 COPY . .
 
 # Construir o projeto Next.js com limite de memória ajustado
-RUN NODE_OPTIONS="--max-old-space-size=4096" npm run build
+RUN npm run build
 
 # Etapa 2: Rodar a aplicação
-FROM node:18-alpine AS production
+FROM node:20-alpine AS production
 
 # Diretório de trabalho no contêiner
 WORKDIR /app
